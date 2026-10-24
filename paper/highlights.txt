@@ -1,5 +1,0 @@
-A mechanical account of cross-model agreement saturation
-Plurality-vote conditioning alone explains 54-108% of wrong-consensus amplification
-The ceiling boundary is post-hoc and class-count-dominated
-A Jensen-gap shape-divergence signal predicts error (mean AUROC 0.622)
-Soft agreement beats entropy on 23/27 datasets, surviving FDR
