@@ -1,0 +1,33 @@
+======================================================================================
+  Exp C — class-level vs instance-level anchoring (differentiate from VisualAnchor)
+======================================================================================
+  Bootstrap B=10000 seed=42
+
+── teacher_behavior | N=3240 | consensus acc=64.66% ──
+  VisualAnchor AnchorScore (LAION-2B per-class acc):
+    guide=29.3%  answer=5.6%  on-stage interaction=54.2%  blackboard-writing=26.1%  teacher=50.5%  stand=9.6%  screen=40.5%  blackboard=3.2%
+  C1 AUROC for predicting per-image correctness:
+    instance agreement        : 0.7062   (ours)
+    class-mean agreement      : 0.6948   (ours, class granularity)
+    VA AnchorScore[primary]   : 0.6511   (sibling #3, class-level) 
+  C2 within-class agreement AUROC (weighted mean) = 0.6958  (>0.5 => instance adds info beyond class prior)
+    class                      N    acc withinCls_agrAUROC
+    guide                    372 56.99%             0.5814
+    answer                   800 49.75%             0.7433
+    on-stage interaction     141 94.33%             0.7110
+    blackboard-writing       235 97.45%             0.9127
+    teacher                 1459 73.61%             0.6852
+    stand                    169 21.89%             0.5005
+  C3 combined signal vs instance agreement alone:
+    instance + VA AnchorScore : 0.7430  (delta vs instance: +0.0367 CI[+0.0231,+0.0502])
+    instance + class-mean     : 0.7602  (delta vs instance: +0.0539 CI[+0.0417,+0.0662])
+  C4 FAIR selective accuracy (tie-aware, 200 seeds; classmean=5-fold held-out):
+    coverage |  instance classmean_ho       VA |  withinCls_inst_lift
+         30% |    87.03%       81.26%   76.64% |              +18.14pp
+         50% |    78.52%       78.38%   75.13% |              +10.71pp
+         70% |    71.93%       72.82%   73.55% |               +5.07pp
+         90% |    66.75%       65.51%   66.97% |               +1.83pp
+
+======================================================================================
+  Reading: C1 instance>class-mean>VA => granularity helps. C2>0.5 => instance signal not redundant with class. C3 delta CI >0 => class prior adds complementary info on top of instance (both deltas CI>0).
+  C4 within-class lift >0 => instance agreement selects better-than-random WITHIN classes.

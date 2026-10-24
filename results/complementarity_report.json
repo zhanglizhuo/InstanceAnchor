@@ -1,0 +1,236 @@
+{
+  "spearman": {
+    "rho": 0.0714285714285714,
+    "ci_lo": -0.5041208791208791,
+    "ci_hi": 0.7184409340659336,
+    "bootstrap_n": 10000
+  },
+  "coverage": {
+    "covered": 12,
+    "uncovered": 1,
+    "coverage_rate": 0.9230769230769231,
+    "total": 13
+  },
+  "quadrants": {
+    "both_strong": [
+      "screen",
+      "turn-head",
+      "hand-raise",
+      "read",
+      "write"
+    ],
+    "mllm_stronger": [
+      "blackboard-writing",
+      "teacher",
+      "blackBoard"
+    ],
+    "clip_stronger": [
+      "guide",
+      "On-stage interaction",
+      "stand",
+      "bow-head"
+    ],
+    "both_weak": [
+      "answer"
+    ]
+  },
+  "per_class_advantage": [
+    {
+      "class": "guide",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.2693548387096774,
+      "advantage_ratio": 0.2767212583285251,
+      "winner": "CLIP"
+    },
+    {
+      "class": "answer",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.08425,
+      "advantage_ratio": 0.08655410137000306,
+      "winner": "tie"
+    },
+    {
+      "class": "On-stage interaction",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.15602836879432624,
+      "advantage_ratio": 0.16029549257234818,
+      "winner": "CLIP"
+    },
+    {
+      "class": "blackboard-writing",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 98.61,
+      "clip_recall": 0.04936170212765957,
+      "advantage_ratio": -0.9492883349757021,
+      "winner": "MLLM"
+    },
+    {
+      "class": "teacher",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 92.01,
+      "clip_recall": 0.09115832762165867,
+      "advantage_ratio": -0.8394183077062748,
+      "winner": "MLLM"
+    },
+    {
+      "class": "stand",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.85,
+      "clip_recall": 0.2414201183431953,
+      "advantage_ratio": 0.2394027530628926,
+      "winner": "CLIP"
+    },
+    {
+      "class": "screen",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 69.41,
+      "clip_recall": 0.26666666666666666,
+      "advantage_ratio": -0.42992441823018024,
+      "winner": "MLLM"
+    },
+    {
+      "class": "blackBoard",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 57.42,
+      "clip_recall": 0.0,
+      "advantage_ratio": -0.582293884942471,
+      "winner": "MLLM"
+    },
+    {
+      "class": "bow-head",
+      "subset": "bow_turnhead",
+      "mllm_accuracy": 43.9,
+      "clip_recall": 0.17513513513513518,
+      "advantage_ratio": -0.26526331665038666,
+      "winner": "MLLM"
+    },
+    {
+      "class": "turn-head",
+      "subset": "bow_turnhead",
+      "mllm_accuracy": 89.0,
+      "clip_recall": 0.9412499999999999,
+      "advantage_ratio": 0.06444628593963553,
+      "winner": "tie"
+    },
+    {
+      "class": "hand-raise",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.9733796296296295,
+      "advantage_ratio": 0.284048260765554,
+      "winner": "CLIP"
+    },
+    {
+      "class": "read",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.15630936227951153,
+      "advantage_ratio": -0.5553675581856343,
+      "winner": "MLLM"
+    },
+    {
+      "class": "write",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.32285714285714284,
+      "advantage_ratio": -0.38426496491482925,
+      "winner": "MLLM"
+    }
+  ],
+  "pairs": [
+    {
+      "class": "guide",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.2693548387096774,
+      "anchoring": "low"
+    },
+    {
+      "class": "answer",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.08425,
+      "anchoring": "low"
+    },
+    {
+      "class": "On-stage interaction",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.0,
+      "clip_recall": 0.15602836879432624,
+      "anchoring": "low"
+    },
+    {
+      "class": "blackboard-writing",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 98.61,
+      "clip_recall": 0.04936170212765957,
+      "anchoring": "high"
+    },
+    {
+      "class": "teacher",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 92.01,
+      "clip_recall": 0.09115832762165867,
+      "anchoring": "high"
+    },
+    {
+      "class": "stand",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 0.85,
+      "clip_recall": 0.2414201183431953,
+      "anchoring": "low"
+    },
+    {
+      "class": "screen",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 69.41,
+      "clip_recall": 0.26666666666666666,
+      "anchoring": "medium"
+    },
+    {
+      "class": "blackBoard",
+      "subset": "teacher_behavior",
+      "mllm_accuracy": 57.42,
+      "clip_recall": 0.0,
+      "anchoring": "medium"
+    },
+    {
+      "class": "bow-head",
+      "subset": "bow_turnhead",
+      "mllm_accuracy": 43.9,
+      "clip_recall": 0.17513513513513518,
+      "anchoring": "medium"
+    },
+    {
+      "class": "turn-head",
+      "subset": "bow_turnhead",
+      "mllm_accuracy": 89.0,
+      "clip_recall": 0.9412499999999999,
+      "anchoring": "high"
+    },
+    {
+      "class": "hand-raise",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.9733796296296295,
+      "anchoring": "medium"
+    },
+    {
+      "class": "read",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.15630936227951153,
+      "anchoring": "medium"
+    },
+    {
+      "class": "write",
+      "subset": "handrise_readwrite",
+      "mllm_accuracy": 70.6,
+      "clip_recall": 0.32285714285714284,
+      "anchoring": "medium"
+    }
+  ]
+}

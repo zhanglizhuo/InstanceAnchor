@@ -1,0 +1,55 @@
+========================================================================
+  Orthogonal Diagnostic Signals Analysis
+  CLIP zero-shot recall vs. MLLM annotation accuracy
+========================================================================
+
+── Primary Result: Spearman ρ + Bootstrap 95% CI ──
+  Number of class-level pairs:     13
+  Spearman ρ:                      +0.0714
+  Bootstrap 95% CI:                [-0.5041, +0.7184]
+  Bootstrap resamples:             10000
+
+  ✓ CI includes zero → signals are orthogonal (ρ ≈ 0).
+    MLLM accuracy and CLIP recall carry non-redundant information.
+
+── Coverage Analysis ──
+  Classes with at least one model performing well: 12/13 (92%)
+  Classes where both models fail:                  1/13
+
+── Per-Class Model Advantage ──
+  Class                  MLLM Acc CLIP Rec   Winner
+  ------------------------------------------------------
+  guide                      0.0%    26.9%     CLIP
+  answer                     0.0%     8.4%      tie
+  On-stage interaction       0.0%    15.6%     CLIP
+  blackboard-writing        98.6%     4.9%     MLLM
+  teacher                   92.0%     9.1%     MLLM
+  stand                      0.8%    24.1%     CLIP
+  screen                    69.4%    26.7%     MLLM
+  blackBoard                57.4%     0.0%     MLLM
+  bow-head                  43.9%    17.5%     MLLM
+  turn-head                 89.0%    94.1%      tie
+  hand-raise                70.6%    97.3%     CLIP
+  read                      70.6%    15.6%     MLLM
+  write                     70.6%    32.3%     MLLM
+
+── Descriptive Quadrants (continuous thresholds) ──
+  Both cover  (5): screen, turn-head, hand-raise, read, write
+  MLLM→       (3): blackboard-writing, teacher, blackBoard
+  CLIP→       (4): guide, On-stage interaction, stand, bow-head
+  Neither     (1): answer
+
+========================================================================
+  Interpretation
+========================================================================
+  1. CI [-0.50, +0.72] is wide (1.22) —
+     with 13 classes, precision is limited; the point estimate
+     ρ=+0.071 suggests weak orthogonal tendency.
+  2. Coverage: 92% of classes (12/13)
+     have at least one model performing above threshold.
+  3. Only 1 class(es) — answer —
+     fail for both models. This class requires temporal context.
+  4. Practical design: deploy CLIP+CAPE for action classes
+     (guide, On-stage interaction, stand, bow-head), MLLM annotation for
+     object-classes (blackboard-writing, teacher, blackBoard), and
+     video analysis for intent-dependent classes.

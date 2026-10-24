@@ -1,0 +1,65 @@
+{
+  "args": {
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260815_151053",
+  "results": [
+    {
+      "cell": "C: data-diverse + arch-fixed (ViT-B/32 x5)",
+      "dataset": "cifar100",
+      "N": 10000,
+      "C": 100,
+      "K": 5,
+      "models": [
+        "openai",
+        "laion400m",
+        "laion2b",
+        "datacomp",
+        "common_pool"
+      ],
+      "per_backbone_accs": [
+        0.6265,
+        0.6758,
+        0.7591,
+        0.8029,
+        0.5471
+      ],
+      "p": 0.68228,
+      "consensus_acc": 0.7822,
+      "E_alpha_correct": 0.8258245972896958,
+      "E_alpha_wrong": 0.5091827364554637,
+      "kappa_empirical": 158.65885342153757,
+      "kappa_iid_mc": 94.04736945462587,
+      "plurality_share": 0.5927647113694517,
+      "p_star": 0.6157710139382129,
+      "Delta_alpha": 0.17309726354453614,
+      "entropy_auroc": 0.8560067505204764,
+      "msp_auroc": 0.8698634728306284,
+      "hard_auroc": 0.8158739835537213,
+      "soft_auroc": 0.8650923122111611,
+      "delta_hard_vs_entropy": {
+        "mean": -0.04010484367609024,
+        "ci_lo": -0.04682611674070358,
+        "ci_hi": -0.03354082256555557
+      },
+      "delta_soft_vs_entropy": {
+        "mean": 0.009095278568565845,
+        "ci_lo": 0.00607390608638525,
+        "ci_hi": 0.012108626775443554
+      },
+      "delta_soft_vs_msp": {
+        "mean": -0.004752674140036106,
+        "ci_lo": -0.0077086202800273895,
+        "ci_hi": -0.0017821978544816375
+      },
+      "reference_arch_diverse_clip": {
+        "p": 0.7113599999999999,
+        "kappa_empirical": 161.69905933603002,
+        "plurality_share": 0.7232770505453107,
+        "delta_hard_vs_entropy": -0.04347458481788635,
+        "delta_soft_vs_entropy": 0.018629517406225204
+      }
+    }
+  ]
+}

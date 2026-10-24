@@ -1,0 +1,71 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_evidence_plugins.py",
+ "claim": "error-overlap analysis: CLIP-family pairs, conditional vs marginal error rates",
+ "paper_line": "Discussion deployment economics",
+ "n_pairs": 10,
+ "min_ratio": 1.517,
+ "max_ratio": 3.284,
+ "median_ratio": 1.75,
+ "pairs": [
+  {
+   "pair": "openai+dfn",
+   "P(B_wrong_given_A_wrong)": 0.8209,
+   "P(B_wrong_marginal)": 0.541,
+   "conditional_marginal_ratio": 1.517
+  },
+  {
+   "pair": "eva02+dfn",
+   "P(B_wrong_given_A_wrong)": 0.8242,
+   "P(B_wrong_marginal)": 0.541,
+   "conditional_marginal_ratio": 1.523
+  },
+  {
+   "pair": "laion+dfn",
+   "P(B_wrong_given_A_wrong)": 0.8696,
+   "P(B_wrong_marginal)": 0.541,
+   "conditional_marginal_ratio": 1.607
+  },
+  {
+   "pair": "openai+laion",
+   "P(B_wrong_given_A_wrong)": 0.7795,
+   "P(B_wrong_marginal)": 0.4497,
+   "conditional_marginal_ratio": 1.733
+  },
+  {
+   "pair": "siglip2+dfn",
+   "P(B_wrong_given_A_wrong)": 0.9426,
+   "P(B_wrong_marginal)": 0.541,
+   "conditional_marginal_ratio": 1.742
+  },
+  {
+   "pair": "laion+eva02",
+   "P(B_wrong_given_A_wrong)": 0.6266,
+   "P(B_wrong_marginal)": 0.3565,
+   "conditional_marginal_ratio": 1.758
+  },
+  {
+   "pair": "laion+siglip2",
+   "P(B_wrong_given_A_wrong)": 0.2828,
+   "P(B_wrong_marginal)": 0.1451,
+   "conditional_marginal_ratio": 1.949
+  },
+  {
+   "pair": "openai+eva02",
+   "P(B_wrong_given_A_wrong)": 0.7382,
+   "P(B_wrong_marginal)": 0.3565,
+   "conditional_marginal_ratio": 2.071
+  },
+  {
+   "pair": "siglip2+eva02",
+   "P(B_wrong_given_A_wrong)": 0.8319,
+   "P(B_wrong_marginal)": 0.3565,
+   "conditional_marginal_ratio": 2.334
+  },
+  {
+   "pair": "openai+siglip2",
+   "P(B_wrong_given_A_wrong)": 0.4764,
+   "P(B_wrong_marginal)": 0.1451,
+   "conditional_marginal_ratio": 3.284
+  }
+ ]
+}

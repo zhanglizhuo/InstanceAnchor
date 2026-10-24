@@ -1,0 +1,129 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260810_081209",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "num_classes": 8,
+      "consensus_accuracy": 0.6466049382716049,
+      "va_anchorscore_per_class": {
+        "guide": 0.2934,
+        "answer": 0.055700000000000006,
+        "on-stage interaction": 0.5417000000000001,
+        "blackboard-writing": 0.2609,
+        "teacher": 0.5048,
+        "stand": 0.09570000000000001,
+        "screen": 0.4048,
+        "blackboard": 0.0316
+      },
+      "C1_auroc": {
+        "instance_agreement": 0.7062413106689873,
+        "class_mean_agreement": 0.6947587831288887,
+        "va_anchorscore_primary": 0.6511094204333462,
+        "instance_minus_classmean_ci": {
+          "mean": 0.011593018658459187,
+          "ci_lo": -0.010194217786192894,
+          "ci_hi": 0.033415816724300385
+        },
+        "instance_minus_va_ci": {
+          "mean": 0.055343955755233765,
+          "ci_lo": 0.030498340725898743,
+          "ci_hi": 0.07996171712875366
+        }
+      },
+      "C2_within_class": {
+        "per_class": {
+          "guide": {
+            "n": 372,
+            "acc": 0.5698924731182796,
+            "within_class_agreement_auroc": 0.5813826650943397
+          },
+          "answer": {
+            "n": 800,
+            "acc": 0.4975,
+            "within_class_agreement_auroc": 0.743331083277082
+          },
+          "on-stage interaction": {
+            "n": 141,
+            "acc": 0.9432624113475178,
+            "within_class_agreement_auroc": 0.7109962406015038
+          },
+          "blackboard-writing": {
+            "n": 235,
+            "acc": 0.9744680851063829,
+            "within_class_agreement_auroc": 0.9126637554585153
+          },
+          "teacher": {
+            "n": 1459,
+            "acc": 0.7361206305688828,
+            "within_class_agreement_auroc": 0.6851556264964086
+          },
+          "stand": {
+            "n": 169,
+            "acc": 0.21893491124260356,
+            "within_class_agreement_auroc": 0.5005118755118755
+          }
+        },
+        "weighted_mean_within_class_auroc": 0.6958105278696758
+      },
+      "C3_combined": {
+        "instance_plus_va_anchorscore_auroc": 0.7429996560744546,
+        "instance_plus_va_minus_instance_ci": {
+          "mean": 0.03665681555867195,
+          "ci_lo": 0.023077426478266716,
+          "ci_hi": 0.050216514617204666
+        },
+        "instance_plus_classmean_auroc": 0.7602426238392512,
+        "instance_plus_classmean_minus_instance_ci": {
+          "mean": 0.05392063781619072,
+          "ci_lo": 0.041655294597148895,
+          "ci_hi": 0.06624358147382736
+        }
+      },
+      "C4_fair_selective": {
+        "coverages": [
+          0.3,
+          0.5,
+          0.7,
+          0.9
+        ],
+        "n_tie_seeds": 200,
+        "selective_accuracy": {
+          "0.3": {
+            "instance": 0.8703086419753086,
+            "classmean_heldout": 0.8126388888888889,
+            "va_anchorscore": 0.7663837448559672
+          },
+          "0.5": {
+            "instance": 0.7852407407407408,
+            "classmean_heldout": 0.7838487654320988,
+            "va_anchorscore": 0.7512530864197531
+          },
+          "0.7": {
+            "instance": 0.7192526455026456,
+            "classmean_heldout": 0.7281988536155203,
+            "va_anchorscore": 0.7355048500881836
+          },
+          "0.9": {
+            "instance": 0.6674622770919066,
+            "classmean_heldout": 0.6551028806584362,
+            "va_anchorscore": 0.669710219478738
+          }
+        },
+        "within_class_instance_lift": {
+          "0.3": 0.1814355550046699,
+          "0.5": 0.10706021401953002,
+          "0.7": 0.05067096877497947,
+          "0.9": 0.018327273815201717
+        }
+      }
+    }
+  ]
+}

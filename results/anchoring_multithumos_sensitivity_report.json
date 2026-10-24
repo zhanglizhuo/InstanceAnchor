@@ -1,0 +1,80 @@
+{
+  "timestamp": "20260808_232209",
+  "dataset": "multithumos",
+  "n_frames": 41779,
+  "n_classes": 65,
+  "label_imbalance": {
+    "min": 8.0,
+    "median": 287.0,
+    "max": 8720.0,
+    "max_min_ratio": 1090.0,
+    "top10_share": 0.6661685594739988,
+    "top3_share": 0.35141462442717675,
+    "n_classes_lt_100": 8,
+    "n_classes_gt_2000": 8
+  },
+  "protocol": {
+    "correctness": "consensus argmax in any active GT",
+    "entropy_temperature": 100.0,
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "ablation": {
+    "all_5": {
+      "k_backbones": 5,
+      "backbones": [
+        "openai",
+        "laion",
+        "siglip2",
+        "eva02",
+        "dfn"
+      ],
+      "excluded": null,
+      "per_backbone_acc_p": 0.1348667991096005,
+      "per_backbone_acc": [
+        0.15503003901481605,
+        0.1562746834534096,
+        0.030302304985758394,
+        0.167261064170995,
+        0.16546590392302352
+      ],
+      "consensus_acc": 0.1828191196534144,
+      "alpha_wrong_E": 0.44906710406842215,
+      "kappa": 33.220658542290785,
+      "p_star": 0.3417036979629167,
+      "agreement_auroc": 0.6424297001639283,
+      "entropy_auroc": 0.6858859557969319,
+      "delta": -0.04345625563300359,
+      "ci_lo": -0.04872681200504303,
+      "ci_hi": -0.038440603762865067,
+      "verdict": "entropy"
+    },
+    "minus_siglip2": {
+      "k_backbones": 4,
+      "backbones": [
+        "openai",
+        "laion",
+        "eva02",
+        "dfn"
+      ],
+      "excluded": "siglip2",
+      "per_backbone_acc_p": 0.16100792264056105,
+      "per_backbone_acc": [
+        0.15503003901481605,
+        0.1562746834534096,
+        0.167261064170995,
+        0.16546590392302352
+      ],
+      "consensus_acc": 0.17953996026711985,
+      "alpha_wrong_E": 0.5481066573312329,
+      "kappa": 41.810676186123885,
+      "p_star": 0.39514610144422246,
+      "agreement_auroc": 0.6722545965612116,
+      "entropy_auroc": 0.7052391925276019,
+      "delta": -0.03298459596639036,
+      "ci_lo": -0.03746280446648598,
+      "ci_hi": -0.028612254187464714,
+      "verdict": "entropy"
+    }
+  }
+}

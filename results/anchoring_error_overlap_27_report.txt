@@ -1,0 +1,36 @@
+n_datasets: 27
+Spearman(mean overlap, residual) all 27: rho=-0.326 CI[-0.650,0.136]
+Spearman(mean class-coincidence, residual) all 27: rho=0.628 CI[0.324,0.812]
+Spearman non-ImageNet (n=20): rho=-0.406 CI[-0.736,0.128]
+Spearman class-coincidence non-ImageNet: rho=0.585 CI[0.152,0.806]
+Spearman original 8: rho=-0.690 CI[-1.000,0.215]
+Spearman class-coincidence original 8: rho=0.238 CI[-0.675,0.778]
+
+dataset          mean  median  min  max  class-coinc  residual
+multithumos          1.08   1.11   1.02   1.13    17.0   0.46
+fgvc_aircraft        1.09   1.11   1.01   1.18    11.1   0.23
+eurosat              1.22   1.18   1.02   1.54     3.8   0.25
+imagenet_a           1.23   1.26   1.02   1.50   222.3   0.27
+cifar100c            1.29   1.35   1.03   1.61    13.9   0.27
+gtsrb                1.30   1.41   0.99   1.59     6.6   0.14
+imagenet_c           1.42   1.53   1.02   1.94   223.9   0.34
+dtd                  1.46   1.60   0.98   1.94    13.8   0.35
+imagenet_sketch      1.58   1.74   1.01   2.21   272.4   0.36
+imagenet_v2_matched   1.76   2.07   1.02   2.44   323.7   0.41
+imagenet_r           1.88   2.11   1.04   2.76   244.9   0.12
+teacher_behavior     1.95   1.75   1.52   3.28     3.8   0.09
+imagenet_v2_threshold   2.00   2.39   1.01   3.00   354.4   0.42
+handrise_readwrite   2.18   2.19   2.13   2.23     1.6   0.30
+imagenet_v2_top      2.20   2.66   1.01   3.34   376.8   0.44
+tiny_imagenet        2.29   2.32   1.46   3.41    58.7   0.43
+bow_turnhead         2.30   2.53   1.71   2.83     1.0   0.28
+cifar100             2.56   2.58   1.16   4.89    33.3   0.30
+coco                 2.85   3.11   0.99   5.59    20.2   0.11
+sun397               2.90   3.37   1.19   4.76    26.3   0.37
+stanford_cars        3.04   2.25   0.99   7.78    82.6   0.42
+stanford40           3.05   3.33   1.00   6.50    13.0  -0.03
+voc2007              3.14   3.71   0.96   6.45     4.4  -0.08
+cifar10c             3.16   3.29   1.35   5.62     3.1   0.04
+food101              4.82   6.39   1.02   9.15    46.1   0.32
+cifar10              8.72   8.22   1.00  22.67     4.7   0.05
+stl10               23.34  22.55   1.12  58.91     5.4   0.03

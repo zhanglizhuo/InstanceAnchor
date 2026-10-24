@@ -1,0 +1,53 @@
+============================================================================
+  Phase 0 — Oracle Upper Bound Analysis (PROJECT GATE)
+  Metric: sample-F1 (per-image F1, predicted set vs GT set)
+============================================================================
+
+  MLLM: qwen3.5_27b | Bootstrap B=10000 seed=42
+  Threshold grid: [0.1, 0.15, 0.2, 0.25, 0.3]
+
+── teacher_behavior | CLIP=siglip2 | MLLM=qwen3.5_27b | N=3240 ──
+  CLIP threshold (best): 0.3
+  CLIP Hit@1 (secondary): 85.49%
+  CLIP-only           sample-F1 =  60.89%   95% CI [60.40, 61.36]
+  MLLM-only           sample-F1 =  64.10%   95% CI [63.36, 64.83]
+  Class-level oracle   sample-F1 =  65.25%   95% CI [64.61, 65.87]
+  Per-instance oracle  sample-F1 =  69.03%   95% CI [68.46, 69.59]
+  Per-instance - class-level =  +3.78pp   95% CI [+3.49, +4.06]
+
+── handrise_readwrite | CLIP=siglip2 | MLLM=qwen3.5_27b | N=665 ──
+  CLIP threshold (best): 0.15
+  CLIP Hit@1 (secondary): 60.00%
+  CLIP-only           sample-F1 =  50.15%   95% CI [50.00, 50.38]
+  MLLM-only           sample-F1 =  33.38%   95% CI [29.77, 36.99]
+  Class-level oracle   sample-F1 =  50.15%   95% CI [50.00, 50.38]
+  Per-instance oracle  sample-F1 =  66.77%   95% CI [65.04, 68.57]
+  Per-instance - class-level = +16.62pp   95% CI [+14.81, +18.20]
+
+── teacher_behavior | CLIP=laion | MLLM=qwen3.5_27b | N=3240 ──
+  CLIP threshold (best): 0.3
+  CLIP Hit@1 (secondary): 55.03%
+  CLIP-only           sample-F1 =  61.68%   95% CI [61.20, 62.14]
+  MLLM-only           sample-F1 =  64.10%   95% CI [63.36, 64.83]
+  Class-level oracle   sample-F1 =  65.81%   95% CI [65.19, 66.42]
+  Per-instance oracle  sample-F1 =  69.45%   95% CI [68.89, 70.00]
+  Per-instance - class-level =  +3.63pp   95% CI [+3.34, +3.90]
+
+── handrise_readwrite | CLIP=laion | MLLM=qwen3.5_27b | N=665 ──
+  CLIP threshold (best): 0.3
+  CLIP Hit@1 (secondary): 62.26%
+  CLIP-only           sample-F1 =  54.54%   95% CI [53.41, 55.69]
+  MLLM-only           sample-F1 =  33.38%   95% CI [29.77, 36.99]
+  Class-level oracle   sample-F1 =  54.54%   95% CI [53.41, 55.69]
+  Per-instance oracle  sample-F1 =  68.50%   95% CI [66.59, 70.40]
+  Per-instance - class-level = +13.96pp   95% CI [+12.23, +15.49]
+
+============================================================================
+  GATE DECISION (>= 5pp on teacher_behavior, siglip2 backbone)
+============================================================================
+  per-instance oracle  - class-level oracle = +3.78pp  (CI [+3.49, +4.06])
+  criterion: delta >= 5pp   ->   FAIL (ABANDON)
+
+  NOTE: MLLM data here is FULL-IMAGE zero-shot inference, NOT bbox-crop.
+  Existing pilot reports (rho=0.07 etc.) were computed on stale/different
+  MLLM data and must NOT be cited; this file is the new canonical source.

@@ -1,0 +1,194 @@
+{
+  "timestamp": "20260818_202134",
+  "datasets": [
+    {
+      "name": "TeacherBehavior",
+      "N": 3240,
+      "C": 8,
+      "entropy_auroc": 0.6387964690310679,
+      "agreement_discrete_auroc": 0.7062413106689873,
+      "agreement_soft_auroc": 0.6734391512334421,
+      "alpha_disc_mean": 0.606604938271605,
+      "alpha_disc_std": 0.2549138406372886,
+      "alpha_soft_mean": 0.4546532928943634,
+      "alpha_soft_std": 0.16370485723018646,
+      "delta_disc_minus_ent": {
+        "mean": 0.06738377903410465,
+        "ci_lo": 0.05205856617231974,
+        "ci_hi": 0.08312414260973344
+      },
+      "delta_soft_minus_ent": {
+        "mean": 0.03453216202343291,
+        "ci_lo": 0.023825435348069024,
+        "ci_hi": 0.045407426619795355
+      },
+      "delta_soft_minus_disc": {
+        "mean": -0.03277359931828164,
+        "ci_lo": -0.04328340423655219,
+        "ci_hi": -0.022436578697921705
+      }
+    },
+    {
+      "name": "HandriseReadWrite",
+      "N": 1671,
+      "C": 3,
+      "entropy_auroc": 0.8814496115109612,
+      "agreement_discrete_auroc": 0.7115509462135229,
+      "agreement_soft_auroc": 0.8669959896953762,
+      "alpha_disc_mean": 0.9025733093955715,
+      "alpha_disc_std": 0.1698715231942639,
+      "alpha_soft_mean": 0.814733624458313,
+      "alpha_soft_std": 0.20184732973575592,
+      "delta_disc_minus_ent": {
+        "mean": -0.1698063956447062,
+        "ci_lo": -0.18536757712053342,
+        "ci_hi": -0.15424509732448788
+      },
+      "delta_soft_minus_ent": {
+        "mean": -0.014458977857434751,
+        "ci_lo": -0.017801907087621416,
+        "ci_hi": -0.011219310059049081
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.15550108910157387,
+        "ci_lo": 0.14059314456035765,
+        "ci_hi": 0.17073374672566632
+      }
+    },
+    {
+      "name": "BowTurnHead",
+      "N": 505,
+      "C": 2,
+      "entropy_auroc": 0.5798705783982259,
+      "agreement_discrete_auroc": 0.5360999018431672,
+      "agreement_soft_auroc": 0.5680735812702221,
+      "alpha_disc_mean": 0.9085148514851485,
+      "alpha_disc_std": 0.15190790682407224,
+      "alpha_soft_mean": 0.7716482281684875,
+      "alpha_soft_std": 0.11481623351573944,
+      "delta_disc_minus_ent": {
+        "mean": -0.043768682704603816,
+        "ci_lo": -0.08500891265597144,
+        "ci_hi": -0.003772977612474082
+      },
+      "delta_soft_minus_ent": {
+        "mean": -0.011858736648087592,
+        "ci_lo": -0.02138967136150227,
+        "ci_hi": -0.002518115942028998
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.03218261965725741,
+        "ci_lo": -0.005996881975693591,
+        "ci_hi": 0.06947571259587138
+      }
+    },
+    {
+      "name": "VOC2007",
+      "N": 2510,
+      "C": 20,
+      "entropy_auroc": 0.9060367063492063,
+      "agreement_discrete_auroc": 0.898823578042328,
+      "agreement_soft_auroc": 0.9250909391534392,
+      "alpha_disc_mean": 0.7,
+      "alpha_disc_std": 0.19051199625517412,
+      "alpha_soft_mean": 0.6543963551521301,
+      "alpha_soft_std": 0.19930529594421387,
+      "delta_disc_minus_ent": {
+        "mean": -0.007274008494401221,
+        "ci_lo": -0.020622864243553862,
+        "ci_hi": 0.0058059524828156794
+      },
+      "delta_soft_minus_ent": {
+        "mean": 0.019042455939663843,
+        "ci_lo": 0.012579361659340926,
+        "ci_hi": 0.025864536214888045
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.026261664068525717,
+        "ci_lo": 0.014509263426342622,
+        "ci_hi": 0.03880420424047859
+      }
+    },
+    {
+      "name": "Stanford40",
+      "N": 573,
+      "C": 40,
+      "entropy_auroc": 0.8842913558578324,
+      "agreement_discrete_auroc": 0.9233216322948662,
+      "agreement_soft_auroc": 0.9733655111891181,
+      "alpha_disc_mean": 0.7329842931937173,
+      "alpha_disc_std": 0.14607486222085747,
+      "alpha_soft_mean": 0.6927688121795654,
+      "alpha_soft_std": 0.15162710845470428,
+      "delta_disc_minus_ent": {
+        "mean": 0.038818689405973564,
+        "ci_lo": -0.016584418736348194,
+        "ci_hi": 0.08714348398420357
+      },
+      "delta_soft_minus_ent": {
+        "mean": 0.0892642726940049,
+        "ci_lo": 0.05958927650799106,
+        "ci_hi": 0.12355584082156612
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.04985613880008015,
+        "ci_lo": 0.01339626759794832,
+        "ci_hi": 0.09554845056566652
+      }
+    },
+    {
+      "name": "COCO",
+      "N": 5000,
+      "C": 80,
+      "entropy_auroc": 0.843430822198423,
+      "agreement_discrete_auroc": 0.8478248185428549,
+      "agreement_soft_auroc": 0.8879775101800766,
+      "alpha_disc_mean": 0.67304,
+      "alpha_disc_std": 0.2003026669817454,
+      "alpha_soft_mean": 0.6024813652038574,
+      "alpha_soft_std": 0.20858167111873627,
+      "delta_disc_minus_ent": {
+        "mean": 0.004462600888357888,
+        "ci_lo": -0.009054954034729334,
+        "ci_hi": 0.01798544801543378
+      },
+      "delta_soft_minus_ent": {
+        "mean": 0.044510652474626836,
+        "ci_lo": 0.03682945999336007,
+        "ci_hi": 0.05236793698870745
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.04022324497981319,
+        "ci_lo": 0.030106802527812726,
+        "ci_hi": 0.050787414358541394
+      }
+    },
+    {
+      "name": "CIFAR-100",
+      "N": 10000,
+      "C": 100,
+      "entropy_auroc": 0.8790807854199668,
+      "agreement_discrete_auroc": 0.8357265294227624,
+      "agreement_soft_auroc": 0.8977407216346711,
+      "alpha_disc_mean": 0.7417199999999999,
+      "alpha_disc_std": 0.20700589750053017,
+      "alpha_soft_mean": 0.6301932334899902,
+      "alpha_soft_std": 0.1869800090789795,
+      "delta_disc_minus_ent": {
+        "mean": -0.04347458320298347,
+        "ci_lo": -0.05385402968332598,
+        "ci_hi": -0.03330561439015456
+      },
+      "delta_soft_minus_ent": {
+        "mean": 0.018650924643993868,
+        "ci_lo": 0.014380784517435963,
+        "ci_hi": 0.022939224909110933
+      },
+      "delta_soft_minus_disc": {
+        "mean": 0.0619648659683661,
+        "ci_lo": 0.053633914671260996,
+        "ci_hi": 0.07057827910893422
+      }
+    }
+  ]
+}

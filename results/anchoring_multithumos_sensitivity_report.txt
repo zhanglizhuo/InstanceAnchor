@@ -1,0 +1,14 @@
+MultiTHUMOS backbone-ablation + imbalance report
+======================================================================
+[all_5] K=5 excluded=None
+  per-backbone acc: ['0.155', '0.156', '0.030', '0.167', '0.165']
+  p=0.1349  consensus_acc=0.1828
+  kappa=33.22  p*=0.342
+  AUROC: agreement 0.6424 vs entropy 0.6859
+  Δ=-0.0435 CI[-0.0487,-0.0384] → entropy
+[minus_siglip2] K=4 excluded=siglip2
+  per-backbone acc: ['0.155', '0.156', '0.167', '0.165']
+  p=0.1610  consensus_acc=0.1795
+  kappa=41.81  p*=0.395
+  AUROC: agreement 0.6723 vs entropy 0.7052
+  Δ=-0.0330 CI[-0.0375,-0.0286] → entropy

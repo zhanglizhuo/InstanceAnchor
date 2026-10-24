@@ -1,0 +1,64 @@
+{
+ "args": {
+  "bootstrap": 10000
+ },
+ "results": {
+  "subset": "teacher_behavior",
+  "n_images": 3240,
+  "backbones": [
+   "openai",
+   "laion",
+   "siglip2",
+   "eva02",
+   "dfn"
+  ],
+  "note": "CAPE A/B/C per-image logits; consensus needs NO new extraction",
+  "consensus5_acc": 0.6466049382716049,
+  "consensus15_acc": 0.8845679012345679,
+  "auroc_table": {
+   "agreement_5": 0.5905984229636789,
+   "agreement_15": 0.7301839564729019,
+   "prompt_consistency": 0.6830188714450445,
+   "entropy_5": 0.5315230006232018,
+   "entropy_15": 0.7930107175776483,
+   "combo_agr15+pc": 0.7259041090267231
+  },
+  "coupled_deltas": {
+   "agreement15_vs_entropy15": {
+    "mean": -0.06271589547395706,
+    "ci_lo": -0.08166348189115524,
+    "ci_hi": -0.044091854244470596
+   },
+   "promptcons_vs_entropy15": {
+    "mean": -0.1099155992269516,
+    "ci_lo": -0.1316855549812317,
+    "ci_hi": -0.08770541101694107
+   },
+   "entropy15_vs_entropy5": {
+    "mean": 0.26135435700416565,
+    "ci_lo": 0.238032728433609,
+    "ci_hi": 0.2846210300922394
+   },
+   "agreement15_vs_agreement5": {
+    "mean": 0.13960951566696167,
+    "ci_lo": 0.11096172034740448,
+    "ci_hi": 0.16753073036670685
+   },
+   "agreement5_vs_entropy5": {
+    "mean": 0.059028930962085724,
+    "ci_lo": 0.03624052181839943,
+    "ci_hi": 0.08143597841262817
+   },
+   "combo_vs_entropy15": {
+    "mean": -0.06696508079767227,
+    "ci_lo": -0.08654909580945969,
+    "ci_hi": -0.04745112732052803
+   }
+  },
+  "redundancy_spearman": {
+   "spearman_agr5_vs_promptcons": 0.5242105343785262,
+   "spearman_agr15_vs_promptcons": 0.7285136926178177,
+   "spearman_agr5_vs_agr15": 0.553340951442184
+  }
+ }
+}

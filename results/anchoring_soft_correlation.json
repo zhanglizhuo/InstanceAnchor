@@ -1,0 +1,8 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_evidence_plugins.py",
+ "claim": "soft-variant agreement correlates strongly with negative entropy",
+ "paper_line": "Exp A variant comparison (r=+0.94)",
+ "pearson_r": 0.9433,
+ "p_value": 0.0,
+ "note": "Computed per-image on TeacherBehavior (N=3240, T=100). r=+0.94 means the soft (probability-based) variant inherits entropy's confidence dependence \u2014 it is not an independent signal."
+}

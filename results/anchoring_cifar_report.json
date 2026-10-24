@@ -1,0 +1,72 @@
+{
+  "args": {
+    "data_dir": "/home/lizhuo/Work/Mayan/InstanceAnchor/results/per_image/cifar100",
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260726_214726",
+  "results": {
+    "dataset": "cifar100",
+    "n_images": 10000,
+    "k_backbones": 5,
+    "backbones": [
+      "openai",
+      "laion",
+      "siglip2",
+      "eva02",
+      "dfn"
+    ],
+    "consensus_accuracy": 0.8981,
+    "signals": {
+      "entropy": {
+        "auroc": 0.8790807854199668,
+        "aupr": 0.9845410641723233,
+        "aurc": 0.019601731434559375,
+        "acc_at_50pct": 0.9934,
+        "acc_at_70pct": 0.9788571428571429,
+        "acc_at_90pct": 0.935
+      },
+      "msp": {
+        "auroc": 0.9047957420523253,
+        "aupr": 0.9878400320315679,
+        "aurc": 0.01656456443619854,
+        "acc_at_50pct": 0.9944,
+        "acc_at_70pct": 0.9852857142857143,
+        "acc_at_90pct": 0.9432222222222222
+      },
+      "margin": {
+        "auroc": 0.9100358416672686,
+        "aupr": 0.988686666278219,
+        "aurc": 0.015797499538913087,
+        "acc_at_50pct": 0.9952,
+        "acc_at_70pct": 0.9875714285714285,
+        "acc_at_90pct": 0.9434444444444444
+      },
+      "agreement_top1": {
+        "auroc": 0.8357265294227624,
+        "aupr": 0.9719973100465696,
+        "aurc": 0.030715659957571327,
+        "acc_at_50pct": 0.9732,
+        "acc_at_70pct": 0.972,
+        "acc_at_90pct": 0.937
+      }
+    },
+    "deltas_vs_entropy": {
+      "msp_minus_entropy": {
+        "mean": 0.025697173550724983,
+        "ci_lo": 0.022708456963300705,
+        "ci_hi": 0.02878742106258869
+      },
+      "margin_minus_entropy": {
+        "mean": 0.030943017452955246,
+        "ci_lo": 0.024706341326236725,
+        "ci_hi": 0.03725484758615494
+      },
+      "agreement_top1_minus_entropy": {
+        "mean": -0.04347458481788635,
+        "ci_lo": -0.0538540855050087,
+        "ci_hi": -0.0333230085670948
+      }
+    }
+  }
+}

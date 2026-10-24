@@ -1,0 +1,298 @@
+{
+  "timestamp": "20260807_181541",
+  "purpose": "P1 reviewer response: leave-one-dataset-out validation of the \u03ba-boundary",
+  "caveat": "p, C, kappa are measured on the same labeled data as \u0394; this tests the transfer of the descriptive boundary relationship, not ex-ante deployability",
+  "tie_margin": 0.015,
+  "datasets": [
+    {
+      "name": "TeacherBehavior",
+      "N": 3240,
+      "C": 8,
+      "K": 5,
+      "p": 0.6701851487159729,
+      "E_alpha_wrong": 0.4866375545851529,
+      "kappa": 10.32840961780257,
+      "Delta_alpha": 0.18354759413082006,
+      "gap_empirical": 0.1855342831236777,
+      "delta": 0.067383773624897,
+      "outcome": "win"
+    },
+    {
+      "name": "HandriseReadWrite",
+      "N": 1671,
+      "C": 3,
+      "K": 5,
+      "p": 0.58515864610672,
+      "E_alpha_wrong": 0.8245310245310244,
+      "kappa": 3.975163116178331,
+      "Delta_alpha": -0.23937237842430448,
+      "gap_empirical": 0.13334218610292237,
+      "delta": -0.16980639100074768,
+      "outcome": "loss"
+    },
+    {
+      "name": "BowTurnHead",
+      "N": 505,
+      "C": 2,
+      "K": 5,
+      "p": 0.6594058871269226,
+      "E_alpha_wrong": 0.8955974842767295,
+      "kappa": 2.629515456746824,
+      "Delta_alpha": -0.23619159714980675,
+      "gap_empirical": 0.01885338277529358,
+      "delta": -0.04376868158578873,
+      "outcome": "loss"
+    },
+    {
+      "name": "VOC2007",
+      "N": 2510,
+      "C": 20,
+      "K": 5,
+      "p": 0.6947410702705383,
+      "E_alpha_wrong": 0.37851851851851853,
+      "kappa": 23.55984101177873,
+      "Delta_alpha": 0.3162225517520198,
+      "gap_empirical": 0.3602314814814814,
+      "delta": -0.007274008356034756,
+      "outcome": "tie"
+    },
+    {
+      "name": "Stanford40",
+      "N": 573,
+      "C": 40,
+      "K": 5,
+      "p": 0.7263525128364563,
+      "E_alpha_wrong": 0.38139534883720927,
+      "kappa": 54.356130797435604,
+      "Delta_alpha": 0.34495716399924703,
+      "gap_empirical": 0.38011408512505496,
+      "delta": 0.038818687200546265,
+      "outcome": "win"
+    },
+    {
+      "name": "COCO",
+      "N": 5000,
+      "C": 80,
+      "K": 5,
+      "p": 0.6866000294685364,
+      "E_alpha_wrong": 0.387523629489603,
+      "kappa": 97.68465095182619,
+      "Delta_alpha": 0.29907639997893337,
+      "gap_empirical": 0.3192981106132822,
+      "delta": 0.0043939963444318275,
+      "outcome": "tie"
+    },
+    {
+      "name": "CIFAR-100",
+      "N": 10000,
+      "C": 100,
+      "K": 5,
+      "p": 0.7113599999999999,
+      "E_alpha_wrong": 0.4714425907752699,
+      "kappa": 161.69905933603002,
+      "Delta_alpha": 0.23991740922472998,
+      "gap_empirical": 0.3009435577605278,
+      "delta": -0.04347458481788635,
+      "outcome": "loss"
+    },
+    {
+      "name": "MultiTHUMOS",
+      "N": 41779,
+      "C": 65,
+      "K": 5,
+      "p": 0.13486680388450623,
+      "E_alpha_wrong": 0.44906710406842215,
+      "kappa": 33.22065872564465,
+      "Delta_alpha": -0.314200300183916,
+      "gap_empirical": 0.13420076710204137,
+      "delta": -0.04345625563300359,
+      "outcome": "loss"
+    }
+  ],
+  "outcome_counts": {
+    "win": 2,
+    "tie": 2,
+    "loss": 4
+  },
+  "baselines": {
+    "always_tie": 0.25,
+    "always_loss": 0.5
+  },
+  "R1_boundary_sign_rule": {
+    "accuracy": 0.625,
+    "n": 8,
+    "per_dataset": [
+      {
+        "dataset": "TeacherBehavior",
+        "predicted_win": true,
+        "actual_win": true,
+        "match": true
+      },
+      {
+        "dataset": "HandriseReadWrite",
+        "predicted_win": false,
+        "actual_win": false,
+        "match": true
+      },
+      {
+        "dataset": "BowTurnHead",
+        "predicted_win": false,
+        "actual_win": false,
+        "match": true
+      },
+      {
+        "dataset": "VOC2007",
+        "predicted_win": true,
+        "actual_win": false,
+        "match": false
+      },
+      {
+        "dataset": "Stanford40",
+        "predicted_win": true,
+        "actual_win": true,
+        "match": true
+      },
+      {
+        "dataset": "COCO",
+        "predicted_win": true,
+        "actual_win": false,
+        "match": false
+      },
+      {
+        "dataset": "CIFAR-100",
+        "predicted_win": true,
+        "actual_win": false,
+        "match": false
+      },
+      {
+        "dataset": "MultiTHUMOS",
+        "predicted_win": false,
+        "actual_win": false,
+        "match": true
+      }
+    ]
+  },
+  "R2_loocv_regression_gap": {
+    "n_folds": 8,
+    "sign_agreement_accuracy": 0.625,
+    "predicted_actual_correlation": 0.33664839692007953,
+    "mean_abs_error": 0.05752239218101013
+  },
+  "R2_loocv_per_fold": [
+    {
+      "held_out": "TeacherBehavior",
+      "actual_delta": 0.067383773624897,
+      "predicted_delta": -0.019269034538999866,
+      "sign_agree": false
+    },
+    {
+      "held_out": "HandriseReadWrite",
+      "actual_delta": -0.16980639100074768,
+      "predicted_delta": -0.036676221515408655,
+      "sign_agree": true
+    },
+    {
+      "held_out": "BowTurnHead",
+      "actual_delta": -0.04376868158578873,
+      "predicted_delta": -0.08929270179281991,
+      "sign_agree": true
+    },
+    {
+      "held_out": "VOC2007",
+      "actual_delta": -0.007274008356034756,
+      "predicted_delta": 0.021946614406337474,
+      "sign_agree": false
+    },
+    {
+      "held_out": "Stanford40",
+      "actual_delta": 0.038818687200546265,
+      "predicted_delta": 0.013613705467452691,
+      "sign_agree": true
+    },
+    {
+      "held_out": "COCO",
+      "actual_delta": 0.0043939963444318275,
+      "predicted_delta": 0.01464384039422615,
+      "sign_agree": true
+    },
+    {
+      "held_out": "CIFAR-100",
+      "actual_delta": -0.04347458481788635,
+      "predicted_delta": 0.012370239533649383,
+      "sign_agree": false
+    },
+    {
+      "held_out": "MultiTHUMOS",
+      "actual_delta": -0.04345625563300359,
+      "predicted_delta": -0.1178081223280217,
+      "sign_agree": true
+    }
+  ],
+  "R2_bootstrap_sign_ci": {
+    "mean": 0.6233125,
+    "ci_lo": 0.25,
+    "ci_hi": 0.875
+  },
+  "R4_loocv_regression_pCkappa": {
+    "n_folds": 8,
+    "sign_agreement_accuracy": 0.75,
+    "predicted_actual_correlation": 0.16596294946163928,
+    "mean_abs_error": 0.22709261492252236
+  },
+  "R4_loocv_per_fold": [
+    {
+      "held_out": "TeacherBehavior",
+      "actual_delta": 0.067383773624897,
+      "predicted_delta": -0.05891265851992866,
+      "sign_agree": false
+    },
+    {
+      "held_out": "HandriseReadWrite",
+      "actual_delta": -0.16980639100074768,
+      "predicted_delta": -0.011783586320036732,
+      "sign_agree": true
+    },
+    {
+      "held_out": "BowTurnHead",
+      "actual_delta": -0.04376868158578873,
+      "predicted_delta": -0.03835699406754145,
+      "sign_agree": true
+    },
+    {
+      "held_out": "VOC2007",
+      "actual_delta": -0.007274008356034756,
+      "predicted_delta": 0.0022098353901773282,
+      "sign_agree": false
+    },
+    {
+      "held_out": "Stanford40",
+      "actual_delta": 0.038818687200546265,
+      "predicted_delta": 0.004459739515763006,
+      "sign_agree": true
+    },
+    {
+      "held_out": "COCO",
+      "actual_delta": 0.0043939963444318275,
+      "predicted_delta": 0.15769088465550207,
+      "sign_agree": true
+    },
+    {
+      "held_out": "CIFAR-100",
+      "actual_delta": -0.04347458481788635,
+      "predicted_delta": -0.592620253855799,
+      "sign_agree": true
+    },
+    {
+      "held_out": "MultiTHUMOS",
+      "actual_delta": -0.04345625563300359,
+      "predicted_delta": -0.8241809018894203,
+      "sign_agree": true
+    }
+  ],
+  "R4_bootstrap_sign_ci": {
+    "mean": 0.7502,
+    "ci_lo": 0.375,
+    "ci_hi": 1.0
+  },
+  "in_sample_gap_delta_pearson": 0.6569940397013765
+}

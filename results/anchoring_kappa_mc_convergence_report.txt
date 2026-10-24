@@ -1,0 +1,30 @@
+MC convergence check: kappa_iid_mc at N=1e5 vs N=1e7 (chunk=100000, seed=42)
+dataset                   C       p  n_wrong@1e5 rel_delta%
+teacher_behavior          8   0.670         3298     -0.672
+handrise_readwrite        3   0.585        16135     -0.023
+bow_turnhead              2   0.659        22144     +0.084
+voc2007                  20   0.695         1149     -0.151
+stanford40               40   0.726          462     +0.754
+coco                     80   0.687          561     -1.726
+multithumos              65   0.135        51944     -0.025
+cifar100                100   0.711          361     -0.426
+food101                 101   0.759          154     +2.934
+dtd                      47   0.481         5982     +0.724
+cifar10                  10   0.819          327     -0.173
+tiny_imagenet           200   0.678          455     -0.555
+stl10                    10   0.834          229     +0.133
+eurosat                  10   0.409        21049     -0.010
+imagenet_a             1000   0.364        10719     -0.352
+imagenet_r             1000   0.604         1042     -2.272
+sun397                   61   0.718          396     +1.128
+fgvc_aircraft            90   0.225        30532     -0.096
+stanford_cars           196   0.693          372     -0.343
+gtsrb                    43   0.353        15546     +0.453
+imagenet_sketch        1000   0.497         3360     -0.377
+imagenet_v2_matched    1000   0.543         2056     -0.526
+imagenet_v2_threshold  1000   0.594         1164     -1.923
+imagenet_v2_top        1000   0.621          832     -2.554
+imagenet_c             1000   0.462         4708     -0.377
+cifar10c                 10   0.810          392     -0.312
+cifar100c               100   0.349        13605     -0.135
+max |rel_delta| = 2.934%  min n_wrong@1e5 = 154

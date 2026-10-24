@@ -1,0 +1,50 @@
+{
+  "args": {
+    "q": 0.05
+  },
+  "timestamp": "20260815_104252",
+  "q": 0.05,
+  "per_csf": {
+    "entropy": {
+      "n_ci_wins": 23,
+      "max_q_all": 0.027411167512690356,
+      "lost_to_fdr": []
+    },
+    "msp": {
+      "n_ci_wins": 14,
+      "max_q_all": 0.0,
+      "lost_to_fdr": []
+    },
+    "margin": {
+      "n_ci_wins": 16,
+      "max_q_all": 0.001142857142857143,
+      "lost_to_fdr": []
+    },
+    "max_logit": {
+      "n_ci_wins": 23,
+      "max_q_all": 0.0,
+      "lost_to_fdr": []
+    },
+    "energy": {
+      "n_ci_wins": 27,
+      "max_q_all": 0.0045473684210526315,
+      "lost_to_fdr": []
+    },
+    "ensemble_mi": {
+      "n_ci_wins": 26,
+      "max_q_all": 0.0,
+      "lost_to_fdr": []
+    },
+    "pred_var": {
+      "n_ci_wins": 27,
+      "max_q_all": 0.04145454545454545,
+      "lost_to_fdr": []
+    },
+    "hard_agree": {
+      "n_ci_wins": 25,
+      "max_q_all": 0.001142857142857143,
+      "lost_to_fdr": []
+    }
+  },
+  "all_survive": true
+}

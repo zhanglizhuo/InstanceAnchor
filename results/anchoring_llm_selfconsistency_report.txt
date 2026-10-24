@@ -1,0 +1,12 @@
+==========================================================================================
+  kappa decomposition: LLM self-consistency
+==========================================================================================
+  llm_sc_qwen3.5-9b-ctx4k_mmlu_16.jsonl: n=500 C=4 K=16 p=0.744 consensus=0.760
+    wrong-consensus rate: empirical=0.240 iid-pooled=0.000 iid-perq=0.210
+    E[a|c]=0.944 E[a|w]=0.782 kappa_emp=9.2 kappa_iid_perq=5.1 share_perq=56%
+    agreement bins: [-inf,0.88):acc=0.45 | [0.88,1.00):acc=0.63 |  | [1.00,inf):acc=0.91
+  llm_sc_qwen3.5-9b-ctx4k_mmlu_pro_32.jsonl: n=70 C=10 K=32 p=0.561 consensus=0.600
+    wrong-consensus rate: empirical=0.400 iid-pooled=0.000 iid-perq=0.341
+    E[a|c]=0.891 E[a|w]=0.690 kappa_emp=14.2 kappa_iid_perq=4.2 share_perq=29%
+    agreement bins: [-inf,0.66):acc=0.24 | [0.66,0.91):acc=0.53 | [0.91,1.00):acc=0.60 | [1.00,inf):acc=0.86
+==========================================================================================

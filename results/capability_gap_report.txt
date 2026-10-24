@@ -1,0 +1,76 @@
+========================================================================
+  MLLM vs CLIP+CAPE Capability Gap Analysis
+========================================================================
+
+── Weighted Summary ──
+Model                   Hit@1   Macro-F1
+----------------------------------------
+gemma4_ollama_26b      76.55%    34.18%
+qwen35_ollama_27b      75.09%    31.46%
+qwen35_ollama_9b       64.94%    27.79%
+
+── Best Model Per Subset ──
+  TeacherBehavior      qwen35_ollama_27b    Hit@1=87.78% (MLLM)
+  HandriseReadWrite    eva02                Hit@1=74.33% (CLIP+CAPE)
+  BowTurnHead          dfn                  Hit@1=93.27% (CLIP+CAPE)
+
+── Per-Subset CLIP vs MLLM Gaps (CAPE Set-A Hit@1) ──
+
+  [TeacherBehavior]
+    openai_vs_qwen35_ollama_9b     CLIP=84.14%  MLLM=74.38%  Δ=-9.76% ↓
+    openai_vs_qwen35_ollama_27b    CLIP=84.14%  MLLM=87.78%  Δ=+3.64% ↑
+    openai_vs_gemma4_ollama_26b    CLIP=84.14%  MLLM=85.40%  Δ=+1.26% ↑
+    eva02_vs_qwen35_ollama_9b      CLIP=64.14%  MLLM=74.38%  Δ=+10.24% ↑
+    eva02_vs_qwen35_ollama_27b     CLIP=64.14%  MLLM=87.78%  Δ=+23.64% ↑
+    eva02_vs_gemma4_ollama_26b     CLIP=64.14%  MLLM=85.40%  Δ=+21.26% ↑
+    dfn_vs_qwen35_ollama_9b        CLIP=45.86%  MLLM=74.38%  Δ=+28.52% ↑
+    dfn_vs_qwen35_ollama_27b       CLIP=45.86%  MLLM=87.78%  Δ=+41.92% ↑
+    dfn_vs_gemma4_ollama_26b       CLIP=45.86%  MLLM=85.40%  Δ=+39.54% ↑
+    laion_vs_qwen35_ollama_9b      CLIP=54.94%  MLLM=74.38%  Δ=+19.44% ↑
+    laion_vs_qwen35_ollama_27b     CLIP=54.94%  MLLM=87.78%  Δ=+32.84% ↑
+    laion_vs_gemma4_ollama_26b     CLIP=54.94%  MLLM=85.40%  Δ=+30.46% ↑
+    siglip2_vs_qwen35_ollama_9b    CLIP=85.56%  MLLM=74.38%  Δ=-11.18% ↓
+    siglip2_vs_qwen35_ollama_27b   CLIP=85.56%  MLLM=87.78%  Δ=+2.22% ↑
+    siglip2_vs_gemma4_ollama_26b   CLIP=85.56%  MLLM=85.40%  Δ=-0.16% ↓
+
+  [HandriseReadWrite]
+    openai_vs_qwen35_ollama_9b     CLIP=67.98%  MLLM=50.33%  Δ=-17.65% ↓
+    openai_vs_qwen35_ollama_27b    CLIP=67.98%  MLLM=54.10%  Δ=-13.88% ↓
+    openai_vs_gemma4_ollama_26b    CLIP=67.98%  MLLM=63.38%  Δ=-4.60% ↓
+    eva02_vs_qwen35_ollama_9b      CLIP=74.33%  MLLM=50.33%  Δ=-24.00% ↓
+    eva02_vs_qwen35_ollama_27b     CLIP=74.33%  MLLM=54.10%  Δ=-20.23% ↓
+    eva02_vs_gemma4_ollama_26b     CLIP=74.33%  MLLM=63.38%  Δ=-10.95% ↓
+    dfn_vs_qwen35_ollama_9b        CLIP=73.73%  MLLM=50.33%  Δ=-23.40% ↓
+    dfn_vs_qwen35_ollama_27b       CLIP=73.73%  MLLM=54.10%  Δ=-19.63% ↓
+    dfn_vs_gemma4_ollama_26b       CLIP=73.73%  MLLM=63.38%  Δ=-10.35% ↓
+    laion_vs_qwen35_ollama_9b      CLIP=69.72%  MLLM=50.33%  Δ=-19.39% ↓
+    laion_vs_qwen35_ollama_27b     CLIP=69.72%  MLLM=54.10%  Δ=-15.62% ↓
+    laion_vs_gemma4_ollama_26b     CLIP=69.72%  MLLM=63.38%  Δ=-6.34% ↓
+    siglip2_vs_qwen35_ollama_9b    CLIP=64.45%  MLLM=50.33%  Δ=-14.12% ↓
+    siglip2_vs_qwen35_ollama_27b   CLIP=64.45%  MLLM=54.10%  Δ=-10.35% ↓
+    siglip2_vs_gemma4_ollama_26b   CLIP=64.45%  MLLM=63.38%  Δ=-1.07% ↓
+
+  [BowTurnHead]
+    openai_vs_qwen35_ollama_9b     CLIP=89.50%  MLLM=52.67%  Δ=-36.83% ↓
+    openai_vs_qwen35_ollama_27b    CLIP=89.50%  MLLM=63.17%  Δ=-26.33% ↓
+    openai_vs_gemma4_ollama_26b    CLIP=89.50%  MLLM=63.37%  Δ=-26.13% ↓
+    eva02_vs_qwen35_ollama_9b      CLIP=90.10%  MLLM=52.67%  Δ=-37.43% ↓
+    eva02_vs_qwen35_ollama_27b     CLIP=90.10%  MLLM=63.17%  Δ=-26.93% ↓
+    eva02_vs_gemma4_ollama_26b     CLIP=90.10%  MLLM=63.37%  Δ=-26.73% ↓
+    dfn_vs_qwen35_ollama_9b        CLIP=93.27%  MLLM=52.67%  Δ=-40.60% ↓
+    dfn_vs_qwen35_ollama_27b       CLIP=93.27%  MLLM=63.17%  Δ=-30.10% ↓
+    dfn_vs_gemma4_ollama_26b       CLIP=93.27%  MLLM=63.37%  Δ=-29.90% ↓
+    laion_vs_qwen35_ollama_9b      CLIP=92.87%  MLLM=52.67%  Δ=-40.20% ↓
+    laion_vs_qwen35_ollama_27b     CLIP=92.87%  MLLM=63.17%  Δ=-29.70% ↓
+    laion_vs_gemma4_ollama_26b     CLIP=92.87%  MLLM=63.37%  Δ=-29.50% ↓
+    siglip2_vs_qwen35_ollama_9b    CLIP=82.38%  MLLM=52.67%  Δ=-29.71% ↓
+    siglip2_vs_qwen35_ollama_27b   CLIP=82.38%  MLLM=63.17%  Δ=-19.21% ↓
+    siglip2_vs_gemma4_ollama_26b   CLIP=82.38%  MLLM=63.37%  Δ=-19.01% ↓
+
+========================================================================
+  Interpretation
+========================================================================
+  • Positive Δ (↑): MLLM outperforms CLIP+CAPE on this subset
+  • Negative Δ (↓): CLIP+CAPE still leads
+  • TeacherBehavior multi-label remains the hardest task for both
+  • All models achieve near-100% Hit@3 on binary subsets

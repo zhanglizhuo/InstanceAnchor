@@ -1,0 +1,305 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260726_193156",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "num_classes": 8,
+      "consensus_accuracy": 0.6466049382716049,
+      "per_backbone_hit1": {
+        "openai": 0.8432098765432099,
+        "laion": 0.5503086419753086,
+        "siglip2": 0.8549382716049383,
+        "eva02": 0.6435185185185185,
+        "dfn": 0.4589506172839506
+      },
+      "signals": {
+        "entropy": {
+          "auroc": 0.6387964690310679,
+          "aupr": 0.7937700246921068,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5,
+              "accuracy": 0.7462962962962963
+            },
+            "70pct": {
+              "coverage": 0.7,
+              "accuracy": 0.6768077601410935
+            },
+            "90pct": {
+              "coverage": 0.9,
+              "accuracy": 0.6478052126200274
+            }
+          }
+        },
+        "margin": {
+          "auroc": 0.6615343248116226,
+          "aupr": 0.8066714008510274,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5,
+              "accuracy": 0.7512345679012346
+            },
+            "70pct": {
+              "coverage": 0.7,
+              "accuracy": 0.6878306878306878
+            },
+            "90pct": {
+              "coverage": 0.9,
+              "accuracy": 0.6574074074074074
+            }
+          }
+        },
+        "agreement": {
+          "auroc": 0.7062413106689873,
+          "aupr": 0.8313035042599553,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5,
+              "accuracy": 0.7876543209876543
+            },
+            "70pct": {
+              "coverage": 0.7,
+              "accuracy": 0.7235449735449735
+            },
+            "90pct": {
+              "coverage": 0.9,
+              "accuracy": 0.6683813443072703
+            }
+          }
+        },
+        "logitvar(neg)": {
+          "auroc": 0.5362891475857469,
+          "aupr": 0.6674603823723294,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5,
+              "accuracy": 0.6753086419753086
+            },
+            "70pct": {
+              "coverage": 0.7,
+              "accuracy": 0.6587301587301587
+            },
+            "90pct": {
+              "coverage": 0.9,
+              "accuracy": 0.6488340192043895
+            }
+          }
+        }
+      },
+      "core_bet_agreement_minus_entropy": {
+        "mean": 0.067383773624897,
+        "ci_lo": 0.05205856263637543,
+        "ci_hi": 0.08312084525823593
+      },
+      "agreement_minus_margin": {
+        "mean": 0.0447041392326355,
+        "ci_lo": 0.029781293123960495,
+        "ci_hi": 0.0592929981648922
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "num_classes": 3,
+      "consensus_accuracy": 0.585278276481149,
+      "per_backbone_hit1": {
+        "openai": 0.5798922800718133,
+        "laion": 0.6080191502094554,
+        "siglip2": 0.5625374027528426,
+        "eva02": 0.6062238180730102,
+        "dfn": 0.5691202872531418
+      },
+      "signals": {
+        "entropy": {
+          "auroc": 0.8814496115109612,
+          "aupr": 0.9282789676294467,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5002992220227409,
+              "accuracy": 0.8696172248803827
+            },
+            "70pct": {
+              "coverage": 0.7001795332136446,
+              "accuracy": 0.7589743589743589
+            },
+            "90pct": {
+              "coverage": 0.9000598444045482,
+              "accuracy": 0.6289893617021277
+            }
+          }
+        },
+        "margin": {
+          "auroc": 0.8773153681129141,
+          "aupr": 0.9262322923036621,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5002992220227409,
+              "accuracy": 0.8696172248803827
+            },
+            "70pct": {
+              "coverage": 0.7001795332136446,
+              "accuracy": 0.7547008547008547
+            },
+            "90pct": {
+              "coverage": 0.9000598444045482,
+              "accuracy": 0.6289893617021277
+            }
+          }
+        },
+        "agreement": {
+          "auroc": 0.7115509462135229,
+          "aupr": 0.7248788553141943,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5002992220227409,
+              "accuracy": 0.645933014354067
+            },
+            "70pct": {
+              "coverage": 0.7001795332136446,
+              "accuracy": 0.7324786324786324
+            },
+            "90pct": {
+              "coverage": 0.9000598444045482,
+              "accuracy": 0.6170212765957447
+            }
+          }
+        },
+        "logitvar(neg)": {
+          "auroc": 0.36748289202276935,
+          "aupr": 0.4876486656402389,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.5002992220227409,
+              "accuracy": 0.4916267942583732
+            },
+            "70pct": {
+              "coverage": 0.7001795332136446,
+              "accuracy": 0.5521367521367522
+            },
+            "90pct": {
+              "coverage": 0.9000598444045482,
+              "accuracy": 0.5718085106382979
+            }
+          }
+        }
+      },
+      "core_bet_agreement_minus_entropy": {
+        "mean": -0.16980639100074768,
+        "ci_lo": -0.18536776304244995,
+        "ci_hi": -0.15424884855747223
+      },
+      "agreement_minus_margin": {
+        "mean": -0.16568031907081604,
+        "ci_lo": -0.18114756047725677,
+        "ci_hi": -0.15049906075000763
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "num_classes": 2,
+      "consensus_accuracy": 0.6851485148514852,
+      "per_backbone_hit1": {
+        "openai": 0.6356435643564357,
+        "laion": 0.6772277227722773,
+        "siglip2": 0.6475247524752475,
+        "eva02": 0.6534653465346535,
+        "dfn": 0.6831683168316832
+      },
+      "signals": {
+        "entropy": {
+          "auroc": 0.5798705783982259,
+          "aupr": 0.7148744967987612,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.499009900990099,
+              "accuracy": 0.753968253968254
+            },
+            "70pct": {
+              "coverage": 0.700990099009901,
+              "accuracy": 0.7457627118644068
+            },
+            "90pct": {
+              "coverage": 0.899009900990099,
+              "accuracy": 0.7026431718061674
+            }
+          }
+        },
+        "margin": {
+          "auroc": 0.5798705783982259,
+          "aupr": 0.7148744967987612,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.499009900990099,
+              "accuracy": 0.753968253968254
+            },
+            "70pct": {
+              "coverage": 0.700990099009901,
+              "accuracy": 0.7457627118644068
+            },
+            "90pct": {
+              "coverage": 0.899009900990099,
+              "accuracy": 0.7026431718061674
+            }
+          }
+        },
+        "agreement": {
+          "auroc": 0.5360999018431672,
+          "aupr": 0.7425225568330203,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.499009900990099,
+              "accuracy": 0.7738095238095238
+            },
+            "70pct": {
+              "coverage": 0.700990099009901,
+              "accuracy": 0.7005649717514124
+            },
+            "90pct": {
+              "coverage": 0.899009900990099,
+              "accuracy": 0.6894273127753304
+            }
+          }
+        },
+        "logitvar(neg)": {
+          "auroc": 0.551568691605773,
+          "aupr": 0.7448350838446645,
+          "risk_coverage": {
+            "50pct": {
+              "coverage": 0.499009900990099,
+              "accuracy": 0.6904761904761905
+            },
+            "70pct": {
+              "coverage": 0.700990099009901,
+              "accuracy": 0.7090395480225988
+            },
+            "90pct": {
+              "coverage": 0.899009900990099,
+              "accuracy": 0.6916299559471366
+            }
+          }
+        }
+      },
+      "core_bet_agreement_minus_entropy": {
+        "mean": -0.04376868158578873,
+        "ci_lo": -0.08501072227954865,
+        "ci_hi": -0.0037759775295853615
+      },
+      "agreement_minus_margin": {
+        "mean": -0.04376868158578873,
+        "ci_lo": -0.08501072227954865,
+        "ci_hi": -0.0037759775295853615
+      }
+    }
+  ]
+}

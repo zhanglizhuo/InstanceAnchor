@@ -1,0 +1,49 @@
+==================================================================================
+  Multi-CLIP-backbone routing feasibility probe (direction A)
+  Metric: sample-F1.  Backbones: openai, laion, siglip2, eva02, dfn
+==================================================================================
+  Bootstrap B=10000 seed=42
+
+── teacher_behavior | N=3240 | 8 classes ──
+  per-backbone sample-F1:
+    openai    63.05%  (thr=0.3)
+    laion     61.68%  (thr=0.3)
+    siglip2   60.89%  (thr=0.3)
+    eva02     62.36%  (thr=0.3)
+    dfn       63.28%  (thr=0.3)
+  best single backbone : dfn =  63.28%
+  class-level oracle    :  63.93%   CI [63.43,64.41]
+  per-instance oracle   :  65.79%   CI [65.33,66.23]
+  per-inst - best single =  +2.51pp  (total routing headroom)
+  per-inst - class-level =  +1.86pp   CI [+1.70,+2.03]  -> <5pp
+
+── handrise_readwrite | N=1671 | 3 classes ──
+  per-backbone sample-F1:
+    openai    52.61%  (thr=0.3)
+    laion     55.01%  (thr=0.3)
+    siglip2   50.06%  (thr=0.15)
+    eva02     54.94%  (thr=0.3)
+    dfn       50.96%  (thr=0.3)
+  best single backbone : laion =  55.01%
+  class-level oracle    :  55.80%   CI [55.13,56.52]
+  per-instance oracle   :  62.34%   CI [61.44,63.27]
+  per-inst - best single =  +7.33pp  (total routing headroom)
+  per-inst - class-level =  +6.53pp   CI [+5.86,+7.21]  -> PASS 5pp gate
+
+── bow_turnhead | N=505 | 2 classes ──
+  per-backbone sample-F1:
+    openai    67.52%  (thr=0.25)
+    laion     68.12%  (thr=0.3)
+    siglip2   67.00%  (thr=0.25)
+    eva02     67.79%  (thr=0.3)
+    dfn       67.33%  (thr=0.3)
+  best single backbone : laion =  68.12%
+  class-level oracle    :  69.44%   CI [68.58,70.30]
+  per-instance oracle   :  71.55%   CI [70.56,72.61]
+  per-inst - best single =  +3.43pp  (total routing headroom)
+  per-inst - class-level =  +2.11pp   CI [+1.39,+2.90]  -> <5pp
+
+==================================================================================
+  Reading guide:
+  * per-inst - class-level >= +5pp on TeacherBehavior => direction A viable.
+  * per-inst - best single   = total headroom any routing/ensemble can unlock.

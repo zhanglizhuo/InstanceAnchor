@@ -1,0 +1,39 @@
+==================================================================================
+  Pilot — per-image anchoring (cross-backbone agreement) vs entropy
+  Topic #2 gate: does agreement predict CLIP correctness better than entropy?
+==================================================================================
+  Bootstrap B=10000 seed=42
+
+── teacher_behavior | N=3240 | consensus acc=64.66% ──
+  per-backbone Hit@1: openai=84.3% laion=55.0% siglip2=85.5% eva02=64.4% dfn=45.9%
+  signal           AUROC    AUPR | acc@50% acc@70% acc@90%
+  ------------------------------------------------------------
+  entropy         0.6388  0.7938 | 74.63% 67.68% 64.78%
+  margin          0.6615  0.8067 | 75.12% 68.78% 65.74%
+  agreement       0.7062  0.8313 | 78.77% 72.35% 66.84%
+  logitvar(neg)   0.5363  0.6675 | 67.53% 65.87% 64.88%
+  CORE BET: agreement - entropy AUROC = +0.0674 CI[+0.0521,+0.0831] -> PASS (agreement better)
+
+── handrise_readwrite | N=1671 | consensus acc=58.53% ──
+  per-backbone Hit@1: openai=58.0% laion=60.8% siglip2=56.3% eva02=60.6% dfn=56.9%
+  signal           AUROC    AUPR | acc@50% acc@70% acc@90%
+  ------------------------------------------------------------
+  entropy         0.8814  0.9283 | 86.96% 75.90% 62.90%
+  margin          0.8773  0.9262 | 86.96% 75.47% 62.90%
+  agreement       0.7116  0.7249 | 64.59% 73.25% 61.70%
+  logitvar(neg)   0.3675  0.4876 | 49.16% 55.21% 57.18%
+  CORE BET: agreement - entropy AUROC = -0.1698 CI[-0.1854,-0.1542] -> FAIL
+
+── bow_turnhead | N=505 | consensus acc=68.51% ──
+  per-backbone Hit@1: openai=63.6% laion=67.7% siglip2=64.8% eva02=65.3% dfn=68.3%
+  signal           AUROC    AUPR | acc@50% acc@70% acc@90%
+  ------------------------------------------------------------
+  entropy         0.5799  0.7149 | 75.40% 74.58% 70.26%
+  margin          0.5799  0.7149 | 75.40% 74.58% 70.26%
+  agreement       0.5361  0.7425 | 77.38% 70.06% 68.94%
+  logitvar(neg)   0.5516  0.7448 | 69.05% 70.90% 69.16%
+  CORE BET: agreement - entropy AUROC = -0.0438 CI[-0.0850,-0.0038] -> FAIL
+
+==================================================================================
+  GATE: agreement AUROC > entropy AUROC on TeacherBehavior, CI excludes 0.
+  acc@c% = accuracy when keeping the top-c% highest-signal images.

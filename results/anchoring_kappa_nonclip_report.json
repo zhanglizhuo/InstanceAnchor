@@ -1,0 +1,119 @@
+{
+  "args": {
+    "datasets": [
+      "imagenet_v2_matched",
+      "imagenet_v2_top"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260815_123026",
+  "ensemble": [
+    "resnet50",
+    "vit_b_16",
+    "convnext_base",
+    "swin_b",
+    "efficientnet_b4"
+  ],
+  "temperature": 1.0,
+  "results": [
+    {
+      "dataset": "imagenet_v2_matched",
+      "N": 10000,
+      "C": 1000,
+      "ensemble": "imagenet-supervised (non-CLIP)",
+      "K": 5,
+      "per_backbone_accs": [
+        0.6989,
+        0.6957,
+        0.7359,
+        0.7244,
+        0.7331
+      ],
+      "p": 0.7176,
+      "consensus_acc": 0.745,
+      "E_alpha_correct": 0.9311677852348993,
+      "E_alpha_wrong": 0.6805490196078432,
+      "kappa_empirical": 2407.4662556240633,
+      "kappa_iid_mc": 787.3283939856178,
+      "plurality_share": 0.32703610783592335,
+      "p_star": 0.7067342151560566,
+      "Delta_alpha": 0.03705098039215682,
+      "entropy_auroc": 0.8092065798131333,
+      "msp_auroc": 0.8428268982760889,
+      "hard_auroc": 0.7791247006185025,
+      "soft_auroc": 0.846636873272799,
+      "delta_hard_vs_entropy": {
+        "mean": -0.030047815293073654,
+        "ci_lo": -0.03822866454720497,
+        "ci_hi": -0.0219807680696249
+      },
+      "delta_soft_vs_entropy": {
+        "mean": 0.03741082549095154,
+        "ci_lo": 0.03353358060121536,
+        "ci_hi": 0.041291989386081696
+      },
+      "delta_soft_vs_msp": {
+        "mean": 0.0037917369045317173,
+        "ci_lo": 0.002297653816640377,
+        "ci_hi": 0.005317936185747385
+      },
+      "clip_reference": {
+        "p": 0.54272,
+        "kappa_empirical": 784.9662422376986,
+        "delta_hard_vs_entropy": 0.033631667494773865,
+        "delta_soft_vs_entropy": 0.08506334573030472,
+        "plurality_share": null
+      }
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "N": 10000,
+      "C": 1000,
+      "ensemble": "imagenet-supervised (non-CLIP)",
+      "K": 5,
+      "per_backbone_accs": [
+        0.8197,
+        0.8198,
+        0.8453,
+        0.8416,
+        0.8431
+      ],
+      "p": 0.8339000000000001,
+      "consensus_acc": 0.8547,
+      "E_alpha_correct": 0.9550017550017551,
+      "E_alpha_wrong": 0.7286992429456297,
+      "kappa_empirical": 4382.724525603157,
+      "kappa_iid_mc": 1403.3714629741128,
+      "plurality_share": 0.32020526382067754,
+      "p_star": 0.8143717696349319,
+      "Delta_alpha": 0.10520075705437038,
+      "entropy_auroc": 0.8113572810751063,
+      "msp_auroc": 0.859384862826019,
+      "hard_auroc": 0.7699400448884276,
+      "soft_auroc": 0.8626756018359597,
+      "delta_hard_vs_entropy": {
+        "mean": -0.041444599628448486,
+        "ci_lo": -0.052987754344940186,
+        "ci_hi": -0.030105747282505035
+      },
+      "delta_soft_vs_entropy": {
+        "mean": 0.0513308122754097,
+        "ci_lo": 0.04595533013343811,
+        "ci_hi": 0.056807760149240494
+      },
+      "delta_soft_vs_msp": {
+        "mean": 0.003286569146439433,
+        "ci_lo": 0.0014803438680246472,
+        "ci_hi": 0.0051483167335391045
+      },
+      "clip_reference": {
+        "p": 0.6208799999999999,
+        "kappa_empirical": 1012.1545615720022,
+        "delta_hard_vs_entropy": 0.03484344109892845,
+        "delta_soft_vs_entropy": 0.09490855783224106,
+        "plurality_share": null
+      }
+    }
+  ]
+}

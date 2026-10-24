@@ -1,0 +1,153 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260728_111614",
+  "description": "Circularity control: LOO, split-half, cross-family",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "n_correct": 2095,
+      "consensus_accuracy": 0.6466049382716049,
+      "C0_original": {
+        "entropy_auroc": 0.6387964690310679,
+        "agreement_auroc": 0.7062413106689873,
+        "delta_agree_minus_ent": {
+          "mean": 0.067383773624897,
+          "ci_lo": 0.05205856263637543,
+          "ci_hi": 0.08312084525823593
+        }
+      },
+      "C1_leave_one_out": {
+        "agreement_loo_auroc": 0.6940557159383435,
+        "delta_loo_minus_ent": {
+          "mean": 0.05523345246911049,
+          "ci_lo": 0.03966198489069939,
+          "ci_hi": 0.07117917388677597
+        },
+        "delta_loo_minus_orig": {
+          "mean": -0.012150324881076813,
+          "ci_lo": -0.021062852814793587,
+          "ci_hi": -0.0034300105180591345
+        }
+      },
+      "C2_split_half": {
+        "n_splits": 10,
+        "agreement_auroc_mean": 0.6484116840813283,
+        "agreement_auroc_std": 0.138656433353063,
+        "entropy_auroc_mean": 0.6342402063059956,
+        "entropy_auroc_std": 0.04939191296204081,
+        "delta_mean": 0.014171477775332763
+      },
+      "C3_cross_family": {
+        "alpha_vB_auroc": 0.5402382466050379,
+        "note": "single non-CLIP model agreeing with CLIP consensus"
+      },
+      "gate": {
+        "original_agreement_auroc": 0.7062413106689873,
+        "loo_agreement_auroc": 0.6940557159383435,
+        "drop": 0.012185594730643845,
+        "passes": true
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "n_correct": 978,
+      "consensus_accuracy": 0.585278276481149,
+      "C0_original": {
+        "entropy_auroc": 0.8814496115109612,
+        "agreement_auroc": 0.7115509462135229,
+        "delta_agree_minus_ent": {
+          "mean": -0.16980639100074768,
+          "ci_lo": -0.18536776304244995,
+          "ci_hi": -0.15424884855747223
+        }
+      },
+      "C1_leave_one_out": {
+        "agreement_loo_auroc": 0.7122547413958457,
+        "delta_loo_minus_ent": {
+          "mean": -0.1691049039363861,
+          "ci_lo": -0.18467368185520172,
+          "ci_hi": -0.15348608791828156
+        },
+        "delta_loo_minus_orig": {
+          "mean": 0.0007014753064140677,
+          "ci_lo": -0.00041954198968596756,
+          "ci_hi": 0.0018342026742175221
+        }
+      },
+      "C2_split_half": {
+        "n_splits": 10,
+        "agreement_auroc_mean": 0.6390410963532227,
+        "agreement_auroc_std": 0.011527870479885802,
+        "entropy_auroc_mean": 0.8807299436546175,
+        "entropy_auroc_std": 0.00664989684907628,
+        "delta_mean": -0.24168884730139478
+      },
+      "C3_cross_family": {
+        "alpha_vB_auroc": 0.51609433511274,
+        "note": "single non-CLIP model agreeing with CLIP consensus"
+      },
+      "gate": {
+        "original_agreement_auroc": 0.7115509462135229,
+        "loo_agreement_auroc": 0.7122547413958457,
+        "drop": -0.000703795182322775,
+        "passes": true
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "n_correct": 346,
+      "consensus_accuracy": 0.6851485148514852,
+      "C0_original": {
+        "entropy_auroc": 0.5798705783982259,
+        "agreement_auroc": 0.5360999018431672,
+        "delta_agree_minus_ent": {
+          "mean": -0.04376868158578873,
+          "ci_lo": -0.08501072227954865,
+          "ci_hi": -0.0037759775295853615
+        }
+      },
+      "C1_leave_one_out": {
+        "agreement_loo_auroc": 0.5404624277456648,
+        "delta_loo_minus_ent": {
+          "mean": -0.039418406784534454,
+          "ci_lo": -0.08035335689783096,
+          "ci_hi": 0.0004932050360366702
+        },
+        "delta_loo_minus_orig": {
+          "mean": 0.004350273869931698,
+          "ci_lo": 0.00010660562111297622,
+          "ci_hi": 0.009458828717470169
+        }
+      },
+      "C2_split_half": {
+        "n_splits": 10,
+        "agreement_auroc_mean": 0.5284534318824268,
+        "agreement_auroc_std": 0.039478436803109876,
+        "entropy_auroc_mean": 0.5749384857301777,
+        "entropy_auroc_std": 0.027411191073983845,
+        "delta_mean": -0.04648505384775099
+      },
+      "C3_cross_family": {
+        "alpha_vB_auroc": 0.4995001272403388,
+        "note": "single non-CLIP model agreeing with CLIP consensus"
+      },
+      "gate": {
+        "original_agreement_auroc": 0.5360999018431672,
+        "loo_agreement_auroc": 0.5404624277456648,
+        "drop": -0.004362525902497527,
+        "passes": true
+      }
+    }
+  ]
+}

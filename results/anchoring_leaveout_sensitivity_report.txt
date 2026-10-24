@@ -1,0 +1,31 @@
+================================================================================================
+  R6 leave-out sensitivity + win-magnitude buckets
+================================================================================================
+
+  soft/hard vs entropy (or MSP): vs_entropy
+    all_27                   hard n=27  W 8/T 4/L15  mean -0.0208
+    all_27                   soft n=27  W23/T 1/L 3  mean +0.0397
+    leave_out_imagenet_n20   hard n=20  W 1/T 4/L15  mean -0.0469
+    leave_out_imagenet_n20   soft n=20  W16/T 1/L 3  mean +0.0196
+    imagenet_only_n7         hard n= 7  W 7/T 0/L 0  mean +0.0537
+    imagenet_only_n7         soft n= 7  W 7/T 0/L 0  mean +0.0971
+
+  soft/hard vs entropy (or MSP): vs_msp
+    all_27                   27  W14/T 6/L 7  mean +0.0229
+    leave_out_imagenet_n20   20  W 7/T 6/L 7  mean +0.0064
+    imagenet_only_n7          7  W 7/T 0/L 0  mean +0.0700
+
+  soft-win magnitude buckets (vs entropy, 23 wins):
+    small_lt_0p02    n= 9  ['cifar10', 'cifar100', 'cifar100c', 'cifar10c', 'gtsrb', 'stanford_cars', 'sun397', 'tiny_imagenet', 'voc2007']
+    mid_0p02_0p03    n= 2  ['dtd', 'food101']
+    large_ge_0p03    n=12  ['coco', 'eurosat', 'fgvc_aircraft', 'imagenet_a', 'imagenet_c', 'imagenet_r', 'imagenet_sketch', 'imagenet_v2_matched', 'imagenet_v2_threshold', 'imagenet_v2_top', 'stanford40', 'teacher_behavior']
+
+  strata (soft vs entropy):
+    ood_all                    n= 9  W 9/T 0/L 0  mean +0.0771
+    ood_non_imagenet           n= 2  W 2/T 0/L 0  mean +0.0072
+    ood_imagenet               n= 7  W 7/T 0/L 0  mean +0.0971
+    multilabel                 n= 4  W 3/T 0/L 1  mean +0.0231
+    standard_single_label      n=14  W11/T 1/L 2  mean +0.0204
+
+  saturated datasets (p < p*): 5 ['bow_turnhead', 'eurosat', 'fgvc_aircraft', 'handrise_readwrite', 'multithumos']
+================================================================================================

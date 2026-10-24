@@ -1,0 +1,153 @@
+{
+  "points": [
+    {
+      "name": "TeacherBehavior",
+      "mean_alpha": 0.606604938271605,
+      "delta": 0.06744484163791942,
+      "ci_lo": 0.05205856263637543,
+      "ci_hi": 0.08312084525823593
+    },
+    {
+      "name": "HandriseReadWrite",
+      "mean_alpha": 0.9025733093955715,
+      "delta": -0.16989866529743836,
+      "ci_lo": -0.18536776304244995,
+      "ci_hi": -0.15424884855747223
+    },
+    {
+      "name": "BowTurnHead",
+      "mean_alpha": 0.9085148514851485,
+      "delta": -0.04377067655505862,
+      "ci_lo": -0.08501072227954865,
+      "ci_hi": -0.0037759775295853615
+    },
+    {
+      "name": "VOC2007",
+      "mean_alpha": 0.7,
+      "delta": -0.007213128306878258,
+      "ci_lo": -0.020623160526156425,
+      "ci_hi": 0.005802532657980919
+    },
+    {
+      "name": "Stanford40",
+      "mean_alpha": 0.7329842931937173,
+      "delta": 0.03903027643703383,
+      "ci_lo": -0.016584591940045357,
+      "ci_hi": 0.08704189211130142
+    },
+    {
+      "name": "CIFAR-100",
+      "mean_alpha": 0.7417199999999999,
+      "delta": -0.04335425599720444,
+      "ci_lo": -0.0538540855050087,
+      "ci_hi": -0.0333230085670948
+    },
+    {
+      "name": "TB-CAPE-B",
+      "mean_alpha": 0.7114814814814814,
+      "delta": -0.09191041762541163,
+      "ci_lo": -0.10693736374378204,
+      "ci_hi": -0.0770866721868515
+    },
+    {
+      "name": "TB-CAPE-C",
+      "mean_alpha": 0.8925925925925926,
+      "delta": -0.11651096472313266,
+      "ci_lo": -0.14537791907787323,
+      "ci_hi": -0.08750449120998383
+    }
+  ],
+  "loocv": {
+    "n_folds": 8,
+    "sign_agreement_accuracy": 0.75,
+    "predicted_actual_correlation": 0.5097460850975519,
+    "mean_abs_error": 0.05428236098395604,
+    "threshold_mean": 0.6849542158877722,
+    "threshold_min": 0.6573664342730032,
+    "threshold_max": 0.7173773436614924,
+    "threshold_std": 0.017350950359940307,
+    "threshold_full_data": 0.6872365788081314,
+    "per_point": [
+      {
+        "held_out": "TeacherBehavior",
+        "held_out_alpha": 0.606604938271605,
+        "actual_delta": 0.06744484163791942,
+        "predicted_delta": 0.02227214845428821,
+        "sign_agree": true,
+        "fold_threshold": 0.6573664342730032,
+        "fold_slope": -0.43876067903268134,
+        "fold_intercept": 0.2884265430749154
+      },
+      {
+        "held_out": "HandriseReadWrite",
+        "held_out_alpha": 0.9025733093955715,
+        "actual_delta": -0.16989866529743836,
+        "predicted_delta": -0.0873154094291726,
+        "sign_agree": true,
+        "fold_threshold": 0.6870612632405866,
+        "fold_slope": -0.40515326631152676,
+        "fold_intercept": 0.2783651149580474
+      },
+      {
+        "held_out": "BowTurnHead",
+        "held_out_alpha": 0.9085148514851485,
+        "actual_delta": -0.04377067655505862,
+        "predicted_delta": -0.15108626618288867,
+        "sign_agree": true,
+        "fold_threshold": 0.6882849043080749,
+        "fold_slope": -0.6860386978225506,
+        "fold_intercept": 0.4721900794824305
+      },
+      {
+        "held_out": "VOC2007",
+        "held_out_alpha": 0.7,
+        "actual_delta": -0.007213128306878258,
+        "predicted_delta": -0.006569656840703653,
+        "sign_agree": true,
+        "fold_threshold": 0.6874797606848831,
+        "fold_slope": -0.5247229446142895,
+        "fold_intercept": 0.36073640438929894
+      },
+      {
+        "held_out": "Stanford40",
+        "held_out_alpha": 0.7329842931937173,
+        "actual_delta": 0.03903027643703383,
+        "predicted_delta": -0.03461969867821424,
+        "sign_agree": false,
+        "fold_threshold": 0.6622896775919601,
+        "fold_slope": -0.4897077151283601,
+        "fold_intercept": 0.32432836476665705
+      },
+      {
+        "held_out": "CIFAR-100",
+        "held_out_alpha": 0.7417199999999999,
+        "actual_delta": -0.04335425599720444,
+        "predicted_delta": -0.02620777151335857,
+        "sign_agree": true,
+        "fold_threshold": 0.6923200717907744,
+        "fold_slope": -0.5305224615379944,
+        "fold_intercept": 0.36729134865860263
+      },
+      {
+        "held_out": "TB-CAPE-B",
+        "held_out_alpha": 0.7114814814814814,
+        "actual_delta": -0.09191041762541163,
+        "predicted_delta": 0.0034899713978367997,
+        "sign_agree": false,
+        "fold_threshold": 0.7173773436614924,
+        "fold_slope": -0.5919357154699108,
+        "fold_intercept": 0.42464127118216954
+      },
+      {
+        "held_out": "TB-CAPE-C",
+        "held_out_alpha": 0.8925925925925926,
+        "actual_delta": -0.11651096472313266,
+        "predicted_delta": -0.10416393561972831,
+        "sign_agree": true,
+        "fold_threshold": 0.6874542715514025,
+        "fold_slope": -0.5077741452257133,
+        "fold_intercept": 0.34907150511877877
+      }
+    ]
+  }
+}

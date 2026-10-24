@@ -1,0 +1,132 @@
+{
+  "subset": "teacher_behavior",
+  "n_images": 3240,
+  "timestamp": "20260812_132807",
+  "low_anchor_classes": [
+    "guide",
+    "answer",
+    "on-stage interaction",
+    "stand"
+  ],
+  "analyses": {
+    "full_tb": {
+      "label": "Full TeacherBehavior",
+      "n": 3240,
+      "n_correct": 2095,
+      "entropy_auroc": 0.6387964690310679,
+      "agreement_auroc": 0.7062413106689873,
+      "delta": 0.06744484163791942,
+      "delta_ci": {
+        "mean": 0.067383773624897,
+        "ci_lo": 0.05205856263637543,
+        "ci_hi": 0.08312084525823593
+      }
+    },
+    "low_anchor_all": {
+      "label": "Low-anchor (all 4 classes)",
+      "n": 1482,
+      "n_correct": 780,
+      "entropy_auroc": 0.543584264738111,
+      "agreement_auroc": 0.6709940463145592,
+      "delta": 0.12740978157644822,
+      "delta_ci": {
+        "mean": 0.12739644944667816,
+        "ci_lo": 0.10096178203821182,
+        "ci_hi": 0.1536283940076828
+      }
+    },
+    "answer_only": {
+      "label": "answer class only",
+      "n": 800,
+      "n_correct": 398,
+      "entropy_auroc": 0.5502887572189304,
+      "agreement_auroc": 0.743331083277082,
+      "delta": 0.19304232605815153,
+      "delta_ci": {
+        "mean": 0.19282230734825134,
+        "ci_lo": 0.1587723344564438,
+        "ci_hi": 0.22784742712974548
+      }
+    },
+    "full_tb_minus_answer": {
+      "label": "Full TeacherBehavior minus answer (reviewer single-class-driver check)",
+      "n": 2440,
+      "n_correct": 1697,
+      "entropy_auroc": 0.6657048976461509,
+      "agreement_auroc": 0.6920323332045863,
+      "delta": 0.02632743555843542,
+      "delta_ci": {
+        "mean": 0.026281405240297318,
+        "ci_lo": 0.00852182600647211,
+        "ci_hi": 0.04421443119645119
+      }
+    },
+    "low_anchor_minus_answer": {
+      "label": "Low-anchor minus answer",
+      "n": 682,
+      "n_correct": 382,
+      "entropy_auroc": 0.5418935427574171,
+      "agreement_auroc": 0.5955846422338569,
+      "delta": 0.053691099476439796,
+      "delta_ci": {
+        "mean": 0.05377935618162155,
+        "ci_lo": 0.016465280205011368,
+        "ci_hi": 0.09062027186155319
+      }
+    },
+    "per_low_anchor_class": {
+      "guide": {
+        "label": "guide",
+        "n": 372,
+        "n_correct": 212,
+        "entropy_auroc": 0.5188974056603773,
+        "agreement_auroc": 0.5813826650943397,
+        "delta": 0.062485259433962326,
+        "delta_ci": {
+          "mean": 0.06253387033939362,
+          "ci_lo": 0.002557134721428156,
+          "ci_hi": 0.1218312680721283
+        }
+      },
+      "answer": {
+        "label": "answer",
+        "n": 800,
+        "n_correct": 398,
+        "entropy_auroc": 0.5502887572189304,
+        "agreement_auroc": 0.743331083277082,
+        "delta": 0.19304232605815153,
+        "delta_ci": {
+          "mean": 0.19282230734825134,
+          "ci_lo": 0.1587723344564438,
+          "ci_hi": 0.22784742712974548
+        }
+      },
+      "on-stage interaction": {
+        "label": "on-stage interaction",
+        "n": 141,
+        "n_correct": 133,
+        "entropy_auroc": 0.8270676691729323,
+        "agreement_auroc": 0.7109962406015038,
+        "delta": -0.11607142857142849,
+        "delta_ci": {
+          "mean": NaN,
+          "ci_lo": NaN,
+          "ci_hi": NaN
+        }
+      },
+      "stand": {
+        "label": "stand",
+        "n": 169,
+        "n_correct": 37,
+        "entropy_auroc": 0.4832104832104832,
+        "agreement_auroc": 0.5005118755118755,
+        "delta": 0.01730139230139227,
+        "delta_ci": {
+          "mean": 0.017490176483988762,
+          "ci_lo": -0.0743292048573494,
+          "ci_hi": 0.10946081578731537
+        }
+      }
+    }
+  }
+}

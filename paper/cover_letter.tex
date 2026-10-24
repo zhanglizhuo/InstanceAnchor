@@ -1,0 +1,38 @@
+\documentclass[10pt]{letter}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{hyperref}
+\usepackage{url}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{4pt}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{100pt}
+
+\signature{Lizhuo Zhang \\ zhanglizhuo@hunau.edu.cn}
+\address{Lizhuo Zhang \\ Hunan Agricultural University \\ Changsha 410128, China}
+
+\begin{document}
+
+\begin{letter}{Editor-in-Chief \\ Neural Networks}
+
+\opening{Dear Editor-in-Chief,}
+
+We submit the enclosed manuscript, ``The Plurality Ceiling: A Mechanical Account of Cross-Model Agreement Saturation and the Jensen-Gap Signal That Survives It,'' as a Research Paper for consideration in \emph{Neural Networks}. Lizhuo Zhang (zhanglizhuo@hunau.edu.cn) is the corresponding author; Yan Ma has approved this submission.
+
+Cross-model agreement is the most widely trusted reliability signal in modern machine learning. We characterize when this trust is structurally justified: in multi-class recognition it runs into a mechanical, accounting-level limit (a plurality-induced ceiling; we make no causal claim) and we identify the quantity that survives it. The contribution has four parts. First, a mechanical account: in multi-class recognition, plurality-vote conditioning alone inflates agreement on wrong predictions, and an i.i.d.\ Monte-Carlo decomposition with matched per-class accuracy reproduces 54--108\% of the empirical wrong-consensus amplification across 27 datasets and five architecturally diverse CLIP-family backbones. Second, a closed-form parameterization of the ceiling, the conditional-agreement gap $\Delta_\alpha = p - \kappa(1-p)/(C-1)$, whose positive-gap regime is necessary but not sufficient for agreement to carry signal. The resulting regime boundary is a post-hoc, label-conditional characterization rather than an ex-ante rule; its out-of-sample sign recovery is quantified by leave-one-dataset-out validation (81.5--88.9\% at $n{=}27$, with the zero-parameter rule at chance level as the control), and its recoverable structure is essentially the class count, which we report rather than conceal. Third, intervention evidence: a controlled co-occurrence manipulation, a cross-family ImageNet-supervised ensemble that shares training data (same phenomenology, inverted mechanism mix, plurality mechanics explaining only 32--33\% of amplification), and a from-scratch seed-diverse deep ensemble that reproduces the phenomenology (share 46\%). Fourth, the positive result that survives the ceiling: the consensus-coordinate Jensen gap, the difference between normalizing per-backbone softmaxes before versus after averaging, predicts per-image error on its own (mean AUROC 0.622), and soft agreement, the confidence-scoring function built on this gap, beats ensemble entropy on 23 of 27 datasets (all wins surviving FDR over a 216-test family) and never loses to energy, ensemble mutual information, or prediction variance. Its comparison with the strongest known confidence-scoring function, maximum softmax probability, is reported in full: the edge concentrates in out-of-distribution conditions and is honestly reported as absent outside the ImageNet family, while the entropy edge survives on non-ImageNet corruptions (CIFAR-10-C, CIFAR-100-C). Its deployment value is stated with equal candor: the ranking advantage does not, on average, convert into selective accuracy at fixed coverage (mean $-2.8$pp at 50\% coverage, positive on only 4 of 27 datasets), so we recommend a two-tier use (soft agreement for ranking the pool, entropy for abstention thresholds) and claim no drop-in replacement. A parallel study in the language-model domain reports a qualitatively consistent picture.
+
+The paper is deliberately honest about scope: this is a characterization, not a new architecture. Its claims are quantified structural understanding of a ubiquitous signal, and a derived training-free confidence-scoring function for selective prediction. All comparisons are compute-matched, and every number traces to released evidence files.
+
+This manuscript is complementary to, and explicitly differentiated from, our prior work. Our accepted paper in \emph{IEEE Access} (Ma \& Zhang, 2026) introduced the visual-anchoring concept; a companion paper (AnchorScore, class-level anchoring) is cited here via its arXiv preprint, and appears only as a class-level baseline in one experiment. The present work is at instance granularity, and no tables or figures overlap with either paper.
+
+We believe this work fits \emph{Neural Networks}: it is a mechanical account of ensemble-model behavior (a closed-form parameterization of the agreement ceiling and a necessary-not-sufficient condition), validated by controlled interventions and large-scale empirical decomposition, with a derived training-free confidence-scoring function whose deployment limits we report openly. Code, data splits, and all evidence files are public at \url{https://github.com/zhanglizhuo/InstanceAnchor}.
+
+This manuscript is original, has not been published elsewhere, and is not under consideration by another journal. All authors have read and approved the final version. The authors declare no competing interests. This research was supported by the Education Department of Hunan Province, China, under Grant HNJG-2022-0608.
+
+Thank you for your consideration.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

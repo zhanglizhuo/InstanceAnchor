@@ -1,0 +1,19 @@
+================================================================================================
+  R2 LOO circularity control (nested feature sets)
+================================================================================================
+
+  target: delta_hard_mean
+    C_only       ['C']                        sign_acc  85.2%  CI [ 70.4, 96.3]
+    pC           ['p', 'C']                   sign_acc  85.2%  CI [ 70.4, 96.3]
+    pC_kappa     ['p', 'C', 'kappa']          sign_acc  81.5%  CI [ 66.7, 96.3]
+  target: delta_soft_mean
+    C_only       ['C']                        sign_acc  88.9%  CI [ 77.8,100.0]
+    pC           ['p', 'C']                   sign_acc  88.9%  CI [ 77.8,100.0]
+    pC_kappa     ['p', 'C', 'kappa']          sign_acc  88.9%  CI [ 77.8,100.0]
+
+  kappa_iid_mc control (n=27, MC plurality from p,C only):
+    hard_pC_kappa_iidmc      sign_acc  85.2%  CI [ 70.4, 96.3]
+    hard_pC_kappa_emp        sign_acc  81.5%  CI [ 66.7, 96.3]
+    soft_pC_kappa_iidmc      sign_acc  88.9%  CI [ 77.8,100.0]
+    soft_pC_kappa_emp        sign_acc  88.9%  CI [ 77.8,100.0]
+================================================================================================

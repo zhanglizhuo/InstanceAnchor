@@ -1,0 +1,25 @@
+========================================================================
+  CKA Mechanism Test — does backbone alignment predict agreement advantage?
+========================================================================
+  Datasets: 8  Bootstrap: B=10000
+
+  Per-dataset:
+    TeacherBehavior    Δ=+0.0674 CKA=0.5905 (min=0.415, max=0.788)
+    HandriseReadWrite  Δ=-0.1699 CKA=0.4940 (min=0.228, max=0.724)
+    BowTurnHead        Δ=-0.0438 CKA=0.2512 (min=0.057, max=0.388)
+    VOC2007            Δ=-0.0072 CKA=0.3640 (min=0.067, max=0.621)
+    COCO               Δ=+0.0044 CKA=0.3131 (min=0.066, max=0.546)
+    Stanford40         Δ=+0.0390 CKA=0.4447 (min=0.087, max=0.761)
+    CIFAR-100          Δ=-0.0434 CKA=0.3229 (min=0.099, max=0.635)
+    MultiTHUMOS        Δ=-0.0435 CKA=0.3697 (min=0.061, max=0.748)
+
+  Correlation with Δ (Spearman, 95% bootstrap CI):
+    mean_cka       ρ=+0.286 [-0.747,+1.000] p=0.493
+    min_cka        ρ=+0.333 [-0.671,+1.000] p=0.420
+    max_cka        ρ=+0.452 [-0.615,+0.975] p=0.260
+    std_cka        ρ=+0.238 [-0.781,+0.923] p=0.570
+    n_classes      ρ=+0.310 [-0.797,+0.829] p=0.456
+    consensus_acc  ρ=+0.476 [-0.367,+1.000] p=0.233
+    ml_degree      ρ=+0.609 [-0.178,+1.000] p=0.109
+
+========================================================================

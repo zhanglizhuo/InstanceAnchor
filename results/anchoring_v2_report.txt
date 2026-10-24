@@ -1,0 +1,38 @@
+======================================================================================
+  Exp A (V2) — Instance anchoring on VOC2007 & Stanford40
+======================================================================================
+  Backbones: ['openai', 'laion', 'siglip2', 'eva02', 'dfn']  Bootstrap B=10000 seed=42
+
+── voc2007 | N=2510 | 5 backbones | consensus acc=89.24% ──
+  signal                 AUROC    AUPR    AURC | acc@50 acc@70 acc@90
+  ------------------------------------------------------------------
+  entropy               0.9060  0.9865  0.0181 | 99.20% 98.75% 93.94%
+  msp                   0.9083  0.9868  0.0181 | 99.20% 98.63% 93.98%
+  margin                0.9006  0.9861  0.0189 | 99.20% 98.35% 93.94%
+  agreement_top1        0.8988  0.9790  0.0246 | 98.65% 98.80% 94.16%
+  agreement_top3_jac    0.6138  0.9168  0.0773 | 91.79% 91.24% 90.75%
+  agreement_rankcorr    0.4843  0.8934  0.1028 | 88.76% 88.39% 89.24%
+  -- AUROC delta vs entropy --
+    msp_minus_entropy                +0.0023 CI[-0.0011,+0.0057]
+    margin_minus_entropy             -0.0054 CI[-0.0139,+0.0029]
+    agreement_top1_minus_entropy     -0.0073 CI[-0.0206,+0.0058]
+    agreement_top3_jac_minus_entropy -0.2923 CI[-0.3283,-0.2561]
+    agreement_rankcorr_minus_entropy -0.4218 CI[-0.4557,-0.3878]
+
+── stanford40 | N=573 | 5 backbones | consensus acc=92.50% ──
+  signal                 AUROC    AUPR    AURC | acc@50 acc@70 acc@90
+  ------------------------------------------------------------------
+  entropy               0.8843  0.9891  0.0135 | 99.65% 99.00% 95.35%
+  msp                   0.9145  0.9917  0.0110 | 99.65% 99.50% 96.51%
+  margin                0.9180  0.9919  0.0107 | 99.65% 99.25% 96.90%
+  agreement_top1        0.9233  0.9787  0.0185 | 98.95% 99.25% 97.87%
+  agreement_top3_jac    0.3997  0.8919  0.0983 | 91.26% 91.77% 92.25%
+  agreement_rankcorr    0.3458  0.8898  0.0988 | 88.11% 90.77% 91.86%
+  -- AUROC delta vs entropy --
+    msp_minus_entropy                +0.0300 CI[+0.0150,+0.0461]
+    margin_minus_entropy             +0.0334 CI[+0.0046,+0.0618]
+    agreement_top1_minus_entropy     +0.0388 CI[-0.0166,+0.0870]
+    agreement_top3_jac_minus_entropy -0.4839 CI[-0.5679,-0.3972]
+    agreement_rankcorr_minus_entropy -0.5388 CI[-0.6251,-0.4475]
+
+======================================================================================

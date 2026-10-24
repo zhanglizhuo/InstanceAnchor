@@ -1,0 +1,69 @@
+{
+  "args": {
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260813_090223",
+  "results": [
+    {
+      "cape": "A",
+      "n": 3240,
+      "consensus_acc": 0.6466049382716049,
+      "entropy_auroc": 0.6387964690310679,
+      "agreement_hard_auroc": 0.7062413106689873,
+      "soft_agreement_auroc": 0.6734391512334421,
+      "soft_agreement_aupr": 0.8110402499486544,
+      "entropy_aupr": 0.7937700246921068,
+      "delta_hard_mean": 0.067383773624897,
+      "delta_hard_ci_lo": 0.05205856263637543,
+      "delta_hard_ci_hi": 0.08312083780765533,
+      "delta_soft_mean": 0.034596998244524,
+      "delta_soft_ci_lo": 0.02397596277296543,
+      "delta_soft_ci_hi": 0.045414648950099945,
+      "spearman_soft_entropy": {
+        "rho": 0.8823720749583114,
+        "p": 0.0
+      }
+    },
+    {
+      "cape": "B",
+      "n": 3240,
+      "consensus_acc": 0.7552469135802469,
+      "entropy_auroc": 0.7782512596168663,
+      "agreement_hard_auroc": 0.6863408419914546,
+      "soft_agreement_auroc": 0.7528378419466202,
+      "soft_agreement_aupr": 0.9133593575986085,
+      "entropy_aupr": 0.9203940972050677,
+      "delta_hard_mean": -0.09189239144325256,
+      "delta_hard_ci_lo": -0.10693736374378204,
+      "delta_hard_ci_hi": -0.0770866721868515,
+      "delta_soft_mean": -0.025465192273259163,
+      "delta_soft_ci_lo": -0.03189127892255783,
+      "delta_soft_ci_hi": -0.019302336499094963,
+      "spearman_soft_entropy": {
+        "rho": 0.9656891146468339,
+        "p": 0.0
+      }
+    },
+    {
+      "cape": "C",
+      "n": 3240,
+      "consensus_acc": 0.9234567901234568,
+      "entropy_auroc": 0.5702801556839745,
+      "agreement_hard_auroc": 0.45376919096084184,
+      "soft_agreement_auroc": 0.513130444626531,
+      "soft_agreement_aupr": 0.9392077046866176,
+      "entropy_aupr": 0.9462942870599337,
+      "delta_hard_mean": -0.11639343202114105,
+      "delta_hard_ci_lo": -0.14537791907787323,
+      "delta_hard_ci_hi": -0.08750451356172562,
+      "delta_soft_mean": -0.057081397622823715,
+      "delta_soft_ci_lo": -0.06726258248090744,
+      "delta_soft_ci_hi": -0.04668577015399933,
+      "spearman_soft_entropy": {
+        "rho": 0.9518269999609399,
+        "p": 0.0
+      }
+    }
+  ]
+}

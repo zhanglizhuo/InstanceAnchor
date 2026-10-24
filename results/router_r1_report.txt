@@ -1,0 +1,35 @@
+====================================================================================
+  R1 entropy router vs class-level router (Pareto, sample-F1)
+====================================================================================
+  temperature=100.0  bootstrap B=10000 seed=42
+
+── teacher_behavior | CLIP=siglip2 | N=3240 ──
+  endpoints: CLIP-only=60.89%  MLLM-only=64.10%  cls-oracle ceiling=65.25%  per-inst-oracle ceiling=69.03%
+  R1 reaches MLLM-only accuracy at budget = 91.7%
+
+   budget | R1 sample-F1 (CI)        | class-level (CI)         |   R1-cls
+  --------------------------------------------------------------------------
+      10% | 61.49% [60.98,62.00] (b=10.0%) | 61.25% [60.71,61.78] (b=16.5%) | +0.24pp *
+      25% | 62.17% [61.62,62.71] (b=25.0%) | 62.53% [61.89,63.16] (b=56.3%) | -0.36pp
+      50% | 62.99% [62.37,63.59] (b=50.0%) | 62.53% [61.89,63.16] (b=56.3%) | +0.46pp *
+      75% | 63.98% [63.30,64.64] (b=75.0%) | 64.10% [63.36,64.83] (b=100.0%) | -0.13pp
+      90% | 64.05% [63.34,64.75] (b=90.0%) | 64.10% [63.36,64.83] (b=100.0%) | -0.05pp
+
+── handrise_readwrite | CLIP=siglip2 | N=665 ──
+  endpoints: CLIP-only=50.15%  MLLM-only=33.38%  cls-oracle ceiling=50.15%  per-inst-oracle ceiling=66.77%
+  R1 reaches MLLM-only accuracy at budget = 0.0%
+
+   budget | R1 sample-F1 (CI)        | class-level (CI)         |   R1-cls
+  --------------------------------------------------------------------------
+      10% | 46.69% [45.49,47.82] (b= 9.9%) | 33.38% [29.77,36.99] (b=100.0%) | +13.31pp *
+      25% | 42.18% [40.38,43.98] (b=25.0%) | 33.38% [29.77,36.99] (b=100.0%) | +8.80pp *
+      50% | 36.17% [33.68,38.65] (b=49.9%) | 33.38% [29.77,36.99] (b=100.0%) | +2.78pp *
+      75% | 32.48% [29.55,35.49] (b=75.0%) | 33.38% [29.77,36.99] (b=100.0%) | -0.90pp
+      90% | 32.41% [29.17,35.79] (b=89.9%) | 33.38% [29.77,36.99] (b=100.0%) | -0.98pp
+
+====================================================================================
+  Reading guide:
+  * R1 = entropy router (per-instance); class-level = VisualAnchor-style (predicted class).
+  * 'b=' = actual MLLM fraction routed. class-level granularity is coarse (<=num_classes).
+  * R1-cls > 0 (marked *) = per-instance beats class-level at matched budget.
+  * Compare R1's budget-to-reach-MLLM-only vs 100% (MLLM-only) for cost savings.

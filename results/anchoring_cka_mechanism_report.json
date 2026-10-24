@@ -1,0 +1,517 @@
+{
+  "script": "anchoring_cka_mechanism",
+  "bootstrap_n": 10000,
+  "seed": 42,
+  "n_datasets": 8,
+  "datasets": [
+    {
+      "dataset": "teacher_behavior",
+      "name": "TeacherBehavior",
+      "n": 3240,
+      "n_classes": 8,
+      "consensus_acc": 0.6466049382716049,
+      "ml_degree": 3.6080245971679688,
+      "delta": 0.06744484163791942,
+      "delta_ci_lo": 0.05205856263637543,
+      "delta_ci_hi": 0.08312083780765533,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.5336563587188721
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.4146515130996704
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.45641395449638367
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.5092856884002686
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.6116878986358643
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.6948241591453552
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.7881550788879395
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.5194891691207886
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.6733415126800537
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.7034476399421692
+        }
+      ],
+      "mean_cka": 0.5904952973127365,
+      "min_cka": 0.4146515130996704,
+      "max_cka": 0.7881550788879395,
+      "std_cka": 0.11566811696377892
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "name": "HandriseReadWrite",
+      "n": 1671,
+      "n_classes": 3,
+      "consensus_acc": 0.585278276481149,
+      "ml_degree": 1.0,
+      "delta": -0.16989866529743836,
+      "delta_ci_lo": -0.18536776304244995,
+      "delta_ci_hi": -0.15424886345863342,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.4229663610458374
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.22785550355911255
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.44274142384529114
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.3586365878582001
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.45533666014671326
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.7239687442779541
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.709143340587616
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.4449761211872101
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.47641822695732117
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.6783239245414734
+        }
+      ],
+      "mean_cka": 0.4940366894006729,
+      "min_cka": 0.22785550355911255,
+      "max_cka": 0.7239687442779541,
+      "std_cka": 0.15303079923725693
+    },
+    {
+      "dataset": "bow_turnhead",
+      "name": "BowTurnHead",
+      "n": 505,
+      "n_classes": 2,
+      "consensus_acc": 0.6851485148514852,
+      "ml_degree": 1.0,
+      "delta": -0.04377067655505862,
+      "delta_ci_lo": -0.08501072227954865,
+      "delta_ci_hi": -0.0037759786937385798,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.32774272561073303
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.057250406593084335
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.2526209354400635
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.19840973615646362
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.2001335769891739
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.31786787509918213
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.38845959305763245
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.207230806350708
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.24702200293540955
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.31524911522865295
+        }
+      ],
+      "mean_cka": 0.25119867734611034,
+      "min_cka": 0.057250406593084335,
+      "max_cka": 0.38845959305763245,
+      "std_cka": 0.08843623717133736
+    },
+    {
+      "dataset": "voc2007",
+      "name": "VOC2007",
+      "n": 2510,
+      "n_classes": 20,
+      "consensus_acc": 0.8924302788844621,
+      "ml_degree": 1.5521912574768066,
+      "delta": -0.007213128306878258,
+      "delta_ci_lo": -0.020623160526156425,
+      "delta_ci_hi": 0.005802531260997057,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.5255497097969055
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.06716763973236084
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.526199460029602
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.4464108943939209
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.07319863140583038
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.619981586933136
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.5627202391624451
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.10074689239263535
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.09649557620286942
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.6210963129997253
+        }
+      ],
+      "mean_cka": 0.3639566943049431,
+      "min_cka": 0.06716763973236084,
+      "max_cka": 0.6210963129997253,
+      "std_cka": 0.23320571011110353
+    },
+    {
+      "dataset": "coco",
+      "name": "COCO",
+      "n": 5000,
+      "n_classes": 80,
+      "consensus_acc": 0.8942,
+      "ml_degree": 2.9261999130249023,
+      "delta": 0.0043939963444318275,
+      "delta_ci_lo": -0.009055380709469318,
+      "delta_ci_hi": 0.01796802505850792,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.4168284833431244
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.11289042979478836
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.4479859471321106
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.33049747347831726
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.06614351272583008
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.5095431804656982
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.5463768243789673
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.16832607984542847
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.07595144957304001
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.4559813141822815
+        }
+      ],
+      "mean_cka": 0.31305246949195864,
+      "min_cka": 0.06614351272583008,
+      "max_cka": 0.5463768243789673,
+      "std_cka": 0.17915072924877587
+    },
+    {
+      "dataset": "stanford40",
+      "name": "Stanford40",
+      "n": 573,
+      "n_classes": 40,
+      "consensus_acc": 0.924956369982548,
+      "ml_degree": 1.0,
+      "delta": 0.03903027643703383,
+      "delta_ci_lo": -0.016584591940045357,
+      "delta_ci_hi": 0.08704185485839844,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.6072540283203125
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.11174590140581131
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.6137509942054749
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.5983502268791199
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.08744066208600998
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.7134808897972107
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.7605503797531128
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.11310102045536041
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.11089705675840378
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.7306239604949951
+        }
+      ],
+      "mean_cka": 0.44471951201558113,
+      "min_cka": 0.08744066208600998,
+      "max_cka": 0.7605503797531128,
+      "std_cka": 0.2814680326293835
+    },
+    {
+      "dataset": "cifar100",
+      "name": "CIFAR-100",
+      "n": 10000,
+      "n_classes": 100,
+      "consensus_acc": 0.8981,
+      "ml_degree": 1.0,
+      "delta": -0.04335425599720444,
+      "delta_ci_lo": -0.0538540855050087,
+      "delta_ci_hi": -0.0333230160176754,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.29901596903800964
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.09873258322477341
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.27685099840164185
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.30153074860572815
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.18031013011932373
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.5894514918327332
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.6345422267913818
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.15399140119552612
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.15493915975093842
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.5391629934310913
+        }
+      ],
+      "mean_cka": 0.32285277023911474,
+      "min_cka": 0.09873258322477341,
+      "max_cka": 0.6345422267913818,
+      "std_cka": 0.185852548562267
+    },
+    {
+      "dataset": "multithumos",
+      "name": "MultiTHUMOS",
+      "n": 41779,
+      "n_classes": 65,
+      "consensus_acc": 0.1828191196534144,
+      "ml_degree": 1.4415855407714844,
+      "delta": -0.04345625563300359,
+      "delta_ci_lo": -0.04872681200504303,
+      "delta_ci_hi": -0.038440603762865067,
+      "pairs": [
+        {
+          "pair": "openai-laion",
+          "cka": 0.5794711112976074
+        },
+        {
+          "pair": "openai-siglip2",
+          "cka": 0.07240666449069977
+        },
+        {
+          "pair": "openai-eva02",
+          "cka": 0.5750952959060669
+        },
+        {
+          "pair": "openai-dfn",
+          "cka": 0.3971308171749115
+        },
+        {
+          "pair": "laion-siglip2",
+          "cka": 0.060711972415447235
+        },
+        {
+          "pair": "laion-eva02",
+          "cka": 0.7482784986495972
+        },
+        {
+          "pair": "laion-dfn",
+          "cka": 0.5784962177276611
+        },
+        {
+          "pair": "siglip2-eva02",
+          "cka": 0.07069414108991623
+        },
+        {
+          "pair": "siglip2-dfn",
+          "cka": 0.0719764232635498
+        },
+        {
+          "pair": "eva02-dfn",
+          "cka": 0.5424133539199829
+        }
+      ],
+      "mean_cka": 0.36966744959354403,
+      "min_cka": 0.060711972415447235,
+      "max_cka": 0.7482784986495972,
+      "std_cka": 0.25799065661115644
+    }
+  ],
+  "correlations": {
+    "mean_cka": {
+      "rho": 0.28571428571428575,
+      "ci_lo": -0.7468354430379749,
+      "ci_hi": 1.0,
+      "p": 0.4927262450169573
+    },
+    "min_cka": {
+      "rho": 0.3333333333333334,
+      "ci_lo": -0.6708860759493672,
+      "ci_hi": 1.0,
+      "p": 0.4197530864197531
+    },
+    "max_cka": {
+      "rho": 0.4523809523809524,
+      "ci_lo": -0.6153846153846154,
+      "ci_hi": 0.9746835443037977,
+      "p": 0.260404767436885
+    },
+    "std_cka": {
+      "rho": 0.2380952380952381,
+      "ci_lo": -0.7808219178082192,
+      "ci_hi": 0.9230769230769231,
+      "p": 0.5701563208157683
+    },
+    "n_classes": {
+      "rho": 0.30952380952380953,
+      "ci_lo": -0.79746835443038,
+      "ci_hi": 0.8285714285714284,
+      "p": 0.4556448907375822
+    },
+    "consensus_acc": {
+      "rho": 0.4761904761904762,
+      "ci_lo": -0.3670886075949367,
+      "ci_hi": 1.0,
+      "p": 0.23293553465009798
+    },
+    "ml_degree": {
+      "rho": 0.6088155473182093,
+      "ci_lo": -0.17770466332772772,
+      "ci_hi": 1.0,
+      "p": 0.10918149231554707
+    }
+  },
+  "verdict": {
+    "cka_rho": 0.28571428571428575,
+    "cka_ci": [
+      -0.7468354430379749,
+      1.0
+    ],
+    "supported": false
+  },
+  "interpretation": "If supported: replaces ad-hoc 'spatial annotation multiplicity' theory. CKA provides a continuous, measurable predictor of when agreement works, grounded in SV's shared-geometry framework. The boundary condition becomes 'low backbone alignment' rather than a dataset-specific label."
+}

@@ -1,0 +1,83 @@
+{
+  "script": "anchoring_multithumos",
+  "dataset": "multithumos",
+  "n_frames": 41779,
+  "n_classes": 65,
+  "n_backbones": 5,
+  "consensus_accuracy": 0.1828191196534144,
+  "ml_labels_per_frame": 1.4415854855310084,
+  "multilabel_frac": 0.42511788218961677,
+  "main": {
+    "agreement_auroc": 0.6424297001639283,
+    "entropy_auroc": 0.6858859557969319,
+    "delta": -0.04345625563300359,
+    "ci_lo": -0.04872681200504303,
+    "ci_hi": -0.038440603762865067,
+    "verdict": "entropy",
+    "agreement_aupr": 0.2682877940382315,
+    "entropy_aupr": 0.28453000736382705
+  },
+  "selective": {
+    "30pct": {
+      "agreement": 0.29559597893729056,
+      "entropy": 0.30668581458433064,
+      "delta": -0.01108983564704008
+    },
+    "50pct": {
+      "agreement": 0.24523695548109142,
+      "entropy": 0.2706558161799904,
+      "delta": -0.025418860698898982
+    },
+    "70pct": {
+      "agreement": 0.2134723884424688,
+      "entropy": 0.2308086852453411,
+      "delta": -0.017336296802872297
+    }
+  },
+  "ml_strata": [
+    {
+      "n_labels": 1,
+      "n": 13917,
+      "acc": 0.0883811166199612,
+      "delta": -0.011885125353972792,
+      "ci_lo": -0.023385323584079742,
+      "ci_hi": -0.00042601869790814817,
+      "verdict": "ent"
+    },
+    {
+      "n_labels": 2,
+      "n": 10566,
+      "acc": 0.3094832481544577,
+      "delta": -0.05057936735474011,
+      "ci_lo": -0.059306737035512924,
+      "ci_hi": -0.041693732142448425,
+      "verdict": "ent"
+    },
+    {
+      "n_labels": 3,
+      "n": 4513,
+      "acc": 0.37691114557943717,
+      "delta": -0.004600046997707774,
+      "ci_lo": -0.017249252647161484,
+      "ci_hi": 0.008122737519443035,
+      "verdict": "tie"
+    },
+    {
+      "n_labels": 4,
+      "n": 1989,
+      "acc": 0.5268979386626446,
+      "delta": 0.03123250805136646,
+      "ci_lo": 0.0117932865396142,
+      "ci_hi": 0.05116268992424011,
+      "verdict": "agr"
+    }
+  ],
+  "protocol": {
+    "frame_sampling": "1 fps",
+    "label_alignment": "annotation intervals [s,e) in seconds",
+    "correctness": "consensus argmax in any active GT",
+    "entropy_temperature": 100.0,
+    "bootstrap_n": 10000,
+    "seed": 42
+  }
+}

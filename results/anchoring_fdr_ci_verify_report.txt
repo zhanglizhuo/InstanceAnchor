@@ -1,0 +1,15 @@
+================================================================================================
+  R4 CI-win survival under BH-FDR q=0.05 (216-test family)
+================================================================================================
+
+  entropy      CI-wins 23  max q_all=0.0274  lost to FDR: NONE
+  msp          CI-wins 14  max q_all=0.0000  lost to FDR: NONE
+  margin       CI-wins 16  max q_all=0.0011  lost to FDR: NONE
+  max_logit    CI-wins 23  max q_all=0.0000  lost to FDR: NONE
+  energy       CI-wins 27  max q_all=0.0045  lost to FDR: NONE
+  ensemble_mi  CI-wins 26  max q_all=0.0000  lost to FDR: NONE
+  pred_var     CI-wins 27  max q_all=0.0415  lost to FDR: NONE
+  hard_agree   CI-wins 25  max q_all=0.0011  lost to FDR: NONE
+
+  ALL CI-BASED WINS SURVIVE BH-FDR at q=0.05: True
+================================================================================================

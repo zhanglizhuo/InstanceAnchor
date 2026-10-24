@@ -1,0 +1,72 @@
+{
+ "args": {
+  "bootstrap_n": 10000,
+  "seed": 42
+ },
+ "timestamp": "20260816_160254",
+ "results": [
+  {
+   "subset": "handrise_readwrite",
+   "N": 1671,
+   "C": 3,
+   "consensus5_acc": 0.585278276481149,
+   "consensus15_acc": 0.5990424895272292,
+   "agreement5_auroc": 0.715431583342031,
+   "agreement15_auroc": 0.805130690205317,
+   "entropy5_auroc": 0.8728584847987833,
+   "entropy15_auroc": 0.8683838549510191,
+   "agr_change": {
+    "mean": 0.08977638185024261,
+    "ci_lo": 0.06897295266389847,
+    "ci_hi": 0.11034051328897476
+   },
+   "ent_change": {
+    "mean": -0.004400008823722601,
+    "ci_lo": -0.012910297140479088,
+    "ci_hi": 0.004017516039311886
+   },
+   "delta15": {
+    "mean": -0.06320814043283463,
+    "ci_lo": -0.07444533705711365,
+    "ci_hi": -0.052237946540117264
+   },
+   "delta5_at15target": {
+    "mean": -0.15738451480865479,
+    "ci_lo": -0.17307361960411072,
+    "ci_hi": -0.1417033076286316
+   }
+  },
+  {
+   "subset": "bow_turnhead",
+   "N": 505,
+   "C": 2,
+   "consensus5_acc": 0.6851485148514852,
+   "consensus15_acc": 0.6752475247524753,
+   "agreement5_auroc": 0.5516236320720979,
+   "agreement15_auroc": 0.584766826407267,
+   "entropy5_auroc": 0.5951291037837064,
+   "entropy15_auroc": 0.6016379372004864,
+   "agr_change": {
+    "mean": 0.03311128541827202,
+    "ci_lo": -0.015105635859072208,
+    "ci_hi": 0.08061587810516357
+   },
+   "ent_change": {
+    "mean": 0.006518425885587931,
+    "ci_lo": -0.022595057263970375,
+    "ci_hi": 0.034704264253377914
+   },
+   "delta15": {
+    "mean": -0.016935141757130623,
+    "ci_lo": -0.05574055388569832,
+    "ci_hi": 0.022105729207396507
+   },
+   "delta5_at15target": {
+    "mean": -0.043528001755476,
+    "ci_lo": -0.08425261080265045,
+    "ci_hi": -0.0037205442786216736
+   }
+  }
+ ],
+ "note": "15-vote = CAPE-A/B/C pooled (5 backbones x 3 sets); ALL signals (5-vote and 15-vote) evaluated against the common 15-vote consensus correctness target (matching crossprompt_feasibility.py and the AGENTS.md B5 protocol)"
+}

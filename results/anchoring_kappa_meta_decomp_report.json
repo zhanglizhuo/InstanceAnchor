@@ -1,0 +1,276 @@
+{
+  "timestamp": "20260816_175412",
+  "n_datasets": 27,
+  "datasets": [
+    {
+      "name": "teacher_behavior",
+      "C": 8,
+      "p": 0.6701851851851852,
+      "kappa_empirical": 10.32841075986456,
+      "kappa_iid_mc": 9.443821868519775,
+      "plurality_share": 0.9143538234573094,
+      "correlation_share": 0.08564617654269058,
+      "n_wrong_consensus": 1230795
+    },
+    {
+      "name": "handrise_readwrite",
+      "C": 3,
+      "p": 0.5851585876720525,
+      "kappa_empirical": 3.975162556235838,
+      "kappa_iid_mc": 2.794625342369089,
+      "plurality_share": 0.7030216507712772,
+      "correlation_share": 0.2969783492287228,
+      "n_wrong_consensus": 7991675
+    },
+    {
+      "name": "bow_turnhead",
+      "C": 2,
+      "p": 0.6594059405940594,
+      "kappa_empirical": 2.629515869533421,
+      "kappa_iid_mc": 1.9035728908047074,
+      "plurality_share": 0.7239252338653791,
+      "correlation_share": 0.2760747661346209,
+      "n_wrong_consensus": 11028561
+    },
+    {
+      "name": "voc2007",
+      "C": 20,
+      "p": 0.6947410358565737,
+      "kappa_empirical": 23.559838355714103,
+      "kappa_iid_mc": 25.53616852671434,
+      "plurality_share": 1.0838855573268782,
+      "correlation_share": -0.08388555732687819,
+      "n_wrong_consensus": 152647
+    },
+    {
+      "name": "stanford40",
+      "C": 40,
+      "p": 0.7263525305410121,
+      "kappa_empirical": 54.35613431419077,
+      "kappa_iid_mc": 56.22205743516878,
+      "plurality_share": 1.0343277376973232,
+      "correlation_share": -0.034327737697323224,
+      "n_wrong_consensus": 23584
+    },
+    {
+      "name": "coco",
+      "C": 80,
+      "p": 0.6866,
+      "kappa_empirical": 97.68464176668358,
+      "kappa_iid_mc": 86.6416734322915,
+      "plurality_share": 0.8869528706388888,
+      "correlation_share": 0.11304712936111116,
+      "n_wrong_consensus": 56207
+    },
+    {
+      "name": "multithumos",
+      "C": 65,
+      "p": 0.1348667991096005,
+      "kappa_empirical": 33.220658542290785,
+      "kappa_iid_mc": 17.88315635437023,
+      "plurality_share": 0.538314324251113,
+      "correlation_share": 0.46168567574888697,
+      "n_wrong_consensus": 25771591
+    },
+    {
+      "name": "cifar100",
+      "C": 100,
+      "p": 0.7113599999999999,
+      "kappa_empirical": 161.69905933603002,
+      "kappa_iid_mc": 112.38874834094166,
+      "plurality_share": 0.6950488691921477,
+      "correlation_share": 0.3049511308078523,
+      "n_wrong_consensus": 56949
+    },
+    {
+      "name": "food101",
+      "C": 101,
+      "p": 0.75932,
+      "kappa_empirical": 223.3077300455125,
+      "kappa_iid_mc": 150.77725178583503,
+      "plurality_share": 0.6751994288558888,
+      "correlation_share": 0.3248005711441112,
+      "n_wrong_consensus": 6047
+    },
+    {
+      "name": "dtd",
+      "C": 47,
+      "p": 0.4811702127659575,
+      "kappa_empirical": 42.39062127692949,
+      "kappa_iid_mc": 27.620050371462657,
+      "plurality_share": 0.6515604050958906,
+      "correlation_share": 0.34843959490410936,
+      "n_wrong_consensus": 2267551
+    },
+    {
+      "name": "cifar10",
+      "C": 10,
+      "p": 0.8185800000000001,
+      "kappa_empirical": 27.48806772076751,
+      "kappa_iid_mc": 25.97752235290024,
+      "plurality_share": 0.9450472334682865,
+      "correlation_share": 0.05495276653171355,
+      "n_wrong_consensus": 4275
+    },
+    {
+      "name": "tiny_imagenet",
+      "C": 200,
+      "p": 0.6779200000000001,
+      "kappa_empirical": 283.2932840486134,
+      "kappa_iid_mc": 161.36983989725775,
+      "plurality_share": 0.569621127585808,
+      "correlation_share": 0.43037887241419204,
+      "n_wrong_consensus": 180071
+    },
+    {
+      "name": "stl10",
+      "C": 10,
+      "p": 0.834325,
+      "kappa_empirical": 31.304908272015098,
+      "kappa_iid_mc": 30.372083502845697,
+      "plurality_share": 0.970201964463084,
+      "correlation_share": 0.029798035536915957,
+      "n_wrong_consensus": 533
+    },
+    {
+      "name": "eurosat",
+      "C": 10,
+      "p": 0.4094814814814815,
+      "kappa_empirical": 8.277821324555168,
+      "kappa_iid_mc": 6.205196136643359,
+      "plurality_share": 0.7496170662969477,
+      "correlation_share": 0.2503829337030523,
+      "n_wrong_consensus": 9858033
+    },
+    {
+      "name": "imagenet_a",
+      "C": 1000,
+      "p": 0.36405333333333334,
+      "kappa_empirical": 441.068022428029,
+      "kappa_iid_mc": 323.4093670468996,
+      "plurality_share": 0.7332414743344304,
+      "correlation_share": 0.26675852566556957,
+      "n_wrong_consensus": 4575883
+    },
+    {
+      "name": "imagenet_r",
+      "C": 1000,
+      "p": 0.6035999999999999,
+      "kappa_empirical": 611.7946706768037,
+      "kappa_iid_mc": 541.1409410785001,
+      "plurality_share": 0.8845139832288139,
+      "correlation_share": 0.11548601677118608,
+      "n_wrong_consensus": 240318
+    },
+    {
+      "name": "sun397",
+      "C": 61,
+      "p": 0.71768,
+      "kappa_empirical": 119.2825548718123,
+      "kappa_iid_mc": 74.74403175964986,
+      "plurality_share": 0.6266132699787825,
+      "correlation_share": 0.37338673002121747,
+      "n_wrong_consensus": 77289
+    },
+    {
+      "name": "fgvc_aircraft",
+      "C": 90,
+      "p": 0.22492,
+      "kappa_empirical": 35.43573847630932,
+      "kappa_iid_mc": 27.412718679395226,
+      "plurality_share": 0.773589597906139,
+      "correlation_share": 0.22641040209386099,
+      "n_wrong_consensus": 14738021
+    },
+    {
+      "name": "stanford_cars",
+      "C": 196,
+      "p": 0.6929000000000001,
+      "kappa_empirical": 339.54875847871574,
+      "kappa_iid_mc": 197.88395620567184,
+      "plurality_share": 0.5827850971750085,
+      "correlation_share": 0.4172149028249915,
+      "n_wrong_consensus": 16999
+    },
+    {
+      "name": "gtsrb",
+      "C": 43,
+      "p": 0.35334000000000004,
+      "kappa_empirical": 22.20074712701026,
+      "kappa_iid_mc": 19.027260415599066,
+      "plurality_share": 0.857054958859911,
+      "correlation_share": 0.142945041140089,
+      "n_wrong_consensus": 7026308
+    },
+    {
+      "name": "imagenet_sketch",
+      "C": 1000,
+      "p": 0.49695999999999996,
+      "kappa_empirical": 652.3697886467877,
+      "kappa_iid_mc": 416.06207668877704,
+      "plurality_share": 0.6377703013375522,
+      "correlation_share": 0.3622296986624478,
+      "n_wrong_consensus": 1087869
+    },
+    {
+      "name": "imagenet_v2_matched",
+      "C": 1000,
+      "p": 0.54272,
+      "kappa_empirical": 784.9662422376986,
+      "kappa_iid_mc": 461.80069107875283,
+      "plurality_share": 0.5883064343790128,
+      "correlation_share": 0.41169356562098725,
+      "n_wrong_consensus": 589374
+    },
+    {
+      "name": "imagenet_v2_threshold",
+      "C": 1000,
+      "p": 0.59434,
+      "kappa_empirical": 916.0443419876267,
+      "kappa_iid_mc": 528.7619152183808,
+      "plurality_share": 0.5772230567693665,
+      "correlation_share": 0.42277694323063353,
+      "n_wrong_consensus": 249071
+    },
+    {
+      "name": "imagenet_v2_top",
+      "C": 1000,
+      "p": 0.6208799999999999,
+      "kappa_empirical": 1012.1545615720022,
+      "kappa_iid_mc": 571.5857335692791,
+      "plurality_share": 0.5647217878280717,
+      "correlation_share": 0.4352782121719283,
+      "n_wrong_consensus": 147832
+    },
+    {
+      "name": "imagenet_c",
+      "C": 1000,
+      "p": 0.46192,
+      "kappa_empirical": 586.4024308931271,
+      "kappa_iid_mc": 386.8518373717404,
+      "plurality_share": 0.6597036727534386,
+      "correlation_share": 0.34029632724656145,
+      "n_wrong_consensus": 1655876
+    },
+    {
+      "name": "cifar10c",
+      "C": 10,
+      "p": 0.8101200000000001,
+      "kappa_empirical": 21.867217396586287,
+      "kappa_iid_mc": 20.955635378020553,
+      "plurality_share": 0.9583128478565341,
+      "correlation_share": 0.041687152143465855,
+      "n_wrong_consensus": 182191
+    },
+    {
+      "name": "cifar100c",
+      "C": 100,
+      "p": 0.3494,
+      "kappa_empirical": 51.143441834668124,
+      "kappa_iid_mc": 37.24970376817839,
+      "plurality_share": 0.7283378363270085,
+      "correlation_share": 0.27166216367299145,
+      "n_wrong_consensus": 6763533
+    }
+  ]
+}

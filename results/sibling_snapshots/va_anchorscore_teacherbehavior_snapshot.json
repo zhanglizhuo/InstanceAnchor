@@ -1,0 +1,47 @@
+{
+ "_snapshot_meta": {
+  "source": "VisualAnchor/results/01_core/anchor_score_scb5/anchor_scores.json",
+  "snapshot_date": "2026-08-10",
+  "reason": "Exp C exp-c baseline lock (SUBMISSION_CHECKLIST); IA must not drift if VA repo changes",
+  "verified": "all 8 TeacherBehavior per-class AnchorScores match VA repo at bit precision (checked 2026-08-10)"
+ },
+ "TeacherBehavior": {
+  "overall_acc": 32.56,
+  "per_class_acc": {
+   "guide": {
+    "n": 167,
+    "acc": 29.34
+   },
+   "answer": {
+    "n": 287,
+    "acc": 5.57
+   },
+   "On-stage interaction": {
+    "n": 48,
+    "acc": 54.17
+   },
+   "blackboard-writing": {
+    "n": 161,
+    "acc": 26.09
+   },
+   "teacher": {
+    "n": 1684,
+    "acc": 50.48
+   },
+   "stand": {
+    "n": 439,
+    "acc": 9.57
+   },
+   "screen": {
+    "n": 42,
+    "acc": 40.48
+   },
+   "blackBoard": {
+    "n": 412,
+    "acc": 3.16
+   }
+  },
+  "total": 3240,
+  "correct": 1055
+ }
+}

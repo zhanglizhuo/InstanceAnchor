@@ -1,0 +1,38 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_evidence_plugins.py",
+ "claim": "agreement discriminative gap (\u0394_alpha) correlates with empirical AUROC delta",
+ "paper_line": "Fig 9 caption",
+ "spearman_rho": 0.7142857142857144,
+ "p_value": 0.04652823228416724,
+ "n": 8,
+ "datasets": [
+  "TeacherBehavior",
+  "HandriseReadWrite",
+  "BowTurnHead",
+  "VOC2007",
+  "Stanford40",
+  "COCO",
+  "CIFAR-100",
+  "MultiTHUMOS"
+ ],
+ "gaps": [
+  0.1855342831236777,
+  0.13334218610292237,
+  0.01885338277529358,
+  0.3602314814814814,
+  0.38011408512505496,
+  0.3192981106132822,
+  0.3009435577605278,
+  0.13420076710204137
+ ],
+ "deltas": [
+  0.067383773624897,
+  -0.16980639100074768,
+  -0.04376868158578873,
+  -0.007274008356034756,
+  0.038818687200546265,
+  0.004462600685656071,
+  -0.04347458481788635,
+  -0.04352018982172012
+ ]
+}

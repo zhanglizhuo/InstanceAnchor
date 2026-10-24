@@ -1,0 +1,94 @@
+{
+  "dataset": "voc2007",
+  "n_images": 2510,
+  "n_classes": 20,
+  "consensus_accuracy": 0.8924302788844621,
+  "entropy_auroc_global": 0.9060367063492063,
+  "agreement_auroc_global": 0.898823578042328,
+  "stratification": [
+    {
+      "stratum": "1 label",
+      "n": 1419,
+      "acc": 0.8816067653276956,
+      "entropy_auroc": 0.9235183281945872,
+      "agreement_auroc": 0.9141591488713791,
+      "delta": -0.009359179323208178,
+      "delta_ci": {
+        "mean": -0.009497656486928463,
+        "ci_lo": -0.027727201581001282,
+        "ci_hi": 0.007566382642835379
+      },
+      "verdict": "tie"
+    },
+    {
+      "stratum": "2 labels",
+      "n": 854,
+      "acc": 0.9074941451990632,
+      "entropy_auroc": 0.8944385463454472,
+      "agreement_auroc": 0.9032176398530012,
+      "delta": 0.008779093507554014,
+      "delta_ci": {
+        "mean": 0.00864840392023325,
+        "ci_lo": -0.01665830798447132,
+        "ci_hi": 0.03222706541419029
+      },
+      "verdict": "tie"
+    },
+    {
+      "stratum": "3 labels",
+      "n": 186,
+      "acc": 0.8978494623655914,
+      "entropy_auroc": 0.8392688307595335,
+      "agreement_auroc": 0.7982981405609832,
+      "delta": -0.040970690198550264,
+      "delta_ci": {
+        "mean": -0.04098434001207352,
+        "ci_lo": -0.112334705889225,
+        "ci_hi": 0.03196901082992554
+      },
+      "verdict": "tie"
+    },
+    {
+      "stratum": "4+ labels",
+      "n": 51,
+      "acc": 0.9215686274509803,
+      "entropy_auroc": 0.8031914893617021,
+      "agreement_auroc": 0.726063829787234,
+      "delta": -0.0771276595744681,
+      "delta_ci": {
+        "mean": NaN,
+        "ci_lo": NaN,
+        "ci_hi": NaN
+      },
+      "verdict": "tie"
+    },
+    {
+      "stratum": "2-3 labels (B1 sweet spot)",
+      "n": 1040,
+      "acc": 0.9057692307692308,
+      "entropy_auroc": 0.8819706226439621,
+      "agreement_auroc": 0.8849603535681788,
+      "delta": 0.002989730924216727,
+      "delta_ci": {
+        "mean": 0.0028553837910294533,
+        "ci_lo": -0.020619481801986694,
+        "ci_hi": 0.025103088468313217
+      },
+      "verdict": "tie"
+    },
+    {
+      "stratum": "single-label",
+      "n": 1419,
+      "acc": 0.8816067653276956,
+      "entropy_auroc": 0.9235183281945872,
+      "agreement_auroc": 0.9141591488713791,
+      "delta": -0.009359179323208178,
+      "delta_ci": {
+        "mean": -0.009497656486928463,
+        "ci_lo": -0.027727201581001282,
+        "ci_hi": 0.007566382642835379
+      },
+      "verdict": "tie"
+    }
+  ]
+}

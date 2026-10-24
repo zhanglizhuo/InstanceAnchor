@@ -1,0 +1,35 @@
+Class-Prototype Mantel vs Agreement Gain (Δ AUROC)
+================================================================
+
+dataset                   C      N    ml         Δ                CI   mantel                CI
+----------------------------------------------------------------------------------------------------
+teacher_behavior          8   3240  3.61   +0.0674 [+0.0519,+0.0833]   0.9562 [+0.9432,+0.9694]
+handrise_readwrite        3   1671  1.00   -0.1699 [-0.1859,-0.1545]   0.7000 [+0.7000,+1.0000]
+bow_turnhead              2    505  1.00   -0.0438 [-0.0844,-0.0046]      nan [+0.0000,+0.0000]
+voc2007                  20   2510  1.55   -0.0072 [-0.0210,+0.0059]   0.7044 [+0.6806,+0.7189]
+stanford40               40    573  1.00   +0.0390 [-0.0167,+0.0870]   0.6776 [+0.6010,+0.7314]
+coco                     80   5000  2.93   +0.0044 [-0.0095,+0.0177]   0.8526 [+0.8307,+0.8560]
+multithumos              65  41779  1.44   -0.0435 [-0.0486,-0.0385]   0.7858 [+0.7694,+0.7951]
+cifar100                100  10000  1.00   -0.0434 [-0.0534,-0.0335]   0.6846 [+0.6716,+0.6895]
+
+Cross-dataset correlation:
+  Spearman(mantel, Δ) = +0.2857  permutation p = 0.5477  (n=7)
+  Partial Spearman (controlling n_classes) = +0.2857
+  [compare] CKA vs Δ: ρ = +0.1429  p = 0.7862  (n=7)
+
+Leave-one-out validation (is the correlation a TB artifact?):
+  mean_mantel     all=+0.286  excl_TB=-0.143  ← TB ARTIFACT (sign flips)
+  mean_cka        all=+0.286  excl_TB=-0.071  ← TB ARTIFACT (sign flips)
+  ml_degree       all=+0.609  excl_TB=+0.394  
+
+VERDICT:
+  NO PORTABLE SIGNAL. The full-sample ρ=+0.286 is a TB-driven artifact: excluding TB reverses the sign to -0.143. class-prototype Mantel does NOT predict agreement gain outside the TB outlier.
+
+Interpretation:
+  The full-sample ρ=+0.286 is NOT a weak positive signal. It is a TB-driven
+  artifact: TB is the only dataset with significant positive Δ AND the
+  highest Mantel/CKA/ml_degree. Excluding TB reverses the sign (Mantel
+  +0.286 → −0.143; CKA +0.286 → −0.071). There is no portable predictor
+  of where instance-level agreement will help. The class-prototype level,
+  despite being the right granularity per SV, does not descend to a
+  usable instance-level predictor in this dataset family.

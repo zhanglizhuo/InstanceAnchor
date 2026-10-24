@@ -1,0 +1,68 @@
+========================================================================
+  CLIP+CAPE Confusion Flow Analysis
+  Per-class misclassification patterns × visual anchoring
+========================================================================
+
+── TeacherBehavior ──
+  Class                     Rec   Ent   Anchor        → Top confusion targets
+  ------------------------------------------------------------------------------
+  guide                   26.9%  1.48  low(0%) → On-stage interaction(31%/low), stand(23%/low), answer(16%/low)
+  answer                   8.4%  1.49  low(0%) → stand(37%/low), On-stage interaction(31%/low), screen(17%/medium)
+  On-stage interaction    15.6%  1.37  low(0%) → screen(52%/medium), stand(13%/low), answer(11%/low)
+  blackboard-writing       4.9%  1.11 high(99%) → screen(62%/medium), blackBoard(23%/medium), stand(5%/low)
+  teacher                  9.1%  1.58 high(92%) → screen(44%/medium), answer(18%/low), stand(15%/low)
+  stand                   24.1%  1.42  low(1%) → answer(40%/low), On-stage interaction(23%/low), guide(7%/low)
+  screen                  26.7%  1.59 medium(69%) → answer(32%/low), stand(18%/low), On-stage interaction(15%/low)
+  blackBoard               0.0%  1.29 medium(57%) → answer(46%/low), On-stage interaction(23%/low), stand(22%/low)
+
+── HandriseReadWrite ──
+  Class                     Rec   Ent   Anchor        → Top confusion targets
+  ------------------------------------------------------------------------------
+  hand-raise              97.3%  0.14 medium(71%) → write(2%/medium), read(1%/medium)
+  read                    15.6%  0.97 medium(71%) → hand-raise(56%/medium), write(29%/medium)
+  write                   32.3%  0.84 medium(71%) → hand-raise(61%/medium), read(7%/medium)
+
+── BowTurnHead ──
+  Class                     Rec   Ent   Anchor        → Top confusion targets
+  ------------------------------------------------------------------------------
+  bow-head                17.5%  0.46 medium(44%) → turn-head(82%/high)
+  turn-head               94.1%  0.22 high(89%) → bow-head(6%/medium)
+
+── Anchoring-Level Cross-Flow Summary ──
+  Source           → High   → Medium      → Low
+  ----------------------------------------------
+  high→              0.0%      78.4%      21.6%
+  low→               0.0%      22.9%      77.1%
+  medium→           21.0%      39.3%      39.7%
+
+── Entropy vs Anchoring ──
+  Class                    Anchor Entropy Recall  Interpretation
+  ------------------------------------------------------------------------
+  guide                       low   1.48  26.9%  mixed
+  answer                      low   1.49   8.4%  high entropy + low recall → widely scattered errors
+  On-stage interaction        low   1.37  15.6%  high entropy + low recall → widely scattered errors
+  blackboard-writing         high   1.11   4.9%  high entropy + low recall → widely scattered errors
+  teacher                    high   1.58   9.1%  high entropy + low recall → widely scattered errors
+  stand                       low   1.42  24.1%  mixed
+  screen                   medium   1.59  26.7%  mixed
+  blackBoard               medium   1.29   0.0%  high entropy + low recall → widely scattered errors
+  hand-raise               medium   0.14  97.3%  good recall
+  read                     medium   0.97  15.6%  mixed
+  write                    medium   0.84  32.3%  mixed
+  bow-head                 medium   0.46  17.5%  low entropy + low recall → systematic confusion
+  turn-head                  high   0.22  94.1%  good recall
+
+========================================================================
+  Key Findings
+========================================================================
+  1. 'blackboard-writing' (high anchor): systematically confused with
+     'screen' & 'teacher' — CLIP cannot segment co-occurring objects.
+  2. 'answer' (low anchor): scattered across 'teacher', 'screen', 'stand'
+     — high entropy confirms intent-dependent failure.
+  3. 'blackBoard' (medium anchor): 0% recall across all 5 models —
+     CLIP's text encoder cannot ground the abstract concept.
+  4. Binary subsets (BowTurnHead, HandriseReadWrite): low confusion entropy
+     — errors are predictable and model-consistent.
+  5. Anchoring level does NOT predict where CLIP errors flow:
+     high-anchoring classes and low-anchoring classes get confused
+     with the SAME majority classes (stand, teacher, screen).

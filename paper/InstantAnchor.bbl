@@ -1,0 +1,290 @@
+\begin{thebibliography}{33}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Inproceedings
+\bibitem[{Lakshminarayanan et~al.(2017)Lakshminarayanan, Pritzel, and
+  Blundell}]{lakshminarayanan2017simple}
+\bibinfo{author}{B.~Lakshminarayanan}, \bibinfo{author}{A.~Pritzel},
+  \bibinfo{author}{C.~Blundell},
+\newblock \bibinfo{title}{{Simple and Scalable Predictive Uncertainty
+  Estimation Using Deep Ensembles}},
+\newblock in: \bibinfo{booktitle}{Advances in Neural Information Processing
+  Systems (NeurIPS)}, \bibinfo{year}{2017}, pp. \bibinfo{pages}{6402--6413}.
+%Type = Inproceedings
+\bibitem[{Wang et~al.(2023)Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery,
+  and Zhou}]{wang2023selfconsistency}
+\bibinfo{author}{X.~Wang}, \bibinfo{author}{J.~Wei},
+  \bibinfo{author}{D.~Schuurmans}, \bibinfo{author}{Q.~Le},
+  \bibinfo{author}{E.~H. Chi}, \bibinfo{author}{S.~Narang},
+  \bibinfo{author}{A.~Chowdhery}, \bibinfo{author}{D.~Zhou},
+\newblock \bibinfo{title}{{Self-Consistency Improves Chain of Thought Reasoning
+  in Language Models}},
+\newblock in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}, \bibinfo{year}{2023}.
+%Type = Inproceedings
+\bibitem[{Sheng et~al.(2008)Sheng, Provost, and Ipeirotis}]{sheng2008get}
+\bibinfo{author}{V.~S. Sheng}, \bibinfo{author}{F.~Provost},
+  \bibinfo{author}{P.~G. Ipeirotis},
+\newblock \bibinfo{title}{{Get Another Label? Improving Data Quality and Data
+  Mining Using Multiple, Noisy Labelers}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 14th ACM SIGKDD
+  International Conference on Knowledge Discovery and Data Mining},
+  \bibinfo{year}{2008}, pp. \bibinfo{pages}{614--622}.
+%Type = Inproceedings
+\bibitem[{Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark et~al.}]{radford2021learning}
+\bibinfo{author}{A.~Radford}, \bibinfo{author}{J.~W. Kim},
+  \bibinfo{author}{C.~Hallacy}, \bibinfo{author}{A.~Ramesh},
+  \bibinfo{author}{G.~Goh}, \bibinfo{author}{S.~Agarwal},
+  \bibinfo{author}{G.~Sastry}, \bibinfo{author}{A.~Askell},
+  \bibinfo{author}{P.~Mishkin}, \bibinfo{author}{J.~Clark}, et~al.,
+\newblock \bibinfo{title}{{Learning Transferable Visual Models From Natural
+  Language Supervision}},
+\newblock in: \bibinfo{booktitle}{International Conference on Machine Learning
+  (ICML)}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{8748--8763}.
+%Type = Article
+\bibitem[{Ma et~al.(2026)Ma, Zhang, and Wu}]{scb5}
+\bibinfo{author}{Y.~Ma}, \bibinfo{author}{L.~Zhang}, \bibinfo{author}{X.~Wu},
+\newblock \bibinfo{title}{{Prompt Sensitivity Under Semantic Perturbations in
+  CLIP-Family Models for Zero-Shot Classroom Behavior Analysis}},
+\newblock \bibinfo{journal}{Symmetry} \bibinfo{volume}{18}
+  (\bibinfo{year}{2026}) \bibinfo{pages}{1386}.
+  \DOIprefix\doi{10.3390/sym18081386}, \bibinfo{note}{special Issue on Symmetry
+  in Adversarial Machine Learning}.
+%Type = Inproceedings
+\bibitem[{Jaeger et~al.(2023)Jaeger, L{\"u}th, Klein, and
+  Bungert}]{jaeger2023call}
+\bibinfo{author}{P.~F. Jaeger}, \bibinfo{author}{C.~T. L{\"u}th},
+  \bibinfo{author}{L.~Klein}, \bibinfo{author}{T.~J. Bungert},
+\newblock \bibinfo{title}{{A Call to Reflect on Evaluation Practices for
+  Failure Detection in Image Classification}},
+\newblock in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}, \bibinfo{year}{2023}.
+%Type = Misc
+\bibitem[{Ding(2026)}]{ding2026agree}
+\bibinfo{author}{K.~Ding}, \bibinfo{title}{{When LLMs Agree, Are They Right?
+  Auditing Self-Consistency and Cross-Model Agreement as Confidence Signals}},
+  \bibinfo{year}{2026}. \bibinfo{note}{ArXiv preprint arXiv:2607.08065}.
+%Type = Misc
+\bibitem[{Bahuguna(2026)}]{bahuguna2026backfires}
+\bibinfo{author}{U.~Bahuguna}, \bibinfo{title}{{When Self-Consistency
+  Backfires: Majority Vote Hurts the Majority of Hard Science Problems for
+  Small LLMs}}, \bibinfo{year}{2026}. \bibinfo{note}{ArXiv preprint
+  arXiv:2608.11403}.
+%Type = Inproceedings
+\bibitem[{Geifman and El-Yaniv(2017)}]{geifman2017selective}
+\bibinfo{author}{Y.~Geifman}, \bibinfo{author}{R.~El-Yaniv},
+\newblock \bibinfo{title}{{Selective Classification for Deep Neural Networks}},
+\newblock in: \bibinfo{booktitle}{Advances in Neural Information Processing
+  Systems (NeurIPS)}, \bibinfo{year}{2017}, pp. \bibinfo{pages}{4878--4887}.
+%Type = Inproceedings
+\bibitem[{Geifman and El-Yaniv(2019)}]{geifman2019selectivenet}
+\bibinfo{author}{Y.~Geifman}, \bibinfo{author}{R.~El-Yaniv},
+\newblock \bibinfo{title}{{SelectiveNet: A Deep Neural Network with an
+  Integrated Reject Option}},
+\newblock in: \bibinfo{booktitle}{International Conference on Machine Learning
+  (ICML)}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{2151--2159}.
+%Type = Article
+\bibitem[{El-Yaniv and Wiener(2010)}]{elyaniv2010foundations}
+\bibinfo{author}{R.~El-Yaniv}, \bibinfo{author}{Y.~Wiener},
+\newblock \bibinfo{title}{{On the Foundations of Noise-Free Selective
+  Classification}},
+\newblock \bibinfo{journal}{Journal of Machine Learning Research (JMLR)}
+  \bibinfo{volume}{11} (\bibinfo{year}{2010}) \bibinfo{pages}{1605--1641}.
+%Type = Inproceedings
+\bibitem[{Hendrycks and Gimpel(2017)}]{hendrycks2017baseline}
+\bibinfo{author}{D.~Hendrycks}, \bibinfo{author}{K.~Gimpel},
+\newblock \bibinfo{title}{{A Baseline for Detecting Misclassified and
+  Out-of-Distribution Examples in Neural Networks}},
+\newblock in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}, \bibinfo{year}{2017}.
+%Type = Inproceedings
+\bibitem[{Guo et~al.(2017)Guo, Pleiss, Sun, and
+  Weinberger}]{guo2017temperature}
+\bibinfo{author}{C.~Guo}, \bibinfo{author}{G.~Pleiss},
+  \bibinfo{author}{Y.~Sun}, \bibinfo{author}{K.~Q. Weinberger},
+\newblock \bibinfo{title}{{On Calibration of Modern Neural Networks}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 34th International
+  Conference on Machine Learning (ICML)}, \bibinfo{year}{2017}, pp.
+  \bibinfo{pages}{1321--1330}.
+%Type = Inproceedings
+\bibitem[{Gal and Ghahramani(2016)}]{gal2016dropout}
+\bibinfo{author}{Y.~Gal}, \bibinfo{author}{Z.~Ghahramani},
+\newblock \bibinfo{title}{{Dropout as a Bayesian Approximation: Representing
+  Model Uncertainty in Deep Learning}},
+\newblock in: \bibinfo{booktitle}{International Conference on Machine Learning
+  (ICML)}, \bibinfo{year}{2016}, pp. \bibinfo{pages}{1050--1059}.
+%Type = Inproceedings
+\bibitem[{Traub et~al.(2024)Traub, Bungert, L{\"u}th, Baumgartner, Maier-Hein,
+  Maier-Hein, and J{\"a}ger}]{luth2024overcoming}
+\bibinfo{author}{J.~Traub}, \bibinfo{author}{T.~J. Bungert},
+  \bibinfo{author}{C.~T. L{\"u}th}, \bibinfo{author}{M.~Baumgartner},
+  \bibinfo{author}{K.~H. Maier-Hein}, \bibinfo{author}{L.~Maier-Hein},
+  \bibinfo{author}{P.~F. J{\"a}ger},
+\newblock \bibinfo{title}{{Overcoming Common Flaws in the Evaluation of
+  Selective Classification Systems}},
+\newblock in: \bibinfo{booktitle}{Advances in Neural Information Processing
+  Systems (NeurIPS)}, \bibinfo{year}{2024}.
+%Type = Inproceedings
+\bibitem[{Srinivasan et~al.(2024)Srinivasan, Hessel, Gupta, Lin, Choi,
+  Thomason, and Chandu}]{srinivasan2024selective}
+\bibinfo{author}{T.~Srinivasan}, \bibinfo{author}{J.~Hessel},
+  \bibinfo{author}{T.~Gupta}, \bibinfo{author}{B.~Y. Lin},
+  \bibinfo{author}{Y.~Choi}, \bibinfo{author}{J.~Thomason},
+  \bibinfo{author}{K.~Chandu},
+\newblock \bibinfo{title}{{Selective ``Selective Prediction'': Reducing
+  Unnecessary Abstention in Vision-Language Reasoning}},
+\newblock in: \bibinfo{booktitle}{Findings of the Association for Computational
+  Linguistics: ACL}, \bibinfo{year}{2024}, pp. \bibinfo{pages}{12935--12948}.
+%Type = Article
+\bibitem[{Hansen and Salamon(1990)}]{hansen1990neural}
+\bibinfo{author}{L.~K. Hansen}, \bibinfo{author}{P.~Salamon},
+\newblock \bibinfo{title}{{Neural Network Ensembles}},
+\newblock \bibinfo{journal}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence} \bibinfo{volume}{12} (\bibinfo{year}{1990})
+  \bibinfo{pages}{993--1001}.
+%Type = Article
+\bibitem[{Lam and Suen(1997)}]{lam1997application}
+\bibinfo{author}{L.~Lam}, \bibinfo{author}{C.~Y. Suen},
+\newblock \bibinfo{title}{{Application of Majority Voting to Pattern
+  Recognition: An Analysis of Its Behavior and Performance}},
+\newblock \bibinfo{journal}{IEEE Transactions on Systems, Man, and
+  Cybernetics---Part A: Systems and Humans} \bibinfo{volume}{27}
+  (\bibinfo{year}{1997}) \bibinfo{pages}{553--568}.
+%Type = Inproceedings
+\bibitem[{Sun et~al.(2022)Sun, Yan, Abbeel, and Mordatch}]{sun2022ensembles}
+\bibinfo{author}{M.~Sun}, \bibinfo{author}{W.~Yan},
+  \bibinfo{author}{P.~Abbeel}, \bibinfo{author}{I.~Mordatch},
+\newblock \bibinfo{title}{{Quantifying Uncertainty in Foundation Models via
+  Ensembles}},
+\newblock in: \bibinfo{booktitle}{NeurIPS 2022 Workshop on Robustness in
+  Sequence Modeling}, \bibinfo{year}{2022}.
+%Type = Misc
+\bibitem[{Houlsby et~al.(2011)Houlsby, Husz{\'a}r, Ghahramani, and
+  Lengyel}]{houlsby2011bald}
+\bibinfo{author}{N.~Houlsby}, \bibinfo{author}{F.~Husz{\'a}r},
+  \bibinfo{author}{Z.~Ghahramani}, \bibinfo{author}{M.~Lengyel},
+  \bibinfo{title}{{Bayesian Active Learning for Classification and Preference
+  Learning}}, \bibinfo{year}{2011}. \bibinfo{note}{ArXiv preprint
+  arXiv:1112.5745}.
+%Type = Inproceedings
+\bibitem[{Smith and Gal(2018)}]{smith2018understanding}
+\bibinfo{author}{L.~Smith}, \bibinfo{author}{Y.~Gal},
+\newblock \bibinfo{title}{{Understanding Measures of Uncertainty for
+  Adversarial Example Detection}},
+\newblock in: \bibinfo{booktitle}{Conference on Uncertainty in Artificial
+  Intelligence (UAI)}, \bibinfo{year}{2018}, pp. \bibinfo{pages}{560--569}.
+%Type = Misc
+\bibitem[{Kadavath et~al.(2022)Kadavath, Conerly, Askell, Henighan, Drain,
+  Perez et~al.}]{kadavath2022know}
+\bibinfo{author}{S.~Kadavath}, \bibinfo{author}{T.~Conerly},
+  \bibinfo{author}{A.~Askell}, \bibinfo{author}{T.~Henighan},
+  \bibinfo{author}{D.~Drain}, \bibinfo{author}{E.~Perez}, et~al.,
+  \bibinfo{title}{{Language Models (Mostly) Know What They Know}},
+  \bibinfo{year}{2022}. \bibinfo{note}{ArXiv preprint arXiv:2207.05221}.
+%Type = Article
+\bibitem[{Ma and Zhang(2026{\natexlab{a}})}]{llm_annotation}
+\bibinfo{author}{Y.~Ma}, \bibinfo{author}{L.~Zhang},
+\newblock \bibinfo{title}{{When Agreement Fails: Visual Anchoring and
+  Multimodal Pseudo-Label Reliability in Classroom Behavior Recognition}},
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{14}
+  (\bibinfo{year}{2026}{\natexlab{a}}) \bibinfo{pages}{116680--116695}.
+  \DOIprefix\doi{10.1109/ACCESS.2026.3718349}.
+%Type = Misc
+\bibitem[{Ma and Zhang(2026{\natexlab{b}})}]{visualanchor}
+\bibinfo{author}{Y.~Ma}, \bibinfo{author}{L.~Zhang},
+  \bibinfo{title}{{AnchorScore: A CLIP-Based Diagnostic of MLLM Annotation
+  Difficulty}}, \bibinfo{year}{2026}{\natexlab{b}}. \bibinfo{note}{ArXiv
+  preprint, arXiv:2608.16690}.
+%Type = Misc
+\bibitem[{Ilharco et~al.(2021)Ilharco, Wortsman, Wightman, Gordon, Carlini,
+  Taori, Dave, Shankar, Namkoong, Miller, Hajishirzi, Farhadi, and
+  Schmidt}]{ilharco2021openclip}
+\bibinfo{author}{G.~Ilharco}, \bibinfo{author}{M.~Wortsman},
+  \bibinfo{author}{R.~Wightman}, \bibinfo{author}{C.~Gordon},
+  \bibinfo{author}{N.~Carlini}, \bibinfo{author}{R.~Taori},
+  \bibinfo{author}{A.~Dave}, \bibinfo{author}{V.~Shankar},
+  \bibinfo{author}{H.~Namkoong}, \bibinfo{author}{J.~Miller},
+  \bibinfo{author}{H.~Hajishirzi}, \bibinfo{author}{A.~Farhadi},
+  \bibinfo{author}{L.~Schmidt}, \bibinfo{title}{{OpenCLIP}},
+  \bibinfo{year}{2021}. \DOIprefix\doi{10.5281/zenodo.5143773}.
+%Type = Misc
+\bibitem[{Tschannen et~al.(2025)Tschannen, Gritsenko, Wang, Naeem,
+  Alabdulmohsin, Parthasarathy et~al.}]{tschannen2025siglip2}
+\bibinfo{author}{M.~Tschannen}, \bibinfo{author}{A.~Gritsenko},
+  \bibinfo{author}{X.~Wang}, \bibinfo{author}{M.~F. Naeem},
+  \bibinfo{author}{I.~Alabdulmohsin}, \bibinfo{author}{N.~Parthasarathy},
+  et~al., \bibinfo{title}{{SigLIP 2: Multilingual Vision-Language Encoders with
+  Improved Semantic Understanding, Localization, and Dense Features}},
+  \bibinfo{year}{2025}. \bibinfo{note}{ArXiv preprint arXiv:2502.14786}.
+%Type = Article
+\bibitem[{Fang et~al.(2024{\natexlab{a}})Fang, Sun, Wang, Huang, Wang, and
+  Cao}]{fang2024eva02}
+\bibinfo{author}{Y.~Fang}, \bibinfo{author}{Q.~Sun}, \bibinfo{author}{X.~Wang},
+  \bibinfo{author}{T.~Huang}, \bibinfo{author}{X.~Wang},
+  \bibinfo{author}{Y.~Cao},
+\newblock \bibinfo{title}{{EVA-02: A Visual Representation for Neon Genesis}},
+\newblock \bibinfo{journal}{Image and Vision Computing} \bibinfo{volume}{149}
+  (\bibinfo{year}{2024}{\natexlab{a}}) \bibinfo{pages}{105171}.
+  \DOIprefix\doi{10.1016/j.imavis.2024.105171}.
+%Type = Inproceedings
+\bibitem[{Fang et~al.(2024{\natexlab{b}})Fang, Jose, Jain, Schmidt, Toshev, and
+  Shankar}]{fang2023data}
+\bibinfo{author}{A.~Fang}, \bibinfo{author}{A.~M. Jose},
+  \bibinfo{author}{A.~Jain}, \bibinfo{author}{L.~Schmidt},
+  \bibinfo{author}{A.~Toshev}, \bibinfo{author}{V.~Shankar},
+\newblock \bibinfo{title}{{Data Filtering Networks}},
+\newblock in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}, \bibinfo{year}{2024}{\natexlab{b}}.
+  \bibinfo{note}{Spotlight}.
+%Type = Misc
+\bibitem[{Ma and Zhang(2026)}]{cape_prompts}
+\bibinfo{author}{Y.~Ma}, \bibinfo{author}{L.~Zhang}, \bibinfo{title}{{CAPE
+  Prompts for SCB5}}, \bibinfo{year}{2026}. \URLprefix
+  \url{https://github.com/zhanglizhuo/scb5-zeroshot},
+  \bibinfo{note}{scb5-zeroshot repository}.
+%Type = Article
+\bibitem[{Yeung et~al.(2018)Yeung, Russakovsky, Jin, Andriluka, Mori, and
+  Fei-Fei}]{yeung2018every}
+\bibinfo{author}{S.~Yeung}, \bibinfo{author}{O.~Russakovsky},
+  \bibinfo{author}{N.~Jin}, \bibinfo{author}{M.~Andriluka},
+  \bibinfo{author}{G.~Mori}, \bibinfo{author}{L.~Fei-Fei},
+\newblock \bibinfo{title}{{Every Moment Counts: Dense Detailed Labeling of
+  Actions in Complex Videos}},
+\newblock \bibinfo{journal}{International Journal of Computer Vision}
+  \bibinfo{volume}{126} (\bibinfo{year}{2018}) \bibinfo{pages}{375--389}.
+%Type = Inproceedings
+\bibitem[{Hendrycks et~al.(2022)Hendrycks, Basart, Mazeika, Zou, Kwon,
+  Mostajabi, Steinhardt, and Song}]{hendrycks2022scaling}
+\bibinfo{author}{D.~Hendrycks}, \bibinfo{author}{S.~Basart},
+  \bibinfo{author}{M.~Mazeika}, \bibinfo{author}{A.~Zou},
+  \bibinfo{author}{J.~Kwon}, \bibinfo{author}{M.~Mostajabi},
+  \bibinfo{author}{J.~Steinhardt}, \bibinfo{author}{D.~Song},
+\newblock \bibinfo{title}{{Scaling Out-of-Distribution Detection for Real-World
+  Settings}},
+\newblock in: \bibinfo{booktitle}{International Conference on Machine Learning
+  (ICML)}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{8759--8773}.
+%Type = Inproceedings
+\bibitem[{Liu et~al.(2020)Liu, Wang, Owens, and Li}]{liu2020energy}
+\bibinfo{author}{W.~Liu}, \bibinfo{author}{X.~Wang},
+  \bibinfo{author}{J.~Owens}, \bibinfo{author}{Y.~Li},
+\newblock \bibinfo{title}{{Energy-Based Out-of-Distribution Detection}},
+\newblock in: \bibinfo{booktitle}{Advances in Neural Information Processing
+  Systems (NeurIPS)}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{21495--21507}.
+%Type = Misc
+\bibitem[{Ma and Zhang(2026)}]{phase0_oracle}
+\bibinfo{author}{Y.~Ma}, \bibinfo{author}{L.~Zhang}, \bibinfo{title}{{Phase 0
+  Oracle Probe}}, \bibinfo{year}{2026}. \bibinfo{note}{InstanceAnchor tech
+  report}.
+
+\end{thebibliography}

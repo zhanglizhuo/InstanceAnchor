@@ -1,0 +1,67 @@
+========================================================================
+  Visual Anchoring Synthesis Analysis
+  MLLM Annotation Accuracy → CLIP Zero-Shot Recall
+========================================================================
+
+Source: llm-annotation paper (Agreement strategy, validation split)
+
+── TeacherBehavior: Anchoring vs CLIP Recall Correlation ──
+  Data points:  40 (8 classes × 5 CLIP models)
+  Spearman ρ:   -0.2256  (p=0.1616)
+  Pearson r:    -0.2946  (p=0.0650)
+
+── All Subsets Combined ──
+  Data points:  65
+  Spearman ρ:   +0.1214  (p = 0.3355)
+  Pearson r:    +0.2401
+
+── TeacherBehavior: Per-Class Anchoring vs CLIP Recall ──
+  Class                   Anchor Level    CLIP Recall (mean) Best Model  
+  --------------------------------------------------------------------
+  guide                     0.0% low                   26.9% siglip2 (43.3%)
+  answer                    0.0% low                    8.4% eva02 (18.1%)
+  On-stage interaction      0.0% low                   15.6% dfn (27.0%)
+  blackboard-writing       98.6% high                   4.9% openai (16.6%)
+  teacher                  92.0% high                   9.1% laion (19.8%)
+  stand                     0.8% low                   24.1% openai (46.7%)
+  screen                   69.4% medium                26.7% openai (41.7%)
+  blackBoard               57.4% medium                 0.0%  (0.0%)
+
+── Anchoring Level → CLIP Recall (TeacherBehavior) ──
+  Level       Count  Mean Recall      Std Range
+  ----------------------------------------------------
+  high           10         7.0%     7.2% [0.0-19.8]%
+  medium         10        13.3%    14.4% [0.0-41.7]%
+  low            20        18.8%    15.6% [0.1-46.7]%
+
+── Subset-Level: Visual Anchoring vs CLIP/MLLM Gap ──
+  Subset                         Mean Anchor  Best CLIP  Best MLLM   Δ MLLM
+  ------------------------------------------------------------------------
+  BowTurnHead (2-class binary)      66.5%      93.3%      63.4% -29.9% ↓CLIP
+  HandriseReadWrite (3-class)       70.6%      74.3%      63.4% -11.0% ↓CLIP
+  TeacherBehavior (8-class multi-label)    39.8%      85.6%      87.8% +2.2% ↑MLLM
+
+========================================================================
+  Interpretation
+========================================================================
+  ⚠ Weak correlation between visual anchoring and CLIP recall.
+
+  Key findings:
+  1. Visual anchoring (MLLM crop-level annotation accuracy) and CLIP
+     per-class recall show NO significant correlation (ρ=-0.23, p=0.16).
+     This means MLLM and CLIP fail for DIFFERENT reasons.
+  2. MLLM fails on intent-dependent classes (answer, guide, on-stage
+     interaction → 0% annotation accuracy) because single-frame crops
+     cannot convey teaching intent.
+  3. CLIP fails on visually-confusable classes (blackboard-writing →
+     misclassified as screen/teacher) because full-image embedding
+     cannot separate co-occurring visual elements without training.
+  4. Classes where BOTH fail (answer, guide): need temporal context.
+     Classes where CLIP > MLLM (stand, guide): CLIP benefits from
+     full-image context that MLLM crops miss.
+     Classes where MLLM > CLIP (blackboard-writing): crop-level focus
+     isolates the relevant visual signal better than full-image CLIP.
+  5. Practical implication: NEITHER approach alone suffices. A hybrid
+     pipeline needs (a) CLIP+CAPE for action-recognition classes,
+     (b) MLLM crop-level annotation for visually-distinctive classes,
+     and (c) temporal context (video) for intent-dependent classes.

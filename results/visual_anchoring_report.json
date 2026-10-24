@@ -1,0 +1,955 @@
+{
+  "teacher_behavior": {
+    "per_class": [
+      {
+        "class": "guide",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.41397849462365593,
+        "clip_f1": 0.47751937984496123,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "answer",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.00125,
+        "clip_f1": 0.002447980416156671,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "On-stage interaction",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.2198581560283688,
+        "clip_f1": 0.13478260869565217,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "blackboard-writing",
+        "model": "openai",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.16595744680851063,
+        "clip_f1": 0.2689655172413793,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "teacher",
+        "model": "openai",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.004797806716929404,
+        "clip_f1": 0.009549795361527967,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "stand",
+        "model": "openai",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.46745562130177515,
+        "clip_f1": 0.10926694329183957,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "screen",
+        "model": "openai",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.4166666666666667,
+        "clip_f1": 0.016286644951140065,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "blackBoard",
+        "model": "openai",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "guide",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.010752688172043012,
+        "clip_f1": 0.02105263157894737,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "answer",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.13125,
+        "clip_f1": 0.13444302176696543,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "On-stage interaction",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.16312056737588654,
+        "clip_f1": 0.04811715481171549,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "blackboard-writing",
+        "model": "laion",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.00425531914893617,
+        "clip_f1": 0.008474576271186442,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "teacher",
+        "model": "laion",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.19808087731322824,
+        "clip_f1": 0.32236475181260454,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "stand",
+        "model": "laion",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.10059171597633136,
+        "clip_f1": 0.058721934369602775,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "screen",
+        "model": "laion",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.25,
+        "clip_f1": 0.014510278113663847,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "blackBoard",
+        "model": "laion",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "guide",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.4327956989247312,
+        "clip_f1": 0.5261437908496732,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "answer",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.07,
+        "clip_f1": 0.10209662716499546,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "On-stage interaction",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.04964539007092199,
+        "clip_f1": 0.057613168724279844,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "blackboard-writing",
+        "model": "siglip2",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "teacher",
+        "model": "siglip2",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.0027416038382453737,
+        "clip_f1": 0.005468215994531784,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "stand",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.44970414201183434,
+        "clip_f1": 0.1043956043956044,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "screen",
+        "model": "siglip2",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.25,
+        "clip_f1": 0.00980392156862745,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "blackBoard",
+        "model": "siglip2",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "guide",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.3844086021505376,
+        "clip_f1": 0.5238095238095238,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "answer",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.18125,
+        "clip_f1": 0.15417331206804888,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "On-stage interaction",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.07801418439716312,
+        "clip_f1": 0.06666666666666667,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "blackboard-writing",
+        "model": "eva02",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.03829787234042553,
+        "clip_f1": 0.07377049180327869,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "teacher",
+        "model": "eva02",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.14119259766963674,
+        "clip_f1": 0.23650975889781858,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "stand",
+        "model": "eva02",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.17751479289940827,
+        "clip_f1": 0.09852216748768472,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "screen",
+        "model": "eva02",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.20833333333333334,
+        "clip_f1": 0.010030090270812435,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "blackBoard",
+        "model": "eva02",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "guide",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.10483870967741936,
+        "clip_f1": 0.16919739696312366,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "answer",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.0375,
+        "clip_f1": 0.052956751985878195,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "On-stage interaction",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.2695035460992908,
+        "clip_f1": 0.04831532104259377,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "blackboard-writing",
+        "model": "dfn",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.03829787234042553,
+        "clip_f1": 0.07377049180327869,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "teacher",
+        "model": "dfn",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.10897875257025359,
+        "clip_f1": 0.19214501510574017,
+        "anchoring_level": "high"
+      },
+      {
+        "class": "stand",
+        "model": "dfn",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.011834319526627219,
+        "clip_f1": 0.021052631578947368,
+        "anchoring_level": "low"
+      },
+      {
+        "class": "screen",
+        "model": "dfn",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.20833333333333334,
+        "clip_f1": 0.010449320794148379,
+        "anchoring_level": "medium"
+      },
+      {
+        "class": "blackBoard",
+        "model": "dfn",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      }
+    ],
+    "overall": {
+      "num_pairs": 40,
+      "spearman_r": -0.2255899815295934,
+      "spearman_p": 0.16162379355602957,
+      "pearson_r": -0.2946293185809331,
+      "pearson_p": 0.06496272597870767
+    }
+  },
+  "all_subsets": {
+    "per_class": [
+      {
+        "subset": "teacher_behavior",
+        "class": "guide",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.41397849462365593,
+        "clip_f1": 0.47751937984496123,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "answer",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.00125,
+        "clip_f1": 0.002447980416156671,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "On-stage interaction",
+        "model": "openai",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.2198581560283688,
+        "clip_f1": 0.13478260869565217,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackboard-writing",
+        "model": "openai",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.16595744680851063,
+        "clip_f1": 0.2689655172413793,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "teacher",
+        "model": "openai",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.004797806716929404,
+        "clip_f1": 0.009549795361527967,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "stand",
+        "model": "openai",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.46745562130177515,
+        "clip_f1": 0.10926694329183957,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "screen",
+        "model": "openai",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.4166666666666667,
+        "clip_f1": 0.016286644951140065,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackBoard",
+        "model": "openai",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "guide",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.010752688172043012,
+        "clip_f1": 0.02105263157894737,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "answer",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.13125,
+        "clip_f1": 0.13444302176696543,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "On-stage interaction",
+        "model": "laion",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.16312056737588654,
+        "clip_f1": 0.04811715481171549,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackboard-writing",
+        "model": "laion",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.00425531914893617,
+        "clip_f1": 0.008474576271186442,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "teacher",
+        "model": "laion",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.19808087731322824,
+        "clip_f1": 0.32236475181260454,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "stand",
+        "model": "laion",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.10059171597633136,
+        "clip_f1": 0.058721934369602775,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "screen",
+        "model": "laion",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.25,
+        "clip_f1": 0.014510278113663847,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackBoard",
+        "model": "laion",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "guide",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.4327956989247312,
+        "clip_f1": 0.5261437908496732,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "answer",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.07,
+        "clip_f1": 0.10209662716499546,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "On-stage interaction",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.04964539007092199,
+        "clip_f1": 0.057613168724279844,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackboard-writing",
+        "model": "siglip2",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "teacher",
+        "model": "siglip2",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.0027416038382453737,
+        "clip_f1": 0.005468215994531784,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "stand",
+        "model": "siglip2",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.44970414201183434,
+        "clip_f1": 0.1043956043956044,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "screen",
+        "model": "siglip2",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.25,
+        "clip_f1": 0.00980392156862745,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackBoard",
+        "model": "siglip2",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "guide",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.3844086021505376,
+        "clip_f1": 0.5238095238095238,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "answer",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.18125,
+        "clip_f1": 0.15417331206804888,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "On-stage interaction",
+        "model": "eva02",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.07801418439716312,
+        "clip_f1": 0.06666666666666667,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackboard-writing",
+        "model": "eva02",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.03829787234042553,
+        "clip_f1": 0.07377049180327869,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "teacher",
+        "model": "eva02",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.14119259766963674,
+        "clip_f1": 0.23650975889781858,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "stand",
+        "model": "eva02",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.17751479289940827,
+        "clip_f1": 0.09852216748768472,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "screen",
+        "model": "eva02",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.20833333333333334,
+        "clip_f1": 0.010030090270812435,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackBoard",
+        "model": "eva02",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "guide",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.10483870967741936,
+        "clip_f1": 0.16919739696312366,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "answer",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.0375,
+        "clip_f1": 0.052956751985878195,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "On-stage interaction",
+        "model": "dfn",
+        "anchoring_accuracy": 0.0,
+        "clip_recall": 0.2695035460992908,
+        "clip_f1": 0.04831532104259377,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackboard-writing",
+        "model": "dfn",
+        "anchoring_accuracy": 98.61,
+        "clip_recall": 0.03829787234042553,
+        "clip_f1": 0.07377049180327869,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "teacher",
+        "model": "dfn",
+        "anchoring_accuracy": 92.01,
+        "clip_recall": 0.10897875257025359,
+        "clip_f1": 0.19214501510574017,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "stand",
+        "model": "dfn",
+        "anchoring_accuracy": 0.85,
+        "clip_recall": 0.011834319526627219,
+        "clip_f1": 0.021052631578947368,
+        "anchoring_level": "low"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "screen",
+        "model": "dfn",
+        "anchoring_accuracy": 69.41,
+        "clip_recall": 0.20833333333333334,
+        "clip_f1": 0.010449320794148379,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "teacher_behavior",
+        "class": "blackBoard",
+        "model": "dfn",
+        "anchoring_accuracy": 57.42,
+        "clip_recall": 0.0,
+        "clip_f1": 0.0,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "hand-raise",
+        "model": "openai",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.9791666666666666,
+        "clip_f1": 0.7663043478260869,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "read",
+        "model": "openai",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.13568521031207598,
+        "clip_f1": 0.23640661938534277,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "write",
+        "model": "openai",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.32857142857142857,
+        "clip_f1": 0.15972222222222224,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "hand-raise",
+        "model": "laion",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.9837962962962963,
+        "clip_f1": 0.7737824305871644,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "read",
+        "model": "laion",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.1994572591587517,
+        "clip_f1": 0.32775919732441466,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "write",
+        "model": "laion",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.2857142857142857,
+        "clip_f1": 0.16129032258064516,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "hand-raise",
+        "model": "siglip2",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.9791666666666666,
+        "clip_f1": 0.745374449339207,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "read",
+        "model": "siglip2",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.11397557666214382,
+        "clip_f1": 0.200238379022646,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "write",
+        "model": "siglip2",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.17142857142857143,
+        "clip_f1": 0.10300429184549356,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "hand-raise",
+        "model": "eva02",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.9618055555555556,
+        "clip_f1": 0.8087591240875912,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "read",
+        "model": "eva02",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.20488466757123475,
+        "clip_f1": 0.334070796460177,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "write",
+        "model": "eva02",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.4714285714285714,
+        "clip_f1": 0.1723237597911227,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "hand-raise",
+        "model": "dfn",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.9629629629629629,
+        "clip_f1": 0.8081593006313745,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "read",
+        "model": "dfn",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.12754409769335143,
+        "clip_f1": 0.22407628128724674,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "handrise_readwrite",
+        "class": "write",
+        "model": "dfn",
+        "anchoring_accuracy": 70.6,
+        "clip_recall": 0.35714285714285715,
+        "clip_f1": 0.11261261261261263,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "bow-head",
+        "model": "openai",
+        "anchoring_accuracy": 43.9,
+        "clip_recall": 0.06486486486486487,
+        "clip_f1": 0.11594202898550726,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "turn-head",
+        "model": "openai",
+        "anchoring_accuracy": 89.0,
+        "clip_recall": 0.96875,
+        "clip_f1": 0.772104607721046,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "bow-head",
+        "model": "laion",
+        "anchoring_accuracy": 43.9,
+        "clip_recall": 0.12972972972972974,
+        "clip_f1": 0.22748815165876776,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "turn-head",
+        "model": "laion",
+        "anchoring_accuracy": 89.0,
+        "clip_recall": 0.99375,
+        "clip_f1": 0.7959949937421777,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "bow-head",
+        "model": "siglip2",
+        "anchoring_accuracy": 43.9,
+        "clip_recall": 0.41081081081081083,
+        "clip_f1": 0.46200607902735563,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "turn-head",
+        "model": "siglip2",
+        "anchoring_accuracy": 89.0,
+        "clip_recall": 0.7875,
+        "clip_f1": 0.7400881057268722,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "bow-head",
+        "model": "eva02",
+        "anchoring_accuracy": 43.9,
+        "clip_recall": 0.10270270270270271,
+        "clip_f1": 0.1784037558685446,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "turn-head",
+        "model": "eva02",
+        "anchoring_accuracy": 89.0,
+        "clip_recall": 0.971875,
+        "clip_f1": 0.7804265997490589,
+        "anchoring_level": "high"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "bow-head",
+        "model": "dfn",
+        "anchoring_accuracy": 43.9,
+        "clip_recall": 0.16756756756756758,
+        "clip_f1": 0.28054298642533937,
+        "anchoring_level": "medium"
+      },
+      {
+        "subset": "bow_turnhead",
+        "class": "turn-head",
+        "model": "dfn",
+        "anchoring_accuracy": 89.0,
+        "clip_recall": 0.984375,
+        "clip_f1": 0.7984790874524715,
+        "anchoring_level": "high"
+      }
+    ],
+    "overall": {
+      "num_pairs": 65,
+      "spearman_r": 0.1213797553241667,
+      "spearman_p": 0.3354600558328493,
+      "pearson_r": 0.24011332467326466,
+      "pearson_p": 0.05403182231963185
+    }
+  },
+  "subset_level": {
+    "teacher_behavior": {
+      "mean_anchoring_accuracy": 39.7875,
+      "best_clip_hit1": 0.8556,
+      "best_clip_model": "siglip2",
+      "best_mllm_hit1": 0.8777777777777778,
+      "best_mllm_model": "qwen35_ollama_27b",
+      "gap": 0.02217777777777774
+    },
+    "bow_turnhead": {
+      "mean_anchoring_accuracy": 66.45,
+      "best_clip_hit1": 0.9327,
+      "best_clip_model": "dfn",
+      "best_mllm_hit1": 0.6336633663366337,
+      "best_mllm_model": "gemma4_ollama_26b",
+      "gap": -0.2990366336633663
+    },
+    "handrise_readwrite": {
+      "mean_anchoring_accuracy": 70.6,
+      "best_clip_hit1": 0.7433,
+      "best_clip_model": "eva02",
+      "best_mllm_hit1": 0.6337522441651705,
+      "best_mllm_model": "gemma4_ollama_26b",
+      "gap": -0.10954775583482945
+    }
+  }
+}

@@ -1,0 +1,24 @@
+================================================================================
+  soft-agreement survival mechanism (signal variance vs consensus acc)
+================================================================================
+
+               dataset |    acc |  std_hard |  std_soft |  unanim |  std_soft_unanim
+    ------------------------------------------------------------------------
+      teacher_behavior |  64.7% |    0.2549 |    0.1637 |   0.168 |           0.1105
+    handrise_readwrite |  58.5% |    0.1699 |    0.2018 |   0.698 |           0.1040
+          bow_turnhead |  68.5% |    0.1519 |    0.1148 |   0.679 |           0.0691
+               voc2007 |  89.2% |    0.1905 |    0.1993 |   0.012 |           0.0877
+            stanford40 |  92.5% |    0.1461 |    0.1516 |   0.002 |           0.0000
+                  coco |  89.4% |    0.2003 |    0.2086 |   0.004 |           0.0565
+           multithumos |  18.3% |    0.2713 |    0.2069 |   0.047 |           0.1051
+              cifar100 |  89.8% |    0.2070 |    0.1870 |   0.198 |           0.0850
+
+  Spearman (acc vs signal std):
+    std_hard : rho=-0.452 p=0.2604
+    std_soft : rho=-0.310 p=0.4556
+    unanimity: rho=-0.524 p=0.1827
+
+  If std_hard collapses with acc while std_soft does not, the survival
+  mechanism is: hard votes lose their scale (unanimous -> constant), soft
+  mass keeps a continuous certainty scale even under unanimity.
+================================================================================

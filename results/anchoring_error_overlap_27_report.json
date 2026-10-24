@@ -1,0 +1,1746 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_error_overlap_27.py",
+ "claim": "per-dataset pairwise error-overlap ratio vs kappa-decomposition residual share across 27 datasets",
+ "n_datasets": 27,
+ "bootstrap_n": 10000,
+ "seed": 42,
+ "correlation_all": {
+  "spearman_rho": -0.326007326007326,
+  "ci_lo": -0.6502021302029114,
+  "ci_hi": 0.13601682680857063,
+  "n": 27
+ },
+ "correlation_class_coincidence_all": {
+  "spearman_rho": 0.6275946275946276,
+  "ci_lo": 0.3237057822285095,
+  "ci_hi": 0.811925752693656,
+  "n": 27
+ },
+ "correlation_non_imagenet": {
+  "spearman_rho": -0.4060150375939849,
+  "ci_lo": -0.7355701988445208,
+  "ci_hi": 0.1279382334356252,
+  "n": 20
+ },
+ "correlation_class_coincidence_non_imagenet": {
+  "spearman_rho": 0.5849624060150376,
+  "ci_lo": 0.1524878652409959,
+  "ci_hi": 0.8064147918418837,
+  "n": 20
+ },
+ "correlation_original_8": {
+  "spearman_rho": -0.6904761904761906,
+  "ci_lo": -1.0,
+  "ci_hi": 0.21518987341772153,
+  "n": 8
+ },
+ "correlation_class_coincidence_original_8": {
+  "spearman_rho": 0.2380952380952381,
+  "ci_lo": -0.675,
+  "ci_hi": 0.7777777777777778,
+  "n": 8
+ },
+ "datasets": [
+  {
+   "dataset": "teacher_behavior",
+   "n_pairs": 10,
+   "mean_ratio": 1.9518943627905396,
+   "min_ratio": 1.5171741581361085,
+   "max_ratio": 3.283967163679008,
+   "median_ratio": 1.7499514370249938,
+   "mean_class_coincidence": 3.7532726838080217,
+   "median_class_coincidence": 3.516232903996813,
+   "residual_share": 0.08564617654269058,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.7334724031150188,
+     "class_coincidence": 2.191919191919192
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 3.283967163679008,
+     "class_coincidence": 3.355371900826446
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.0707638817875043,
+     "class_coincidence": 1.9040000000000001
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.5171741581361085,
+     "class_coincidence": 3.306954436450839
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.9493275310679186,
+     "class_coincidence": 4.366504854368932
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.7578193940582412,
+     "class_coincidence": 5.389923329682366
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.6072378716591733,
+     "class_coincidence": 5.116022099447513
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 2.3336833379386572,
+     "class_coincidence": 4.869565217391305
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.7420834799917466,
+     "class_coincidence": 3.650112866817156
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.5234144064720219,
+     "class_coincidence": 3.3823529411764706
+    }
+   ]
+  },
+  {
+   "dataset": "handrise_readwrite",
+   "n_pairs": 10,
+   "mean_ratio": 2.1840669436920708,
+   "min_ratio": 2.1271659826721385,
+   "max_ratio": 2.2349774907026814,
+   "median_ratio": 2.187553185610734,
+   "mean_class_coincidence": 1.5872452556901389,
+   "median_class_coincidence": 1.5658043536039439,
+   "residual_share": 0.2969783492287228,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.2349774907026814,
+     "class_coincidence": 1.6520325203252033
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 2.132864475545734,
+     "class_coincidence": 1.5419847328244274
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.2320227054269606,
+     "class_coincidence": 1.5721231766612642
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.168755935422602,
+     "class_coincidence": 1.5426829268292683
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 2.1777216194484184,
+     "class_coincidence": 1.7147435897435896
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.2293440683078494,
+     "class_coincidence": 1.6939130434782608
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.203905852417303,
+     "class_coincidence": 1.5594855305466238
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 2.1365265552039716,
+     "class_coincidence": 1.5414634146341464
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 2.1271659826721385,
+     "class_coincidence": 1.4328358208955223
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 2.1973847517730496,
+     "class_coincidence": 1.6211878009630818
+    }
+   ]
+  },
+  {
+   "dataset": "bow_turnhead",
+   "n_pairs": 10,
+   "mean_ratio": 2.304240953901244,
+   "min_ratio": 1.711498534440645,
+   "max_ratio": 2.8270705521472395,
+   "median_ratio": 2.5318614130434787,
+   "mean_class_coincidence": 1.0,
+   "median_class_coincidence": 1.0,
+   "residual_share": 0.2760747661346209,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.5930248066150976,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.711498534440645,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.5250000000000004,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.5387228260869565,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.8797821741228373,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.6201577563540757,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.8270705521472395,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.799518459069021,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.9504915730337078,
+     "class_coincidence": 1.0
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 2.597142857142857,
+     "class_coincidence": 1.0
+    }
+   ]
+  },
+  {
+   "dataset": "voc2007",
+   "n_pairs": 10,
+   "mean_ratio": 3.1418872043542647,
+   "min_ratio": 0.964578111946533,
+   "max_ratio": 6.453154574132492,
+   "median_ratio": 3.7070102795634132,
+   "mean_class_coincidence": 4.414564274663045,
+   "median_class_coincidence": 3.685559392172406,
+   "residual_share": -0.08388555732687819,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 3.996984687297541,
+     "class_coincidence": 4.551330798479087
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 0.9756910678378385,
+     "class_coincidence": 0.45084745762711864
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 6.453154574132492,
+     "class_coincidence": 12.006134969325153
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 4.4451823565222215,
+     "class_coincidence": 8.227678571428571
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 0.9699713134403508,
+     "class_coincidence": 0.0
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 4.1913627639155475,
+     "class_coincidence": 6.114942528735632
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 3.4170358718292855,
+     "class_coincidence": 2.8197879858657244
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 0.964578111946533,
+     "class_coincidence": 0.20652173913043478
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0037834770719614,
+     "class_coincidence": 0.4476439790575916
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 5.001127819548873,
+     "class_coincidence": 9.320754716981131
+    }
+   ]
+  },
+  {
+   "dataset": "stanford40",
+   "n_pairs": 10,
+   "mean_ratio": 3.0508748750841788,
+   "min_ratio": 1.0017482517482517,
+   "max_ratio": 6.504643962848297,
+   "median_ratio": 3.3288319482917816,
+   "mean_class_coincidence": 12.966328374411964,
+   "median_class_coincidence": 16.937142857142856,
+   "residual_share": -0.034327737697323224,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 3.350877192982456,
+     "class_coincidence": 20.8
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0017482517482517,
+     "class_coincidence": 2.052631578947368
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 6.504643962848297,
+     "class_coincidence": 31.90909090909091
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 3.3067867036011074,
+     "class_coincidence": 18.72
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0017482517482517,
+     "class_coincidence": 0.0
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 4.4941176470588236,
+     "class_coincidence": 19.5
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 4.18859649122807,
+     "class_coincidence": 17.16
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0017482517482517,
+     "class_coincidence": 2.2941176470588234
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0017482517482517,
+     "class_coincidence": 0.513157894736842
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 4.656733746130031,
+     "class_coincidence": 16.71428571428571
+    }
+   ]
+  },
+  {
+   "dataset": "coco",
+   "n_pairs": 10,
+   "mean_ratio": 2.8470935588603203,
+   "min_ratio": 0.994114762330252,
+   "max_ratio": 5.594307232959741,
+   "median_ratio": 3.1095634769504903,
+   "mean_class_coincidence": 20.159628861925864,
+   "median_class_coincidence": 22.323666650067228,
+   "residual_share": 0.11304712936111116,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 3.1915114701437814,
+     "class_coincidence": 23.332558139534886
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 0.9952967533607696,
+     "class_coincidence": 2.2358490566037736
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 5.594307232959741,
+     "class_coincidence": 45.59428571428572
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 3.888371591453463,
+     "class_coincidence": 36.024
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 0.994114762330252,
+     "class_coincidence": 0.3110236220472441
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 3.8175872848359838,
+     "class_coincidence": 28.332460732984295
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 3.027615483757199,
+     "class_coincidence": 21.31477516059957
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 0.9966766207900422,
+     "class_coincidence": 1.3361522198731501
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 0.9951366795624351,
+     "class_coincidence": 2.061813186813187
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 4.970317709409537,
+     "class_coincidence": 41.05337078651685
+    }
+   ]
+  },
+  {
+   "dataset": "multithumos",
+   "n_pairs": 10,
+   "mean_ratio": 1.0828193598196874,
+   "min_ratio": 1.0193037991021736,
+   "max_ratio": 1.134732783056513,
+   "median_ratio": 1.1147273954420296,
+   "mean_class_coincidence": 17.003834198764018,
+   "median_class_coincidence": 21.610309538955775,
+   "residual_share": 0.46168567574888697,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.1207582942882708,
+     "class_coincidence": 22.69390689593194
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0196227714164448,
+     "class_coincidence": 4.967224386889755
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.1281969326678873,
+     "class_coincidence": 25.425556292588794
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.1086964965957886,
+     "class_coincidence": 20.52671218197961
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0212731722747956,
+     "class_coincidence": 5.358847288664815
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.134732783056513,
+     "class_coincidence": 28.163919661352786
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.1271248447450075,
+     "class_coincidence": 26.05012516210755
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0193037991021736,
+     "class_coincidence": 5.095731068977551
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0203351299399348,
+     "class_coincidence": 6.4005565701365335
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.128149374110057,
+     "class_coincidence": 25.35576247901084
+    }
+   ]
+  },
+  {
+   "dataset": "cifar100",
+   "n_pairs": 10,
+   "mean_ratio": 2.5558959017994693,
+   "min_ratio": 1.1616027173388408,
+   "max_ratio": 4.890624950298527,
+   "median_ratio": 2.5784052519518426,
+   "mean_class_coincidence": 33.31366693805104,
+   "median_class_coincidence": 41.386454990411124,
+   "residual_share": 0.3049511308078523,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.507858396641177,
+     "class_coincidence": 40.27390599675851
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.1616027173388408,
+     "class_coincidence": 8.766043866774979
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.8787378127628687,
+     "class_coincidence": 43.645161290322584
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.6489521072625086,
+     "class_coincidence": 42.49900398406375
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.169684816998105,
+     "class_coincidence": 9.166666666666666
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 4.067286642026097,
+     "class_coincidence": 55.61295180722892
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 3.830162971972563,
+     "class_coincidence": 55.05997818974919
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.2016420830131325,
+     "class_coincidence": 8.084023668639054
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.2024065196808735,
+     "class_coincidence": 9.341129032258065
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 4.890624950298527,
+     "class_coincidence": 60.68780487804878
+    }
+   ]
+  },
+  {
+   "dataset": "cifar10c",
+   "n_pairs": 10,
+   "mean_ratio": 3.162261797009344,
+   "min_ratio": 1.3462732473381682,
+   "max_ratio": 5.619892976434012,
+   "median_ratio": 3.2858815311156415,
+   "mean_class_coincidence": 3.1186092260872607,
+   "median_class_coincidence": 3.4798313974290727,
+   "residual_share": 0.041687152143465855,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 3.287833483134826,
+     "class_coincidence": 3.887116564417178
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.3462732473381682,
+     "class_coincidence": 1.3846153846153846
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 3.6959172965384233,
+     "class_coincidence": 3.9712230215827335
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 3.283929579096457,
+     "class_coincidence": 3.072546230440967
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.5207429839992326,
+     "class_coincidence": 2.0784313725490193
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 4.990592732698863,
+     "class_coincidence": 4.7250000000000005
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 4.543834522884224,
+     "class_coincidence": 4.441389290882778
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.7069467272481107,
+     "class_coincidence": 1.861407249466951
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.626654420721122,
+     "class_coincidence": 1.7617924528301887
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 5.619892976434012,
+     "class_coincidence": 4.002570694087404
+    }
+   ]
+  },
+  {
+   "dataset": "cifar100c",
+   "n_pairs": 10,
+   "mean_ratio": 1.2915386335987915,
+   "min_ratio": 1.0315747002095237,
+   "max_ratio": 1.6071516526863687,
+   "median_ratio": 1.3513837280075474,
+   "mean_class_coincidence": 13.90309476969683,
+   "median_class_coincidence": 17.69423008535336,
+   "residual_share": 0.27166216367299145,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.3407762459905797,
+     "class_coincidence": 16.612560734209104
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0315747002095237,
+     "class_coincidence": 2.6408992916538345
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.3871401823304677,
+     "class_coincidence": 18.775899436497618
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.3619912100245153,
+     "class_coincidence": 21.00695963412209
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0456453715304856,
+     "class_coincidence": 1.7998315080033698
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.5234886335877462,
+     "class_coincidence": 24.387393302692054
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.5036917344234089,
+     "class_coincidence": 26.2325209748302
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0596631864842563,
+     "class_coincidence": 2.0708514605344934
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.054263418720562,
+     "class_coincidence": 1.654473832301632
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.6071516526863687,
+     "class_coincidence": 23.84955752212389
+    }
+   ]
+  },
+  {
+   "dataset": "food101",
+   "n_pairs": 10,
+   "mean_ratio": 4.816868751523562,
+   "min_ratio": 1.0154293631192612,
+   "max_ratio": 9.14675901469351,
+   "median_ratio": 6.388749628263977,
+   "mean_class_coincidence": 46.11858515680612,
+   "median_class_coincidence": 65.58899509170757,
+   "residual_share": 0.3248005711441112,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 5.943284088979453,
+     "class_coincidence": 65.10204081632654
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0154293631192612,
+     "class_coincidence": 7.263922518159806
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 6.834215167548501,
+     "class_coincidence": 74.19354838709677
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 6.879016387732711,
+     "class_coincidence": 66.07594936708861
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0223820167448394,
+     "class_coincidence": 8.695652173913043
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 7.290218842831059,
+     "class_coincidence": 73.13084112149532
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 7.976406628813719,
+     "class_coincidence": 71.27192982456141
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.02028978301492,
+     "class_coincidence": 11.6751269035533
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0406862217576462,
+     "class_coincidence": 11.584327086882453
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 9.14675901469351,
+     "class_coincidence": 72.19251336898395
+    }
+   ]
+  },
+  {
+   "dataset": "dtd",
+   "n_pairs": 10,
+   "mean_ratio": 1.4573896123534207,
+   "min_ratio": 0.9789448513680183,
+   "max_ratio": 1.9387813340733262,
+   "median_ratio": 1.5973841740015886,
+   "mean_class_coincidence": 13.790873427088268,
+   "median_class_coincidence": 20.067637997651104,
+   "residual_share": 0.34843959490410936,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.5703765010613757,
+     "class_coincidence": 20.84770642201835
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 0.9973047142997158,
+     "class_coincidence": 0.5311778290993072
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.7533351650029,
+     "class_coincidence": 25.220949263502455
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.6243918469418017,
+     "class_coincidence": 19.287569573283857
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 0.9939414723365341,
+     "class_coincidence": 0.9815078236130867
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.8531261478033387,
+     "class_coincidence": 21.863117870722434
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.9387813340733262,
+     "class_coincidence": 24.75572519083969
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 0.9955001917361711,
+     "class_coincidence": 0.7157001414427157
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 0.9789448513680183,
+     "class_coincidence": 2.293051359516616
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.868193898911024,
+     "class_coincidence": 21.412228796844182
+    }
+   ]
+  },
+  {
+   "dataset": "cifar10",
+   "n_pairs": 10,
+   "mean_ratio": 8.716904201707008,
+   "min_ratio": 0.9981394437320189,
+   "max_ratio": 22.666391922522152,
+   "median_ratio": 8.2184604209721,
+   "mean_class_coincidence": 4.6914492467747255,
+   "median_class_coincidence": 6.281841949486978,
+   "residual_share": 0.05495276653171355,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 8.316562365028165,
+     "class_coincidence": 6.2154696132596685
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0581578771552718,
+     "class_coincidence": 1.5992438563327032
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 9.650548557496952,
+     "class_coincidence": 6.947368421052631
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 8.120358476916035,
+     "class_coincidence": 6.381818181818182
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0152311185005796,
+     "class_coincidence": 1.7798507462686566
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 18.596896242144414,
+     "class_coincidence": 6.827586206896552
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 15.657984873268184,
+     "class_coincidence": 6.3482142857142865
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0887711403063076,
+     "class_coincidence": 1.6153846153846154
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 0.9981394437320189,
+     "class_coincidence": 1.4268292682926829
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 22.666391922522152,
+     "class_coincidence": 7.7727272727272725
+    }
+   ]
+  },
+  {
+   "dataset": "tiny_imagenet",
+   "n_pairs": 10,
+   "mean_ratio": 2.292866669561773,
+   "min_ratio": 1.4619132772120151,
+   "max_ratio": 3.4084938625068477,
+   "median_ratio": 2.316607942169977,
+   "mean_class_coincidence": 58.6883980104072,
+   "median_class_coincidence": 64.52164512803785,
+   "residual_share": 0.43037887241419204,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.2848396154288806,
+     "class_coincidence": 68.5338280226975
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.4619132772120151,
+     "class_coincidence": 37.47645951035781
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.560968328834618,
+     "class_coincidence": 68.25711098717234
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.3483762689110734,
+     "class_coincidence": 60.78617926890335
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.5854324699452447,
+     "class_coincidence": 41.19793388429752
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 3.0147606009875973,
+     "class_coincidence": 78.52311161217588
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.862665110436471,
+     "class_coincidence": 75.67057673509287
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.7310995362529773,
+     "class_coincidence": 43.25149051490515
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.670117625102007,
+     "class_coincidence": 36.909805735430155
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 3.4084938625068477,
+     "class_coincidence": 76.2774838330394
+    }
+   ]
+  },
+  {
+   "dataset": "stl10",
+   "n_pairs": 10,
+   "mean_ratio": 23.337370568497356,
+   "min_ratio": 1.1190538908014134,
+   "max_ratio": 58.91472868217055,
+   "median_ratio": 22.551292779815636,
+   "mean_class_coincidence": 5.437713494920625,
+   "median_class_coincidence": 7.783284457478006,
+   "residual_share": 0.029798035536915957,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 45.9890253462242,
+     "class_coincidence": 8.386363636363637
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.143050516064748,
+     "class_coincidence": 1.4210526315789473
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 58.91472868217055,
+     "class_coincidence": 8.526315789473683
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 21.587675399862626,
+     "class_coincidence": 8.018181818181818
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.1190538908014134,
+     "class_coincidence": 1.2857142857142856
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 53.932584269662925,
+     "class_coincidence": 8.5
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 23.514910159768647,
+     "class_coincidence": 7.548387096774194
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.2072217731069794,
+     "class_coincidence": 1.2857142857142856
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.2115878554690298,
+     "class_coincidence": 0.4054054054054054
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 24.753867791842474,
+     "class_coincidence": 9.0
+    }
+   ]
+  },
+  {
+   "dataset": "eurosat",
+   "n_pairs": 10,
+   "mean_ratio": 1.2173908817552446,
+   "min_ratio": 1.0228285745564876,
+   "max_ratio": 1.535543724150538,
+   "median_ratio": 1.1770179903446678,
+   "mean_class_coincidence": 3.8037414560747593,
+   "median_class_coincidence": 3.9139825345247763,
+   "residual_share": 0.2503829337030523,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.1273033843189209,
+     "class_coincidence": 4.062753036437247
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0435830345699284,
+     "class_coincidence": 2.5745721271393642
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.3422373331346642,
+     "class_coincidence": 4.553133514986376
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.2267325963704145,
+     "class_coincidence": 3.0
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.081125916673579,
+     "class_coincidence": 3.8529650690495534
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.3998534126322504,
+     "class_coincidence": 6.776978417266187
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.347334203041126,
+     "class_coincidence": 3.9749999999999996
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0228285745564876,
+     "class_coincidence": 4.318348623853211
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0473666381045375,
+     "class_coincidence": 1.31763698630137
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.535543724150538,
+     "class_coincidence": 3.6060267857142856
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_a",
+   "n_pairs": 10,
+   "mean_ratio": 1.228712567316515,
+   "min_ratio": 1.0168778589831222,
+   "max_ratio": 1.504366562036113,
+   "median_ratio": 1.2622695440488343,
+   "mean_class_coincidence": 222.27528633875758,
+   "median_class_coincidence": 298.86856511413725,
+   "residual_share": 0.26675852566556957,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.239527342651109,
+     "class_coincidence": 303.9574110395069
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0271122538240853,
+     "class_coincidence": 19.437742687030806
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.504366562036113,
+     "class_coincidence": 409.35493160547156
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.3481671824895922,
+     "class_coincidence": 293.77971918876756
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0168778589831222,
+     "class_coincidence": 13.486659772492244
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.3193233755830938,
+     "class_coincidence": 375.63246753246756
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.2850117454465597,
+     "class_coincidence": 383.4831693423097
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.04052915154079,
+     "class_coincidence": 20.550898203592816
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0400586895719024,
+     "class_coincidence": 18.148420279206466
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.4661515110387824,
+     "class_coincidence": 384.9214437367304
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_r",
+   "n_pairs": 10,
+   "mean_ratio": 1.8848437258923851,
+   "min_ratio": 1.0413404279084435,
+   "max_ratio": 2.7614890086426573,
+   "median_ratio": 2.1121388696591423,
+   "mean_class_coincidence": 244.85718079886746,
+   "median_class_coincidence": 320.3485231409228,
+   "residual_share": 0.11548601677118608,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.1339563341017533,
+     "class_coincidence": 336.4435721295387
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0413404279084435,
+     "class_coincidence": 18.831416365428854
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.4413802854084596,
+     "class_coincidence": 432.9224855861627
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.0903214052165313,
+     "class_coincidence": 304.25347415230686
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.053939372731485,
+     "class_coincidence": 16.61395348837209
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.6918856021000157,
+     "class_coincidence": 425.0550576184379
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.50562324849637,
+     "class_coincidence": 414.9902912621359
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0690086178540885,
+     "class_coincidence": 40.602739726027394
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0594929564640452,
+     "class_coincidence": 25.753554502369667
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 2.7614890086426573,
+     "class_coincidence": 433.10526315789474
+    }
+   ]
+  },
+  {
+   "dataset": "sun397",
+   "n_pairs": 10,
+   "mean_ratio": 2.8993088717692284,
+   "min_ratio": 1.1863425149686317,
+   "max_ratio": 4.755170285879607,
+   "median_ratio": 3.3689874402766957,
+   "mean_class_coincidence": 26.344476561448566,
+   "median_class_coincidence": 36.669581224114125,
+   "residual_share": 0.37338673002121747,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 3.460241498741582,
+     "class_coincidence": 37.92452830188679
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.1966752496526576,
+     "class_coincidence": 6.149068322981367
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 3.666815689024349,
+     "class_coincidence": 39.359190556492415
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 3.2777333818118097,
+     "class_coincidence": 35.41463414634146
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.1863425149686317,
+     "class_coincidence": 5.628140703517587
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 4.70163932474937,
+     "class_coincidence": 43.22784810126583
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 4.755170285879607,
+     "class_coincidence": 44.59546925566343
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.1941839683597146,
+     "class_coincidence": 5.787234042553192
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.2123655327632588,
+     "class_coincidence": 5.419075144508671
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 4.341921271741307,
+     "class_coincidence": 39.93957703927493
+    }
+   ]
+  },
+  {
+   "dataset": "fgvc_aircraft",
+   "n_pairs": 10,
+   "mean_ratio": 1.0859909308918199,
+   "min_ratio": 1.0066573567116648,
+   "max_ratio": 1.1778548432161295,
+   "median_ratio": 1.1137824661552576,
+   "mean_class_coincidence": 11.107483813014467,
+   "median_class_coincidence": 14.801992273242478,
+   "residual_share": 0.22641040209386099,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.1184450243307809,
+     "class_coincidence": 15.192320103259116
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0082500232613438,
+     "class_coincidence": 2.646500897205845
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.1410469872643003,
+     "class_coincidence": 22.7168806764798
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.1091199079797343,
+     "class_coincidence": 14.868025392582695
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0071687734503518,
+     "class_coincidence": 1.0937410688768219
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.1633206703974648,
+     "class_coincidence": 17.29456038316798
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.1778548432161295,
+     "class_coincidence": 19.552557813594955
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0075329835232016,
+     "class_coincidence": 2.1903818953323904
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0066573567116648,
+     "class_coincidence": 0.7839107457428067
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.120512738783226,
+     "class_coincidence": 14.735959153902261
+    }
+   ]
+  },
+  {
+   "dataset": "stanford_cars",
+   "n_pairs": 10,
+   "mean_ratio": 3.0406076558376762,
+   "min_ratio": 0.9904183994629421,
+   "max_ratio": 7.783505943184078,
+   "median_ratio": 2.245873200350392,
+   "mean_class_coincidence": 82.6458842291085,
+   "median_class_coincidence": 109.88095238095238,
+   "residual_share": 0.4172149028249915,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.18461446910364,
+     "class_coincidence": 117.0944309927361
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 0.9950788235250568,
+     "class_coincidence": 0.42669584245076586
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.307131931597143,
+     "class_coincidence": 112.39583333333333
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.3329465340381934,
+     "class_coincidence": 107.36607142857143
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0055304172951232,
+     "class_coincidence": 0.8931297709923665
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 5.647972466134227,
+     "class_coincidence": 163.79999999999998
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 7.783505943184078,
+     "class_coincidence": 168.0188679245283
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 0.9904183994629421,
+     "class_coincidence": 0.22887323943661972
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0055304172951232,
+     "class_coincidence": 0.0
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 6.153347156741228,
+     "class_coincidence": 156.23493975903614
+    }
+   ]
+  },
+  {
+   "dataset": "gtsrb",
+   "n_pairs": 10,
+   "mean_ratio": 1.3020816454637627,
+   "min_ratio": 0.992330401089095,
+   "max_ratio": 1.585997715278474,
+   "median_ratio": 1.4141313553983643,
+   "mean_class_coincidence": 6.590203142254715,
+   "median_class_coincidence": 8.328625380536165,
+   "residual_share": 0.142945041140089,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.4241018127476688,
+     "class_coincidence": 9.520900321543408
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0202044171523714,
+     "class_coincidence": 3.4021505376344083
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.5813632598431755,
+     "class_coincidence": 11.75039432176656
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.585997715278474,
+     "class_coincidence": 9.028558777949966
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 0.992330401089095,
+     "class_coincidence": 0.7282427475825276
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.4041608980490599,
+     "class_coincidence": 7.628691983122363
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.4767787033768605,
+     "class_coincidence": 11.105421686746988
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.007879774217628,
+     "class_coincidence": 1.4946351931330473
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0008676148082536,
+     "class_coincidence": 1.209490975461367
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.5271318580750386,
+     "class_coincidence": 10.033544877606527
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_sketch",
+   "n_pairs": 10,
+   "mean_ratio": 1.5769532220102396,
+   "min_ratio": 1.0060358875551678,
+   "max_ratio": 2.2093433486835434,
+   "median_ratio": 1.7430425503309326,
+   "mean_class_coincidence": 272.3741060423664,
+   "median_class_coincidence": 364.6384796238244,
+   "residual_share": 0.3622296986624478,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.7382159820268468,
+     "class_coincidence": 349.65
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0060358875551678,
+     "class_coincidence": 23.217419635099912
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.8338665003662442,
+     "class_coincidence": 423.59226594301225
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.7478691186350184,
+     "class_coincidence": 379.6269592476489
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.009113959622668,
+     "class_coincidence": 31.877373417721518
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.0977654139166164,
+     "class_coincidence": 470.8179848320693
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.105657754099508,
+     "class_coincidence": 473.46971830985916
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0096708055652275,
+     "class_coincidence": 33.47087232115907
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.011993449631553,
+     "class_coincidence": 36.214854111405835
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 2.2093433486835434,
+     "class_coincidence": 501.80361260568793
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_v2_matched",
+   "n_pairs": 10,
+   "mean_ratio": 1.7557625234572456,
+   "min_ratio": 1.016040488497138,
+   "max_ratio": 2.4434852421158983,
+   "median_ratio": 2.0727363179535807,
+   "mean_class_coincidence": 323.66870110312243,
+   "median_class_coincidence": 469.72486760899204,
+   "residual_share": 0.41169356562098725,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.021210715152493,
+     "class_coincidence": 454.7432892249527
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.016133549990678,
+     "class_coincidence": 15.41234221598878
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.313332503238851,
+     "class_coincidence": 571.7144573488185
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.1242619207546682,
+     "class_coincidence": 484.70644599303137
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.016040488497138,
+     "class_coincidence": 18.03045685279188
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.2863991011611,
+     "class_coincidence": 548.1274949083504
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.2944909894492476,
+     "class_coincidence": 540.6019456830159
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0223418694537172,
+     "class_coincidence": 20.706422018348626
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.019928854758662,
+     "class_coincidence": 16.98979591836735
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 2.4434852421158983,
+     "class_coincidence": 565.6543608675589
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_v2_threshold",
+   "n_pairs": 10,
+   "mean_ratio": 2.004249562504035,
+   "min_ratio": 1.0119601325148548,
+   "max_ratio": 3.00198642080185,
+   "median_ratio": 2.3949529026539595,
+   "mean_class_coincidence": 354.4461264323939,
+   "median_class_coincidence": 522.2635597631569,
+   "residual_share": 0.42277694323063353,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.3103613310035773,
+     "class_coincidence": 509.5340519353258
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0143149362978596,
+     "class_coincidence": 18.61911216536767
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.666387865409161,
+     "class_coincidence": 598.8742105263158
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.4795444743043418,
+     "class_coincidence": 534.993067590988
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0119601325148548,
+     "class_coincidence": 19.875392670157066
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 2.7573555921536506,
+     "class_coincidence": 601.907949790795
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 2.7673739564203372,
+     "class_coincidence": 602.0569148936171
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.016358066318568,
+     "class_coincidence": 21.09047824213701
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.016852849816153,
+     "class_coincidence": 16.247472527472528
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 3.00198642080185,
+     "class_coincidence": 621.2626139817629
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_v2_top",
+   "n_pairs": 10,
+   "mean_ratio": 2.195024453900936,
+   "min_ratio": 1.0125453121792118,
+   "max_ratio": 3.344687311071654,
+   "median_ratio": 2.65622101404326,
+   "mean_class_coincidence": 376.8180232215107,
+   "median_class_coincidence": 567.073005649121,
+   "residual_share": 0.4352782121719283,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 2.592810807840069,
+     "class_coincidence": 556.1384615384616
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0125453121792118,
+     "class_coincidence": 16.47124233128834
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 2.9927592450782745,
+     "class_coincidence": 636.6528776978417
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 2.7196312202464505,
+     "class_coincidence": 578.0075497597804
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0154254019994449,
+     "class_coincidence": 18.477683956574186
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 3.1133291432325754,
+     "class_coincidence": 644.809090909091
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 3.119174857526928,
+     "class_coincidence": 638.1277533039647
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0184851585291488,
+     "class_coincidence": 21.886562804284324
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0213960813056042,
+     "class_coincidence": 14.631818181818183
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 3.344687311071654,
+     "class_coincidence": 642.9771917320029
+    }
+   ]
+  },
+  {
+   "dataset": "imagenet_c",
+   "n_pairs": 10,
+   "mean_ratio": 1.4245097525062675,
+   "min_ratio": 1.0178670857049814,
+   "max_ratio": 1.9409486498331856,
+   "median_ratio": 1.5301641177255458,
+   "mean_class_coincidence": 223.86625916002748,
+   "median_class_coincidence": 293.2672200973347,
+   "residual_share": 0.34029632724656145,
+   "pairs": [
+    {
+     "pair": "openai+laion",
+     "ratio": 1.4985158012287192,
+     "class_coincidence": 286.5806794055202
+    },
+    {
+     "pair": "openai+siglip2",
+     "ratio": 1.0178670857049814,
+     "class_coincidence": 20.657958199356916
+    },
+    {
+     "pair": "openai+eva02",
+     "ratio": 1.6847545825324644,
+     "class_coincidence": 374.5537391304348
+    },
+    {
+     "pair": "openai+dfn",
+     "ratio": 1.5618124342223723,
+     "class_coincidence": 299.9537607891492
+    },
+    {
+     "pair": "laion+siglip2",
+     "ratio": 1.0202499958519433,
+     "class_coincidence": 28.171898040867916
+    },
+    {
+     "pair": "laion+eva02",
+     "ratio": 1.75784905771902,
+     "class_coincidence": 388.0140105078809
+    },
+    {
+     "pair": "laion+dfn",
+     "ratio": 1.7102904549706472,
+     "class_coincidence": 381.66637089618456
+    },
+    {
+     "pair": "siglip2+eva02",
+     "ratio": 1.0248121072239753,
+     "class_coincidence": 28.990111248454884
+    },
+    {
+     "pair": "siglip2+dfn",
+     "ratio": 1.0279973557753666,
+     "class_coincidence": 28.037965072133634
+    },
+    {
+     "pair": "eva02+dfn",
+     "ratio": 1.9409486498331856,
+     "class_coincidence": 402.0360983102919
+    }
+   ]
+  }
+ ]
+}

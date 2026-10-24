@@ -1,0 +1,27 @@
+======================================================================================
+  Exp H — Selective cascade: CLIP agreement → MLLM fallback
+======================================================================================
+
+── teacher_behavior | N=3240 ──
+  CLIP consensus acc = 64.66%
+  MLLM hit@any       = 96.11%
+  Deferral signal AUROC for detecting CLIP errors:
+    agreement: 0.7062
+    entropy:   0.6388
+    agree-entropy delta: +0.0674 CI[+0.0521,+0.0831]
+
+  Operating points (agreement-based deferral; labels are targets, actual usage = nearest grid point at or above target):
+      MLLM usage |  accuracy
+    -------------------------
+            @20% |   82.69%  (actual usage 38.3%)
+            @50% |   91.45%  (actual usage 63.3%)
+            @80% |   95.43%  (actual usage 83.2%)
+
+  Operating points (entropy-based deferral; labels are targets, actual usage = nearest grid point at or above target):
+      MLLM usage |  accuracy
+    -------------------------
+            @20% |   72.07%  (actual usage 20.0%)
+            @50% |   85.06%  (actual usage 50.0%)
+            @80% |   94.35%  (actual usage 80.0%)
+
+======================================================================================

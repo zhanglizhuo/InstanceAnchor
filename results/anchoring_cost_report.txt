@@ -1,0 +1,51 @@
+======================================================================================
+  Exp D — cost-efficiency: agreement vs ensemble-entropy across k backbones
+======================================================================================
+  tie-aware selective accuracy (100 seeds), averaged over all C(5,k) subsets
+
+── teacher_behavior | N=3240 ──
+    k | baseAcc  entAUROC  agrAUROC |  ent@30%  agr@30% |  ent@50%  agr@50% | n_subsets
+  --------------------------------------------------------------------------------
+    1 |  67.02%    0.5732      n/a  |   72.90%     n/a  |   69.36%     n/a  | 5
+    2 |  66.02%    0.6165    0.6251 |   79.16%   78.32% |   72.25%   74.31% | 10
+    3 |  64.80%    0.6342    0.6751 |   82.04%   83.94% |   73.11%   75.72% | 10
+    4 |  64.51%    0.6369    0.6989 |   84.05%   85.23% |   73.60%   78.11% | 5
+    5 |  64.66%    0.6388    0.7062 |   84.88%   87.08% |   74.63%   78.57% | 1
+  headline deltas:
+    Q1 2-agr@30% - 1-ent@30% = +5.42pp
+    Q1 2-agr AUROC - 1-ent AUROC = +0.0519
+    Q3 5-agr AUROC - 5-ent AUROC = +0.0674
+    Q3 CI: [+0.0521, +0.0831] (B=10000, per-image coupled)
+
+── handrise_readwrite | N=1671 ──
+    k | baseAcc  entAUROC  agrAUROC |  ent@30%  agr@30% |  ent@50%  agr@50% | n_subsets
+  --------------------------------------------------------------------------------
+    1 |  58.52%    0.8574      n/a  |   97.52%     n/a  |   86.10%     n/a  | 5
+    2 |  58.33%    0.8757    0.6107 |   98.58%   64.73% |   86.97%   64.77% | 10
+    3 |  58.31%    0.8807    0.6599 |   98.88%   68.39% |   86.85%   68.37% | 10
+    4 |  58.47%    0.8806    0.6889 |   99.36%   71.01% |   86.99%   71.06% | 5
+    5 |  58.53%    0.8814    0.7116 |   99.40%   73.34% |   86.96%   73.51% | 1
+  headline deltas:
+    Q1 2-agr@30% - 1-ent@30% = -32.79pp
+    Q1 2-agr AUROC - 1-ent AUROC = -0.2467
+    Q3 5-agr AUROC - 5-ent AUROC = -0.1699
+    Q3 CI: [-0.1854, -0.1542] (B=10000, per-image coupled)
+
+── bow_turnhead | N=505 ──
+    k | baseAcc  entAUROC  agrAUROC |  ent@30%  agr@30% |  ent@50%  agr@50% | n_subsets
+  --------------------------------------------------------------------------------
+    1 |  65.94%    0.5870      n/a  |   72.24%     n/a  |   70.87%     n/a  | 5
+    2 |  67.94%    0.5785    0.5187 |   72.50%   68.83% |   73.49%   68.95% | 10
+    3 |  68.46%    0.5749    0.5257 |   71.84%   69.84% |   74.05%   69.93% | 10
+    4 |  68.63%    0.5741    0.5297 |   71.05%   70.24% |   74.44%   70.59% | 5
+    5 |  68.51%    0.5799    0.5361 |   70.39%   70.38% |   75.40%   70.87% | 1
+  headline deltas:
+    Q1 2-agr@30% - 1-ent@30% = -3.41pp
+    Q1 2-agr AUROC - 1-ent AUROC = -0.0682
+    Q3 5-agr AUROC - 5-ent AUROC = -0.0438
+    Q3 CI: [-0.0850, -0.0038] (B=10000, per-image coupled)
+
+======================================================================================
+  Reading: Q1>0 => 2-backbone agreement beats 1-backbone entropy (cheap deployment win).
+           agrAUROC rising then flat => diminishing return in k.
+           Q3>0 => agreement beats compute-matched ensemble-entropy at every k.

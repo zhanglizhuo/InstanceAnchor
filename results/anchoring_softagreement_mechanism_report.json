@@ -1,0 +1,102 @@
+{
+  "args": {
+    "seed": 42
+  },
+  "timestamp": "20260813_090335",
+  "results": [
+    {
+      "dataset": "teacher_behavior",
+      "n": 3240,
+      "acc": 0.6466049382716049,
+      "std_hard": 0.2549138406372886,
+      "std_soft": 0.16370485723018646,
+      "frac_full_unanimity": 0.16790123456790124,
+      "std_soft_among_unanimous": 0.1105024665594101,
+      "mean_soft": 0.4546532928943634
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "n": 1671,
+      "acc": 0.585278276481149,
+      "std_hard": 0.1698715231942639,
+      "std_soft": 0.20184732973575592,
+      "frac_full_unanimity": 0.6983842010771992,
+      "std_soft_among_unanimous": 0.10403581708669662,
+      "mean_soft": 0.814733624458313
+    },
+    {
+      "dataset": "bow_turnhead",
+      "n": 505,
+      "acc": 0.6851485148514852,
+      "std_hard": 0.15190790682407224,
+      "std_soft": 0.11481623351573944,
+      "frac_full_unanimity": 0.6792079207920793,
+      "std_soft_among_unanimous": 0.06909851729869843,
+      "mean_soft": 0.7716482281684875
+    },
+    {
+      "dataset": "voc2007",
+      "n": 2510,
+      "acc": 0.8924302788844621,
+      "std_hard": 0.19051199625517412,
+      "std_soft": 0.19930529594421387,
+      "frac_full_unanimity": 0.012350597609561753,
+      "std_soft_among_unanimous": 0.08766329288482666,
+      "mean_soft": 0.6543963551521301
+    },
+    {
+      "dataset": "stanford40",
+      "n": 573,
+      "acc": 0.924956369982548,
+      "std_hard": 0.14607486222085747,
+      "std_soft": 0.15162710845470428,
+      "frac_full_unanimity": 0.0017452006980802793,
+      "std_soft_among_unanimous": 0.0,
+      "mean_soft": 0.6927688121795654
+    },
+    {
+      "dataset": "coco",
+      "n": 5000,
+      "acc": 0.8942,
+      "std_hard": 0.2003026669817454,
+      "std_soft": 0.20858168601989746,
+      "frac_full_unanimity": 0.004,
+      "std_soft_among_unanimous": 0.056508492678403854,
+      "mean_soft": 0.6024813652038574
+    },
+    {
+      "dataset": "multithumos",
+      "n": 41779,
+      "acc": 0.1828191196534144,
+      "std_hard": 0.27130293819876294,
+      "std_soft": 0.20687982439994812,
+      "frac_full_unanimity": 0.04744010148639269,
+      "std_soft_among_unanimous": 0.10512833297252655,
+      "mean_soft": 0.338101863861084
+    },
+    {
+      "dataset": "cifar100",
+      "n": 10000,
+      "acc": 0.8981,
+      "std_hard": 0.20700589750053017,
+      "std_soft": 0.1869800090789795,
+      "frac_full_unanimity": 0.1979,
+      "std_soft_among_unanimous": 0.08503363281488419,
+      "mean_soft": 0.6301932334899902
+    }
+  ],
+  "spearman": {
+    "std_hard": {
+      "rho": -0.4523809523809524,
+      "p": 0.260404767436885
+    },
+    "std_soft": {
+      "rho": -0.30952380952380953,
+      "p": 0.4556448907375822
+    },
+    "unanimity": {
+      "rho": -0.523809523809524,
+      "p": 0.18272075053971484
+    }
+  }
+}

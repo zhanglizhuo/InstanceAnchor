@@ -1,0 +1,240 @@
+{
+  "args": {
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260813_084127",
+  "results": {
+    "metrics": {
+      "guide": {
+        "n_prompts": 9,
+        "prompt_drift": 0.3802916407585144,
+        "centroid_self_sim": 0.8136110305786133,
+        "cross_set_drift": 0.3861980438232422,
+        "nn_confusion": 0.1111111111111111,
+        "cooc_proximity": 0.9457145595429666,
+        "token_overlap": 0.15453434282469877,
+        "cooc_frac": 0.02297344514325646
+      },
+      "answer": {
+        "n_prompts": 9,
+        "prompt_drift": 0.4078550338745117,
+        "centroid_self_sim": 0.7984122633934021,
+        "cross_set_drift": 0.4197300672531128,
+        "nn_confusion": 0.1111111111111111,
+        "cooc_proximity": 0.9268633246675452,
+        "token_overlap": 0.17678363718368703,
+        "cooc_frac": 0.06842534358257629
+      },
+      "on-stage interaction": {
+        "n_prompts": 9,
+        "prompt_drift": 0.36967402696609497,
+        "centroid_self_sim": 0.8193905353546143,
+        "cross_set_drift": 0.3791835904121399,
+        "nn_confusion": 0.1111111111111111,
+        "cooc_proximity": 0.9202091176778274,
+        "token_overlap": 0.21279072665726537,
+        "cooc_frac": 0.0175867691590962
+      },
+      "blackboard-writing": {
+        "n_prompts": 9,
+        "prompt_drift": 0.3947484493255615,
+        "centroid_self_sim": 0.805675208568573,
+        "cross_set_drift": 0.401375949382782,
+        "nn_confusion": 0.1111111111111111,
+        "cooc_proximity": 0.9259273569576436,
+        "token_overlap": 0.1822665828095372,
+        "cooc_frac": 0.027923363615187515
+      },
+      "teacher": {
+        "n_prompts": 9,
+        "prompt_drift": 0.32028913497924805,
+        "centroid_self_sim": 0.8457533717155457,
+        "cross_set_drift": 0.3238945007324219,
+        "nn_confusion": 0.1111111111111111,
+        "cooc_proximity": 0.9342487256516115,
+        "token_overlap": 0.2130720653118179,
+        "cooc_frac": 0.2435359888190077
+      },
+      "stand": {
+        "n_prompts": 9,
+        "prompt_drift": 0.41080665588378906,
+        "centroid_self_sim": 0.79676753282547,
+        "cross_set_drift": 0.4402751922607422,
+        "nn_confusion": 0.3333333333333333,
+        "cooc_proximity": 0.9317986978795257,
+        "token_overlap": 0.1835019261028096,
+        "cooc_frac": 0.24472979268576753
+      },
+      "screen": {
+        "n_prompts": 9,
+        "prompt_drift": 0.3152180314064026,
+        "centroid_self_sim": 0.8484138250350952,
+        "cross_set_drift": 0.3227875232696533,
+        "nn_confusion": 0.0,
+        "cooc_proximity": 0.9338745975544,
+        "token_overlap": 0.12377533556650808,
+        "cooc_frac": 0.18189494525972513
+      },
+      "blackboard": {
+        "n_prompts": 9,
+        "prompt_drift": 0.38565802574157715,
+        "centroid_self_sim": 0.8106743693351746,
+        "cross_set_drift": 0.3984338045120239,
+        "nn_confusion": 0.0,
+        "cooc_proximity": 0.9194185537601791,
+        "token_overlap": 0.18204013733524227,
+        "cooc_frac": 0.19293035173538317
+      }
+    },
+    "delta_A": {
+      "guide": 0.062485259433962326,
+      "answer": 0.19304232605815153,
+      "on-stage interaction": -0.11607142857142849,
+      "blackboard-writing": -0.005094614264919972,
+      "teacher": 0.001136665941135151,
+      "stand": 0.01730139230139227,
+      "screen": -0.07291666666666674
+    },
+    "delta_B": {
+      "guide": -0.03510737628384686,
+      "answer": -0.053877573164682446,
+      "on-stage interaction": -0.11517241379310339,
+      "blackboard-writing": -0.10085836909871237,
+      "teacher": -0.1273742090222495,
+      "stand": -0.06106398020501935,
+      "screen": -0.2407407407407407
+    },
+    "consensus_acc": {
+      "guide": 0.5698924731182796,
+      "answer": 0.4975,
+      "on-stage interaction": 0.9432624113475178,
+      "blackboard-writing": 0.9744680851063829,
+      "teacher": 0.7361206305688828,
+      "stand": 0.21893491124260356,
+      "screen": 0.5
+    },
+    "correlations": {
+      "prompt_drift": {
+        "vs_delta_A": {
+          "rho": 0.6071428571428572,
+          "p_approx": 0.1482311614811614,
+          "p_perm": 0.16524173791310434,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": -0.21428571428571433,
+          "p_approx": 0.6445115810207203,
+          "p_perm": 0.6610169491525424,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": -0.39285714285714296,
+          "p_approx": 0.38331687042697266,
+          "p_perm": 0.39493025348732563,
+          "n": 7
+        }
+      },
+      "cross_set_drift": {
+        "vs_delta_A": {
+          "rho": 0.6071428571428572,
+          "p_approx": 0.1482311614811614,
+          "p_perm": 0.16524173791310434,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": -0.21428571428571433,
+          "p_approx": 0.6445115810207203,
+          "p_perm": 0.6610169491525424,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": -0.39285714285714296,
+          "p_approx": 0.38331687042697266,
+          "p_perm": 0.39493025348732563,
+          "n": 7
+        }
+      },
+      "nn_confusion": {
+        "vs_delta_A": {
+          "rho": 0.40089186286863665,
+          "p_approx": 0.3727690230065347,
+          "p_perm": 0.472026398680066,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": -0.5345224838248488,
+          "p_approx": 0.2164372292696856,
+          "p_perm": 0.2823858807059647,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": -0.2672612419124244,
+          "p_approx": 0.5623122704704917,
+          "p_perm": 0.7138143092845358,
+          "n": 7
+        }
+      },
+      "centroid_self_sim": {
+        "vs_delta_A": {
+          "rho": -0.6071428571428572,
+          "p_approx": 0.1482311614811614,
+          "p_perm": 0.16524173791310434,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": 0.21428571428571433,
+          "p_approx": 0.6445115810207203,
+          "p_perm": 0.6610169491525424,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": 0.39285714285714296,
+          "p_approx": 0.38331687042697266,
+          "p_perm": 0.39493025348732563,
+          "n": 7
+        }
+      },
+      "token_overlap": {
+        "vs_delta_A": {
+          "rho": -0.21428571428571433,
+          "p_approx": 0.6445115810207203,
+          "p_perm": 0.6574671266436678,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": -0.5,
+          "p_approx": 0.25316999510032273,
+          "p_perm": 0.2648367581620919,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": 0.3214285714285715,
+          "p_approx": 0.4820720382996776,
+          "p_perm": 0.5029748512574371,
+          "n": 7
+        }
+      },
+      "cooc_proximity": {
+        "vs_delta_A": {
+          "rho": 0.42857142857142866,
+          "p_approx": 0.337368311085824,
+          "p_perm": 0.3513324333783311,
+          "n": 7
+        },
+        "vs_delta_drop_AB": {
+          "rho": 0.42857142857142866,
+          "p_approx": 0.337368311085824,
+          "p_perm": 0.35483225838708066,
+          "n": 7
+        },
+        "vs_consensus_acc": {
+          "rho": -0.3214285714285715,
+          "p_approx": 0.4820720382996776,
+          "p_perm": 0.49867506624668767,
+          "n": 7
+        }
+      }
+    }
+  }
+}

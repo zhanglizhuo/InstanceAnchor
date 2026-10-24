@@ -1,0 +1,205 @@
+{
+  "args": {
+    "bootstrap_n": 10000
+  },
+  "timestamp": "20260815_102537",
+  "imagenet_family": [
+    "imagenet_a",
+    "imagenet_c",
+    "imagenet_r",
+    "imagenet_sketch",
+    "imagenet_v2_matched",
+    "imagenet_v2_threshold",
+    "imagenet_v2_top"
+  ],
+  "vs_entropy": {
+    "all_27": {
+      "hard": {
+        "n": 27,
+        "win": 8,
+        "tie": 4,
+        "loss": 15,
+        "mean_delta": -0.020802935309432172,
+        "mean_abs_delta": 0.05718759033415052,
+        "min_delta": -0.16980639100074768,
+        "max_delta": 0.11187807470560074
+      },
+      "soft": {
+        "n": 27,
+        "win": 23,
+        "tie": 1,
+        "loss": 3,
+        "mean_delta": 0.03967747383285314,
+        "mean_abs_delta": 0.04205544032070234,
+        "min_delta": -0.014441045932471752,
+        "max_delta": 0.13349665701389313
+      }
+    },
+    "leave_out_imagenet_n20": {
+      "hard": {
+        "n": 20,
+        "win": 1,
+        "tie": 4,
+        "loss": 15,
+        "mean_delta": -0.046877282205969095,
+        "mean_abs_delta": 0.058409927412867546,
+        "min_delta": -0.16980639100074768,
+        "max_delta": 0.067383773624897
+      },
+      "soft": {
+        "n": 20,
+        "win": 16,
+        "tie": 1,
+        "loss": 3,
+        "mean_delta": 0.019589233229635284,
+        "mean_abs_delta": 0.022799487988231705,
+        "min_delta": -0.014441045932471752,
+        "max_delta": 0.0888347253203392
+      }
+    },
+    "imagenet_only_n7": {
+      "hard": {
+        "n": 7,
+        "win": 7,
+        "tie": 0,
+        "loss": 0,
+        "mean_delta": 0.05369519868067333,
+        "mean_abs_delta": 0.05369519868067333,
+        "min_delta": 0.033631667494773865,
+        "max_delta": 0.11187807470560074
+      },
+      "soft": {
+        "n": 7,
+        "win": 7,
+        "tie": 0,
+        "loss": 0,
+        "mean_delta": 0.09707244698490415,
+        "mean_abs_delta": 0.09707244698490415,
+        "min_delta": 0.08165863901376724,
+        "max_delta": 0.13349665701389313
+      }
+    }
+  },
+  "vs_msp": {
+    "all_27": {
+      "n": 27,
+      "win": 14,
+      "tie": 6,
+      "loss": 7,
+      "mean_delta": 0.02287871359752629
+    },
+    "leave_out_imagenet_n20": {
+      "n": 20,
+      "win": 7,
+      "tie": 6,
+      "loss": 7,
+      "mean_delta": 0.006386410028790123
+    },
+    "imagenet_only_n7": {
+      "n": 7,
+      "win": 7,
+      "tie": 0,
+      "loss": 0,
+      "mean_delta": 0.06999958093677248
+    }
+  },
+  "win_magnitude_buckets": {
+    "small_lt_0p02": {
+      "n": 9,
+      "datasets": [
+        "voc2007",
+        "cifar100",
+        "cifar10",
+        "tiny_imagenet",
+        "sun397",
+        "stanford_cars",
+        "gtsrb",
+        "cifar10c",
+        "cifar100c"
+      ]
+    },
+    "mid_0p02_0p03": {
+      "n": 2,
+      "datasets": [
+        "food101",
+        "dtd"
+      ]
+    },
+    "large_ge_0p03": {
+      "n": 12,
+      "datasets": [
+        "teacher_behavior",
+        "stanford40",
+        "coco",
+        "eurosat",
+        "imagenet_a",
+        "imagenet_r",
+        "fgvc_aircraft",
+        "imagenet_sketch",
+        "imagenet_v2_matched",
+        "imagenet_v2_threshold",
+        "imagenet_v2_top",
+        "imagenet_c"
+      ]
+    }
+  },
+  "strata_soft_vs_entropy": {
+    "ood_all": {
+      "n": 9,
+      "win": 9,
+      "tie": 0,
+      "loss": 0,
+      "mean_delta": 0.0770939302423762,
+      "mean_abs_delta": 0.0770939302423762,
+      "min_delta": 0.0065059601329267025,
+      "max_delta": 0.13349665701389313
+    },
+    "ood_non_imagenet": {
+      "n": 2,
+      "win": 2,
+      "tie": 0,
+      "loss": 0,
+      "mean_delta": 0.007169121643528342,
+      "mean_abs_delta": 0.007169121643528342,
+      "min_delta": 0.0065059601329267025,
+      "max_delta": 0.007832283154129982
+    },
+    "ood_imagenet": {
+      "n": 7,
+      "win": 7,
+      "tie": 0,
+      "loss": 0,
+      "mean_delta": 0.09707244698490415,
+      "mean_abs_delta": 0.09707244698490415,
+      "min_delta": 0.08165863901376724,
+      "max_delta": 0.13349665701389313
+    },
+    "multilabel": {
+      "n": 4,
+      "win": 3,
+      "tie": 0,
+      "loss": 1,
+      "mean_delta": 0.02311013313010335,
+      "mean_abs_delta": 0.026042398530989885,
+      "min_delta": -0.005864530801773071,
+      "max_delta": 0.04460420832037926
+    },
+    "standard_single_label": {
+      "n": 14,
+      "win": 11,
+      "tie": 1,
+      "loss": 2,
+      "mean_delta": 0.020357563484659686,
+      "mean_abs_delta": 0.02410585159668699,
+      "min_delta": -0.014441045932471752,
+      "max_delta": 0.0888347253203392
+    }
+  },
+  "saturated_datasets": [
+    "bow_turnhead",
+    "eurosat",
+    "fgvc_aircraft",
+    "handrise_readwrite",
+    "multithumos"
+  ]
+}

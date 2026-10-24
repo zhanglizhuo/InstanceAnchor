@@ -1,0 +1,18 @@
+# P4 extraction environment (5090: lizhuo@115.190.153.37:9001, venv @ ~/ia_p4/venv)
+# Python 3.12 (from miniconda llava env base). Install order matters:
+#   python -m venv ~/ia_p4/venv
+#   ~/ia_p4/venv/bin/pip install torch==2.7.1 torchvision --index-url https://download.pytorch.org/whl/cu128
+#   ~/ia_p4/venv/bin/pip install -r requirements_5090.txt
+# RTX 5090 (sm_120 Blackwell) needs torch>=2.7 with cu128 wheels; driver 595.71.
+torch==2.7.1
+torchvision
+open_clip_torch==2.32.0
+transformers<5.0
+tokenizers
+sentencepiece
+datasets
+pandas
+pyarrow
+huggingface_hub
+protobuf
+av

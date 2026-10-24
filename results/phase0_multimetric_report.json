@@ -1,0 +1,355 @@
+{
+  "args": {
+    "clip_models": [
+      "siglip2",
+      "laion"
+    ],
+    "mllm_model": "qwen3.5_27b",
+    "subsets": [
+      "teacher_behavior"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260724_104923",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "clip_model": "siglip2",
+      "mllm_model": "qwen3.5_27b",
+      "n_images": 3240,
+      "clip_threshold": 0.3,
+      "metrics": {
+        "sample_f1": {
+          "label": "sample-F1 (set/set)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.6088826656341553,
+            "ci_lo": 0.6040137410163879,
+            "ci_hi": 0.6136124134063721,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.6410276889801025,
+            "ci_lo": 0.6336371302604675,
+            "ci_hi": 0.6483114361763,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.6524742841720581,
+            "ci_lo": 0.6460858583450317,
+            "ci_hi": 0.6587462425231934,
+            "n": 3240,
+            "mean_override": 0.6524742841720581
+          },
+          "per_instance_oracle": {
+            "mean": 0.6902554035186768,
+            "ci_lo": 0.684630274772644,
+            "ci_hi": 0.6958755850791931,
+            "n": 3240
+          },
+          "delta_point": 0.03778111934661865,
+          "delta_ci_lo": 0.034885223954916,
+          "delta_ci_hi": 0.04064387455582619
+        },
+        "jaccard": {
+          "label": "Jaccard / IoU",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.45138153433799744,
+            "ci_lo": 0.446665495634079,
+            "ci_hi": 0.45596155524253845,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.5064208507537842,
+            "ci_lo": 0.4987388253211975,
+            "ci_hi": 0.5140790939331055,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.5114414691925049,
+            "ci_lo": 0.5045012831687927,
+            "ci_hi": 0.5182459950447083,
+            "n": 3240,
+            "mean_override": 0.5114414691925049
+          },
+          "per_instance_oracle": {
+            "mean": 0.550861656665802,
+            "ci_lo": 0.5442774891853333,
+            "ci_hi": 0.5575729608535767,
+            "n": 3240
+          },
+          "delta_point": 0.03942018747329712,
+          "delta_ci_lo": 0.036249611526727676,
+          "delta_ci_hi": 0.042135175317525864
+        },
+        "subset_acc": {
+          "label": "subset accuracy (exact match)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.00030864198924973607,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0009259259095415473,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.05771604925394058,
+            "ci_lo": 0.04969135671854019,
+            "ci_hi": 0.06574074178934097,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.05802468955516815,
+            "ci_lo": 0.05030864104628563,
+            "ci_hi": 0.06604938209056854,
+            "n": 3240,
+            "mean_override": 0.05802468955516815
+          },
+          "per_instance_oracle": {
+            "mean": 0.05802468955516815,
+            "ci_lo": 0.05030864104628563,
+            "ci_hi": 0.06604938209056854,
+            "n": 3240
+          },
+          "delta_point": 0.0,
+          "delta_ci_lo": 0.0,
+          "delta_ci_hi": 0.0
+        },
+        "recall_pi": {
+          "label": "per-image recall (coverage)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.9991769790649414,
+            "ci_lo": 0.9982767105102539,
+            "ci_hi": 0.9998456835746765,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.786414623260498,
+            "ci_lo": 0.7768518328666687,
+            "ci_hi": 0.7959465384483337,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.9991769790649414,
+            "ci_lo": 0.9982767105102539,
+            "ci_hi": 0.9998456835746765,
+            "n": 3240,
+            "mean_override": 0.9991769790649414
+          },
+          "per_instance_oracle": {
+            "mean": 0.9994598627090454,
+            "ci_lo": 0.9987654089927673,
+            "ci_hi": 1.0,
+            "n": 3240
+          },
+          "delta_point": 0.0002828836441040039,
+          "delta_ci_lo": 0.0,
+          "delta_ci_hi": 0.000771641731262207
+        },
+        "hit1_asym": {
+          "label": "Hit@1 asymmetric (CLIP argmax / MLLM any)",
+          "kind": "asymmetric",
+          "clip_only": {
+            "mean": 0.854938268661499,
+            "ci_lo": 0.8425925970077515,
+            "ci_hi": 0.8672839403152466,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.9611111283302307,
+            "ci_lo": 0.9543209671974182,
+            "ci_hi": 0.9675925970077515,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.9611111283302307,
+            "ci_lo": 0.9543209671974182,
+            "ci_hi": 0.9675925970077515,
+            "n": 3240,
+            "mean_override": 0.9611111283302307
+          },
+          "per_instance_oracle": {
+            "mean": 0.989506185054779,
+            "ci_lo": 0.9861111044883728,
+            "ci_hi": 0.9929012060165405,
+            "n": 3240
+          },
+          "delta_point": 0.02839505672454834,
+          "delta_ci_lo": 0.022839486598968506,
+          "delta_ci_hi": 0.03333336114883423
+        }
+      }
+    },
+    {
+      "subset": "teacher_behavior",
+      "clip_model": "laion",
+      "mllm_model": "qwen3.5_27b",
+      "n_images": 3240,
+      "clip_threshold": 0.3,
+      "metrics": {
+        "sample_f1": {
+          "label": "sample-F1 (set/set)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.6167678833007812,
+            "ci_lo": 0.6119517683982849,
+            "ci_hi": 0.6214214563369751,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.6410276889801025,
+            "ci_lo": 0.6336371302604675,
+            "ci_hi": 0.6483114361763,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.6581380367279053,
+            "ci_lo": 0.6519086360931396,
+            "ci_hi": 0.6642258167266846,
+            "n": 3240,
+            "mean_override": 0.6581380367279053
+          },
+          "per_instance_oracle": {
+            "mean": 0.6944648623466492,
+            "ci_lo": 0.6889344453811646,
+            "ci_hi": 0.700042724609375,
+            "n": 3240
+          },
+          "delta_point": 0.036326825618743896,
+          "delta_ci_lo": 0.03335020691156387,
+          "delta_ci_hi": 0.03895644471049309
+        },
+        "jaccard": {
+          "label": "Jaccard / IoU",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.45911118388175964,
+            "ci_lo": 0.4544410705566406,
+            "ci_hi": 0.4636787474155426,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.5064208507537842,
+            "ci_lo": 0.4987388253211975,
+            "ci_hi": 0.5140790939331055,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.5169848799705505,
+            "ci_lo": 0.5101100206375122,
+            "ci_hi": 0.5237522125244141,
+            "n": 3240,
+            "mean_override": 0.5169848799705505
+          },
+          "per_instance_oracle": {
+            "mean": 0.5551069378852844,
+            "ci_lo": 0.5486114621162415,
+            "ci_hi": 0.5616884231567383,
+            "n": 3240
+          },
+          "delta_point": 0.03812205791473389,
+          "delta_ci_lo": 0.03517745062708855,
+          "delta_ci_hi": 0.041099913418293
+        },
+        "subset_acc": {
+          "label": "subset accuracy (exact match)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.0,
+            "ci_lo": 0.0,
+            "ci_hi": 0.0,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.05771604925394058,
+            "ci_lo": 0.04969135671854019,
+            "ci_hi": 0.06574074178934097,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.05771604925394058,
+            "ci_lo": 0.04969135671854019,
+            "ci_hi": 0.06574074178934097,
+            "n": 3240,
+            "mean_override": 0.05771604925394058
+          },
+          "per_instance_oracle": {
+            "mean": 0.05771604925394058,
+            "ci_lo": 0.04969135671854019,
+            "ci_hi": 0.06574074178934097,
+            "n": 3240
+          },
+          "delta_point": 0.0,
+          "delta_ci_lo": 0.0,
+          "delta_ci_hi": 0.0
+        },
+        "recall_pi": {
+          "label": "per-image recall (coverage)",
+          "kind": "symmetric",
+          "clip_only": {
+            "mean": 0.9998765587806702,
+            "ci_lo": 0.999691367149353,
+            "ci_hi": 1.0,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.786414623260498,
+            "ci_lo": 0.7768518328666687,
+            "ci_hi": 0.7959465384483337,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.9998765587806702,
+            "ci_lo": 0.999691367149353,
+            "ci_hi": 1.0,
+            "n": 3240,
+            "mean_override": 0.9998765587806702
+          },
+          "per_instance_oracle": {
+            "mean": 0.9998765587806702,
+            "ci_lo": 0.999691367149353,
+            "ci_hi": 1.0,
+            "n": 3240
+          },
+          "delta_point": 0.0,
+          "delta_ci_lo": 0.0,
+          "delta_ci_hi": 0.0
+        },
+        "hit1_asym": {
+          "label": "Hit@1 asymmetric (CLIP argmax / MLLM any)",
+          "kind": "asymmetric",
+          "clip_only": {
+            "mean": 0.5503086447715759,
+            "ci_lo": 0.5333333611488342,
+            "ci_hi": 0.5672917366027832,
+            "n": 3240
+          },
+          "mllm_only": {
+            "mean": 0.9611111283302307,
+            "ci_lo": 0.9543209671974182,
+            "ci_hi": 0.9675925970077515,
+            "n": 3240
+          },
+          "class_level_oracle": {
+            "mean": 0.9611111283302307,
+            "ci_lo": 0.9543209671974182,
+            "ci_hi": 0.9675925970077515,
+            "n": 3240,
+            "mean_override": 0.9611111283302307
+          },
+          "per_instance_oracle": {
+            "mean": 0.9709876775741577,
+            "ci_lo": 0.9651234745979309,
+            "ci_hi": 0.9765431880950928,
+            "n": 3240
+          },
+          "delta_point": 0.009876549243927002,
+          "delta_ci_lo": 0.006481528282165527,
+          "delta_ci_hi": 0.013271629810333252
+        }
+      }
+    }
+  ]
+}

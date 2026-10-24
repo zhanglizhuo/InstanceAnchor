@@ -1,0 +1,1742 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260725_132800",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.5731934264366055,
+          "entropy_auroc_std": 0.09809728682974124,
+          "agreement_auroc_mean": null,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.8432098765432099,
+            "entropy_auroc": 0.6790632457546028,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.8432098765432099,
+            "entropy_auroc": 0.6790632457546028,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai"
+              ],
+              "base_acc": 0.8432098765432099,
+              "entropy_auroc": 0.6790632457546028,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "laion"
+              ],
+              "base_acc": 0.5503086419753086,
+              "entropy_auroc": 0.5253209311922138,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "siglip2"
+              ],
+              "base_acc": 0.8549382716049383,
+              "entropy_auroc": 0.7032233658499116,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "eva02"
+              ],
+              "base_acc": 0.6435185185185185,
+              "entropy_auroc": 0.48307099774725676,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "dfn"
+              ],
+              "base_acc": 0.4589506172839506,
+              "entropy_auroc": 0.47528859163904247,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            }
+          ]
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.6164859158599458,
+          "entropy_auroc_std": 0.06867823282244355,
+          "agreement_auroc_mean": 0.625076640773454,
+          "agreement_auroc_std": 0.05229029674790666,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "dfn"
+            ],
+            "base_acc": 0.5429012345679012,
+            "entropy_auroc": 0.6280588803640887,
+            "agreement_auroc": 0.6875808756663425,
+            "delta_mean": 0.05955720320343971,
+            "delta_ci_lo": 0.04350343719124794,
+            "delta_ci_hi": 0.07585782557725906
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.504320987654321,
+            "entropy_auroc": 0.5476178681230575,
+            "agreement_auroc": 0.6361487140481457,
+            "delta_mean": 0.08847758919000626,
+            "delta_ci_lo": 0.07062265276908875,
+            "delta_ci_hi": 0.10629991441965103
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion"
+              ],
+              "base_acc": 0.7197530864197531,
+              "entropy_auroc": 0.6370033190772323,
+              "agreement_auroc": 0.6630730461459412,
+              "delta_mean": 0.02599637396633625,
+              "delta_ci_lo": 0.00850448664277792,
+              "delta_ci_hi": 0.0436481349170208
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2"
+              ],
+              "base_acc": 0.8938271604938272,
+              "entropy_auroc": 0.7397422667994347,
+              "agreement_auroc": 0.6653122189387126,
+              "delta_mean": -0.07437019795179367,
+              "delta_ci_lo": -0.10057330131530762,
+              "delta_ci_hi": -0.04838504269719124
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02"
+              ],
+              "base_acc": 0.8293209876543209,
+              "entropy_auroc": 0.6867140764150746,
+              "agreement_auroc": 0.664478222450739,
+              "delta_mean": -0.02223268896341324,
+              "delta_ci_lo": -0.042835745960474014,
+              "delta_ci_hi": -0.0016354690305888653
+            },
+            {
+              "backbones": [
+                "openai",
+                "dfn"
+              ],
+              "base_acc": 0.5429012345679012,
+              "entropy_auroc": 0.6280588803640887,
+              "agreement_auroc": 0.6875808756663425,
+              "delta_mean": 0.05955720320343971,
+              "delta_ci_lo": 0.04350343719124794,
+              "delta_ci_hi": 0.07585782557725906
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.6996913580246914,
+              "entropy_auroc": 0.633107805771263,
+              "agreement_auroc": 0.614586105392578,
+              "delta_mean": -0.018487734720110893,
+              "delta_ci_lo": -0.03658337891101837,
+              "delta_ci_hi": -0.000605897861532867
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.5768518518518518,
+              "entropy_auroc": 0.5338661153083497,
+              "agreement_auroc": 0.5477880298891781,
+              "delta_mean": 0.013767275959253311,
+              "delta_ci_lo": -0.0045443326234817505,
+              "delta_ci_hi": 0.032311469316482544
+            },
+            {
+              "backbones": [
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.46574074074074073,
+              "entropy_auroc": 0.5075558587623116,
+              "agreement_auroc": 0.5442588068737584,
+              "delta_mean": 0.036713335663080215,
+              "delta_ci_lo": 0.017766978591680527,
+              "delta_ci_hi": 0.05568661168217659
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.792283950617284,
+              "entropy_auroc": 0.5894641729437118,
+              "agreement_auroc": 0.5597910616575336,
+              "delta_mean": -0.02972162514925003,
+              "delta_ci_lo": -0.051061611622571945,
+              "delta_ci_hi": -0.008644552901387215
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5771604938271605,
+              "entropy_auroc": 0.661728795034935,
+              "agreement_auroc": 0.6677493266716109,
+              "delta_mean": 0.006173752713948488,
+              "delta_ci_lo": -0.009671404957771301,
+              "delta_ci_hi": 0.02196924202144146
+            },
+            {
+              "backbones": [
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.504320987654321,
+              "entropy_auroc": 0.5476178681230575,
+              "agreement_auroc": 0.6361487140481457,
+              "delta_mean": 0.08847758919000626,
+              "delta_ci_lo": 0.07062265276908875,
+              "delta_ci_hi": 0.10629991441965103
+            }
+          ]
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.6342402063059956,
+          "entropy_auroc_std": 0.04939191296204081,
+          "agreement_auroc_mean": 0.6750990434487651,
+          "agreement_auroc_std": 0.04825350204558172,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "dfn"
+            ],
+            "base_acc": 0.6620370370370371,
+            "entropy_auroc": 0.6835284350352844,
+            "agreement_auroc": 0.7692196996306585,
+            "delta_mean": 0.0856781154870987,
+            "delta_ci_lo": 0.0686451867222786,
+            "delta_ci_hi": 0.10304257273674011
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "dfn"
+            ],
+            "base_acc": 0.6620370370370371,
+            "entropy_auroc": 0.6835284350352844,
+            "agreement_auroc": 0.7692196996306585,
+            "delta_mean": 0.0856781154870987,
+            "delta_ci_lo": 0.0686451867222786,
+            "delta_ci_hi": 0.10304257273674011
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.8049382716049382,
+              "entropy_auroc": 0.6942999145763765,
+              "agreement_auroc": 0.7168749878659626,
+              "delta_mean": 0.022608008235692978,
+              "delta_ci_lo": 0.0030476779211312532,
+              "delta_ci_hi": 0.04242638126015663
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.7274691358024692,
+              "entropy_auroc": 0.6376344096354514,
+              "agreement_auroc": 0.6533455440554172,
+              "delta_mean": 0.015581605955958366,
+              "delta_ci_lo": -0.003170960582792759,
+              "delta_ci_hi": 0.033757563680410385
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.5317901234567901,
+              "entropy_auroc": 0.5914874219094028,
+              "agreement_auroc": 0.6629013184298209,
+              "delta_mean": 0.07138946652412415,
+              "delta_ci_lo": 0.055518969893455505,
+              "delta_ci_hi": 0.08784862607717514
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.8635802469135803,
+              "entropy_auroc": 0.7205833837356354,
+              "agreement_auroc": 0.6847651360538717,
+              "delta_mean": -0.03569374233484268,
+              "delta_ci_lo": -0.05794667452573776,
+              "delta_ci_hi": -0.013172164559364319
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.6620370370370371,
+              "entropy_auroc": 0.6835284350352844,
+              "agreement_auroc": 0.7692196996306585,
+              "delta_mean": 0.0856781154870987,
+              "delta_ci_lo": 0.0686451867222786,
+              "delta_ci_hi": 0.10304257273674011
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5858024691358025,
+              "entropy_auroc": 0.6362595971286742,
+              "agreement_auroc": 0.7191767080886775,
+              "delta_mean": 0.08296165615320206,
+              "delta_ci_lo": 0.06720007210969925,
+              "delta_ci_hi": 0.0989435613155365
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.687962962962963,
+              "entropy_auroc": 0.5896653189966448,
+              "agreement_auroc": 0.5898434847897888,
+              "delta_mean": 0.00012508334475569427,
+              "delta_ci_lo": -0.01723012514412403,
+              "delta_ci_hi": 0.01710112765431404
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5398148148148149,
+              "entropy_auroc": 0.610553544250063,
+              "agreement_auroc": 0.6449606731296872,
+              "delta_mean": 0.03443177044391632,
+              "delta_ci_lo": 0.018214566633105278,
+              "delta_ci_hi": 0.05048695206642151
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.48055555555555557,
+              "entropy_auroc": 0.5541632273469517,
+              "agreement_auroc": 0.6322234777408755,
+              "delta_mean": 0.0780254378914833,
+              "delta_ci_lo": 0.06066104397177696,
+              "delta_ci_hi": 0.09497010707855225
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5959876543209877,
+              "entropy_auroc": 0.6242268104454719,
+              "agreement_auroc": 0.6776794047028915,
+              "delta_mean": 0.05347807705402374,
+              "delta_ci_lo": 0.03798922896385193,
+              "delta_ci_hi": 0.06974086910486221
+            }
+          ]
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.6369307796067005,
+          "entropy_auroc_std": 0.03179419431768947,
+          "agreement_auroc_mean": 0.6989368015711148,
+          "agreement_auroc_std": 0.03256910684680969,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.678395061728395,
+            "entropy_auroc": 0.6736524566915657,
+            "agreement_auroc": 0.7528568110252035,
+            "delta_mean": 0.07918249070644379,
+            "delta_ci_lo": 0.062303975224494934,
+            "delta_ci_hi": 0.09583491832017899
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.5635802469135802,
+            "entropy_auroc": 0.599163272609533,
+            "agreement_auroc": 0.6872919219632807,
+            "delta_mean": 0.08807621896266937,
+            "delta_ci_lo": 0.07238718122243881,
+            "delta_ci_hi": 0.10416662693023682
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.7913580246913581,
+              "entropy_auroc": 0.6669774483287024,
+              "agreement_auroc": 0.6743162034173674,
+              "delta_mean": 0.007285631727427244,
+              "delta_ci_lo": -0.01240568421781063,
+              "delta_ci_hi": 0.026481175795197487
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.6287037037037037,
+              "entropy_auroc": 0.6442954143033841,
+              "agreement_auroc": 0.7174842308400167,
+              "delta_mean": 0.07322569936513901,
+              "delta_ci_lo": 0.05772292986512184,
+              "delta_ci_hi": 0.0887562707066536
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5635802469135802,
+              "entropy_auroc": 0.599163272609533,
+              "agreement_auroc": 0.6872919219632807,
+              "delta_mean": 0.08807621896266937,
+              "delta_ci_lo": 0.07238718122243881,
+              "delta_ci_hi": 0.10416662693023682
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.678395061728395,
+              "entropy_auroc": 0.6736524566915657,
+              "agreement_auroc": 0.7528568110252035,
+              "delta_mean": 0.07918249070644379,
+              "delta_ci_lo": 0.062303975224494934,
+              "delta_ci_hi": 0.09583491832017899
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5635802469135802,
+              "entropy_auroc": 0.6005653061003174,
+              "agreement_auroc": 0.6627348406097064,
+              "delta_mean": 0.0621730275452137,
+              "delta_ci_lo": 0.046880658715963364,
+              "delta_ci_hi": 0.07762650400400162
+            }
+          ]
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "entropy_auroc_mean": 0.6387964690310679,
+          "entropy_auroc_std": 0.0,
+          "agreement_auroc_mean": 0.7062413106689873,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6466049382716049,
+            "entropy_auroc": 0.6387964690310679,
+            "agreement_auroc": 0.7062413106689873,
+            "delta_mean": 0.067383773624897,
+            "delta_ci_lo": 0.05205856263637543,
+            "delta_ci_hi": 0.08312084525823593
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6466049382716049,
+            "entropy_auroc": 0.6387964690310679,
+            "agreement_auroc": 0.7062413106689873,
+            "delta_mean": 0.067383773624897,
+            "delta_ci_lo": 0.05205856263637543,
+            "delta_ci_hi": 0.08312084525823593
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6466049382716049,
+              "entropy_auroc": 0.6387964690310679,
+              "agreement_auroc": 0.7062413106689873,
+              "delta_mean": 0.067383773624897,
+              "delta_ci_lo": 0.05205856263637543,
+              "delta_ci_hi": 0.08312084525823593
+            }
+          ]
+        }
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.8574300246862224,
+          "entropy_auroc_std": 0.0135360907509107,
+          "agreement_auroc_mean": null,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.5798922800718133,
+            "entropy_auroc": 0.8839979536573964,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.5798922800718133,
+            "entropy_auroc": 0.8839979536573964,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai"
+              ],
+              "base_acc": 0.5798922800718133,
+              "entropy_auroc": 0.8839979536573964,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "laion"
+              ],
+              "base_acc": 0.6080191502094554,
+              "entropy_auroc": 0.8464371581414919,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "siglip2"
+              ],
+              "base_acc": 0.5625374027528426,
+              "entropy_auroc": 0.8531900340541957,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "eva02"
+              ],
+              "base_acc": 0.6062238180730102,
+              "entropy_auroc": 0.849863626952955,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "dfn"
+              ],
+              "base_acc": 0.5691202872531418,
+              "entropy_auroc": 0.853661350625073,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            }
+          ]
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.8757153945866823,
+          "entropy_auroc_std": 0.007837150413130956,
+          "agreement_auroc_mean": 0.6106901478807842,
+          "agreement_auroc_std": 0.01380801000822579,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "eva02"
+            ],
+            "base_acc": 0.582884500299222,
+            "entropy_auroc": 0.889645856840257,
+            "agreement_auroc": 0.6285812767537025,
+            "delta_mean": -0.2609904706478119,
+            "delta_ci_lo": -0.27940642833709717,
+            "delta_ci_hi": -0.2428366243839264
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "siglip2",
+              "dfn"
+            ],
+            "base_acc": 0.5739078396169958,
+            "entropy_auroc": 0.8631460088341085,
+            "agreement_auroc": 0.6269097608698199,
+            "delta_mean": -0.23602917790412903,
+            "delta_ci_lo": -0.25433018803596497,
+            "delta_ci_hi": -0.21721844375133514
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion"
+              ],
+              "base_acc": 0.5918611609814483,
+              "entropy_auroc": 0.8791797751809494,
+              "agreement_auroc": 0.5975036249180873,
+              "delta_mean": -0.2815168797969818,
+              "delta_ci_lo": -0.29905885457992554,
+              "delta_ci_hi": -0.2633782625198364
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2"
+              ],
+              "base_acc": 0.5727109515260324,
+              "entropy_auroc": 0.8836130063310591,
+              "agreement_auroc": 0.612696071113921,
+              "delta_mean": -0.27086782455444336,
+              "delta_ci_lo": -0.2883675992488861,
+              "delta_ci_hi": -0.25309616327285767
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02"
+              ],
+              "base_acc": 0.582884500299222,
+              "entropy_auroc": 0.889645856840257,
+              "agreement_auroc": 0.6285812767537025,
+              "delta_mean": -0.2609904706478119,
+              "delta_ci_lo": -0.27940642833709717,
+              "delta_ci_hi": -0.2428366243839264
+            },
+            {
+              "backbones": [
+                "openai",
+                "dfn"
+              ],
+              "base_acc": 0.5769000598444045,
+              "entropy_auroc": 0.8793320499803389,
+              "agreement_auroc": 0.6108366542048396,
+              "delta_mean": -0.26832687854766846,
+              "delta_ci_lo": -0.28593724966049194,
+              "delta_ci_hi": -0.25058650970458984
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.5840813883901855,
+              "entropy_auroc": 0.869268192003774,
+              "agreement_auroc": 0.5810119117820498,
+              "delta_mean": -0.288175493478775,
+              "delta_ci_lo": -0.30621305108070374,
+              "delta_ci_hi": -0.2700302004814148
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.5972471573907839,
+              "entropy_auroc": 0.876489978471058,
+              "agreement_auroc": 0.6056354908926322,
+              "delta_mean": -0.27078744769096375,
+              "delta_ci_lo": -0.28866803646087646,
+              "delta_ci_hi": -0.25275060534477234
+            },
+            {
+              "backbones": [
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.5930580490724118,
+              "entropy_auroc": 0.8642384400783523,
+              "agreement_auroc": 0.6063156645100017,
+              "delta_mean": -0.2576683461666107,
+              "delta_ci_lo": -0.27575793862342834,
+              "delta_ci_hi": -0.239256352186203
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.5798922800718133,
+              "entropy_auroc": 0.876616713562018,
+              "agreement_auroc": 0.625470791105466,
+              "delta_mean": -0.25113803148269653,
+              "delta_ci_lo": -0.2693750560283661,
+              "delta_ci_hi": -0.23304253816604614
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5739078396169958,
+              "entropy_auroc": 0.8631460088341085,
+              "agreement_auroc": 0.6269097608698199,
+              "delta_mean": -0.23602917790412903,
+              "delta_ci_lo": -0.25433018803596497,
+              "delta_ci_hi": -0.21721844375133514
+            },
+            {
+              "backbones": [
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5804907241172951,
+              "entropy_auroc": 0.8756239245849081,
+              "agreement_auroc": 0.6119402326573231,
+              "delta_mean": -0.2635459303855896,
+              "delta_ci_lo": -0.2817181348800659,
+              "delta_ci_hi": -0.24551670253276825
+            }
+          ]
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.8807299436546175,
+          "entropy_auroc_std": 0.00664989684907628,
+          "agreement_auroc_mean": 0.6599180744311104,
+          "agreement_auroc_std": 0.011093426583029125,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "eva02"
+            ],
+            "base_acc": 0.5774985038898863,
+            "entropy_auroc": 0.8889811974342791,
+            "agreement_auroc": 0.675350438139412,
+            "delta_mean": -0.21363192796707153,
+            "delta_ci_lo": -0.2309092879295349,
+            "delta_ci_hi": -0.19627606868743896
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.578096947935368,
+            "entropy_auroc": 0.8768380247566187,
+            "agreement_auroc": 0.6750972791213309,
+            "delta_mean": -0.20167705416679382,
+            "delta_ci_lo": -0.2192356288433075,
+            "delta_ci_hi": -0.18410064280033112
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.5798922800718133,
+              "entropy_auroc": 0.887430575769069,
+              "agreement_auroc": 0.6463112910481331,
+              "delta_mean": -0.24101528525352478,
+              "delta_ci_lo": -0.2582094669342041,
+              "delta_ci_hi": -0.22371190786361694
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.5894673847995212,
+              "entropy_auroc": 0.8863328942889701,
+              "agreement_auroc": 0.6594212014029688,
+              "delta_mean": -0.22680869698524475,
+              "delta_ci_lo": -0.24424341320991516,
+              "delta_ci_hi": -0.20949485898017883
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.590065828845003,
+              "entropy_auroc": 0.8752402244562562,
+              "agreement_auroc": 0.646536918316282,
+              "delta_mean": -0.22846169769763947,
+              "delta_ci_lo": -0.2457767277956009,
+              "delta_ci_hi": -0.21136631071567535
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.5774985038898863,
+              "entropy_auroc": 0.8889811974342791,
+              "agreement_auroc": 0.675350438139412,
+              "delta_mean": -0.21363192796707153,
+              "delta_ci_lo": -0.2309092879295349,
+              "delta_ci_hi": -0.19627606868743896
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5757031717534411,
+              "entropy_auroc": 0.8783710476235159,
+              "agreement_auroc": 0.6695478976861206,
+              "delta_mean": -0.20866404473781586,
+              "delta_ci_lo": -0.2254323661327362,
+              "delta_ci_hi": -0.19172973930835724
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5798922800718133,
+              "entropy_auroc": 0.8843904633378318,
+              "agreement_auroc": 0.6671532610645098,
+              "delta_mean": -0.21713218092918396,
+              "delta_ci_lo": -0.23446594178676605,
+              "delta_ci_hi": -0.19974784553050995
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.5840813883901855,
+              "entropy_auroc": 0.8830301332704328,
+              "agreement_auroc": 0.6548922337539804,
+              "delta_mean": -0.22810903191566467,
+              "delta_ci_lo": -0.24551445245742798,
+              "delta_ci_hi": -0.21067939698696136
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5882704967085578,
+              "entropy_auroc": 0.865624038893752,
+              "agreement_auroc": 0.6448424081478152,
+              "delta_mean": -0.22061941027641296,
+              "delta_ci_lo": -0.23815706372261047,
+              "delta_ci_hi": -0.2036423683166504
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.587672052663076,
+              "entropy_auroc": 0.88106083671545,
+              "agreement_auroc": 0.6600278156305517,
+              "delta_mean": -0.22091826796531677,
+              "delta_ci_lo": -0.23839886486530304,
+              "delta_ci_hi": -0.20361681282520294
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.578096947935368,
+              "entropy_auroc": 0.8768380247566187,
+              "agreement_auroc": 0.6750972791213309,
+              "delta_mean": -0.20167705416679382,
+              "delta_ci_lo": -0.2192356288433075,
+              "delta_ci_hi": -0.18410064280033112
+            }
+          ]
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.8806218861595422,
+          "entropy_auroc_std": 0.004844271470935941,
+          "agreement_auroc_mean": 0.6888926295328969,
+          "agreement_auroc_std": 0.00942468984985465,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.5792938360263316,
+            "entropy_auroc": 0.8814569789450172,
+            "agreement_auroc": 0.7023801476552672,
+            "delta_mean": -0.17899782955646515,
+            "delta_ci_lo": -0.1954280436038971,
+            "delta_ci_hi": -0.16243213415145874
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.5792938360263316,
+            "entropy_auroc": 0.8814569789450172,
+            "agreement_auroc": 0.7023801476552672,
+            "delta_mean": -0.17899782955646515,
+            "delta_ci_lo": -0.1954280436038971,
+            "delta_ci_hi": -0.16243213415145874
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.5870736086175943,
+              "entropy_auroc": 0.882738702004757,
+              "agreement_auroc": 0.6817052992362127,
+              "delta_mean": -0.2010120153427124,
+              "delta_ci_lo": -0.2172766625881195,
+              "delta_ci_hi": -0.18419362604618073
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.5882704967085578,
+              "entropy_auroc": 0.8713522321322955,
+              "agreement_auroc": 0.6753678818992642,
+              "delta_mean": -0.19580748677253723,
+              "delta_ci_lo": -0.21215027570724487,
+              "delta_ci_hi": -0.17941643297672272
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5858767205266308,
+              "entropy_auroc": 0.8855517899000396,
+              "agreement_auroc": 0.6916282392673897,
+              "delta_mean": -0.1937907487154007,
+              "delta_ci_lo": -0.21052707731723785,
+              "delta_ci_hi": -0.17717504501342773
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.5792938360263316,
+              "entropy_auroc": 0.8814569789450172,
+              "agreement_auroc": 0.7023801476552672,
+              "delta_mean": -0.17899782955646515,
+              "delta_ci_lo": -0.1954280436038971,
+              "delta_ci_hi": -0.16243213415145874
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.582884500299222,
+              "entropy_auroc": 0.8820097278156016,
+              "agreement_auroc": 0.6933815796063505,
+              "delta_mean": -0.18855008482933044,
+              "delta_ci_lo": -0.20500963926315308,
+              "delta_ci_hi": -0.1719038486480713
+            }
+          ]
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "entropy_auroc_mean": 0.8814496115109612,
+          "entropy_auroc_std": 0.0,
+          "agreement_auroc_mean": 0.7115509462135229,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.585278276481149,
+            "entropy_auroc": 0.8814496115109612,
+            "agreement_auroc": 0.7115509462135229,
+            "delta_mean": -0.16980639100074768,
+            "delta_ci_lo": -0.18536776304244995,
+            "delta_ci_hi": -0.15424884855747223
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.585278276481149,
+            "entropy_auroc": 0.8814496115109612,
+            "agreement_auroc": 0.7115509462135229,
+            "delta_mean": -0.16980639100074768,
+            "delta_ci_lo": -0.18536776304244995,
+            "delta_ci_hi": -0.15424884855747223
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.585278276481149,
+              "entropy_auroc": 0.8814496115109612,
+              "agreement_auroc": 0.7115509462135229,
+              "delta_mean": -0.16980639100074768,
+              "delta_ci_lo": -0.18536776304244995,
+              "delta_ci_hi": -0.15424884855747223
+            }
+          ]
+        }
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.586967437936642,
+          "entropy_auroc_std": 0.024887005668324667,
+          "agreement_auroc_mean": null,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.6356435643564357,
+            "entropy_auroc": 0.5457639171068671,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai"
+            ],
+            "base_acc": 0.6356435643564357,
+            "entropy_auroc": 0.5457639171068671,
+            "agreement_auroc": null,
+            "delta_mean": null,
+            "delta_ci_lo": null,
+            "delta_ci_hi": null
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai"
+              ],
+              "base_acc": 0.6356435643564357,
+              "entropy_auroc": 0.5457639171068671,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "laion"
+              ],
+              "base_acc": 0.6772277227722773,
+              "entropy_auroc": 0.5986079718724213,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "siglip2"
+              ],
+              "base_acc": 0.6475247524752475,
+              "entropy_auroc": 0.6219633714737313,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "eva02"
+              ],
+              "base_acc": 0.6534653465346535,
+              "entropy_auroc": 0.5877229437229438,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            },
+            {
+              "backbones": [
+                "dfn"
+              ],
+              "base_acc": 0.6831683168316832,
+              "entropy_auroc": 0.5807789855072464,
+              "agreement_auroc": null,
+              "delta_mean": null,
+              "delta_ci_lo": null,
+              "delta_ci_hi": null
+            }
+          ]
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.5785248193299717,
+          "entropy_auroc_std": 0.02265711895591033,
+          "agreement_auroc_mean": 0.5187182348219004,
+          "agreement_auroc_std": 0.009814057594817132,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "eva02"
+            ],
+            "base_acc": 0.6356435643564357,
+            "entropy_auroc": 0.6036333468779629,
+            "agreement_auroc": 0.5406931464174455,
+            "delta_mean": -0.06312553584575653,
+            "delta_ci_lo": -0.10999425500631332,
+            "delta_ci_hi": -0.01469428837299347
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "siglip2"
+            ],
+            "base_acc": 0.695049504950495,
+            "entropy_auroc": 0.5303400303400303,
+            "agreement_auroc": 0.5014337514337515,
+            "delta_mean": -0.028904009610414505,
+            "delta_ci_lo": -0.07525698840618134,
+            "delta_ci_hi": 0.01776762120425701
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion"
+              ],
+              "base_acc": 0.6633663366336634,
+              "entropy_auroc": 0.5855838454784899,
+              "agreement_auroc": 0.5127304653204565,
+              "delta_mean": -0.07297341525554657,
+              "delta_ci_lo": -0.12218312174081802,
+              "delta_ci_hi": -0.0215702336281538
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2"
+              ],
+              "base_acc": 0.695049504950495,
+              "entropy_auroc": 0.5303400303400303,
+              "agreement_auroc": 0.5014337514337515,
+              "delta_mean": -0.028904009610414505,
+              "delta_ci_lo": -0.07525698840618134,
+              "delta_ci_hi": 0.01776762120425701
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02"
+              ],
+              "base_acc": 0.6356435643564357,
+              "entropy_auroc": 0.6036333468779629,
+              "agreement_auroc": 0.5406931464174455,
+              "delta_mean": -0.06312553584575653,
+              "delta_ci_lo": -0.10999425500631332,
+              "delta_ci_hi": -0.01469428837299347
+            },
+            {
+              "backbones": [
+                "openai",
+                "dfn"
+              ],
+              "base_acc": 0.6693069306930693,
+              "entropy_auroc": 0.5828579527335861,
+              "agreement_auroc": 0.5139868192608865,
+              "delta_mean": -0.06896865367889404,
+              "delta_ci_lo": -0.11989336460828781,
+              "delta_ci_hi": -0.018217124044895172
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.7029702970297029,
+              "entropy_auroc": 0.5593802816901409,
+              "agreement_auroc": 0.5230985915492957,
+              "delta_mean": -0.036265525966882706,
+              "delta_ci_lo": -0.08013962209224701,
+              "delta_ci_hi": 0.00787425972521305
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.6732673267326733,
+              "entropy_auroc": 0.6093226381461676,
+              "agreement_auroc": 0.5147504456327986,
+              "delta_mean": -0.09471362084150314,
+              "delta_ci_lo": -0.14151586592197418,
+              "delta_ci_hi": -0.04671330749988556
+            },
+            {
+              "backbones": [
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.6831683168316832,
+              "entropy_auroc": 0.5910326086956522,
+              "agreement_auroc": 0.5191123188405797,
+              "delta_mean": -0.07195524871349335,
+              "delta_ci_lo": -0.12306404858827591,
+              "delta_ci_hi": -0.020752742886543274
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.6871287128712872,
+              "entropy_auroc": 0.5791960018969102,
+              "agreement_auroc": 0.5276967132382446,
+              "delta_mean": -0.05130322277545929,
+              "delta_ci_lo": -0.09296673536300659,
+              "delta_ci_hi": -0.008167088031768799
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.7069306930693069,
+              "entropy_auroc": 0.5553032023620259,
+              "agreement_auroc": 0.5163335604512075,
+              "delta_mean": -0.03869165480136871,
+              "delta_ci_lo": -0.08604070544242859,
+              "delta_ci_hi": 0.00792125053703785
+            },
+            {
+              "backbones": [
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6772277227722773,
+              "entropy_auroc": 0.58859828507875,
+              "agreement_auroc": 0.5173465360743372,
+              "delta_mean": -0.07127200067043304,
+              "delta_ci_lo": -0.11896762251853943,
+              "delta_ci_hi": -0.022365128621459007
+            }
+          ]
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "entropy_auroc_mean": 0.5749384857301777,
+          "entropy_auroc_std": 0.027411191073983845,
+          "agreement_auroc_mean": 0.5257154290932619,
+          "agreement_auroc_std": 0.018354656743393177,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6534653465346535,
+            "entropy_auroc": 0.6199134199134199,
+            "agreement_auroc": 0.5646580086580086,
+            "delta_mean": -0.05533991754055023,
+            "delta_ci_lo": -0.10226409882307053,
+            "delta_ci_hi": -0.00838595349341631
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2"
+            ],
+            "base_acc": 0.7029702970297029,
+            "entropy_auroc": 0.5262347417840375,
+            "agreement_auroc": 0.4955492957746479,
+            "delta_mean": -0.03068486973643303,
+            "delta_ci_lo": -0.07430781424045563,
+            "delta_ci_hi": 0.012571693398058414
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2"
+              ],
+              "base_acc": 0.7029702970297029,
+              "entropy_auroc": 0.5262347417840375,
+              "agreement_auroc": 0.4955492957746479,
+              "delta_mean": -0.03068486973643303,
+              "delta_ci_lo": -0.07430781424045563,
+              "delta_ci_hi": 0.012571693398058414
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02"
+              ],
+              "base_acc": 0.6574257425742575,
+              "entropy_auroc": 0.6098091789121806,
+              "agreement_auroc": 0.5494637509575876,
+              "delta_mean": -0.06059573218226433,
+              "delta_ci_lo": -0.10502336919307709,
+              "delta_ci_hi": -0.014808902516961098
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "dfn"
+              ],
+              "base_acc": 0.6732673267326733,
+              "entropy_auroc": 0.5938324420677362,
+              "agreement_auroc": 0.5252495543672014,
+              "delta_mean": -0.0686810314655304,
+              "delta_ci_lo": -0.11746194958686829,
+              "delta_ci_hi": -0.019539015367627144
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.6792079207920793,
+              "entropy_auroc": 0.5661735593708382,
+              "agreement_auroc": 0.5296044343663391,
+              "delta_mean": -0.03656997159123421,
+              "delta_ci_lo": -0.07645305246114731,
+              "delta_ci_hi": 0.004151130560785532
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.695049504950495,
+              "entropy_auroc": 0.5529470529470529,
+              "agreement_auroc": 0.5162985162985163,
+              "delta_mean": -0.03654704615473747,
+              "delta_ci_lo": -0.0805332139134407,
+              "delta_ci_hi": 0.007026452571153641
+            },
+            {
+              "backbones": [
+                "openai",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6534653465346535,
+              "entropy_auroc": 0.6199134199134199,
+              "agreement_auroc": 0.5646580086580086,
+              "delta_mean": -0.05533991754055023,
+              "delta_ci_lo": -0.10226409882307053,
+              "delta_ci_hi": -0.00838595349341631
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.700990099009901,
+              "entropy_auroc": 0.5590788341377633,
+              "agreement_auroc": 0.5116455269951734,
+              "delta_mean": -0.04735821112990379,
+              "delta_ci_lo": -0.08741261810064316,
+              "delta_ci_hi": -0.007328447885811329
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.700990099009901,
+              "entropy_auroc": 0.5657948890634938,
+              "agreement_auroc": 0.525021513824971,
+              "delta_mean": -0.04064251855015755,
+              "delta_ci_lo": -0.0845324844121933,
+              "delta_ci_hi": 0.002998426090925932
+            },
+            {
+              "backbones": [
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6811881188118812,
+              "entropy_auroc": 0.5956052289469883,
+              "agreement_auroc": 0.5216669074100824,
+              "delta_mean": -0.07405935227870941,
+              "delta_ci_lo": -0.12126512080430984,
+              "delta_ci_hi": -0.02642204612493515
+            },
+            {
+              "backbones": [
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.700990099009901,
+              "entropy_auroc": 0.5599955101582669,
+              "agreement_auroc": 0.5179967822800913,
+              "delta_mean": -0.041859183460474014,
+              "delta_ci_lo": -0.08334407955408096,
+              "delta_ci_hi": -0.0010740617290139198
+            }
+          ]
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "entropy_auroc_mean": 0.5740677796193887,
+          "entropy_auroc_std": 0.026032807967520607,
+          "agreement_auroc_mean": 0.5296978442224948,
+          "agreement_auroc_std": 0.021047042106723333,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6594059405940594,
+            "entropy_auroc": 0.6239960891123681,
+            "agreement_auroc": 0.5679778615825127,
+            "delta_mean": -0.05618138611316681,
+            "delta_ci_lo": -0.10160807520151138,
+            "delta_ci_hi": -0.0101107656955719
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02"
+            ],
+            "base_acc": 0.689108910891089,
+            "entropy_auroc": 0.5587341679478732,
+            "agreement_auroc": 0.5218720257705542,
+            "delta_mean": -0.036902621388435364,
+            "delta_ci_lo": -0.07642245292663574,
+            "delta_ci_hi": 0.003076238790526986
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02"
+              ],
+              "base_acc": 0.689108910891089,
+              "entropy_auroc": 0.5587341679478732,
+              "agreement_auroc": 0.5218720257705542,
+              "delta_mean": -0.036902621388435364,
+              "delta_ci_lo": -0.07642245292663574,
+              "delta_ci_hi": 0.003076238790526986
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "dfn"
+              ],
+              "base_acc": 0.699009900990099,
+              "entropy_auroc": 0.5499478157149247,
+              "agreement_auroc": 0.5065603101237514,
+              "delta_mean": -0.043329909443855286,
+              "delta_ci_lo": -0.08639068156480789,
+              "delta_ci_hi": 6.902094173710793e-05
+            },
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6594059405940594,
+              "entropy_auroc": 0.6239960891123681,
+              "agreement_auroc": 0.5679778615825127,
+              "delta_mean": -0.05618138611316681,
+              "delta_ci_lo": -0.10160807520151138,
+              "delta_ci_hi": -0.0101107656955719
+            },
+            {
+              "backbones": [
+                "openai",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6851485148514852,
+              "entropy_auroc": 0.5722906896426364,
+              "agreement_auroc": 0.5339822590613298,
+              "delta_mean": -0.0382525734603405,
+              "delta_ci_lo": -0.07958090305328369,
+              "delta_ci_hi": 0.0030312049202620983
+            },
+            {
+              "backbones": [
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.699009900990099,
+              "entropy_auroc": 0.5653701356791412,
+              "agreement_auroc": 0.5180967645743253,
+              "delta_mean": -0.04717933386564255,
+              "delta_ci_lo": -0.08805843442678452,
+              "delta_ci_hi": -0.006899915169924498
+            }
+          ]
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "entropy_auroc_mean": 0.5798705783982259,
+          "entropy_auroc_std": 0.0,
+          "agreement_auroc_mean": 0.5360999018431672,
+          "agreement_auroc_std": 0.0,
+          "best_agreement_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6851485148514852,
+            "entropy_auroc": 0.5798705783982259,
+            "agreement_auroc": 0.5360999018431672,
+            "delta_mean": -0.04376868158578873,
+            "delta_ci_lo": -0.08501072227954865,
+            "delta_ci_hi": -0.0037759775295853615
+          },
+          "best_delta_combo": {
+            "backbones": [
+              "openai",
+              "laion",
+              "siglip2",
+              "eva02",
+              "dfn"
+            ],
+            "base_acc": 0.6851485148514852,
+            "entropy_auroc": 0.5798705783982259,
+            "agreement_auroc": 0.5360999018431672,
+            "delta_mean": -0.04376868158578873,
+            "delta_ci_lo": -0.08501072227954865,
+            "delta_ci_hi": -0.0037759775295853615
+          },
+          "combinations": [
+            {
+              "backbones": [
+                "openai",
+                "laion",
+                "siglip2",
+                "eva02",
+                "dfn"
+              ],
+              "base_acc": 0.6851485148514852,
+              "entropy_auroc": 0.5798705783982259,
+              "agreement_auroc": 0.5360999018431672,
+              "delta_mean": -0.04376868158578873,
+              "delta_ci_lo": -0.08501072227954865,
+              "delta_ci_hi": -0.0037759775295853615
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "llm-annotation paper (zhanglizhuo/llm-annotation), Agreement strategy validation split",
+  "teacher_behavior": {
+    "blackboard-writing": {"accuracy_pct": 98.61, "anchoring": "high"},
+    "teacher":             {"accuracy_pct": 92.01, "anchoring": "high"},
+    "screen":              {"accuracy_pct": 69.41, "anchoring": "medium"},
+    "blackboard":          {"accuracy_pct": 57.42, "anchoring": "medium"},
+    "stand":               {"accuracy_pct": 0.85,  "anchoring": "low"},
+    "answer":              {"accuracy_pct": 0.00,  "anchoring": "low"},
+    "guide":               {"accuracy_pct": 0.00,  "anchoring": "low"},
+    "On-stage interaction":{"accuracy_pct": 0.00,  "anchoring": "low"}
+  },
+  "bow_turnhead": {
+    "bow-head":            {"accuracy_pct": 43.90, "anchoring": "medium"},
+    "turn-head":           {"accuracy_pct": 89.00, "anchoring": "high"}
+  },
+  "handrise_readwrite": {
+    "hand-raise":          {"accuracy_pct": 70.60, "anchoring": "medium"},
+    "read":                {"accuracy_pct": 70.60, "anchoring": "medium"},
+    "write":               {"accuracy_pct": 70.60, "anchoring": "medium"}
+  }
+}

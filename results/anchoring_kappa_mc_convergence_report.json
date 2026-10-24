@@ -1,0 +1,336 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_kappa_mc_convergence.py",
+ "args": {
+  "chunk": 100000,
+  "seed": 42
+ },
+ "stability_lowest3_1e7_vs_5e7": [
+  {
+   "dataset": "stl10",
+   "kappa_iid_n1e7": 29.995866711279955,
+   "kappa_iid_n5e7": 30.372083502845697,
+   "n_wrong_n1e7": 92,
+   "n_wrong_n5e7": 533,
+   "rel_delta_pct_1e7_vs_5e7": 1.2386927341698264
+  },
+  {
+   "dataset": "cifar10",
+   "kappa_iid_n1e7": 26.03983381000094,
+   "kappa_iid_n5e7": 25.97752235290024,
+   "n_wrong_n1e7": 791,
+   "n_wrong_n5e7": 4275,
+   "rel_delta_pct_1e7_vs_5e7": -0.23986682122416206
+  },
+  {
+   "dataset": "food101",
+   "kappa_iid_n1e7": 149.58959284980492,
+   "kappa_iid_n5e7": 150.77725178583503,
+   "n_wrong_n1e7": 1241,
+   "n_wrong_n5e7": 6047,
+   "rel_delta_pct_1e7_vs_5e7": 0.7876910621219417
+  }
+ ],
+ "timestamp": "20260816_203319",
+ "check": "MC convergence of kappa_iid_mc across the 19-dataset decomposition (appendix A)",
+ "rows": [
+  {
+   "dataset": "teacher_behavior",
+   "C": 8,
+   "p": 0.6701851851851852,
+   "kappa_iid_mc_committed": 9.443821868519775,
+   "kappa_iid_n1e5": 9.377701218542606,
+   "kappa_iid_n1e7": 9.315132123323105,
+   "n_wrong_consensus_at_1e5": 3298,
+   "n_wrong_consensus_at_1e7": 329709,
+   "rel_delta_pct_1e5_vs_1e7": -0.6716930515976453
+  },
+  {
+   "dataset": "handrise_readwrite",
+   "C": 3,
+   "p": 0.5851585876720525,
+   "kappa_iid_mc_committed": 2.794625342369089,
+   "kappa_iid_n1e5": 2.795323002272193,
+   "kappa_iid_n1e7": 2.7946879893928855,
+   "n_wrong_consensus_at_1e5": 16135,
+   "n_wrong_consensus_at_1e7": 1600278,
+   "rel_delta_pct_1e5_vs_1e7": -0.022722138632917263
+  },
+  {
+   "dataset": "bow_turnhead",
+   "C": 2,
+   "p": 0.6594059405940594,
+   "kappa_iid_mc_committed": 1.9035728908047074,
+   "kappa_iid_n1e5": 1.9023311474996638,
+   "kappa_iid_n1e7": 1.9039398854901701,
+   "n_wrong_consensus_at_1e5": 22144,
+   "n_wrong_consensus_at_1e7": 2206834,
+   "rel_delta_pct_1e5_vs_1e7": 0.08449520926403327
+  },
+  {
+   "dataset": "voc2007",
+   "C": 20,
+   "p": 0.6947410358565737,
+   "kappa_iid_mc_committed": 25.53616852671434,
+   "kappa_iid_n1e5": 24.13850274170746,
+   "kappa_iid_n1e7": 24.10201904570907,
+   "n_wrong_consensus_at_1e5": 1149,
+   "n_wrong_consensus_at_1e7": 116611,
+   "rel_delta_pct_1e5_vs_1e7": -0.15137194908525126
+  },
+  {
+   "dataset": "stanford40",
+   "C": 40,
+   "p": 0.7263525305410121,
+   "kappa_iid_mc_committed": 56.22205743516878,
+   "kappa_iid_n1e5": 50.282724291015086,
+   "kappa_iid_n1e7": 50.664928667739545,
+   "n_wrong_consensus_at_1e5": 462,
+   "n_wrong_consensus_at_1e7": 45982,
+   "rel_delta_pct_1e5_vs_1e7": 0.754376620622432
+  },
+  {
+   "dataset": "coco",
+   "C": 80,
+   "p": 0.6866,
+   "kappa_iid_mc_committed": 86.6416734322915,
+   "kappa_iid_n1e5": 78.0935220291052,
+   "kappa_iid_n1e7": 76.76874953528785,
+   "n_wrong_consensus_at_1e5": 561,
+   "n_wrong_consensus_at_1e7": 54964,
+   "rel_delta_pct_1e5_vs_1e7": -1.7256663705436528
+  },
+  {
+   "dataset": "multithumos",
+   "C": 65,
+   "p": 0.1348667991096005,
+   "kappa_iid_mc_committed": 17.88315635437023,
+   "kappa_iid_n1e5": 17.863924594139505,
+   "kappa_iid_n1e7": 17.85943074063262,
+   "n_wrong_consensus_at_1e5": 51944,
+   "n_wrong_consensus_at_1e7": 5188353,
+   "rel_delta_pct_1e5_vs_1e7": -0.02516235580039459
+  },
+  {
+   "dataset": "cifar100",
+   "C": 100,
+   "p": 0.7113599999999999,
+   "kappa_iid_mc_committed": 112.38874834094166,
+   "kappa_iid_n1e5": 102.61131004661841,
+   "kappa_iid_n1e7": 102.17565440578701,
+   "n_wrong_consensus_at_1e5": 361,
+   "n_wrong_consensus_at_1e7": 34742,
+   "rel_delta_pct_1e5_vs_1e7": -0.426379105047087
+  },
+  {
+   "dataset": "food101",
+   "C": 101,
+   "p": 0.75932,
+   "kappa_iid_mc_committed": 150.77725178583503,
+   "kappa_iid_n1e5": 124.10723728656252,
+   "kappa_iid_n1e7": 127.85825541802936,
+   "n_wrong_consensus_at_1e5": 154,
+   "n_wrong_consensus_at_1e7": 15409,
+   "rel_delta_pct_1e5_vs_1e7": 2.9337316696547875
+  },
+  {
+   "dataset": "dtd",
+   "C": 47,
+   "p": 0.4811702127659575,
+   "kappa_iid_mc_committed": 27.620050371462657,
+   "kappa_iid_n1e5": 26.541997669585893,
+   "kappa_iid_n1e7": 26.73560118363635,
+   "n_wrong_consensus_at_1e5": 5982,
+   "n_wrong_consensus_at_1e7": 597069,
+   "rel_delta_pct_1e5_vs_1e7": 0.7241412404406846
+  },
+  {
+   "dataset": "cifar10",
+   "C": 10,
+   "p": 0.8185800000000001,
+   "kappa_iid_mc_committed": 25.97752235290024,
+   "kappa_iid_n1e5": 22.08874131595903,
+   "kappa_iid_n1e7": 22.050519687664956,
+   "n_wrong_consensus_at_1e5": 327,
+   "n_wrong_consensus_at_1e7": 30596,
+   "rel_delta_pct_1e5_vs_1e7": -0.17333663258492613
+  },
+  {
+   "dataset": "tiny_imagenet",
+   "C": 200,
+   "p": 0.6779200000000001,
+   "kappa_iid_mc_committed": 161.36983989725775,
+   "kappa_iid_n1e5": 158.87800723866303,
+   "kappa_iid_n1e7": 158.0006770410791,
+   "n_wrong_consensus_at_1e5": 455,
+   "n_wrong_consensus_at_1e7": 45414,
+   "rel_delta_pct_1e5_vs_1e7": -0.5552698975814164
+  },
+  {
+   "dataset": "stl10",
+   "C": 10,
+   "p": 0.834325,
+   "kappa_iid_mc_committed": 30.372083502845697,
+   "kappa_iid_n1e5": 24.291257875187057,
+   "kappa_iid_n1e7": 24.323600923824202,
+   "n_wrong_consensus_at_1e5": 229,
+   "n_wrong_consensus_at_1e7": 21823,
+   "rel_delta_pct_1e5_vs_1e7": 0.13296982111503888
+  },
+  {
+   "dataset": "eurosat",
+   "C": 10,
+   "p": 0.4094814814814815,
+   "kappa_iid_mc_committed": 6.205196136643359,
+   "kappa_iid_n1e5": 6.174681006783756,
+   "kappa_iid_n1e7": 6.174050838544992,
+   "n_wrong_consensus_at_1e5": 21049,
+   "n_wrong_consensus_at_1e7": 2102396,
+   "rel_delta_pct_1e5_vs_1e7": -0.010206722543167337
+  },
+  {
+   "dataset": "imagenet_a",
+   "C": 1000,
+   "p": 0.36405333333333334,
+   "kappa_iid_mc_committed": 323.4093670468996,
+   "kappa_iid_n1e5": 323.7324528901346,
+   "kappa_iid_n1e7": 322.59614476195765,
+   "n_wrong_consensus_at_1e5": 10719,
+   "n_wrong_consensus_at_1e7": 1057675,
+   "rel_delta_pct_1e5_vs_1e7": -0.35223859510640665
+  },
+  {
+   "dataset": "imagenet_r",
+   "C": 1000,
+   "p": 0.6035999999999999,
+   "kappa_iid_mc_committed": 541.1409410785001,
+   "kappa_iid_n1e5": 543.2176537009669,
+   "kappa_iid_n1e7": 531.1500664610826,
+   "n_wrong_consensus_at_1e5": 1042,
+   "n_wrong_consensus_at_1e7": 102169,
+   "rel_delta_pct_1e5_vs_1e7": -2.2719732147051404
+  },
+  {
+   "dataset": "sun397",
+   "C": 61,
+   "p": 0.71768,
+   "kappa_iid_mc_committed": 74.74403175964986,
+   "kappa_iid_n1e5": 69.01689035437973,
+   "kappa_iid_n1e7": 69.80439990340149,
+   "n_wrong_consensus_at_1e5": 396,
+   "n_wrong_consensus_at_1e7": 40038,
+   "rel_delta_pct_1e5_vs_1e7": 1.1281660613250093
+  },
+  {
+   "dataset": "fgvc_aircraft",
+   "C": 90,
+   "p": 0.22492,
+   "kappa_iid_mc_committed": 27.412718679395226,
+   "kappa_iid_n1e5": 27.306918651727774,
+   "kappa_iid_n1e7": 27.280743228935382,
+   "n_wrong_consensus_at_1e5": 30532,
+   "n_wrong_consensus_at_1e7": 3065541,
+   "rel_delta_pct_1e5_vs_1e7": -0.09594834925402099
+  },
+  {
+   "dataset": "stanford_cars",
+   "C": 196,
+   "p": 0.6929000000000001,
+   "kappa_iid_mc_committed": 197.88395620567184,
+   "kappa_iid_n1e5": 164.88797386582078,
+   "kappa_iid_n1e7": 164.32413924335435,
+   "n_wrong_consensus_at_1e5": 372,
+   "n_wrong_consensus_at_1e7": 36595,
+   "rel_delta_pct_1e5_vs_1e7": -0.3431234297423731
+  },
+  {
+   "dataset": "gtsrb",
+   "C": 43,
+   "p": 0.35334000000000004,
+   "kappa_iid_mc_committed": 19.027260415599066,
+   "kappa_iid_n1e5": 18.645821226222402,
+   "kappa_iid_n1e7": 18.73062695281087,
+   "n_wrong_consensus_at_1e5": 15546,
+   "n_wrong_consensus_at_1e7": 1554495,
+   "rel_delta_pct_1e5_vs_1e7": 0.4527650185021721
+  },
+  {
+   "dataset": "imagenet_sketch",
+   "C": 1000,
+   "p": 0.49695999999999996,
+   "kappa_iid_mc_committed": 416.06207668877704,
+   "kappa_iid_n1e5": 414.0891238413305,
+   "kappa_iid_n1e7": 412.5358710948388,
+   "n_wrong_consensus_at_1e5": 3360,
+   "n_wrong_consensus_at_1e7": 331782,
+   "rel_delta_pct_1e5_vs_1e7": -0.37651337867164847
+  },
+  {
+   "dataset": "imagenet_v2_matched",
+   "C": 1000,
+   "p": 0.54272,
+   "kappa_iid_mc_committed": 461.80069107875283,
+   "kappa_iid_n1e5": 458.6079793766151,
+   "kappa_iid_n1e7": 456.20808661804574,
+   "n_wrong_consensus_at_1e5": 2056,
+   "n_wrong_consensus_at_1e7": 206649,
+   "rel_delta_pct_1e5_vs_1e7": -0.526052218048174
+  },
+  {
+   "dataset": "imagenet_v2_threshold",
+   "C": 1000,
+   "p": 0.59434,
+   "kappa_iid_mc_committed": 528.7619152183808,
+   "kappa_iid_n1e5": 528.0741426343018,
+   "kappa_iid_n1e7": 518.1088300423347,
+   "n_wrong_consensus_at_1e5": 1164,
+   "n_wrong_consensus_at_1e7": 114592,
+   "rel_delta_pct_1e5_vs_1e7": -1.923401419572949
+  },
+  {
+   "dataset": "imagenet_v2_top",
+   "C": 1000,
+   "p": 0.6208799999999999,
+   "kappa_iid_mc_committed": 571.5857335692791,
+   "kappa_iid_n1e5": 571.349694434074,
+   "kappa_iid_n1e7": 557.1216469974619,
+   "n_wrong_consensus_at_1e5": 832,
+   "n_wrong_consensus_at_1e7": 81961,
+   "rel_delta_pct_1e5_vs_1e7": -2.553849327753173
+  },
+  {
+   "dataset": "imagenet_c",
+   "C": 1000,
+   "p": 0.46192,
+   "kappa_iid_mc_committed": 386.8518373717404,
+   "kappa_iid_n1e5": 385.75347104061865,
+   "kappa_iid_n1e7": 384.3059083730425,
+   "n_wrong_consensus_at_1e5": 4708,
+   "n_wrong_consensus_at_1e7": 463176,
+   "rel_delta_pct_1e5_vs_1e7": -0.37666937614995705
+  },
+  {
+   "dataset": "cifar10c",
+   "C": 10,
+   "p": 0.8101200000000001,
+   "kappa_iid_mc_committed": 20.955635378020553,
+   "kappa_iid_n1e5": 21.039066564059798,
+   "kappa_iid_n1e7": 20.973717201947547,
+   "n_wrong_consensus_at_1e5": 392,
+   "n_wrong_consensus_at_1e7": 36161,
+   "rel_delta_pct_1e5_vs_1e7": -0.31157739700134135
+  },
+  {
+   "dataset": "cifar100c",
+   "C": 100,
+   "p": 0.3494,
+   "kappa_iid_mc_committed": 37.24970376817839,
+   "kappa_iid_n1e5": 37.28292872561703,
+   "kappa_iid_n1e7": 37.23253909600994,
+   "n_wrong_consensus_at_1e5": 13605,
+   "n_wrong_consensus_at_1e7": 1352128,
+   "rel_delta_pct_1e5_vs_1e7": -0.13533761282613227
+  }
+ ],
+ "max_abs_rel_delta_pct": 2.9337316696547875,
+ "min_n_wrong_consensus_at_1e5": 154
+}

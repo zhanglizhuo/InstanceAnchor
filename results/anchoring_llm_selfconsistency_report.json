@@ -1,0 +1,96 @@
+{
+  "args": {
+    "jsonl_dir": "results/per_llm"
+  },
+  "timestamp": "20260816_143707",
+  "results": [
+    {
+      "file": "llm_sc_qwen3.5-9b-ctx4k_mmlu_16.jsonl",
+      "n_questions": 500,
+      "C": 4,
+      "K": 16,
+      "p": 0.7443833333333333,
+      "p_std": 0.3770516767559116,
+      "consensus_acc": 0.76,
+      "wrong_consensus_rate_empirical": 0.24,
+      "E_alpha_correct": 0.944078947368421,
+      "E_alpha_wrong": 0.7821180555555556,
+      "kappa_empirical": 9.179190845667339,
+      "kappa_iid_pooled": 4.890134967725109,
+      "wrong_consensus_rate_iid_pooled": 0.00039000000000000146,
+      "kappa_iid_perq": 5.102612493125698,
+      "wrong_consensus_rate_iid_perq": 0.209715,
+      "plurality_share_perq": 0.5558891386961605,
+      "agreement_bins": [
+        {
+          "lo": -Infinity,
+          "hi": 0.875,
+          "n": 124,
+          "acc": 0.45161290322580644
+        },
+        {
+          "lo": 0.875,
+          "hi": 1.0,
+          "n": 62,
+          "acc": 0.6290322580645161
+        },
+        {
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 0,
+          "acc": null
+        },
+        {
+          "lo": 1.0,
+          "hi": Infinity,
+          "n": 314,
+          "acc": 0.9076433121019108
+        }
+      ]
+    },
+    {
+      "file": "llm_sc_qwen3.5-9b-ctx4k_mmlu_pro_32.jsonl",
+      "n_questions": 70,
+      "C": 10,
+      "K": 32,
+      "p": 0.5611607142857142,
+      "p_std": 0.43270444803524927,
+      "consensus_acc": 0.6,
+      "wrong_consensus_rate_empirical": 0.4,
+      "E_alpha_correct": 0.8913690476190477,
+      "E_alpha_wrong": 0.6904881912442397,
+      "kappa_empirical": 14.16097857119417,
+      "kappa_iid_pooled": NaN,
+      "wrong_consensus_rate_iid_pooled": 0.0,
+      "kappa_iid_perq": 4.154254156502477,
+      "wrong_consensus_rate_iid_perq": 0.340725,
+      "plurality_share_perq": 0.2933592573152348,
+      "agreement_bins": [
+        {
+          "lo": -Infinity,
+          "hi": 0.65625,
+          "n": 17,
+          "acc": 0.23529411764705882
+        },
+        {
+          "lo": 0.65625,
+          "hi": 0.90625,
+          "n": 15,
+          "acc": 0.5333333333333333
+        },
+        {
+          "lo": 0.90625,
+          "hi": 1.0,
+          "n": 10,
+          "acc": 0.6
+        },
+        {
+          "lo": 1.0,
+          "hi": Infinity,
+          "n": 28,
+          "acc": 0.8571428571428571
+        }
+      ]
+    }
+  ]
+}

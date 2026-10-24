@@ -1,0 +1,251 @@
+{
+  "args": {
+    "datasets": [
+      "cifar100",
+      "voc2007"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260813_090009",
+  "results": [
+    {
+      "dataset": "cifar100",
+      "n_images": 10000,
+      "n_classes": 100,
+      "configs": [
+        {
+          "tag": "native_k1_singlelabel",
+          "n": 10000,
+          "correct_frac": 0.8981,
+          "agreement_mean": 0.7417199999999999,
+          "entropy_mean": -0.7045931816101074,
+          "entropy_auroc": 0.8790807854199668,
+          "agreement_auroc": 0.8357265294227624,
+          "entropy_aupr": 0.9845410641723233,
+          "agreement_aupr": 0.9719973100465696,
+          "delta_mean": -0.04347458481788635,
+          "delta_ci_lo": -0.0538540855050087,
+          "delta_ci_hi": -0.0333230160176754
+        },
+        {
+          "tag": "inject_k2_random",
+          "n": 10000,
+          "correct_frac": 0.8987,
+          "agreement_mean": 0.7417199999999999,
+          "entropy_mean": -0.7045931816101074,
+          "entropy_auroc": 0.8792937830238721,
+          "agreement_auroc": 0.8360991652854716,
+          "entropy_aupr": 0.9846647721298246,
+          "agreement_aupr": 0.9722121749727588,
+          "delta_mean": -0.043324604630470276,
+          "delta_ci_lo": -0.053687162697315216,
+          "delta_ci_hi": -0.03316475450992584
+        },
+        {
+          "tag": "inject_k3_random",
+          "n": 10000,
+          "correct_frac": 0.9005,
+          "agreement_mean": 0.7417199999999999,
+          "entropy_mean": -0.7045931816101074,
+          "entropy_auroc": 0.8774646134615331,
+          "agreement_auroc": 0.8345566254370129,
+          "entropy_aupr": 0.9847006549568879,
+          "agreement_aupr": 0.9726607098665965,
+          "delta_mean": -0.043012116104364395,
+          "delta_ci_lo": -0.05340593308210373,
+          "delta_ci_hi": -0.032827965915203094
+        },
+        {
+          "tag": "inject_k4_random",
+          "n": 10000,
+          "correct_frac": 0.9013,
+          "agreement_mean": 0.7417199999999999,
+          "entropy_mean": -0.7045931816101074,
+          "entropy_auroc": 0.8762558551303414,
+          "agreement_auroc": 0.8333636846293505,
+          "entropy_aupr": 0.984717520911468,
+          "agreement_aupr": 0.9725616260677241,
+          "delta_mean": -0.043009866029024124,
+          "delta_ci_lo": -0.05332145467400551,
+          "delta_ci_hi": -0.032830365002155304
+        },
+        {
+          "tag": "merge_k2",
+          "n": 8000,
+          "correct_frac": 0.9095,
+          "agreement_mean": 0.5635999999999999,
+          "entropy_mean": -2.4826459884643555,
+          "entropy_auroc": 0.7510510981384344,
+          "agreement_auroc": 0.7721849666959261,
+          "entropy_aupr": 0.9649919732928789,
+          "agreement_aupr": 0.9689461692409516,
+          "delta_mean": 0.02106739580631256,
+          "delta_ci_lo": 0.0023093554191291332,
+          "delta_ci_hi": 0.04035096988081932
+        },
+        {
+          "tag": "merge_k3",
+          "n": 8000,
+          "correct_frac": 0.844875,
+          "agreement_mean": 0.41690000000000005,
+          "entropy_mean": -3.3322958946228027,
+          "entropy_auroc": 0.6583049383285652,
+          "agreement_auroc": 0.6653520378534891,
+          "entropy_aupr": 0.9082482023347267,
+          "agreement_aupr": 0.9168260240496598,
+          "delta_mean": 0.006992414128035307,
+          "delta_ci_lo": -0.010665887966752052,
+          "delta_ci_hi": 0.024568859487771988
+        },
+        {
+          "tag": "merge_k4",
+          "n": 8000,
+          "correct_frac": 0.75375,
+          "agreement_mean": 0.3543750000000001,
+          "entropy_mean": -3.6802330017089844,
+          "entropy_auroc": 0.6551991312473168,
+          "agreement_auroc": 0.5479490028705878,
+          "entropy_aupr": 0.8518034243288334,
+          "agreement_aupr": 0.802971065897934,
+          "delta_mean": -0.10724718123674393,
+          "delta_ci_lo": -0.12345170229673386,
+          "delta_ci_hi": -0.09079392999410629
+        },
+        {
+          "tag": "merge_k2_confusable",
+          "n": 8000,
+          "correct_frac": 0.956875,
+          "agreement_mean": 0.6630750000000001,
+          "entropy_mean": -1.453878402709961,
+          "entropy_auroc": 0.7471392194170714,
+          "agreement_auroc": 0.7768536241350259,
+          "entropy_aupr": 0.9847921130937304,
+          "agreement_aupr": 0.9848495151526249,
+          "delta_mean": 0.029707441106438637,
+          "delta_ci_lo": 0.004526287317276001,
+          "delta_ci_hi": 0.055436521768569946
+        }
+      ]
+    },
+    {
+      "dataset": "voc2007",
+      "n_images": 2510,
+      "n_classes": 20,
+      "configs": [
+        {
+          "tag": "native_multilabel_GT",
+          "n": 2510,
+          "correct_frac": 0.8924302788844621,
+          "agreement_mean": 0.7,
+          "entropy_mean": -0.5107260346412659,
+          "entropy_auroc": 0.9060367063492063,
+          "agreement_auroc": 0.898823578042328,
+          "entropy_aupr": 0.9864552172517957,
+          "agreement_aupr": 0.9789934896920924,
+          "delta_mean": -0.007274008356034756,
+          "delta_ci_lo": -0.020623160526156425,
+          "delta_ci_hi": 0.005802531260997057
+        },
+        {
+          "tag": "inject_k2_random",
+          "n": 2510,
+          "correct_frac": 0.8972111553784861,
+          "agreement_mean": 0.7,
+          "entropy_mean": -0.5107260346412659,
+          "entropy_auroc": 0.9065481845594614,
+          "agreement_auroc": 0.9010001445743319,
+          "entropy_aupr": 0.9872779805175568,
+          "agreement_aupr": 0.9798654045943581,
+          "delta_mean": -0.005611843895167112,
+          "delta_ci_lo": -0.019195254892110825,
+          "delta_ci_hi": 0.007593280170112848
+        },
+        {
+          "tag": "inject_k3_random",
+          "n": 2510,
+          "correct_frac": 0.9015936254980079,
+          "agreement_mean": 0.7,
+          "entropy_mean": -0.5107260346412659,
+          "entropy_auroc": 0.90417757231721,
+          "agreement_auroc": 0.898702235039654,
+          "entropy_aupr": 0.987589710610465,
+          "agreement_aupr": 0.9807821401139833,
+          "delta_mean": -0.0055396161042153835,
+          "delta_ci_lo": -0.01877189613878727,
+          "delta_ci_hi": 0.00728069432079792
+        },
+        {
+          "tag": "inject_k4_random",
+          "n": 2510,
+          "correct_frac": 0.9063745019920318,
+          "agreement_mean": 0.7,
+          "entropy_mean": -0.5107260346412659,
+          "entropy_auroc": 0.9021912555529576,
+          "agreement_auroc": 0.8929455225625439,
+          "entropy_aupr": 0.9885007556642198,
+          "agreement_aupr": 0.9814965618306869,
+          "delta_mean": -0.009309721179306507,
+          "delta_ci_lo": -0.02415403723716736,
+          "delta_ci_hi": 0.005284167360514402
+        },
+        {
+          "tag": "merge_k2",
+          "n": 2510,
+          "correct_frac": 0.950597609561753,
+          "agreement_mean": 0.5278884462151394,
+          "entropy_mean": -1.3676491975784302,
+          "entropy_auroc": 0.7969641456885596,
+          "agreement_auroc": 0.838986831787578,
+          "entropy_aupr": 0.9843638410969244,
+          "agreement_aupr": 0.9875792819028255,
+          "delta_mean": 0.04207666963338852,
+          "delta_ci_lo": 0.00877024233341217,
+          "delta_ci_hi": 0.07679077237844467
+        },
+        {
+          "tag": "merge_k3",
+          "n": 2510,
+          "correct_frac": 0.9438247011952191,
+          "agreement_mean": 0.4346613545816733,
+          "entropy_mean": -1.8858896493911743,
+          "entropy_auroc": 0.7245598436063935,
+          "agreement_auroc": 0.7885767403429044,
+          "entropy_aupr": 0.9784567798318915,
+          "agreement_aupr": 0.9845794057046362,
+          "delta_mean": 0.06349437683820724,
+          "delta_ci_lo": 0.02442074380815029,
+          "delta_ci_hi": 0.10226836800575256
+        },
+        {
+          "tag": "merge_k4",
+          "n": 2510,
+          "correct_frac": 0.949003984063745,
+          "agreement_mean": 0.4004780876494024,
+          "entropy_mean": -2.118492603302002,
+          "entropy_auroc": 0.7715876889168766,
+          "agreement_auroc": 0.764955919395466,
+          "entropy_aupr": 0.9836366474579097,
+          "agreement_aupr": 0.9824473238333342,
+          "delta_mean": -0.006308084819465876,
+          "delta_ci_lo": -0.048644520342350006,
+          "delta_ci_hi": 0.03842518478631973
+        },
+        {
+          "tag": "merge_k2_confusable",
+          "n": 2510,
+          "correct_frac": 0.9665338645418327,
+          "agreement_mean": 0.6731474103585657,
+          "entropy_mean": -0.6568006277084351,
+          "entropy_auroc": 0.8901385781023043,
+          "agreement_auroc": 0.889667491068975,
+          "entropy_aupr": 0.9956239547848011,
+          "agreement_aupr": 0.9950789967989754,
+          "delta_mean": -0.0004617763916030526,
+          "delta_ci_lo": -0.021474432200193405,
+          "delta_ci_hi": 0.01957080140709877
+        }
+      ]
+    }
+  ]
+}

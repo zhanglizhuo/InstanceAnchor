@@ -1,0 +1,233 @@
+{
+  "args": {
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260813_085922",
+  "results": {
+    "A": {
+      "cape": "A",
+      "n": 3240,
+      "consensus_acc": 0.6466049382716049,
+      "entropy_auroc": 0.6387964690310679,
+      "agreement_auroc": 0.7062413106689873,
+      "agreement_aupr": 0.8313035042599553,
+      "entropy_aupr": 0.7937700246921068,
+      "delta_mean": 0.067383773624897,
+      "delta_ci_lo": 0.05205856263637543,
+      "delta_ci_hi": 0.08312083780765533,
+      "per_class": {
+        "guide": {
+          "n": 372,
+          "consensus_acc": 0.5698924731182796,
+          "entropy_auroc": 0.5188974056603773,
+          "agreement_auroc": 0.5813826650943397,
+          "delta": 0.062485259433962326
+        },
+        "answer": {
+          "n": 800,
+          "consensus_acc": 0.4975,
+          "entropy_auroc": 0.5502887572189304,
+          "agreement_auroc": 0.743331083277082,
+          "delta": 0.19304232605815153
+        },
+        "on-stage interaction": {
+          "n": 141,
+          "consensus_acc": 0.9432624113475178,
+          "entropy_auroc": 0.8270676691729323,
+          "agreement_auroc": 0.7109962406015038,
+          "delta": -0.11607142857142849
+        },
+        "blackboard-writing": {
+          "n": 235,
+          "consensus_acc": 0.9744680851063829,
+          "entropy_auroc": 0.9177583697234353,
+          "agreement_auroc": 0.9126637554585153,
+          "delta": -0.005094614264919972
+        },
+        "teacher": {
+          "n": 1459,
+          "consensus_acc": 0.7361206305688828,
+          "entropy_auroc": 0.6840189605552734,
+          "agreement_auroc": 0.6851556264964086,
+          "delta": 0.001136665941135151
+        },
+        "stand": {
+          "n": 169,
+          "consensus_acc": 0.21893491124260356,
+          "entropy_auroc": 0.4832104832104832,
+          "agreement_auroc": 0.5005118755118755,
+          "delta": 0.01730139230139227
+        },
+        "screen": {
+          "n": 24,
+          "consensus_acc": 0.5,
+          "entropy_auroc": 0.6180555555555556,
+          "agreement_auroc": 0.5451388888888888,
+          "delta": -0.07291666666666674
+        },
+        "blackboard": {
+          "n": 40,
+          "consensus_acc": 0.0,
+          "entropy_auroc": null,
+          "agreement_auroc": null
+        }
+      }
+    },
+    "B": {
+      "cape": "B",
+      "n": 3240,
+      "consensus_acc": 0.7552469135802469,
+      "entropy_auroc": 0.7782512596168663,
+      "agreement_auroc": 0.6863408419914546,
+      "agreement_aupr": 0.8680129322042348,
+      "entropy_aupr": 0.9203940972050677,
+      "delta_mean": -0.09189239144325256,
+      "delta_ci_lo": -0.10693736374378204,
+      "delta_ci_hi": -0.0770866721868515,
+      "per_class": {
+        "guide": {
+          "n": 372,
+          "consensus_acc": 0.9596774193548387,
+          "entropy_auroc": 0.7953314659197012,
+          "agreement_auroc": 0.7602240896358543,
+          "delta": -0.03510737628384686
+        },
+        "answer": {
+          "n": 800,
+          "consensus_acc": 0.72,
+          "entropy_auroc": 0.6535063244047619,
+          "agreement_auroc": 0.5996287512400794,
+          "delta": -0.053877573164682446
+        },
+        "on-stage interaction": {
+          "n": 141,
+          "consensus_acc": 0.8226950354609929,
+          "entropy_auroc": 0.8620689655172413,
+          "agreement_auroc": 0.7468965517241379,
+          "delta": -0.11517241379310339
+        },
+        "blackboard-writing": {
+          "n": 235,
+          "consensus_acc": 0.9914893617021276,
+          "entropy_auroc": 0.9935622317596566,
+          "agreement_auroc": 0.8927038626609443,
+          "delta": -0.10085836909871237
+        },
+        "teacher": {
+          "n": 1459,
+          "consensus_acc": 0.7566826593557231,
+          "entropy_auroc": 0.8033756889161053,
+          "agreement_auroc": 0.6760014798938558,
+          "delta": -0.1273742090222495
+        },
+        "stand": {
+          "n": 169,
+          "consensus_acc": 0.27218934911242604,
+          "entropy_auroc": 0.5706963591375044,
+          "agreement_auroc": 0.509632378932485,
+          "delta": -0.06106398020501935
+        },
+        "screen": {
+          "n": 24,
+          "consensus_acc": 0.625,
+          "entropy_auroc": 0.9111111111111111,
+          "agreement_auroc": 0.6703703703703704,
+          "delta": -0.2407407407407407
+        },
+        "blackboard": {
+          "n": 40,
+          "consensus_acc": 0.0,
+          "entropy_auroc": null,
+          "agreement_auroc": null
+        }
+      }
+    },
+    "C": {
+      "cape": "C",
+      "n": 3240,
+      "consensus_acc": 0.9234567901234568,
+      "entropy_auroc": 0.5702801556839745,
+      "agreement_auroc": 0.45376919096084184,
+      "agreement_aupr": 0.9130686336173532,
+      "entropy_aupr": 0.9462942870599337,
+      "delta_mean": -0.11639343202114105,
+      "delta_ci_lo": -0.14537791907787323,
+      "delta_ci_hi": -0.08750451356172562,
+      "per_class": {
+        "guide": {
+          "n": 372,
+          "consensus_acc": 0.9919354838709677,
+          "entropy_auroc": 0.935862691960253,
+          "agreement_auroc": 0.969286359530262,
+          "delta": 0.03342366757000903
+        },
+        "answer": {
+          "n": 800,
+          "consensus_acc": 0.99625,
+          "entropy_auroc": 0.7310748640736093,
+          "agreement_auroc": 0.733375156838143,
+          "delta": 0.0023002927645336957
+        },
+        "on-stage interaction": {
+          "n": 141,
+          "consensus_acc": 0.9929078014184397,
+          "entropy_auroc": 0.8428571428571429,
+          "agreement_auroc": 0.2357142857142857,
+          "delta": -0.6071428571428572
+        },
+        "blackboard-writing": {
+          "n": 235,
+          "consensus_acc": 0.9957446808510638,
+          "entropy_auroc": 0.7222222222222222,
+          "agreement_auroc": 0.6111111111111112,
+          "delta": -0.11111111111111105
+        },
+        "teacher": {
+          "n": 1459,
+          "consensus_acc": 0.9869773817683345,
+          "entropy_auroc": 0.8345029239766082,
+          "agreement_auroc": 0.7098135964912281,
+          "delta": -0.12468932748538009
+        },
+        "stand": {
+          "n": 169,
+          "consensus_acc": 0.011834319526627219,
+          "entropy_auroc": 0.17664670658682635,
+          "agreement_auroc": 0.061377245508982034,
+          "delta": -0.11526946107784432
+        },
+        "screen": {
+          "n": 24,
+          "consensus_acc": 0.4166666666666667,
+          "entropy_auroc": 0.34285714285714286,
+          "agreement_auroc": 0.2357142857142857,
+          "delta": -0.10714285714285715
+        },
+        "blackboard": {
+          "n": 40,
+          "consensus_acc": 0.0,
+          "entropy_auroc": null,
+          "agreement_auroc": null
+        }
+      }
+    }
+  },
+  "spearman": {
+    "A_vs_B": {
+      "rho": 0.7857142857142859,
+      "p": 0.03623846267982713,
+      "n": 7
+    },
+    "A_vs_C": {
+      "rho": 0.642857142857143,
+      "p": 0.11939237342741094,
+      "n": 7
+    },
+    "B_vs_C": {
+      "rho": 0.5714285714285715,
+      "p": 0.1802019889115274,
+      "n": 7
+    }
+  }
+}

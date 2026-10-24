@@ -1,0 +1,268 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "seed": 42
+  },
+  "timestamp": "20260726_193031",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.6701851851851852,
+          "ensemble_entropy_auroc": 0.5731934264366055,
+          "agreement_auroc": null,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7290123456790124,
+            "0.5": 0.6935802469135802
+          },
+          "agreement_selacc": null
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.6601851851851852,
+          "ensemble_entropy_auroc": 0.6164859158599458,
+          "agreement_auroc": 0.625076640773454,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7915637860082305,
+            "0.5": 0.7225308641975308
+          },
+          "agreement_selacc": {
+            "0.3": 0.7832314814814815,
+            "0.5": 0.7430783950617285
+          }
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.6479938271604938,
+          "ensemble_entropy_auroc": 0.6342402063059956,
+          "agreement_auroc": 0.6750990434487651,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.8203703703703702,
+            "0.5": 0.731111111111111
+          },
+          "agreement_selacc": {
+            "0.3": 0.839414609053498,
+            "0.5": 0.7571796296296296
+          }
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.6451234567901234,
+          "ensemble_entropy_auroc": 0.6369307796067005,
+          "agreement_auroc": 0.6989368015711148,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.8405349794238683,
+            "0.5": 0.7360493827160494
+          },
+          "agreement_selacc": {
+            "0.3": 0.8523127572016461,
+            "0.5": 0.7810938271604938
+          }
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "base_accuracy_mean": 0.6466049382716049,
+          "ensemble_entropy_auroc": 0.6387964690310679,
+          "agreement_auroc": 0.7062413106689873,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.8487654320987654,
+            "0.5": 0.7462962962962962
+          },
+          "agreement_selacc": {
+            "0.3": 0.8708333333333335,
+            "0.5": 0.7857345679012346
+          }
+        }
+      },
+      "bootstrap": {
+        "q3_delta_ci": {
+          "mean": 0.067383773624897,
+          "ci_lo": 0.05205856263637543,
+          "ci_hi": 0.08312084525823593
+        }
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.5851585876720525,
+          "ensemble_entropy_auroc": 0.8574300246862224,
+          "agreement_auroc": null,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.9752495009980038,
+            "0.5": 0.8610047846889952
+          },
+          "agreement_selacc": null
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.5833034111310592,
+          "ensemble_entropy_auroc": 0.8757153945866823,
+          "agreement_auroc": 0.6106901478807842,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.9858283433133732,
+            "0.5": 0.8697368421052631
+          },
+          "agreement_selacc": {
+            "0.3": 0.647311377245509,
+            "0.5": 0.6476722488038277
+          }
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.5830640335128666,
+          "ensemble_entropy_auroc": 0.8807299436546175,
+          "agreement_auroc": 0.6599180744311104,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.9888223552894211,
+            "0.5": 0.8685406698564593
+          },
+          "agreement_selacc": {
+            "0.3": 0.6838542914171657,
+            "0.5": 0.6836842105263159
+          }
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.5846798324356672,
+          "ensemble_entropy_auroc": 0.8806218861595422,
+          "agreement_auroc": 0.6888926295328969,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.9936127744510976,
+            "0.5": 0.8698564593301434
+          },
+          "agreement_selacc": {
+            "0.3": 0.7100878243512974,
+            "0.5": 0.7105598086124404
+          }
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "base_accuracy_mean": 0.585278276481149,
+          "ensemble_entropy_auroc": 0.8814496115109612,
+          "agreement_auroc": 0.7115509462135229,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.9940119760479039,
+            "0.5": 0.869617224880383
+          },
+          "agreement_selacc": {
+            "0.3": 0.7333932135728543,
+            "0.5": 0.7351315789473687
+          }
+        }
+      },
+      "bootstrap": {
+        "q3_delta_ci": {
+          "mean": -0.16980639100074768,
+          "ci_lo": -0.18536776304244995,
+          "ci_hi": -0.15424884855747223
+        }
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "by_k": {
+        "k=1": {
+          "k": 1,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.6594059405940594,
+          "ensemble_entropy_auroc": 0.586967437936642,
+          "agreement_auroc": null,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7223684210526313,
+            "0.5": 0.7087301587301588
+          },
+          "agreement_selacc": null
+        },
+        "k=2": {
+          "k": 2,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.6794059405940593,
+          "ensemble_entropy_auroc": 0.5785248193299717,
+          "agreement_auroc": 0.5187182348219004,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7249999999999999,
+            "0.5": 0.7349206349206349
+          },
+          "agreement_selacc": {
+            "0.3": 0.6882828947368421,
+            "0.5": 0.6895119047619048
+          }
+        },
+        "k=3": {
+          "k": 3,
+          "n_subsets": 10,
+          "base_accuracy_mean": 0.6845544554455445,
+          "ensemble_entropy_auroc": 0.5749384857301777,
+          "agreement_auroc": 0.5257154290932619,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.718421052631579,
+            "0.5": 0.7404761904761905
+          },
+          "agreement_selacc": {
+            "0.3": 0.6983881578947366,
+            "0.5": 0.6992738095238098
+          }
+        },
+        "k=4": {
+          "k": 4,
+          "n_subsets": 5,
+          "base_accuracy_mean": 0.6863366336633664,
+          "ensemble_entropy_auroc": 0.5740677796193887,
+          "agreement_auroc": 0.5296978442224948,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7105263157894737,
+            "0.5": 0.7444444444444445
+          },
+          "agreement_selacc": {
+            "0.3": 0.7024473684210527,
+            "0.5": 0.7058730158730159
+          }
+        },
+        "k=5": {
+          "k": 5,
+          "n_subsets": 1,
+          "base_accuracy_mean": 0.6851485148514852,
+          "ensemble_entropy_auroc": 0.5798705783982259,
+          "agreement_auroc": 0.5360999018431672,
+          "ensemble_entropy_selacc": {
+            "0.3": 0.7039473684210529,
+            "0.5": 0.753968253968254
+          },
+          "agreement_selacc": {
+            "0.3": 0.7038157894736843,
+            "0.5": 0.7087301587301588
+          }
+        }
+      },
+      "bootstrap": {
+        "q3_delta_ci": {
+          "mean": -0.04376868158578873,
+          "ci_lo": -0.08501072227954865,
+          "ci_hi": -0.0037759775295853615
+        }
+      }
+    }
+  ]
+}

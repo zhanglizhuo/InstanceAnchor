@@ -1,0 +1,52 @@
+{
+  "subset": "teacher_behavior",
+  "n_images": 3240,
+  "n_splits": 100,
+  "consensus_accuracy": 0.6466049382716049,
+  "agreement_auroc": 0.7062413106689873,
+  "entropy_auroc": 0.6387964690310679,
+  "conformal": {
+    "50pct": {
+      "agreement": {
+        "coverage_mean": 0.6172037037037037,
+        "coverage_std": 0.008551847039762528,
+        "accuracy_mean": 0.7501866520735914,
+        "accuracy_std": 0.009168134229648999
+      },
+      "entropy": {
+        "coverage_mean": 0.5032530864197531,
+        "coverage_std": 0.014843812926530559,
+        "accuracy_mean": 0.741750992607766,
+        "accuracy_std": 0.01055598146950294
+      }
+    },
+    "70pct": {
+      "agreement": {
+        "coverage_mean": 0.36745679012345683,
+        "coverage_std": 0.008760248858740428,
+        "accuracy_mean": 0.8501163902269675,
+        "accuracy_std": 0.009969753661743252
+      },
+      "entropy": {
+        "coverage_mean": 0.3031851851851852,
+        "coverage_std": 0.017718462432987192,
+        "accuracy_mean": 0.8490650653066855,
+        "accuracy_std": 0.01295044788521057
+      }
+    },
+    "90pct": {
+      "agreement": {
+        "coverage_mean": 0.16816049382716047,
+        "coverage_std": 0.006644441691784117,
+        "accuracy_mean": 0.9562290856409815,
+        "accuracy_std": 0.008782697815465625
+      },
+      "entropy": {
+        "coverage_mean": 0.10089506172839506,
+        "coverage_std": 0.010451029284609146,
+        "accuracy_mean": 0.9428934444702842,
+        "accuracy_std": 0.013268309736463455
+      }
+    }
+  }
+}

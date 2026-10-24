@@ -1,0 +1,43 @@
+__pycache__/
+*.pyc
+results/per_image/*.npy
+results/per_image/*.jsonl
+results/baseline/*/baseline_results.json
+logs/*.log
+logs/*/
+paper/*.spl
+
+data/
+
+# Submission packages (regenerable staging of paper/ + external CAS templates; not source of truth)
+paper/arxiv/
+paper/InstanceAnchor_NN_submission/
+*_submission.zip
+paper/arxiv_submission.tar.gz
+arxiv_submission_STALE_Sep5.zip.bak
+
+# Raw per-image logits (2.5GB) — not for public repo
+results/per_image/
+
+# --- Sensitive: server IPs / internal network / SSH — do NOT publish (added 2026-10-24 for public release) ---
+AGENTS.md
+REPRODUCIBILITY.md
+TODO.md
+todo.md
+experiments/local_dl_meta.py
+experiments/p4_pipeline.sh
+experiments/p4_5090/04_local_puller.sh
+paper/PAPER_CLAIM_AUDIT.md
+paper/PAPER_CLAIM_AUDIT.json
+paper/KILL_ARGUMENT.json
+paper/KILL_ARGUMENT.md
+
+# --- Internal audit / process records — do NOT publish (added 2026-10-24) ---
+EXPERIMENT_AUDIT.json
+EXPERIMENT_AUDIT.md
+FINAL_AUDIT.md
+project_status.md
+SUBMISSION_CHECKLIST.md
+audits/
+quality_reports/
+.aris/

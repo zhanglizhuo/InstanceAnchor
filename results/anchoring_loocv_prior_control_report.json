@@ -1,0 +1,132 @@
+{
+  "args": {
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260816_193045",
+  "n_datasets": 27,
+  "n_iid_subset": 27,
+  "note": "sign recovery of LOO OLS refit on nested feature sets; kappa requires test labels (label-conditional), C and kappa_iid_mc do not (except p, which needs labels)",
+  "by_target": {
+    "hard": {
+      "C_only": {
+        "features": [
+          "C"
+        ],
+        "sign_acc": 0.8518518518518519,
+        "sign_ci": {
+          "mean": 0.8514037037037037,
+          "ci_lo": 0.7037037037037037,
+          "ci_hi": 0.9629629629629629
+        },
+        "n_folds": 27
+      },
+      "pC": {
+        "features": [
+          "p",
+          "C"
+        ],
+        "sign_acc": 0.8518518518518519,
+        "sign_ci": {
+          "mean": 0.8514037037037037,
+          "ci_lo": 0.7037037037037037,
+          "ci_hi": 0.9629629629629629
+        },
+        "n_folds": 27
+      },
+      "pC_kappa": {
+        "features": [
+          "p",
+          "C",
+          "kappa"
+        ],
+        "sign_acc": 0.8148148148148148,
+        "sign_ci": {
+          "mean": 0.8148074074074075,
+          "ci_lo": 0.6666666666666666,
+          "ci_hi": 0.9629629629629629
+        },
+        "n_folds": 27
+      }
+    },
+    "soft": {
+      "C_only": {
+        "features": [
+          "C"
+        ],
+        "sign_acc": 0.8888888888888888,
+        "sign_ci": {
+          "mean": 0.8899370370370371,
+          "ci_lo": 0.7777777777777778,
+          "ci_hi": 1.0
+        },
+        "n_folds": 27
+      },
+      "pC": {
+        "features": [
+          "p",
+          "C"
+        ],
+        "sign_acc": 0.8888888888888888,
+        "sign_ci": {
+          "mean": 0.8899370370370371,
+          "ci_lo": 0.7777777777777778,
+          "ci_hi": 1.0
+        },
+        "n_folds": 27
+      },
+      "pC_kappa": {
+        "features": [
+          "p",
+          "C",
+          "kappa"
+        ],
+        "sign_acc": 0.8888888888888888,
+        "sign_ci": {
+          "mean": 0.8899370370370371,
+          "ci_lo": 0.7777777777777778,
+          "ci_hi": 1.0
+        },
+        "n_folds": 27
+      }
+    }
+  },
+  "iid_mc_control": {
+    "hard_pC_kappa_iidmc": {
+      "n_folds": 27,
+      "sign_acc": 0.8518518518518519,
+      "sign_ci": {
+        "mean": 0.8514037037037037,
+        "ci_lo": 0.7037037037037037,
+        "ci_hi": 0.9629629629629629
+      }
+    },
+    "hard_pC_kappa_emp": {
+      "n_folds": 27,
+      "sign_acc": 0.8148148148148148,
+      "sign_ci": {
+        "mean": 0.8148074074074075,
+        "ci_lo": 0.6666666666666666,
+        "ci_hi": 0.9629629629629629
+      }
+    },
+    "soft_pC_kappa_iidmc": {
+      "n_folds": 27,
+      "sign_acc": 0.8888888888888888,
+      "sign_ci": {
+        "mean": 0.8899370370370371,
+        "ci_lo": 0.7777777777777778,
+        "ci_hi": 1.0
+      }
+    },
+    "soft_pC_kappa_emp": {
+      "n_folds": 27,
+      "sign_acc": 0.8888888888888888,
+      "sign_ci": {
+        "mean": 0.8899370370370371,
+        "ci_lo": 0.7777777777777778,
+        "ci_hi": 1.0
+      }
+    }
+  }
+}

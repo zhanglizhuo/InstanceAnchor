@@ -1,0 +1,681 @@
+{
+  "per_subset": [
+    {
+      "subset": "teacher_behavior",
+      "label": "TeacherBehavior",
+      "class_names": [
+        "guide",
+        "answer",
+        "On-stage interaction",
+        "blackboard-writing",
+        "teacher",
+        "stand",
+        "screen",
+        "blackBoard"
+      ],
+      "per_class": [
+        {
+          "class": "guide",
+          "total_samples": 372.0,
+          "correct": 100.2,
+          "recall": 0.2693548387096774,
+          "top_misclass": [
+            {
+              "target_class": "On-stage interaction",
+              "count": 114.0,
+              "fraction": 0.3064516129032258,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "stand",
+              "count": 85.4,
+              "fraction": 0.2295698924731183,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "answer",
+              "count": 61.0,
+              "fraction": 0.1639784946236559,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.478297465879123,
+          "anchoring": "low",
+          "anchoring_accuracy": 0.0
+        },
+        {
+          "class": "answer",
+          "total_samples": 800.0,
+          "correct": 67.4,
+          "recall": 0.08425,
+          "top_misclass": [
+            {
+              "target_class": "stand",
+              "count": 296.8,
+              "fraction": 0.371,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "On-stage interaction",
+              "count": 249.4,
+              "fraction": 0.31175,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "screen",
+              "count": 135.2,
+              "fraction": 0.16899999999999998,
+              "target_anchoring": "medium"
+            }
+          ],
+          "entropy": 1.489272342724631,
+          "anchoring": "low",
+          "anchoring_accuracy": 0.0
+        },
+        {
+          "class": "On-stage interaction",
+          "total_samples": 141.0,
+          "correct": 22.0,
+          "recall": 0.15602836879432624,
+          "top_misclass": [
+            {
+              "target_class": "screen",
+              "count": 73.8,
+              "fraction": 0.5234042553191489,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "stand",
+              "count": 18.6,
+              "fraction": 0.1319148936170213,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "answer",
+              "count": 16.0,
+              "fraction": 0.11347517730496454,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.3656723201512946,
+          "anchoring": "low",
+          "anchoring_accuracy": 0.0
+        },
+        {
+          "class": "blackboard-writing",
+          "total_samples": 235.0,
+          "correct": 11.6,
+          "recall": 0.04936170212765957,
+          "top_misclass": [
+            {
+              "target_class": "screen",
+              "count": 146.6,
+              "fraction": 0.6238297872340425,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "blackBoard",
+              "count": 54.6,
+              "fraction": 0.2323404255319149,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "stand",
+              "count": 11.2,
+              "fraction": 0.0476595744680851,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.1114800840801824,
+          "anchoring": "high",
+          "anchoring_accuracy": 98.61
+        },
+        {
+          "class": "teacher",
+          "total_samples": 1459.0,
+          "correct": 133.0,
+          "recall": 0.09115832762165867,
+          "top_misclass": [
+            {
+              "target_class": "screen",
+              "count": 644.0,
+              "fraction": 0.44139821795750517,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "answer",
+              "count": 255.8,
+              "fraction": 0.17532556545579164,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "stand",
+              "count": 221.2,
+              "fraction": 0.15161069225496915,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.578829705826707,
+          "anchoring": "high",
+          "anchoring_accuracy": 92.01
+        },
+        {
+          "class": "stand",
+          "total_samples": 169.0,
+          "correct": 40.8,
+          "recall": 0.24142011834319524,
+          "top_misclass": [
+            {
+              "target_class": "answer",
+              "count": 68.4,
+              "fraction": 0.4047337278106509,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "On-stage interaction",
+              "count": 38.6,
+              "fraction": 0.22840236686390533,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "guide",
+              "count": 12.2,
+              "fraction": 0.07218934911242603,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.4204901203524085,
+          "anchoring": "low",
+          "anchoring_accuracy": 0.85
+        },
+        {
+          "class": "screen",
+          "total_samples": 24.0,
+          "correct": 6.4,
+          "recall": 0.26666666666666666,
+          "top_misclass": [
+            {
+              "target_class": "answer",
+              "count": 7.8,
+              "fraction": 0.325,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "stand",
+              "count": 4.4,
+              "fraction": 0.18333333333333335,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "On-stage interaction",
+              "count": 3.6,
+              "fraction": 0.15,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.5937787208824479,
+          "anchoring": "medium",
+          "anchoring_accuracy": 69.41
+        },
+        {
+          "class": "blackBoard",
+          "total_samples": 40.0,
+          "correct": 0.0,
+          "recall": 0.0,
+          "top_misclass": [
+            {
+              "target_class": "answer",
+              "count": 18.4,
+              "fraction": 0.45999999999999996,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "On-stage interaction",
+              "count": 9.2,
+              "fraction": 0.22999999999999998,
+              "target_anchoring": "low"
+            },
+            {
+              "target_class": "stand",
+              "count": 8.6,
+              "fraction": 0.215,
+              "target_anchoring": "low"
+            }
+          ],
+          "entropy": 1.2907627929296663,
+          "anchoring": "medium",
+          "anchoring_accuracy": 57.42
+        }
+      ]
+    },
+    {
+      "subset": "handrise_readwrite",
+      "label": "HandriseReadWrite",
+      "class_names": [
+        "hand-raise",
+        "read",
+        "write"
+      ],
+      "per_class": [
+        {
+          "class": "hand-raise",
+          "total_samples": 864.0,
+          "correct": 841.0,
+          "recall": 0.9733796296296297,
+          "top_misclass": [
+            {
+              "target_class": "write",
+              "count": 14.8,
+              "fraction": 0.01712962962962963,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "read",
+              "count": 8.2,
+              "fraction": 0.00949074074074074,
+              "target_anchoring": "medium"
+            }
+          ],
+          "entropy": 0.14013067577435417,
+          "anchoring": "medium",
+          "anchoring_accuracy": 70.6
+        },
+        {
+          "class": "read",
+          "total_samples": 737.0,
+          "correct": 115.2,
+          "recall": 0.15630936227951153,
+          "top_misclass": [
+            {
+              "target_class": "hand-raise",
+              "count": 410.0,
+              "fraction": 0.5563093622795116,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "write",
+              "count": 211.8,
+              "fraction": 0.28738127544097697,
+              "target_anchoring": "medium"
+            }
+          ],
+          "entropy": 0.9746830647525406,
+          "anchoring": "medium",
+          "anchoring_accuracy": 70.6
+        },
+        {
+          "class": "write",
+          "total_samples": 70.0,
+          "correct": 22.6,
+          "recall": 0.3228571428571429,
+          "top_misclass": [
+            {
+              "target_class": "hand-raise",
+              "count": 42.8,
+              "fraction": 0.6114285714285714,
+              "target_anchoring": "medium"
+            },
+            {
+              "target_class": "read",
+              "count": 4.6,
+              "fraction": 0.06571428571428571,
+              "target_anchoring": "medium"
+            }
+          ],
+          "entropy": 0.8447044182104846,
+          "anchoring": "medium",
+          "anchoring_accuracy": 70.6
+        }
+      ]
+    },
+    {
+      "subset": "bow_turnhead",
+      "label": "BowTurnHead",
+      "class_names": [
+        "bow-head",
+        "turn-head"
+      ],
+      "per_class": [
+        {
+          "class": "bow-head",
+          "total_samples": 185.0,
+          "correct": 32.4,
+          "recall": 0.17513513513513512,
+          "top_misclass": [
+            {
+              "target_class": "turn-head",
+              "count": 152.6,
+              "fraction": 0.8248648648648649,
+              "target_anchoring": "high"
+            }
+          ],
+          "entropy": 0.4639359167797906,
+          "anchoring": "medium",
+          "anchoring_accuracy": 43.9
+        },
+        {
+          "class": "turn-head",
+          "total_samples": 320.0,
+          "correct": 301.2,
+          "recall": 0.9412499999999999,
+          "top_misclass": [
+            {
+              "target_class": "bow-head",
+              "count": 18.8,
+              "fraction": 0.058750000000000004,
+              "target_anchoring": "medium"
+            }
+          ],
+          "entropy": 0.2235141604008116,
+          "anchoring": "high",
+          "anchoring_accuracy": 89.0
+        }
+      ]
+    }
+  ],
+  "cross_flows": [
+    {
+      "subset": "teacher_behavior",
+      "source_class": "guide",
+      "source_anchoring": "low",
+      "source_recall": 0.2693548387096774,
+      "target_class": "On-stage interaction",
+      "target_anchoring": "low",
+      "fraction": 0.3064516129032258
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "guide",
+      "source_anchoring": "low",
+      "source_recall": 0.2693548387096774,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.2295698924731183
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "guide",
+      "source_anchoring": "low",
+      "source_recall": 0.2693548387096774,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.1639784946236559
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "answer",
+      "source_anchoring": "low",
+      "source_recall": 0.08425,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.371
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "answer",
+      "source_anchoring": "low",
+      "source_recall": 0.08425,
+      "target_class": "On-stage interaction",
+      "target_anchoring": "low",
+      "fraction": 0.31175
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "answer",
+      "source_anchoring": "low",
+      "source_recall": 0.08425,
+      "target_class": "screen",
+      "target_anchoring": "medium",
+      "fraction": 0.16899999999999998
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "On-stage interaction",
+      "source_anchoring": "low",
+      "source_recall": 0.15602836879432624,
+      "target_class": "screen",
+      "target_anchoring": "medium",
+      "fraction": 0.5234042553191489
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "On-stage interaction",
+      "source_anchoring": "low",
+      "source_recall": 0.15602836879432624,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.1319148936170213
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "On-stage interaction",
+      "source_anchoring": "low",
+      "source_recall": 0.15602836879432624,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.11347517730496454
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackboard-writing",
+      "source_anchoring": "high",
+      "source_recall": 0.04936170212765957,
+      "target_class": "screen",
+      "target_anchoring": "medium",
+      "fraction": 0.6238297872340425
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackboard-writing",
+      "source_anchoring": "high",
+      "source_recall": 0.04936170212765957,
+      "target_class": "blackBoard",
+      "target_anchoring": "medium",
+      "fraction": 0.2323404255319149
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackboard-writing",
+      "source_anchoring": "high",
+      "source_recall": 0.04936170212765957,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.0476595744680851
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "teacher",
+      "source_anchoring": "high",
+      "source_recall": 0.09115832762165867,
+      "target_class": "screen",
+      "target_anchoring": "medium",
+      "fraction": 0.44139821795750517
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "teacher",
+      "source_anchoring": "high",
+      "source_recall": 0.09115832762165867,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.17532556545579164
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "teacher",
+      "source_anchoring": "high",
+      "source_recall": 0.09115832762165867,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.15161069225496915
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "stand",
+      "source_anchoring": "low",
+      "source_recall": 0.24142011834319524,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.4047337278106509
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "stand",
+      "source_anchoring": "low",
+      "source_recall": 0.24142011834319524,
+      "target_class": "On-stage interaction",
+      "target_anchoring": "low",
+      "fraction": 0.22840236686390533
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "stand",
+      "source_anchoring": "low",
+      "source_recall": 0.24142011834319524,
+      "target_class": "guide",
+      "target_anchoring": "low",
+      "fraction": 0.07218934911242603
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "screen",
+      "source_anchoring": "medium",
+      "source_recall": 0.26666666666666666,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.325
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "screen",
+      "source_anchoring": "medium",
+      "source_recall": 0.26666666666666666,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.18333333333333335
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "screen",
+      "source_anchoring": "medium",
+      "source_recall": 0.26666666666666666,
+      "target_class": "On-stage interaction",
+      "target_anchoring": "low",
+      "fraction": 0.15
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackBoard",
+      "source_anchoring": "medium",
+      "source_recall": 0.0,
+      "target_class": "answer",
+      "target_anchoring": "low",
+      "fraction": 0.45999999999999996
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackBoard",
+      "source_anchoring": "medium",
+      "source_recall": 0.0,
+      "target_class": "On-stage interaction",
+      "target_anchoring": "low",
+      "fraction": 0.22999999999999998
+    },
+    {
+      "subset": "teacher_behavior",
+      "source_class": "blackBoard",
+      "source_anchoring": "medium",
+      "source_recall": 0.0,
+      "target_class": "stand",
+      "target_anchoring": "low",
+      "fraction": 0.215
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "hand-raise",
+      "source_anchoring": "medium",
+      "source_recall": 0.9733796296296297,
+      "target_class": "write",
+      "target_anchoring": "medium",
+      "fraction": 0.01712962962962963
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "hand-raise",
+      "source_anchoring": "medium",
+      "source_recall": 0.9733796296296297,
+      "target_class": "read",
+      "target_anchoring": "medium",
+      "fraction": 0.00949074074074074
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "read",
+      "source_anchoring": "medium",
+      "source_recall": 0.15630936227951153,
+      "target_class": "hand-raise",
+      "target_anchoring": "medium",
+      "fraction": 0.5563093622795116
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "read",
+      "source_anchoring": "medium",
+      "source_recall": 0.15630936227951153,
+      "target_class": "write",
+      "target_anchoring": "medium",
+      "fraction": 0.28738127544097697
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "write",
+      "source_anchoring": "medium",
+      "source_recall": 0.3228571428571429,
+      "target_class": "hand-raise",
+      "target_anchoring": "medium",
+      "fraction": 0.6114285714285714
+    },
+    {
+      "subset": "handrise_readwrite",
+      "source_class": "write",
+      "source_anchoring": "medium",
+      "source_recall": 0.3228571428571429,
+      "target_class": "read",
+      "target_anchoring": "medium",
+      "fraction": 0.06571428571428571
+    },
+    {
+      "subset": "bow_turnhead",
+      "source_class": "bow-head",
+      "source_anchoring": "medium",
+      "source_recall": 0.17513513513513512,
+      "target_class": "turn-head",
+      "target_anchoring": "high",
+      "fraction": 0.8248648648648649
+    },
+    {
+      "subset": "bow_turnhead",
+      "source_class": "turn-head",
+      "source_anchoring": "high",
+      "source_recall": 0.9412499999999999,
+      "target_class": "bow-head",
+      "target_anchoring": "medium",
+      "fraction": 0.058750000000000004
+    }
+  ],
+  "summary": {
+    "high\u2192*": {
+      "medium": 0.7835849873056435,
+      "low": 0.21641501269435656
+    },
+    "medium\u2192*": {
+      "low": 0.39722346084884763,
+      "medium": 0.3931886864725349,
+      "high": 0.20958785267861746
+    },
+    "low\u2192*": {
+      "low": 0.7711718256424781,
+      "medium": 0.228828174357522
+    }
+  }
+}

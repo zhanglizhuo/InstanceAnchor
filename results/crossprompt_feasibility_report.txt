@@ -1,0 +1,20 @@
+Cross-prompt agreement feasibility (teacher_behavior, N=3240)
+  consensus CAPE-A acc=0.6466  consensus 15-vote acc=0.8846
+AUROC (higher=keep):
+  agreement_5              0.5906
+  agreement_15             0.7302
+  prompt_consistency       0.6830
+  entropy_5                0.5315
+  entropy_15               0.7930
+  combo_agr15+pc           0.7259
+Coupled deltas (mean, 95% CI):
+  agreement15_vs_entropy15   -0.0627 [-0.0817, -0.0441]
+  promptcons_vs_entropy15    -0.1099 [-0.1317, -0.0877]
+  entropy15_vs_entropy5      +0.2614 [+0.2380, +0.2846]
+  agreement15_vs_agreement5  +0.1396 [+0.1110, +0.1675]
+  agreement5_vs_entropy5     +0.0590 [+0.0362, +0.0814]
+  combo_vs_entropy15         -0.0670 [-0.0865, -0.0475]
+Spearman redundancy:
+  spearman_agr5_vs_promptcons +0.524
+  spearman_agr15_vs_promptcons +0.729
+  spearman_agr5_vs_agr15     +0.553

@@ -1,0 +1,63 @@
+
+============================================================
+  teacher_behavior  (N=3240)
+============================================================
+  Consensus accuracy: 0.6466
+  Best single model entropy AUROC: 0.7485
+  Ensemble entropy AUROC: 0.6388
+  Agreement AUROC: 0.7062
+  Δ(agr−ent) CI: 0.0674 [0.0517, 0.0832]
+  Selective acc @50: agr=0.7877, ent=0.7463
+  Variance decomposition:
+    ρ(entropy, total_var) = 0.051
+    ρ(agreement, 1−var_ratio) = 0.252
+    Low var ratio: agr=0.775, ent=0.683
+    High var ratio: agr=0.633, ent=0.598
+  Single model baselines:
+    openai: max_logit=0.716 softmax=0.657 entropy=0.649 margin=0.654
+    laion: max_logit=0.660 softmax=0.495 entropy=0.466 margin=0.519
+    siglip2: max_logit=0.785 softmax=0.765 entropy=0.749 margin=0.735
+    eva02: max_logit=0.657 softmax=0.545 entropy=0.521 margin=0.529
+    dfn: max_logit=0.695 softmax=0.430 entropy=0.409 margin=0.467
+
+============================================================
+  handrise_readwrite  (N=1671)
+============================================================
+  Consensus accuracy: 0.5853
+  Best single model entropy AUROC: 0.8812
+  Ensemble entropy AUROC: 0.8814
+  Agreement AUROC: 0.7116
+  Δ(agr−ent) CI: -0.1699 [-0.1859, -0.1543]
+  Selective acc @50: agr=0.6459, ent=0.8696
+  Variance decomposition:
+    ρ(entropy, total_var) = -0.571
+    ρ(agreement, 1−var_ratio) = 0.543
+    Low var ratio: agr=0.513, ent=0.897
+    High var ratio: agr=0.586, ent=0.701
+  Single model baselines:
+    openai: max_logit=0.777 softmax=0.877 entropy=0.878 margin=0.874
+    laion: max_logit=0.885 softmax=0.876 entropy=0.879 margin=0.871
+    siglip2: max_logit=0.716 softmax=0.834 entropy=0.830 margin=0.838
+    eva02: max_logit=0.849 softmax=0.880 entropy=0.881 margin=0.877
+    dfn: max_logit=0.818 softmax=0.831 entropy=0.835 margin=0.830
+
+============================================================
+  bow_turnhead  (N=505)
+============================================================
+  Consensus accuracy: 0.6851
+  Best single model entropy AUROC: 0.5836
+  Ensemble entropy AUROC: 0.5799
+  Agreement AUROC: 0.5361
+  Δ(agr−ent) CI: -0.0439 [-0.0837, -0.0037]
+  Selective acc @50: agr=0.7738, ent=0.7540
+  Variance decomposition:
+    ρ(entropy, total_var) = 0.040
+    ρ(agreement, 1−var_ratio) = 0.508
+    Low var ratio: agr=0.443, ent=0.385
+    High var ratio: agr=0.520, ent=0.563
+  Single model baselines:
+    openai: max_logit=0.511 softmax=0.466 entropy=0.466 margin=0.466
+    laion: max_logit=0.546 softmax=0.584 entropy=0.584 margin=0.584
+    siglip2: max_logit=0.575 softmax=0.570 entropy=0.570 margin=0.570
+    eva02: max_logit=0.504 softmax=0.555 entropy=0.555 margin=0.555
+    dfn: max_logit=0.621 softmax=0.576 entropy=0.576 margin=0.576

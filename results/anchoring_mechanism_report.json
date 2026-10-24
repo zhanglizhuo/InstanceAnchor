@@ -1,0 +1,246 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260810_073848",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "num_classes": 8,
+      "consensus_accuracy": 0.6466049382716049,
+      "B1_multilabel_degree": {
+        "1_classes": {
+          "n": 176,
+          "base_acc": 0.1590909090909091,
+          "entropy_auroc": 0.5511583011583011,
+          "agreement_auroc": 0.5307673745173745,
+          "agree_minus_ent": -0.020390926640926565
+        },
+        "2_classes": {
+          "n": 266,
+          "base_acc": 0.3458646616541353,
+          "entropy_auroc": 0.5004372813593203,
+          "agreement_auroc": 0.6136931534232883,
+          "agree_minus_ent": 0.11325587206396803
+        },
+        "3_classes": {
+          "n": 942,
+          "base_acc": 0.4394904458598726,
+          "entropy_auroc": 0.5165239350021958,
+          "agreement_auroc": 0.6353594825062217,
+          "agree_minus_ent": 0.1188355475040258
+        },
+        "4+_classes": {
+          "n": 1856,
+          "base_acc": 0.8410560344827587,
+          "entropy_auroc": 0.7788575337408659,
+          "agreement_auroc": 0.7213053344770302,
+          "agree_minus_ent": -0.0575521992638357
+        }
+      },
+      "B2_anchor_level": {
+        "low_anchor(primary)": {
+          "n": 1482,
+          "base_acc": 0.5263157894736842,
+          "entropy_auroc": 0.543584264738111,
+          "agreement_auroc": 0.6709940463145592,
+          "agree_minus_ent": 0.12740978157644822
+        },
+        "high_anchor(primary)": {
+          "n": 1758,
+          "base_acc": 0.7480091012514221,
+          "entropy_auroc": 0.7099348548180827,
+          "agreement_auroc": 0.7098327167858277,
+          "agree_minus_ent": -0.00010213803225500584
+        }
+      },
+      "B3_complementarity": {
+        "spearman_agree_entropy": 0.7148412336631315,
+        "conditional_high_entropy_half": {
+          "n": 1620,
+          "agreement_auroc_within": 0.7828250811533128
+        },
+        "conditional_low_agreement_half": {
+          "n": 2052,
+          "entropy_auroc_within": 0.4523726022384191
+        },
+        "combined_ranksum_auroc": 0.6815414117622537,
+        "combined_minus_agreement_ci": {
+          "mean": -0.02466772496700287,
+          "ci_lo": -0.0332728773355484,
+          "ci_hi": -0.01632864587008953
+        },
+        "combined_minus_entropy_ci": {
+          "mean": 0.04271605238318443,
+          "ci_lo": 0.03468631953001022,
+          "ci_hi": 0.0508345291018486
+        }
+      },
+      "B4_saturation": {
+        "agreement": {
+          "mean": 0.606604938271605,
+          "std": 0.2549138406372886,
+          "n_distinct": 6
+        },
+        "entropy(-)": {
+          "mean": -1.3039723634719849,
+          "std": 0.33054009079933167
+        }
+      },
+      "B5_prompt_dimension": {
+        "consensus_acc_5vote": 0.6466049382716049,
+        "consensus_acc_15vote": 0.8845679012345679,
+        "auroc_entropy_5": 0.5315230006232018,
+        "auroc_entropy_15": 0.7930111840460349,
+        "auroc_agreement_5": 0.5905984229636789,
+        "auroc_agreement_15": 0.7301839564729019,
+        "delta_agreement15_vs_entropy15": {
+          "mean": -0.06271634995937347,
+          "ci_lo": -0.08166436851024628,
+          "ci_hi": -0.04409468173980713
+        },
+        "delta_entropy_gain_15v5": {
+          "mean": 0.26135480403900146,
+          "ci_lo": 0.23803362250328064,
+          "ci_hi": 0.2846224308013916
+        },
+        "delta_agreement_gain_15v5": {
+          "mean": 0.13960951566696167,
+          "ci_lo": 0.11096172034740448,
+          "ci_hi": 0.16753073036670685
+        }
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "num_classes": 3,
+      "consensus_accuracy": 0.585278276481149,
+      "B3_complementarity": {
+        "spearman_agree_entropy": 0.7586732953134595,
+        "conditional_high_entropy_half": {
+          "n": 836,
+          "agreement_auroc_within": 0.49931224209078406
+        },
+        "conditional_low_agreement_half": {
+          "n": 1671,
+          "entropy_auroc_within": 0.8814496115109612
+        },
+        "combined_ranksum_auroc": 0.8714083576046766,
+        "combined_minus_agreement_ci": {
+          "mean": 0.15978728234767914,
+          "ci_lo": 0.14543986320495605,
+          "ci_hi": 0.17429620027542114
+        },
+        "combined_minus_entropy_ci": {
+          "mean": -0.010019125416874886,
+          "ci_lo": -0.013629207387566566,
+          "ci_hi": -0.006626348476856947
+        }
+      },
+      "B4_saturation": {
+        "agreement": {
+          "mean": 0.9025733093955715,
+          "std": 0.1698715231942639,
+          "n_distinct": 5
+        },
+        "entropy(-)": {
+          "mean": -0.3848266899585724,
+          "std": 0.39499208331108093
+        }
+      },
+      "B5_prompt_dimension": {
+        "consensus_acc_5vote": 0.585278276481149,
+        "consensus_acc_15vote": 0.5990424895272292,
+        "auroc_entropy_5": 0.8728584847987833,
+        "auroc_entropy_15": 0.8683838549510191,
+        "auroc_agreement_5": 0.715431583342031,
+        "auroc_agreement_15": 0.805130690205317,
+        "delta_agreement15_vs_entropy15": {
+          "mean": -0.06320814043283463,
+          "ci_lo": -0.07444533705711365,
+          "ci_hi": -0.052237942814826965
+        },
+        "delta_entropy_gain_15v5": {
+          "mean": -0.004400008823722601,
+          "ci_lo": -0.012910297140479088,
+          "ci_hi": 0.0040175169706344604
+        },
+        "delta_agreement_gain_15v5": {
+          "mean": 0.08977638185024261,
+          "ci_lo": 0.06897295266389847,
+          "ci_hi": 0.11034052073955536
+        }
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "num_classes": 2,
+      "consensus_accuracy": 0.6851485148514852,
+      "B3_complementarity": {
+        "spearman_agree_entropy": 0.7018696574493934,
+        "conditional_high_entropy_half": {
+          "n": 253,
+          "agreement_auroc_within": 0.4581151832460733
+        },
+        "conditional_low_agreement_half": {
+          "n": 505,
+          "entropy_auroc_within": 0.5798705783982259
+        },
+        "combined_ranksum_auroc": 0.5608935907223616,
+        "combined_minus_agreement_ci": {
+          "mean": 0.024808300659060478,
+          "ci_lo": -0.00898813921958208,
+          "ci_hi": 0.05859117954969406
+        },
+        "combined_minus_entropy_ci": {
+          "mean": -0.018960382789373398,
+          "ci_lo": -0.030506258830428123,
+          "ci_hi": -0.008134403266012669
+        }
+      },
+      "B4_saturation": {
+        "agreement": {
+          "mean": 0.9085148514851485,
+          "std": 0.15190790682407224,
+          "n_distinct": 4
+        },
+        "entropy(-)": {
+          "mean": -0.4545743465423584,
+          "std": 0.15608355402946472
+        }
+      },
+      "B5_prompt_dimension": {
+        "consensus_acc_5vote": 0.6851485148514852,
+        "consensus_acc_15vote": 0.6752475247524753,
+        "auroc_entropy_5": 0.5951291037837064,
+        "auroc_entropy_15": 0.6016379372004864,
+        "auroc_agreement_5": 0.5516236320720979,
+        "auroc_agreement_15": 0.584766826407267,
+        "delta_agreement15_vs_entropy15": {
+          "mean": -0.016935141757130623,
+          "ci_lo": -0.05574055388569832,
+          "ci_hi": 0.022105755284428596
+        },
+        "delta_entropy_gain_15v5": {
+          "mean": 0.006518425885587931,
+          "ci_lo": -0.022595057263970375,
+          "ci_hi": 0.03470427542924881
+        },
+        "delta_agreement_gain_15v5": {
+          "mean": 0.03311128541827202,
+          "ci_lo": -0.015105635859072208,
+          "ci_hi": 0.08061588555574417
+        }
+      }
+    }
+  ]
+}

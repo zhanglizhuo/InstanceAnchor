@@ -1,0 +1,21 @@
+{
+ "script": "/home/lizhuo/Work/Mayan/InstanceAnchor/analysis/anchoring_evidence_plugins.py",
+ "claim": "Borda count collapses on larger C datasets",
+ "paper_line": "Exp A variant comparison",
+ "results": {
+  "Stanford40": {
+   "C": 40,
+   "N": 573,
+   "borda_auroc": 0.15184291355857832,
+   "discrete_auroc": 0.9233216322948662,
+   "entropy_auroc": 0.8842913558578324
+  },
+  "COCO": {
+   "C": 80,
+   "N": 5000,
+   "borda_auroc": 0.33354544028541,
+   "discrete_auroc": 0.8478248185428549,
+   "entropy_auroc": 0.843430822198423
+  }
+ }
+}

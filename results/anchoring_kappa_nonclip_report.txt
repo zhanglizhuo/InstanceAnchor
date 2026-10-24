@@ -1,0 +1,21 @@
+================================================================================================
+  Cross-family kappa replication (ImageNet-supervised non-CLIP ensemble)
+================================================================================================
+
+  imagenet_v2_matched  N=10000 C=1000 K=5
+    per-backbone acc: 0.699, 0.696, 0.736, 0.724, 0.733
+    p=0.718  consensus=0.745  E[a|correct]=0.931  E[a|wrong]=0.681
+    kappa_emp=2407.5  kappa_iid_mc=787.3  plurality_share=33%  p*=0.707  Delta_alpha=+0.037
+    AUROC ent=0.809 msp=0.843 hard=0.779 soft=0.847
+    d_hard-ent=-0.0300 CI[-0.0382,-0.0220]  d_soft-ent=+0.0374 CI[+0.0335,+0.0413]  d_soft-msp=+0.0038 CI[+0.0023,+0.0053]
+    CLIP ref: p=0.543 kappa=785.0 share=n/a d_hard=+0.0336 d_soft=+0.0851
+
+  imagenet_v2_top  N=10000 C=1000 K=5
+    per-backbone acc: 0.820, 0.820, 0.845, 0.842, 0.843
+    p=0.834  consensus=0.855  E[a|correct]=0.955  E[a|wrong]=0.729
+    kappa_emp=4382.7  kappa_iid_mc=1403.4  plurality_share=32%  p*=0.814  Delta_alpha=+0.105
+    AUROC ent=0.811 msp=0.859 hard=0.770 soft=0.863
+    d_hard-ent=-0.0414 CI[-0.0530,-0.0301]  d_soft-ent=+0.0513 CI[+0.0460,+0.0568]  d_soft-msp=+0.0033 CI[+0.0015,+0.0051]
+    CLIP ref: p=0.621 kappa=1012.2 share=n/a d_hard=+0.0348 d_soft=+0.0949
+
+================================================================================================

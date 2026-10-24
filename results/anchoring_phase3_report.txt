@@ -1,0 +1,41 @@
+========================================================================
+  Phase 3 — Cross-family complementarity (vit_b_16 vs CLIP)
+========================================================================
+
+── teacher_behavior | N=3240 ──
+  CLIP consensus acc=64.66%  vit_b_16 acc=32.19%
+  CLIP↔vB agreement rate=44.6%  χ² p=0.819006
+  CLIP agreement → predict vB correctness: AUROC=0.4658 [0.4452,0.4862]
+  CLIP entropy   → predict vB correctness: AUROC=0.4007 [0.3792,0.4224]
+  -- Confusion matrix (CLIP_right/wrong × vB_right/wrong) --
+                      vB_right   vB_wrong
+         CLIP_right        671       1424
+         CLIP_wrong        372        773
+    CLIP_wrong + vB_wrong (both fail): 773 / 3240 (23.9%)
+    CLIP_wrong + vB_right (vB rescues): 372 / 3240 (11.5%)
+
+── handrise_readwrite | N=1671 ──
+  CLIP consensus acc=58.53%  vit_b_16 acc=32.26%
+  CLIP↔vB agreement rate=35.8%  χ² p=0.000000
+  CLIP agreement → predict vB correctness: AUROC=0.4096 [0.3850,0.4341]
+  CLIP entropy   → predict vB correctness: AUROC=0.3410 [0.3134,0.3683]
+  -- Confusion matrix (CLIP_right/wrong × vB_right/wrong) --
+                      vB_right   vB_wrong
+         CLIP_right        222        756
+         CLIP_wrong        317        376
+    CLIP_wrong + vB_wrong (both fail): 376 / 1671 (22.5%)
+    CLIP_wrong + vB_right (vB rescues): 317 / 1671 (19.0%)
+
+── bow_turnhead | N=505 ──
+  CLIP consensus acc=68.51%  vit_b_16 acc=35.84%
+  CLIP↔vB agreement rate=11.9%  χ² p=0.000000
+  CLIP agreement → predict vB correctness: AUROC=0.4486 [0.4048,0.4936]
+  CLIP entropy   → predict vB correctness: AUROC=0.4551 [0.3996,0.5103]
+  -- Confusion matrix (CLIP_right/wrong × vB_right/wrong) --
+                      vB_right   vB_wrong
+         CLIP_right         41        305
+         CLIP_wrong        140         19
+    CLIP_wrong + vB_wrong (both fail): 19 / 505 (3.8%)
+    CLIP_wrong + vB_right (vB rescues): 140 / 505 (27.7%)
+
+========================================================================

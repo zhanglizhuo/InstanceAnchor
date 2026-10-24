@@ -1,0 +1,100 @@
+{
+  "type": "cape_robustness",
+  "models": [
+    "openai",
+    "laion",
+    "siglip2",
+    "eva02",
+    "dfn"
+  ],
+  "bootstrap_n": 10000,
+  "results": {
+    "A": {
+      "teacher_behavior": {
+        "n_images": 3240,
+        "consensus_accuracy": 0.6466049382716049,
+        "entropy_auroc": 0.6387964690310679,
+        "agreement_auroc": 0.7062413106689873,
+        "delta": 0.06744484163791942,
+        "delta_ci_lo": 0.05205856263637543,
+        "delta_ci_hi": 0.08312084525823593
+      },
+      "handrise_readwrite": {
+        "n_images": 1671,
+        "consensus_accuracy": 0.585278276481149,
+        "entropy_auroc": 0.8814496115109612,
+        "agreement_auroc": 0.7115509462135229,
+        "delta": -0.16989866529743836,
+        "delta_ci_lo": -0.18536776304244995,
+        "delta_ci_hi": -0.15424884855747223
+      },
+      "bow_turnhead": {
+        "n_images": 505,
+        "consensus_accuracy": 0.6851485148514852,
+        "entropy_auroc": 0.5798705783982259,
+        "agreement_auroc": 0.5360999018431672,
+        "delta": -0.04377067655505862,
+        "delta_ci_lo": -0.08501072227954865,
+        "delta_ci_hi": -0.0037759775295853615
+      }
+    },
+    "B": {
+      "teacher_behavior": {
+        "n_images": 3240,
+        "consensus_accuracy": 0.7552469135802469,
+        "entropy_auroc": 0.7782512596168663,
+        "agreement_auroc": 0.6863408419914546,
+        "delta": -0.09191041762541163,
+        "delta_ci_lo": -0.10693736374378204,
+        "delta_ci_hi": -0.0770866721868515
+      },
+      "handrise_readwrite": {
+        "n_images": 1671,
+        "consensus_accuracy": 0.6415320167564332,
+        "entropy_auroc": 0.8448346747066006,
+        "agreement_auroc": 0.6850643485411009,
+        "delta": -0.1597703261654997,
+        "delta_ci_lo": -0.1790456622838974,
+        "delta_ci_hi": -0.14102549850940704
+      },
+      "bow_turnhead": {
+        "n_images": 505,
+        "consensus_accuracy": 0.6594059405940594,
+        "entropy_auroc": 0.6618740833857113,
+        "agreement_auroc": 0.6257769397304281,
+        "delta": -0.03609714365528316,
+        "delta_ci_lo": -0.07433927059173584,
+        "delta_ci_hi": 0.0029166496824473143
+      }
+    },
+    "C": {
+      "teacher_behavior": {
+        "n_images": 3240,
+        "consensus_accuracy": 0.9234567901234568,
+        "entropy_auroc": 0.5702801556839745,
+        "agreement_auroc": 0.45376919096084184,
+        "delta": -0.11651096472313266,
+        "delta_ci_lo": -0.14537791907787323,
+        "delta_ci_hi": -0.08750449120998383
+      },
+      "handrise_readwrite": {
+        "n_images": 1671,
+        "consensus_accuracy": 0.5164572112507481,
+        "entropy_auroc": 0.7497189174305612,
+        "agreement_auroc": 0.5561907001824169,
+        "delta": -0.19352821724814429,
+        "delta_ci_lo": -0.21529705822467804,
+        "delta_ci_hi": -0.1721259355545044
+      },
+      "bow_turnhead": {
+        "n_images": 505,
+        "consensus_accuracy": 0.5722772277227722,
+        "entropy_auroc": 0.49080481865948994,
+        "agreement_auroc": 0.5220908624887863,
+        "delta": 0.031286043829296395,
+        "delta_ci_lo": -0.0156420711427927,
+        "delta_ci_hi": 0.07837676256895065
+      }
+    }
+  }
+}

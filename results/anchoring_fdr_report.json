@@ -1,0 +1,1836 @@
+{
+  "args": {
+    "bootstrap_n": 2000,
+    "seed": 42,
+    "q": 0.05
+  },
+  "timestamp": "20260815_103030",
+  "n_tests": 216,
+  "csfs": [
+    "entropy",
+    "msp",
+    "margin",
+    "max_logit",
+    "energy",
+    "ensemble_mi",
+    "pred_var",
+    "hard_agree"
+  ],
+  "ref_win_table_b10000": {
+    "entropy": {
+      "win": 23,
+      "tie": 1,
+      "loss": 3,
+      "n": 27
+    },
+    "msp": {
+      "win": 14,
+      "tie": 6,
+      "loss": 7,
+      "n": 27
+    },
+    "margin": {
+      "win": 16,
+      "tie": 7,
+      "loss": 4,
+      "n": 27
+    },
+    "hard_agree": {
+      "win": 25,
+      "tie": 1,
+      "loss": 1,
+      "n": 27
+    },
+    "max_logit": {
+      "win": 23,
+      "tie": 2,
+      "loss": 2,
+      "n": 27
+    },
+    "energy": {
+      "win": 27,
+      "tie": 0,
+      "loss": 0,
+      "n": 27
+    },
+    "ensemble_mi": {
+      "win": 26,
+      "tie": 1,
+      "loss": 0,
+      "n": 27
+    },
+    "pred_var": {
+      "win": 27,
+      "tie": 0,
+      "loss": 0,
+      "n": 27
+    }
+  },
+  "win_counts_nominal_b2000": {
+    "entropy": 26,
+    "msp": 21,
+    "margin": 20,
+    "max_logit": 25,
+    "energy": 27,
+    "ensemble_mi": 26,
+    "pred_var": 27,
+    "hard_agree": 26
+  },
+  "win_counts_fdr_q0p05_all216": {
+    "entropy": 26,
+    "msp": 21,
+    "margin": 20,
+    "max_logit": 25,
+    "energy": 27,
+    "ensemble_mi": 26,
+    "pred_var": 27,
+    "hard_agree": 26
+  },
+  "win_counts_fdr_q0p05_within_csf": {
+    "entropy": 26,
+    "msp": 21,
+    "margin": 20,
+    "max_logit": 25,
+    "energy": 27,
+    "ensemble_mi": 26,
+    "pred_var": 27,
+    "hard_agree": 26
+  },
+  "max_q_surviving_all": 0.027411167512690356,
+  "tests": [
+    {
+      "dataset": "teacher_behavior",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "margin",
+      "p_two_sided": 0.05,
+      "p_one_sided_a_gt_b": 0.975,
+      "q_all": 0.0542713567839196,
+      "q_within_csf": 0.0642857142857143
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "teacher_behavior",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "max_logit",
+      "p_two_sided": 0.009,
+      "p_one_sided_a_gt_b": 0.0045,
+      "q_all": 0.010125,
+      "q_within_csf": 0.00972
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "handrise_readwrite",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "entropy",
+      "p_two_sided": 0.017,
+      "p_one_sided_a_gt_b": 0.0085,
+      "q_all": 0.01883076923076923,
+      "q_within_csf": 0.01836
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "msp",
+      "p_two_sided": 0.017,
+      "p_one_sided_a_gt_b": 0.0085,
+      "q_all": 0.01883076923076923,
+      "q_within_csf": 0.02295
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "margin",
+      "p_two_sided": 0.017,
+      "p_one_sided_a_gt_b": 0.0085,
+      "q_all": 0.01883076923076923,
+      "q_within_csf": 0.02295
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "max_logit",
+      "p_two_sided": 0.956,
+      "p_one_sided_a_gt_b": 0.522,
+      "q_all": 0.956,
+      "q_within_csf": 0.956
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "energy",
+      "p_two_sided": 0.004,
+      "p_one_sided_a_gt_b": 0.998,
+      "q_all": 0.0045473684210526315,
+      "q_within_csf": 0.004
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.065,
+      "p_one_sided_a_gt_b": 0.9675,
+      "q_all": 0.06916256157635468,
+      "q_within_csf": 0.065
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "pred_var",
+      "p_two_sided": 0.038,
+      "p_one_sided_a_gt_b": 0.981,
+      "q_all": 0.04145454545454545,
+      "q_within_csf": 0.038
+    },
+    {
+      "dataset": "bow_turnhead",
+      "csf": "hard_agree",
+      "p_two_sided": 0.107,
+      "p_one_sided_a_gt_b": 0.9465,
+      "q_all": 0.11219417475728155,
+      "q_within_csf": 0.107
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "voc2007",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford40",
+      "csf": "hard_agree",
+      "p_two_sided": 0.001,
+      "p_one_sided_a_gt_b": 0.9995,
+      "q_all": 0.001142857142857143,
+      "q_within_csf": 0.0010384615384615384
+    },
+    {
+      "dataset": "coco",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "coco",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "msp",
+      "p_two_sided": 0.514,
+      "p_one_sided_a_gt_b": 0.257,
+      "q_all": 0.5188037383177571,
+      "q_within_csf": 0.514
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "max_logit",
+      "p_two_sided": 0.071,
+      "p_one_sided_a_gt_b": 0.9645,
+      "q_all": 0.07517647058823529,
+      "q_within_csf": 0.07373076923076922
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "multithumos",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "msp",
+      "p_two_sided": 0.064,
+      "p_one_sided_a_gt_b": 0.968,
+      "q_all": 0.06843564356435644,
+      "q_within_csf": 0.07854545454545454
+    },
+    {
+      "dataset": "food101",
+      "csf": "margin",
+      "p_two_sided": 0.059,
+      "p_one_sided_a_gt_b": 0.9705,
+      "q_all": 0.06372,
+      "q_within_csf": 0.07240909090909091
+    },
+    {
+      "dataset": "food101",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "food101",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "msp",
+      "p_two_sided": 0.258,
+      "p_one_sided_a_gt_b": 0.871,
+      "q_all": 0.26792307692307693,
+      "q_within_csf": 0.30286956521739133
+    },
+    {
+      "dataset": "dtd",
+      "csf": "margin",
+      "p_two_sided": 0.286,
+      "p_one_sided_a_gt_b": 0.143,
+      "q_all": 0.29557894736842105,
+      "q_within_csf": 0.289
+    },
+    {
+      "dataset": "dtd",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "entropy",
+      "p_two_sided": 0.025,
+      "p_one_sided_a_gt_b": 0.9875,
+      "q_all": 0.027411167512690356,
+      "q_within_csf": 0.025961538461538463
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "msp",
+      "p_two_sided": 0.389,
+      "p_one_sided_a_gt_b": 0.1945,
+      "q_all": 0.39447887323943664,
+      "q_within_csf": 0.4039615384615385
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "margin",
+      "p_two_sided": 0.098,
+      "p_one_sided_a_gt_b": 0.049,
+      "q_all": 0.10325853658536585,
+      "q_within_csf": 0.11025
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "msp",
+      "p_two_sided": 0.018,
+      "p_one_sided_a_gt_b": 0.009,
+      "q_all": 0.01983673469387755,
+      "q_within_csf": 0.023142857142857142
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "tiny_imagenet",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stl10",
+      "csf": "entropy",
+      "p_two_sided": 0.587,
+      "p_one_sided_a_gt_b": 0.7075,
+      "q_all": 0.5897302325581395,
+      "q_within_csf": 0.587
+    },
+    {
+      "dataset": "stl10",
+      "csf": "msp",
+      "p_two_sided": 0.343,
+      "p_one_sided_a_gt_b": 0.1715,
+      "q_all": 0.3511279620853081,
+      "q_within_csf": 0.385875
+    },
+    {
+      "dataset": "stl10",
+      "csf": "margin",
+      "p_two_sided": 0.289,
+      "p_one_sided_a_gt_b": 0.1445,
+      "q_all": 0.29725714285714283,
+      "q_within_csf": 0.289
+    },
+    {
+      "dataset": "stl10",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stl10",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stl10",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stl10",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stl10",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "margin",
+      "p_two_sided": 0.001,
+      "p_one_sided_a_gt_b": 0.9995,
+      "q_all": 0.001142857142857143,
+      "q_within_csf": 0.0014210526315789472
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "eurosat",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_a",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_r",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "entropy",
+      "p_two_sided": 0.001,
+      "p_one_sided_a_gt_b": 0.9995,
+      "q_all": 0.001142857142857143,
+      "q_within_csf": 0.001125
+    },
+    {
+      "dataset": "sun397",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "margin",
+      "p_two_sided": 0.062,
+      "p_one_sided_a_gt_b": 0.969,
+      "q_all": 0.06662686567164179,
+      "q_within_csf": 0.07278260869565217
+    },
+    {
+      "dataset": "sun397",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "sun397",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "fgvc_aircraft",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "entropy",
+      "p_two_sided": 0.001,
+      "p_one_sided_a_gt_b": 0.9995,
+      "q_all": 0.001142857142857143,
+      "q_within_csf": 0.001125
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 0.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "stanford_cars",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "gtsrb",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_sketch",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_matched",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_threshold",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_v2_top",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "msp",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "imagenet_c",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "msp",
+      "p_two_sided": 0.009,
+      "p_one_sided_a_gt_b": 0.0045,
+      "q_all": 0.010125,
+      "q_within_csf": 0.012789473684210526
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "margin",
+      "p_two_sided": 0.142,
+      "p_one_sided_a_gt_b": 0.071,
+      "q_all": 0.14817391304347824,
+      "q_within_csf": 0.15336
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar10c",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "entropy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "msp",
+      "p_two_sided": 0.366,
+      "p_one_sided_a_gt_b": 0.817,
+      "q_all": 0.3729056603773585,
+      "q_within_csf": 0.39527999999999996
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "margin",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "max_logit",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "energy",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "ensemble_mi",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "pred_var",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    },
+    {
+      "dataset": "cifar100c",
+      "csf": "hard_agree",
+      "p_two_sided": 0.0,
+      "p_one_sided_a_gt_b": 1.0,
+      "q_all": 0.0,
+      "q_within_csf": 0.0
+    }
+  ],
+  "notes": [
+    "p_two_sided from coupled bootstrap (B=2000), H0: soft AUROC <= CSF AUROC",
+    "q_all = BH-FDR over all 216 tests at q=0.05",
+    "q_within_csf = BH-FDR within each CSF (27 tests)",
+    "stratification (OOD/multilabel/standard) was defined after inspection; its nominal stratum p-values should be read with this post-hoc selection in mind"
+  ]
+}

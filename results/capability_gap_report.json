@@ -1,0 +1,355 @@
+{
+  "summary": {
+    "qwen35_ollama_9b": {
+      "weighted_hit_at_1": 0.6493722304283605,
+      "weighted_macro_f1": 0.2779361960529555
+    },
+    "qwen35_ollama_27b": {
+      "weighted_hit_at_1": 0.7509231905465288,
+      "weighted_macro_f1": 0.31456771918469423
+    },
+    "gemma4_ollama_26b": {
+      "weighted_hit_at_1": 0.7655096011816839,
+      "weighted_macro_f1": 0.3418437832245132
+    }
+  },
+  "per_category": {
+    "teacher_behavior": {
+      "classes": [
+        "guide",
+        "answer",
+        "On-stage interaction",
+        "blackboard-writing",
+        "teacher",
+        "stand",
+        "screen",
+        "blackBoard"
+      ],
+      "openai": {},
+      "eva02": {},
+      "dfn": {},
+      "laion": {},
+      "siglip2": {},
+      "qwen35_ollama_9b": {},
+      "qwen35_ollama_27b": {},
+      "gemma4_ollama_26b": {},
+      "openai_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.8414,
+        "mllm_hit1": 0.7438271604938271,
+        "gap": -0.0975728395061729,
+        "mllm_better": false
+      },
+      "openai_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.8414,
+        "mllm_hit1": 0.8777777777777778,
+        "gap": 0.03637777777777773,
+        "mllm_better": true
+      },
+      "openai_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.8414,
+        "mllm_hit1": 0.8540123456790123,
+        "gap": 0.01261234567901226,
+        "mllm_better": true
+      },
+      "eva02_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.6414,
+        "mllm_hit1": 0.7438271604938271,
+        "gap": 0.10242716049382716,
+        "mllm_better": true
+      },
+      "eva02_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.6414,
+        "mllm_hit1": 0.8777777777777778,
+        "gap": 0.2363777777777778,
+        "mllm_better": true
+      },
+      "eva02_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.6414,
+        "mllm_hit1": 0.8540123456790123,
+        "gap": 0.21261234567901233,
+        "mllm_better": true
+      },
+      "dfn_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.4586,
+        "mllm_hit1": 0.7438271604938271,
+        "gap": 0.2852271604938271,
+        "mllm_better": true
+      },
+      "dfn_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.4586,
+        "mllm_hit1": 0.8777777777777778,
+        "gap": 0.41917777777777776,
+        "mllm_better": true
+      },
+      "dfn_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.4586,
+        "mllm_hit1": 0.8540123456790123,
+        "gap": 0.3954123456790123,
+        "mllm_better": true
+      },
+      "laion_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.5494,
+        "mllm_hit1": 0.7438271604938271,
+        "gap": 0.19442716049382713,
+        "mllm_better": true
+      },
+      "laion_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.5494,
+        "mllm_hit1": 0.8777777777777778,
+        "gap": 0.32837777777777777,
+        "mllm_better": true
+      },
+      "laion_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.5494,
+        "mllm_hit1": 0.8540123456790123,
+        "gap": 0.3046123456790123,
+        "mllm_better": true
+      },
+      "siglip2_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.8556,
+        "mllm_hit1": 0.7438271604938271,
+        "gap": -0.1117728395061729,
+        "mllm_better": false
+      },
+      "siglip2_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.8556,
+        "mllm_hit1": 0.8777777777777778,
+        "gap": 0.02217777777777774,
+        "mllm_better": true
+      },
+      "siglip2_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.8556,
+        "mllm_hit1": 0.8540123456790123,
+        "gap": -0.0015876543209877303,
+        "mllm_better": false
+      }
+    },
+    "handrise_readwrite": {
+      "classes": [
+        "hand-raise",
+        "read",
+        "write"
+      ],
+      "openai": {},
+      "eva02": {},
+      "dfn": {},
+      "laion": {},
+      "siglip2": {},
+      "qwen35_ollama_9b": {},
+      "qwen35_ollama_27b": {},
+      "gemma4_ollama_26b": {},
+      "openai_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.6798000000000001,
+        "mllm_hit1": 0.5032914422501497,
+        "gap": -0.17650855774985041,
+        "mllm_better": false
+      },
+      "openai_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.6798000000000001,
+        "mllm_hit1": 0.5409934171154998,
+        "gap": -0.13880658288450032,
+        "mllm_better": false
+      },
+      "openai_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.6798000000000001,
+        "mllm_hit1": 0.6337522441651705,
+        "gap": -0.04604775583482956,
+        "mllm_better": false
+      },
+      "eva02_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.7433,
+        "mllm_hit1": 0.5032914422501497,
+        "gap": -0.2400085577498503,
+        "mllm_better": false
+      },
+      "eva02_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.7433,
+        "mllm_hit1": 0.5409934171154998,
+        "gap": -0.2023065828845002,
+        "mllm_better": false
+      },
+      "eva02_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.7433,
+        "mllm_hit1": 0.6337522441651705,
+        "gap": -0.10954775583482945,
+        "mllm_better": false
+      },
+      "dfn_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.7373000000000001,
+        "mllm_hit1": 0.5032914422501497,
+        "gap": -0.2340085577498504,
+        "mllm_better": false
+      },
+      "dfn_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.7373000000000001,
+        "mllm_hit1": 0.5409934171154998,
+        "gap": -0.1963065828845003,
+        "mllm_better": false
+      },
+      "dfn_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.7373000000000001,
+        "mllm_hit1": 0.6337522441651705,
+        "gap": -0.10354775583482956,
+        "mllm_better": false
+      },
+      "laion_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.6972,
+        "mllm_hit1": 0.5032914422501497,
+        "gap": -0.19390855774985039,
+        "mllm_better": false
+      },
+      "laion_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.6972,
+        "mllm_hit1": 0.5409934171154998,
+        "gap": -0.1562065828845003,
+        "mllm_better": false
+      },
+      "laion_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.6972,
+        "mllm_hit1": 0.6337522441651705,
+        "gap": -0.06344775583482953,
+        "mllm_better": false
+      },
+      "siglip2_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.6445000000000001,
+        "mllm_hit1": 0.5032914422501497,
+        "gap": -0.14120855774985042,
+        "mllm_better": false
+      },
+      "siglip2_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.6445000000000001,
+        "mllm_hit1": 0.5409934171154998,
+        "gap": -0.10350658288450032,
+        "mllm_better": false
+      },
+      "siglip2_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.6445000000000001,
+        "mllm_hit1": 0.6337522441651705,
+        "gap": -0.010747755834829564,
+        "mllm_better": false
+      }
+    },
+    "bow_turnhead": {
+      "classes": [
+        "bow-head",
+        "turn-head"
+      ],
+      "openai": {},
+      "eva02": {},
+      "dfn": {},
+      "laion": {},
+      "siglip2": {},
+      "qwen35_ollama_9b": {},
+      "qwen35_ollama_27b": {},
+      "gemma4_ollama_26b": {},
+      "openai_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.895,
+        "mllm_hit1": 0.5267326732673268,
+        "gap": -0.36826732673267326,
+        "mllm_better": false
+      },
+      "openai_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.895,
+        "mllm_hit1": 0.6316831683168317,
+        "gap": -0.26331683168316833,
+        "mllm_better": false
+      },
+      "openai_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.895,
+        "mllm_hit1": 0.6336633663366337,
+        "gap": -0.26133663366336635,
+        "mllm_better": false
+      },
+      "eva02_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.9009999999999999,
+        "mllm_hit1": 0.5267326732673268,
+        "gap": -0.37426732673267316,
+        "mllm_better": false
+      },
+      "eva02_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.9009999999999999,
+        "mllm_hit1": 0.6316831683168317,
+        "gap": -0.2693168316831682,
+        "mllm_better": false
+      },
+      "eva02_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.9009999999999999,
+        "mllm_hit1": 0.6336633663366337,
+        "gap": -0.26733663366336624,
+        "mllm_better": false
+      },
+      "dfn_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.9327,
+        "mllm_hit1": 0.5267326732673268,
+        "gap": -0.4059673267326732,
+        "mllm_better": false
+      },
+      "dfn_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.9327,
+        "mllm_hit1": 0.6316831683168317,
+        "gap": -0.3010168316831683,
+        "mllm_better": false
+      },
+      "dfn_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.9327,
+        "mllm_hit1": 0.6336633663366337,
+        "gap": -0.2990366336633663,
+        "mllm_better": false
+      },
+      "laion_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.9287000000000001,
+        "mllm_hit1": 0.5267326732673268,
+        "gap": -0.4019673267326733,
+        "mllm_better": false
+      },
+      "laion_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.9287000000000001,
+        "mllm_hit1": 0.6316831683168317,
+        "gap": -0.2970168316831684,
+        "mllm_better": false
+      },
+      "laion_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.9287000000000001,
+        "mllm_hit1": 0.6336633663366337,
+        "gap": -0.2950366336633664,
+        "mllm_better": false
+      },
+      "siglip2_vs_qwen35_ollama_9b": {
+        "clip_hit1": 0.8238,
+        "mllm_hit1": 0.5267326732673268,
+        "gap": -0.2970673267326732,
+        "mllm_better": false
+      },
+      "siglip2_vs_qwen35_ollama_27b": {
+        "clip_hit1": 0.8238,
+        "mllm_hit1": 0.6316831683168317,
+        "gap": -0.1921168316831683,
+        "mllm_better": false
+      },
+      "siglip2_vs_gemma4_ollama_26b": {
+        "clip_hit1": 0.8238,
+        "mllm_hit1": 0.6336633663366337,
+        "gap": -0.1901366336633663,
+        "mllm_better": false
+      }
+    }
+  },
+  "actionable_insights": [],
+  "best_models": {
+    "teacher_behavior": {
+      "model": "qwen35_ollama_27b",
+      "hit_at_1": 0.8777777777777778,
+      "source": "MLLM"
+    },
+    "handrise_readwrite": {
+      "model": "eva02",
+      "hit_at_1": 0.7433,
+      "source": "CLIP+CAPE"
+    },
+    "bow_turnhead": {
+      "model": "dfn",
+      "hit_at_1": 0.9327,
+      "source": "CLIP+CAPE"
+    }
+  }
+}

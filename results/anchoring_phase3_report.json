@@ -1,0 +1,119 @@
+{
+  "args": {
+    "subsets": [
+      "teacher_behavior",
+      "handrise_readwrite",
+      "bow_turnhead"
+    ],
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260811_214548",
+  "results": [
+    {
+      "subset": "teacher_behavior",
+      "n_images": 3240,
+      "num_classes": 8,
+      "clip_consensus_accuracy": 0.6466049382716049,
+      "vB_accuracy": 0.3219135802469136,
+      "clip_vs_vB_agreement_rate": 0.445679012345679,
+      "chi2_p_value": 0.8190055684977269,
+      "predict_vB_correctness": {
+        "agreement_auroc": {
+          "mean": 0.46579858096110355,
+          "ci_lo": 0.44522313973548855,
+          "ci_hi": 0.4861556386967222
+        },
+        "entropy_auroc": {
+          "mean": 0.4006633218142749,
+          "ci_lo": 0.37919836733437023,
+          "ci_hi": 0.4223547694683097
+        }
+      },
+      "predict_CLIP_correctness": {
+        "agreement_auroc": {
+          "mean": 0.7063601760002084
+        },
+        "entropy_auroc": {
+          "mean": 0.6387691074965345
+        }
+      },
+      "confusion_matrix": {
+        "CLIP_right_vB_right": 671,
+        "CLIP_right_vB_wrong": 1424,
+        "CLIP_wrong_vB_right": 372,
+        "CLIP_wrong_vB_wrong": 773
+      }
+    },
+    {
+      "subset": "handrise_readwrite",
+      "n_images": 1671,
+      "num_classes": 3,
+      "clip_consensus_accuracy": 0.585278276481149,
+      "vB_accuracy": 0.3225613405146619,
+      "clip_vs_vB_agreement_rate": 0.35786953919808495,
+      "chi2_p_value": 5.351346747867256e-23,
+      "predict_vB_correctness": {
+        "agreement_auroc": {
+          "mean": 0.40960896023864296,
+          "ci_lo": 0.38503766373945947,
+          "ci_hi": 0.43411442775866366
+        },
+        "entropy_auroc": {
+          "mean": 0.3410296886800057,
+          "ci_lo": 0.3133652322900415,
+          "ci_hi": 0.3683448776934373
+        }
+      },
+      "predict_CLIP_correctness": {
+        "agreement_auroc": {
+          "mean": 0.7114760780025632
+        },
+        "entropy_auroc": {
+          "mean": 0.8813976444878947
+        }
+      },
+      "confusion_matrix": {
+        "CLIP_right_vB_right": 222,
+        "CLIP_right_vB_wrong": 756,
+        "CLIP_wrong_vB_right": 317,
+        "CLIP_wrong_vB_wrong": 376
+      }
+    },
+    {
+      "subset": "bow_turnhead",
+      "n_images": 505,
+      "num_classes": 2,
+      "clip_consensus_accuracy": 0.6851485148514852,
+      "vB_accuracy": 0.3584158415841584,
+      "clip_vs_vB_agreement_rate": 0.1188118811881188,
+      "chi2_p_value": 4.655339444477746e-61,
+      "predict_vB_correctness": {
+        "agreement_auroc": {
+          "mean": 0.44863170373595784,
+          "ci_lo": 0.40475529214081735,
+          "ci_hi": 0.49356876639050895
+        },
+        "entropy_auroc": {
+          "mean": 0.4550871296569947,
+          "ci_lo": 0.3995774475573953,
+          "ci_hi": 0.5103448421718146
+        }
+      },
+      "predict_CLIP_correctness": {
+        "agreement_auroc": {
+          "mean": 0.5359313573617026
+        },
+        "entropy_auroc": {
+          "mean": 0.5800156890527615
+        }
+      },
+      "confusion_matrix": {
+        "CLIP_right_vB_right": 41,
+        "CLIP_right_vB_wrong": 305,
+        "CLIP_wrong_vB_right": 140,
+        "CLIP_wrong_vB_wrong": 19
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "args": {
+    "name": "e2_nonclip_cifar100",
+    "stack_dir": "nonclip_cifar100",
+    "models": "resnet50,vit_b_16,convnext_base,swin_b,efficientnet_b4",
+    "dataset": "cifar100_restricted",
+    "T": 1.0,
+    "clip_ref": "cifar100",
+    "bootstrap_n": 10000,
+    "seed": 42
+  },
+  "timestamp": "20260816_100630",
+  "results": [
+    {
+      "name": "e2_nonclip_cifar100",
+      "N": 6300,
+      "C": 63,
+      "K": 5,
+      "per_backbone_accs": [
+        0.4203174603174603,
+        0.5866666666666667,
+        0.533968253968254,
+        0.5661904761904762,
+        0.5298412698412699
+      ],
+      "p": 0.5273968253968254,
+      "consensus_acc": 0.5731746031746032,
+      "E_alpha_correct": 0.8549432290224314,
+      "E_alpha_wrong": 0.6473782075120863,
+      "kappa_empirical": 84.92843684228552,
+      "kappa_iid_mc": 38.31962744152437,
+      "plurality_share": 0.45119901962501663,
+      "hard_auroc": 0.7311924670485899,
+      "entropy_auroc": 0.7694406960097442,
+      "msp_auroc": 0.7919207137317187,
+      "soft_auroc": 0.8016354103340492,
+      "delta_hard_vs_entropy": {
+        "mean": -0.03821961209177971,
+        "ci_lo": -0.04905208200216293,
+        "ci_hi": -0.027027836069464684
+      },
+      "delta_soft_vs_entropy": {
+        "mean": 0.032205212861299515,
+        "ci_lo": 0.028880534693598747,
+        "ci_hi": 0.03563935309648514
+      },
+      "delta_soft_vs_msp": {
+        "mean": 0.009718160144984722,
+        "ci_lo": 0.008176486007869244,
+        "ci_hi": 0.011295388452708721
+      },
+      "T": 1.0,
+      "clip_reference": {
+        "p": 0.7113599999999999,
+        "kappa": 161.69905933603002,
+        "delta_hard": -0.04347458481788635,
+        "delta_soft": 0.018629517406225204
+      }
+    }
+  ]
+}

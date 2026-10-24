@@ -1,0 +1,34 @@
+================================================================================================
+  P3 — signal-space expansion (6 principled divergence signals vs entropy,
+       8 datasets, compute-matched 5 backbones, coupled bootstrap)
+================================================================================================
+
+               dataset |    acc |     ent |     agr | logitvar_cons | kl_pairwise | soft_agreement | topk_soft_ovl | rank_consensus | cos_dispersion
+    --------------------------------------------------------------------------------------------
+      teacher_behavior |  64.7% |   0.639 |   0.706 |     0.662 |     0.695 |     0.673 |     0.688 |     0.712 |     0.688
+    handrise_readwrite |  58.5% |   0.881 |   0.712 |     0.231 |     0.769 |     0.867 |     0.719 |     0.712 |     0.265
+          bow_turnhead |  68.5% |   0.580 |   0.536 |     0.557 |     0.504 |     0.568 |     0.536 |     0.536 |     0.472
+               voc2007 |  89.2% |   0.906 |   0.899 |     0.116 |     0.628 |     0.925 |     0.831 |     0.621 |     0.592
+            stanford40 |  92.5% |   0.884 |   0.923 |     0.075 |     0.294 |     0.973 |     0.745 |     0.152 |     0.365
+                  coco |  89.4% |   0.843 |   0.848 |     0.151 |     0.534 |     0.888 |     0.777 |     0.334 |     0.450
+           multithumos |  18.3% |   0.686 |   0.642 |     0.360 |     0.487 |     0.680 |     0.663 |     0.574 |     0.415
+              cifar100 |  89.8% |   0.879 |   0.836 |     0.350 |     0.545 |     0.898 |     0.740 |     0.650 |     0.345
+
+  Delta vs entropy (signal - entropy AUROC), * = CI excludes 0:
+      teacher_behavior | logitvar_cons +0.023  | kl_pairwise +0.056* | soft_agreement +0.035* | topk_soft_ovl +0.049* | rank_consensus +0.073* | cos_dispersion +0.049*
+    handrise_readwrite | logitvar_cons -0.650! | kl_pairwise -0.113! | soft_agreement -0.014! | topk_soft_ovl -0.162! | rank_consensus -0.170! | cos_dispersion -0.616!
+          bow_turnhead | logitvar_cons -0.023  | kl_pairwise -0.076! | soft_agreement -0.012! | topk_soft_ovl -0.044! | rank_consensus -0.044! | cos_dispersion -0.108!
+               voc2007 | logitvar_cons -0.790! | kl_pairwise -0.278! | soft_agreement +0.019* | topk_soft_ovl -0.075! | rank_consensus -0.285! | cos_dispersion -0.314!
+            stanford40 | logitvar_cons -0.810! | kl_pairwise -0.590! | soft_agreement +0.089* | topk_soft_ovl -0.139! | rank_consensus -0.732! | cos_dispersion -0.519!
+                  coco | logitvar_cons -0.692! | kl_pairwise -0.309! | soft_agreement +0.045* | topk_soft_ovl -0.066! | rank_consensus -0.510! | cos_dispersion -0.394!
+           multithumos | logitvar_cons -0.326! | kl_pairwise -0.199! | soft_agreement -0.006! | topk_soft_ovl -0.023! | rank_consensus -0.112! | cos_dispersion -0.271!
+              cifar100 | logitvar_cons -0.529! | kl_pairwise -0.334! | soft_agreement +0.019* | topk_soft_ovl -0.139! | rank_consensus -0.229! | cos_dispersion -0.534!
+
+  Significant wins (CI>0) per signal across 8 datasets:
+         logitvar_cons : 0/8
+           kl_pairwise : 1/8
+        soft_agreement : 5/8
+         topk_soft_ovl : 1/8
+        rank_consensus : 1/8
+        cos_dispersion : 1/8
+================================================================================================

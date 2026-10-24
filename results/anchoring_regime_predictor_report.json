@@ -1,0 +1,128 @@
+{
+  "timestamp": "20260818_212526",
+  "datasets": [
+    {
+      "name": "TeacherBehavior",
+      "N": 3240,
+      "C": 8,
+      "entropy_auroc": 0.6387964690310679,
+      "agreement_auroc": 0.7062413106689873,
+      "delta": 0.06744484163791942,
+      "delta_ci": {
+        "ci_lo": 0.05205856617231974,
+        "ci_hi": 0.08312414260973344
+      },
+      "mean_agreement": 0.606604938271605,
+      "std_agreement": 0.2549138406372886,
+      "mean_pairwise_argmax_agreement": 0.46259259259259256,
+      "mean_multilabel_degree": 3.6080245971679688,
+      "win": true
+    },
+    {
+      "name": "HandriseReadWrite",
+      "N": 1671,
+      "C": 3,
+      "entropy_auroc": 0.8814496115109612,
+      "agreement_auroc": 0.7115509462135229,
+      "delta": -0.16989866529743836,
+      "delta_ci": {
+        "ci_lo": -0.18536757712053342,
+        "ci_hi": -0.15424509732448788
+      },
+      "mean_agreement": 0.9025733093955715,
+      "std_agreement": 0.1698715231942639,
+      "mean_pairwise_argmax_agreement": 0.8430879712746858,
+      "mean_multilabel_degree": 1.0,
+      "win": false
+    },
+    {
+      "name": "BowTurnHead",
+      "N": 505,
+      "C": 2,
+      "entropy_auroc": 0.5798705783982259,
+      "agreement_auroc": 0.5360999018431672,
+      "delta": -0.04377067655505862,
+      "delta_ci": {
+        "ci_lo": -0.08500891265597144,
+        "ci_hi": -0.003772977612474082
+      },
+      "mean_agreement": 0.9085148514851485,
+      "std_agreement": 0.15190790682407224,
+      "mean_pairwise_argmax_agreement": 0.84990099009901,
+      "mean_multilabel_degree": 1.0,
+      "win": false
+    },
+    {
+      "name": "VOC2007",
+      "N": 2510,
+      "C": 20,
+      "entropy_auroc": 0.9060367063492063,
+      "agreement_auroc": 0.898823578042328,
+      "delta": -0.007213128306878258,
+      "delta_ci": {
+        "ci_lo": -0.020622864243553862,
+        "ci_hi": 0.0058059524828156794
+      },
+      "mean_agreement": 0.7,
+      "std_agreement": 0.19051199625517412,
+      "mean_pairwise_argmax_agreement": 0.4897609561752988,
+      "mean_multilabel_degree": 1.5521912574768066,
+      "win": false
+    },
+    {
+      "name": "Stanford40",
+      "N": 573,
+      "C": 40,
+      "entropy_auroc": 0.8842913558578324,
+      "agreement_auroc": 0.9233216322948662,
+      "delta": 0.03903027643703383,
+      "delta_ci": {
+        "ci_lo": -0.016584418736348194,
+        "ci_hi": 0.08714348398420357
+      },
+      "mean_agreement": 0.7329842931937173,
+      "std_agreement": 0.14607486222085747,
+      "mean_pairwise_argmax_agreement": 0.5228621291448518,
+      "mean_multilabel_degree": 1.0,
+      "win": false
+    },
+    {
+      "name": "CIFAR-100",
+      "N": 10000,
+      "C": 100,
+      "entropy_auroc": 0.8790807854199668,
+      "agreement_auroc": 0.8357265294227624,
+      "delta": -0.04335425599720444,
+      "delta_ci": {
+        "ci_lo": -0.05385402968332598,
+        "ci_hi": -0.03330561439015456
+      },
+      "mean_agreement": 0.7417199999999999,
+      "std_agreement": 0.20700589750053017,
+      "mean_pairwise_argmax_agreement": 0.56633,
+      "mean_multilabel_degree": 1.0,
+      "win": false
+    }
+  ],
+  "predictor_analysis": {
+    "entropy_auroc": {
+      "correlation_with_delta": -0.27755141732801103
+    },
+    "mean_agreement": {
+      "correlation_with_delta": -0.810960174318398
+    },
+    "std_agreement": {
+      "correlation_with_delta": 0.3846183481834889
+    },
+    "mean_pairwise_argmax_agreement": {
+      "correlation_with_delta": -0.7972470491907314
+    },
+    "mean_multilabel_degree": {
+      "correlation_with_delta": 0.5873482427403501
+    }
+  },
+  "best_predictor": "mean_agreement",
+  "best_predictor_correlation": -0.810960174318398,
+  "best_threshold": 0.6096545333545701,
+  "threshold_accuracy": 1.0
+}

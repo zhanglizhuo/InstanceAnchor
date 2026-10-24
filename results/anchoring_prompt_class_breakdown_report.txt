@@ -1,0 +1,30 @@
+================================================================================
+  P2 — CAPE prompt-set per-class breakdown (TeacherBehavior)
+================================================================================
+
+  Global agreement-minus-entropy AUROC delta per prompt set:
+     set |     acc |  entropy | agreement |    delta | CI
+    ------------------------------------------------------------
+       A |   64.7% |   0.6388 |    0.7062 |  +0.0674 | [+0.0521,+0.0831]
+       B |   75.5% |   0.7783 |    0.6863 |  -0.0919 | [-0.1069,-0.0771]
+       C |   92.3% |   0.5703 |    0.4538 |  -0.1164 | [-0.1454,-0.0875]
+
+  Per-class delta (agreement - entropy AUROC) per prompt set:
+                   class |    N_A         A |    N_B         B |    N_C         C
+    ----------------------------------------------------------------------
+                   guide |    372    +0.062 |    372    -0.035 |    372    +0.033
+                  answer |    800    +0.193 |    800    -0.054 |    800    +0.002
+    on-stage interaction |    141    -0.116 |    141    -0.115 |    141    -0.607
+      blackboard-writing |    235    -0.005 |    235    -0.101 |    235    -0.111
+                 teacher |   1459    +0.001 |   1459    -0.127 |   1459    -0.125
+                   stand |    169    +0.017 |    169    -0.061 |    169    -0.115
+                  screen |     24    -0.073 |     24    -0.241 |     24    -0.107
+              blackboard |     40       deg |     40       deg |     40       deg
+
+  Per-class delta Spearman across prompt sets:
+    A_vs_B: rho=+0.786 p=0.0362 n=7
+    A_vs_C: rho=+0.643 p=0.1194 n=7
+    B_vs_C: rho=+0.571 p=0.1802 n=7
+
+  Key question: does the `answer` class advantage survive CAPE-B/C?
+================================================================================

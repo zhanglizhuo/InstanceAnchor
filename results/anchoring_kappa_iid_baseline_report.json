@@ -1,0 +1,174 @@
+{
+ "timestamp": "20260812_133036",
+ "datasets": [
+  {
+   "name": "TeacherBehavior",
+   "C": 8,
+   "p": 0.6701851851851852,
+   "per_backbone_accs": [
+    0.8432098765432099,
+    0.5503086419753086,
+    0.8549382716049383,
+    0.6435185185185185,
+    0.4589506172839506
+   ],
+   "kappa_empirical": 10.32841075986456,
+   "kappa_iid_mc": 9.458079650562183,
+   "kappa_ratio_real_over_iid": 1.0920198540779518,
+   "plurality_share_of_kappa": 0.9157342664290212,
+   "correlation_share_of_kappa": 0.08426573357097877,
+   "E_alpha_correct_empirical": 0.6721718377088306,
+   "E_alpha_correct_iid": 0.6814991125565553,
+   "E_alpha_wrong_empirical": 0.4866375545851529,
+   "E_alpha_wrong_iid": 0.4456306840648478
+  },
+  {
+   "name": "HandriseReadWrite",
+   "C": 3,
+   "p": 0.5851585876720525,
+   "per_backbone_accs": [
+    0.5798922800718133,
+    0.6080191502094554,
+    0.5625374027528426,
+    0.6062238180730102,
+    0.5691202872531418
+   ],
+   "kappa_empirical": 3.975162556235838,
+   "kappa_iid_mc": 2.7961354246654633,
+   "kappa_ratio_real_over_iid": 1.4216631001380902,
+   "plurality_share_of_kappa": 0.7034015301535695,
+   "correlation_share_of_kappa": 0.29659846984643046,
+   "E_alpha_correct_empirical": 0.9578732106339468,
+   "E_alpha_correct_iid": 0.6462238853996591,
+   "E_alpha_wrong_empirical": 0.8245310245310244,
+   "E_alpha_wrong_iid": 0.579976384314213
+  },
+  {
+   "name": "BowTurnHead",
+   "C": 2,
+   "p": 0.6594059405940594,
+   "per_backbone_accs": [
+    0.6356435643564357,
+    0.6772277227722773,
+    0.6475247524752475,
+    0.6534653465346535,
+    0.6831683168316832
+   ],
+   "kappa_empirical": 2.629515869533421,
+   "kappa_iid_mc": 1.902037709857037,
+   "kappa_ratio_real_over_iid": 1.3824730476721534,
+   "plurality_share_of_kappa": 0.7233414074030795,
+   "correlation_share_of_kappa": 0.2766585925969205,
+   "E_alpha_correct_empirical": 0.914450867052023,
+   "E_alpha_correct_iid": 0.7465493997560505,
+   "E_alpha_wrong_empirical": 0.8955974842767295,
+   "E_alpha_wrong_iid": 0.6478227447433867
+  },
+  {
+   "name": "VOC2007",
+   "C": 20,
+   "p": 0.6947410358565737,
+   "per_backbone_accs": [
+    0.8737051792828685,
+    0.7924302788844622,
+    0.046215139442231074,
+    0.9203187250996016,
+    0.8410358565737052
+   ],
+   "kappa_empirical": 23.559838355714103,
+   "kappa_iid_mc": 25.405792533272916,
+   "kappa_ratio_real_over_iid": 0.9273412086971409,
+   "plurality_share_of_kappa": 1.0783517335597976,
+   "correlation_share_of_kappa": -0.07835173355979763,
+   "E_alpha_correct_empirical": 0.7387499999999999,
+   "E_alpha_correct_iid": 0.6964687706907967,
+   "E_alpha_wrong_empirical": 0.37851851851851853,
+   "E_alpha_wrong_iid": 0.40817610062893084
+  },
+  {
+   "name": "Stanford40",
+   "C": 40,
+   "p": 0.7263525305410121,
+   "per_backbone_accs": [
+    0.900523560209424,
+    0.9214659685863874,
+    0.0017452006980802793,
+    0.9406631762652705,
+    0.8673647469458988
+   ],
+   "kappa_empirical": 54.35613431419077,
+   "kappa_iid_mc": 53.44467474489794,
+   "kappa_ratio_real_over_iid": 1.0170542635658915,
+   "plurality_share_of_kappa": 0.9832317073170732,
+   "correlation_share_of_kappa": 0.01676829268292679,
+   "E_alpha_correct_empirical": 0.7615094339622642,
+   "E_alpha_correct_iid": 0.726786857691692,
+   "E_alpha_wrong_empirical": 0.38139534883720927,
+   "E_alpha_wrong_iid": 0.375
+  },
+  {
+   "name": "COCO",
+   "C": 80,
+   "p": 0.6866,
+   "per_backbone_accs": [
+    0.8702,
+    0.7924,
+    0.0154,
+    0.9036,
+    0.8514
+   ],
+   "kappa_empirical": 97.68464176668358,
+   "kappa_iid_mc": 84.02467560093596,
+   "kappa_ratio_real_over_iid": 1.162570888468809,
+   "plurality_share_of_kappa": 0.8601626016260163,
+   "correlation_share_of_kappa": 0.13983739837398368,
+   "E_alpha_correct_empirical": 0.7068217401028852,
+   "E_alpha_correct_iid": 0.6873845106655588,
+   "E_alpha_wrong_empirical": 0.387523629489603,
+   "E_alpha_wrong_iid": 0.3333333333333333
+  },
+  {
+   "name": "CIFAR-100",
+   "C": 100,
+   "p": 0.7113599999999999,
+   "per_backbone_accs": [
+    0.7209,
+    0.8237,
+    0.2406,
+    0.9074,
+    0.8642
+   ],
+   "kappa_empirical": 161.69905933603002,
+   "kappa_iid_mc": 116.95321871251497,
+   "kappa_ratio_real_over_iid": 1.3825960594851663,
+   "plurality_share_of_kappa": 0.7232770505453107,
+   "correlation_share_of_kappa": 0.27672294945468934,
+   "E_alpha_correct_empirical": 0.7723861485357977,
+   "E_alpha_correct_iid": 0.7124592002242736,
+   "E_alpha_wrong_empirical": 0.4714425907752699,
+   "E_alpha_wrong_iid": 0.34098360655737714
+  },
+  {
+   "name": "MultiTHUMOS",
+   "C": 65,
+   "p": 0.1348667991096005,
+   "per_backbone_accs": [
+    0.15503003901481605,
+    0.1562746834534096,
+    0.030302304985758394,
+    0.167261064170995,
+    0.16546590392302352
+   ],
+   "kappa_empirical": 33.220658542290785,
+   "kappa_iid_mc": 17.877333340220478,
+   "kappa_ratio_real_over_iid": 1.8582558097493684,
+   "plurality_share_of_kappa": 0.5381390413276171,
+   "correlation_share_of_kappa": 0.46186095867238286,
+   "E_alpha_correct_empirical": 0.5832678711704635,
+   "E_alpha_correct_iid": 0.26362356643067114,
+   "E_alpha_wrong_empirical": 0.44906710406842215,
+   "E_alpha_wrong_iid": 0.24166054087514996
+  }
+ ],
+ "superseded_by": "anchoring_kappa_meta_decomp_report.json (canonical N=5e7, 27 datasets, 2026-08-17); this N=1e5 8-dataset version is historical"
+}
